@@ -1,0 +1,37 @@
+:root {
+  --melkism-font-family-sans:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  --melkism-font-family-mono:
+    "Cascadia Code",
+    Consolas,
+    monospace;
+}
+
+html {
+  font-family: var(--melkism-font-family-sans);
+  font-size: 16px;
+}
+
+body {
+  font-size: var(--melkism-font-size-md);
+  line-height: var(--melkism-line-height-normal);
+  color: var(--melkism-color-foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+  line-height: var(--melkism-line-height-tight);
+}
+
+p {
+  margin: 0;
+}

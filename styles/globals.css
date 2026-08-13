@@ -1,0 +1,35 @@
+@import "./tokens.css";
+@import "./typography.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--melkism-color-background);
+}
+
+body {
+  margin: 0;
+  background: var(--melkism-color-background);
+  color: var(--melkism-color-foreground);
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

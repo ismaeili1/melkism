@@ -1,0 +1,80 @@
+:root {
+  --melkism-color-primary: #1f3a5f;
+  --melkism-color-primary-hover: #17304f;
+
+  --melkism-color-secondary: #64748b;
+
+  --melkism-color-accent: #c98b3c;
+  --melkism-color-accent-hover: #b77a2f;
+
+  --melkism-color-background: #ffffff;
+  --melkism-color-surface: #f8fafc;
+  --melkism-color-surface-raised: #ffffff;
+
+  --melkism-color-foreground: #172033;
+  --melkism-color-muted: #64748b;
+
+  --melkism-color-border: #e2e8f0;
+  --melkism-color-border-strong: #cbd5e1;
+
+  --melkism-color-success: #15803d;
+  --melkism-color-warning: #b45309;
+  --melkism-color-danger: #b91c1c;
+  --melkism-color-info: #0369a1;
+
+  --melkism-font-size-xs: 0.75rem;
+  --melkism-font-size-sm: 0.875rem;
+  --melkism-font-size-md: 1rem;
+  --melkism-font-size-lg: 1.125rem;
+  --melkism-font-size-xl: 1.25rem;
+  --melkism-font-size-2xl: 1.5rem;
+  --melkism-font-size-3xl: 1.875rem;
+  --melkism-font-size-4xl: 2.25rem;
+  --melkism-font-size-5xl: 3rem;
+
+  --melkism-line-height-tight: 1.15;
+  --melkism-line-height-normal: 1.5;
+  --melkism-line-height-relaxed: 1.75;
+
+  --melkism-space-1: 0.25rem;
+  --melkism-space-2: 0.5rem;
+  --melkism-space-3: 0.75rem;
+  --melkism-space-4: 1rem;
+  --melkism-space-5: 1.25rem;
+  --melkism-space-6: 1.5rem;
+  --melkism-space-8: 2rem;
+  --melkism-space-10: 2.5rem;
+  --melkism-space-12: 3rem;
+  --melkism-space-16: 4rem;
+  --melkism-space-20: 5rem;
+  --melkism-space-24: 6rem;
+  --melkism-space-32: 8rem;
+
+  --melkism-radius-sm: 0.375rem;
+  --melkism-radius-md: 0.5rem;
+  --melkism-radius-lg: 0.75rem;
+  --melkism-radius-xl: 1rem;
+  --melkism-radius-2xl: 1.5rem;
+  --melkism-radius-full: 9999px;
+
+  --melkism-shadow-sm:
+    0 1px 2px rgb(15 23 42 / 0.05);
+
+  --melkism-shadow-md:
+    0 4px 12px rgb(15 23 42 / 0.08);
+
+  --melkism-shadow-lg:
+    0 12px 32px rgb(15 23 42 / 0.12);
+
+  --melkism-container-sm: 640px;
+  --melkism-container-md: 768px;
+  --melkism-container-lg: 1024px;
+  --melkism-container-xl: 1280px;
+  --melkism-container-2xl: 1440px;
+
+  --melkism-duration-fast: 120ms;
+  --melkism-duration-normal: 200ms;
+  --melkism-duration-slow: 320ms;
+
+  --melkism-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
