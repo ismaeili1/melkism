@@ -1,6 +1,11 @@
 import type { Source } from "../../sources/source.types";
-import type { SourceAdapterContext, SourceAdapterResult } from "../contracts/source.adapter";
-import type { NormalizedContent, ContentNormalizer } from "../normalization/content.normalizer";
+import type {
+  SourceAdapter,
+} from "../contracts/source.adapter";
+import type {
+  NormalizedContent,
+  ContentNormalizer,
+} from "../normalization/content.normalizer";
 import type { ProvenanceRecord } from "../../provenance/provenance.types";
 import type { ProvenancePipelineContract } from "../../provenance/provenance.contract";
 
@@ -32,11 +37,7 @@ export type IngestionResult = {
 };
 
 export type IngestionPipelineDependencies<TPayload = unknown> = {
-  adapter: {
-    fetch(
-      context: SourceAdapterContext,
-    ): Promise<SourceAdapterResult<TPayload>>;
-  };
+  adapter: SourceAdapter<TPayload>;
   normalizer: ContentNormalizer<TPayload>;
   provenance: ProvenancePipelineContract;
 };
