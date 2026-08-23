@@ -25,3 +25,8 @@ export {
 export type {
   ContentIndexDependencies,
 } from "./composition";
+export * from './persistence/adapters';
+export * from './persistence/runtime';
+export * from './persistence/composition';
+
+export * from './integration';
