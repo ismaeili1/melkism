@@ -77,9 +77,13 @@ export interface ContentStorageContract {
 
 
   delete(
-    id: string
+    id:string
   ):
   Promise<boolean>;
+
+
+  list():
+  Promise<readonly StoredContent[]>;
 
 
 

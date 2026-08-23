@@ -1,96 +1,91 @@
 /**
- * MELKISM Content Storage Runtime Integration
+ * MELKISM Content Runtime Storage
  *
- * v0.2.7
- *
- * Application runtime boundary for content storage.
- *
- * This layer receives composed dependencies.
- *
- * It does not know concrete adapters.
+ * v0.2.8
  */
 
 
-import {
-  ContentStorageRuntime,
-} from "../storage";
-
-
 import type {
-  ContentStorageDependencies,
-} from "../storage";
+ ContentStorageContract,
+ CreateStoredContentInput,
+ UpdateStoredContentInput,
+ StoredContent,
+} from "../storage/content.storage.contract";
 
 
 
 export class ContentRuntimeStorage {
 
 
- private readonly runtime:
- ContentStorageRuntime;
-
-
-
  constructor(
-   dependencies:
-   ContentStorageDependencies,
- ){
-
-   this.runtime =
-   new ContentStorageRuntime(
-     dependencies.contentStorage,
-   );
-
- }
+  private readonly storage:
+  ContentStorageContract
+ ){}
 
 
 
- save(
-   input:
-   Parameters<
-    ContentStorageRuntime["save"]
-   >[0],
- ){
+ async save(
+  input:CreateStoredContentInput
+ ):
+ Promise<StoredContent>{
 
-   return this.runtime.save(input);
+ return this.storage.save(input);
 
  }
 
 
 
- findById(
-   id:string,
- ){
+ async findById(
+  id:string
+ ):
+ Promise<StoredContent | undefined>{
 
-   return this.runtime.findById(id);
-
- }
-
-
-
- update(
-   id:string,
-   input:
-   Parameters<
-    ContentStorageRuntime["update"]
-   >[1],
- ){
-
-   return this.runtime.update(
-     id,
-     input,
-   );
+ return this.storage.findById(id);
 
  }
 
 
 
- delete(
-   id:string,
- ){
+ async update(
+  id:string,
+  input:UpdateStoredContentInput
+ ):
+ Promise<StoredContent>{
 
-   return this.runtime.delete(id);
+ return this.storage.update(id,input);
+
+ }
+
+
+
+ async delete(
+  id:string
+ ):
+ Promise<boolean>{
+
+ return this.storage.delete(id);
+
+ }
+
+
+
+ async list():
+ Promise<readonly StoredContent[]>{
+
+ return this.storage.list();
 
  }
 
 
 }
+
+
+/**
+ * Backward compatibility export
+ *
+ * v0.2.8
+ */
+
+export {
+  ContentRuntimeStorage as ContentStorageRuntime,
+};

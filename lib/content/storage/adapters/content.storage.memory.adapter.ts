@@ -133,4 +133,18 @@ implements ContentStorageContract {
  }
 
 
+
+
+async list():
+ Promise<readonly StoredContent[]> {
+
+
+ return Array.from(
+   this.records.values()
+ );
+
+
+ }
+
+
 }
