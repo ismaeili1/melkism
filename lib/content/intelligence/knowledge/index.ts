@@ -8,3 +8,7 @@ export type {
  KnowledgeRelationship,
  KnowledgeGraph,
 } from "./knowledge.graph.contract";
+
+export type { KnowledgeGraphPersistenceContract } from "./persistence";
+
+export * from "./integration";
