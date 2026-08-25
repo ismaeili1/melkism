@@ -10,4 +10,8 @@ export * from "./runtime";
 
 export * from "./composition";
 
-export * from './pipeline';
+export * from "./pipeline";
+
+export * from "./storage";
+
+export * from "./integration";
