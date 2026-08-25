@@ -15,3 +15,7 @@ export * from "./pipeline";
 export * from "./storage";
 
 export * from "./integration";
+
+export * from "./semantic";
+
+export * from "./query";
