@@ -9,6 +9,10 @@ import {
 } from "@/lib/api/core/rate-limit";
 
 import {
+  rateLimitResponse,
+} from "@/lib/api/core/rate-limit-response";
+
+import {
   getAuthorizationContext,
 } from "@/lib/auth/authorization";
 
@@ -42,6 +46,18 @@ export async function POST(
   try {
     const { id } =
       await params;
+
+    if (
+      !id ||
+      id.length > 128
+    ) {
+      return errorResponse(
+        new Error(
+          "BAD_REQUEST"
+        ),
+        requestId
+      );
+    }
 
     const authContext =
       await getAuthorizationContext();
@@ -82,27 +98,10 @@ export async function POST(
       );
 
     const limited =
-      !decision.allowed
-        ? Response.json(
-            {
-              ok: false,
-              error: {
-                code:
-                  "RATE_LIMITED",
-                message:
-                  "Too many requests.",
-              },
-              requestId,
-            },
-            {
-              status: 429,
-              headers:
-                getRateLimitHeaders(
-                  decision
-                ),
-            }
-          )
-        : null;
+      rateLimitResponse(
+        requestId,
+        decision
+      );
 
     if (limited) {
       return limited;
