@@ -1,40 +1,45 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MELKISM
 
-## Getting Started
+**Media, Knowledge and Intelligence for Real Estate and the Built Environment**
 
-First, run the development server:
+MELKISM is an independent knowledge and intelligence platform focused on real estate, architecture, the built environment, urban intelligence, market knowledge, data-driven analysis, and AI-enabled knowledge systems.
+
+## Project
+
+- Framework: Next.js 16.3.0
+- Runtime: React 19.2.8
+- Database layer: Prisma 7.9.0
+- Authentication: NextAuth 5 beta
+- Primary locales: `fa`, `en`, `ar`, `tr`
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Validate the project:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npx prisma validate
+npx prisma generate
+npx tsc --noEmit
+npm run lint
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Repository
 
-## Learn More
+The canonical development branch is `main`.
 
-To learn more about Next.js, take a look at the following resources:
+## Status
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# melkism
->>>>>>> 1321588f13d9896f506ac3133d6e01f6ff19a9a1
+MELKISM is under active phased development. Current work is establishing the production backend foundation for content persistence, authorization, rate limiting, and editorial workflows.
