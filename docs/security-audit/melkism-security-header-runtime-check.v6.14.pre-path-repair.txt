@@ -1,0 +1,117 @@
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "Stop"
+
+$ProjectRoot = Split-Path -Parent $PSScriptRoot
+
+if (-not (Test-Path -LiteralPath $ProjectRoot -PathType Container)) {
+    throw "Project root not found: $ProjectRoot"
+}
+
+Set-Location -LiteralPath $ProjectRoot
+
+Write-Host ""
+Write-Host "MELKISM Security Header Runtime Configuration Check v6.14" -ForegroundColor Cyan
+Write-Host "ProjectRoot: $ProjectRoot" -ForegroundColor DarkCyan
+Write-Host ""
+
+$nextConfigPath = Join-Path $ProjectRoot "next.config.ts"
+
+if (-not (Test-Path -LiteralPath $nextConfigPath -PathType Leaf)) {
+    throw "next.config.ts not found."
+}
+
+$content = Get-Content -LiteralPath $nextConfigPath -Raw
+
+$globalHeaders = @(
+    "Content-Security-Policy",
+    "Referrer-Policy",
+    "X-Frame-Options",
+    "X-Content-Type-Options",
+    "Permissions-Policy"
+)
+
+foreach ($header in $globalHeaders) {
+    if ($content -notmatch [regex]::Escape($header)) {
+        throw "Required global header missing: $header"
+    }
+}
+
+$globalSourceIndex = $content.IndexOf(
+    'source: "/(.*)"',
+    [System.StringComparison]::Ordinal
+)
+
+$apiSourceIndex = $content.IndexOf(
+    'source: "/api/(.*)"',
+    [System.StringComparison]::Ordinal
+)
+
+if ($globalSourceIndex -lt 0) {
+    throw "Global source pattern not found."
+}
+
+if ($apiSourceIndex -lt 0) {
+    throw "API source pattern not found."
+}
+
+if ($apiSourceIndex -le $globalSourceIndex) {
+    throw "API source must follow global source."
+}
+
+$globalSectionLength = $apiSourceIndex - $globalSourceIndex
+$globalSection = $content.Substring(
+    $globalSourceIndex,
+    $globalSectionLength
+)
+
+if ($globalSection -match '(?i)key:\s*"Cache-Control"') {
+    throw "Cache-Control remains globally scoped."
+}
+
+$apiSection = $content.Substring($apiSourceIndex)
+
+$apiCachePattern =
+    '(?s)source:\s*"/api/\(\.\*\)".*?key:\s*"Cache-Control".*?value:\s*"no-store,\s*max-age=0"'
+
+if ($apiSection -notmatch $apiCachePattern) {
+    throw "API-only Cache-Control policy missing."
+}
+
+if ($content -match '(?i)Strict-Transport-Security') {
+    throw "HSTS unexpectedly enabled."
+}
+
+Write-Host "Global security headers: 5" -ForegroundColor Green
+Write-Host "Global Cache-Control: OFF" -ForegroundColor Green
+Write-Host "API Cache-Control: ON" -ForegroundColor Green
+Write-Host "HSTS: OFF" -ForegroundColor Green
+Write-Host ""
+Write-Host "Runtime configuration check PASSED." -ForegroundColor Green
+
+$reportDirectory = Join-Path $ProjectRoot "docs\security-audit"
+
+New-Item -Path $reportDirectory -ItemType Directory -Force | Out-Null
+
+$reportPath = Join-Path $reportDirectory "security-header-scope-v6.14.txt"
+
+$reportLines = @(
+    "MELKISM v6.14 Security Header Scope Verification",
+    "Generated: $((Get-Date).ToString("o"))",
+    "ProjectRoot: $ProjectRoot",
+    "",
+    "Global security headers: 5",
+    "Global Cache-Control: OFF",
+    "API Cache-Control: ON",
+    "HSTS: OFF",
+    "",
+    "Global headers:",
+    ($globalHeaders -join [Environment]::NewLine)
+)
+
+Set-Content -LiteralPath $reportPath -Value ($reportLines -join [Environment]::NewLine) -Encoding UTF8
+
+Write-Host "Verification report created:" -ForegroundColor Cyan
+Write-Host $reportPath -ForegroundColor Green
+
+$global:LASTEXITCODE = 0
+

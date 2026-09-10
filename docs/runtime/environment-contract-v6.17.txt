@@ -1,0 +1,13 @@
+MELKISM v6.17 Environment Contract
+Generated: 2026-09-08T19:43:50
+
+Environment variable names discovered in executable project files.
+Values are intentionally excluded.
+
+Scanned files: 10292
+Scan notes: 0
+
+MELKIST_API_BASE_URL	server-only
+MELKIST_API_KEY	server-only
+MELKIST_INTEGRATION_ENABLED	server-only
+NODE_ENV	server-only

@@ -1,0 +1,13 @@
+
+lib\intelligence\context\melkism.intelligence.context.integration.ts:4:integrate(input:any){
+lib\intelligence\context\melkism.intelligence.context.manager.ts:4:create(input:any){
+lib\intelligence\core\melkism.intelligence.adaptive.core.ts:4:process(input:any){
+lib\intelligence\core\melkism.intelligence.core.ts:4:process(input:any){
+lib\intelligence\discovery\melkism.intelligence.discovery.ts:4:discover(input:any){
+lib\intelligence\learning\melkism.intelligence.learning.feedback.ts:4:learn(input:any){
+lib\intelligence\loader\melkism.intelligence.module.loader.ts:4:load(input:any){
+lib\intelligence\registry\melkism.intelligence.registry.evolution.ts:4:evolve(input:any){
+lib\intelligence\registry\melkism.intelligence.registry.ts:4:register(input:any){
+lib\intelligence\runtime\melkism.intelligence.runtime.adaptive.engine.ts:4:execute(input:any){
+lib\intelligence\runtime\melkism.intelligence.runtime.engine.ts:4:execute(input:any){
+

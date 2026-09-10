@@ -1,0 +1,14 @@
+export const PROFESSIONAL_TYPES=[
+
+"ARCHITECT",
+
+"ENGINEER",
+
+"CONSULTANT",
+
+"ORGANIZATION",
+
+"RESEARCHER"
+
+];
+

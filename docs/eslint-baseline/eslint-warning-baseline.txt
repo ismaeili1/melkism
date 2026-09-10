@@ -1,0 +1,20 @@
+
+MELKISM ESLINT BASELINE
+
+Date:
+09/05/2026 08:37:53
+
+Warnings:
+1803
+
+Errors:
+0
+
+
+Policy:
+
+- Existing warnings are baseline.
+- New errors are blocked.
+- ESLint rules remain active.
+- Type safety remains enforced.
+

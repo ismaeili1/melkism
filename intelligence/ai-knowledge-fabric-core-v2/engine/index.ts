@@ -1,0 +1,8 @@
+
+export {
+
+processAIKnowledgeFabricCore
+
+} from "./processor";
+
+

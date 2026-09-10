@@ -1,0 +1,1 @@
+export const PERFORMANCE_PLATFORM='MELKISM';

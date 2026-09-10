@@ -1,0 +1,9 @@
+
+export {
+
+processRealEstateIntelligenceKernel
+
+} from "./processor";
+
+
+

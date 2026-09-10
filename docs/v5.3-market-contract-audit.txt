@@ -1,0 +1,259 @@
+============================================================
+MELKISM v5.3 — MARKET INTELLIGENCE CONTRACT AUDIT
+Generated: 2026-09-08 15:15:38
+============================================================
+
+MODULE FILES
+------------
+lib\market-intelligence-platform\analytics.service.ts
+lib\market-intelligence-platform\index.ts
+lib\market-intelligence-platform\indicator.service.ts
+lib\market-intelligence-platform\market.ai-adapter.ts
+lib\market-intelligence-platform\market.constants.ts
+lib\market-intelligence-platform\market.health.ts
+lib\market-intelligence-platform\market.registry.ts
+lib\market-intelligence-platform\market.service.ts
+lib\market-intelligence-platform\market.types.ts
+lib\market-intelligence-platform\market.utils.ts
+lib\market-intelligence-platform\trend.service.ts
+
+FILE COUNT: 11
+
+
+============================================================
+FILE: lib\market-intelligence-platform\market.types.ts
+============================================================
+export type MarketLocale =
+    | "fa"
+    | "en"
+    | "ar"
+    | "tr";
+
+export type MarketSegment =
+    | "residential"
+    | "commercial"
+    | "industrial"
+    | "land"
+    | "office"
+    | "retail"
+    | "hospitality";
+
+export type MarketDirection =
+    | "up"
+    | "down"
+    | "stable";
+
+export type MarketRisk =
+    | "low"
+    | "moderate"
+    | "high";
+
+export type MarketConfidence =
+    | "low"
+    | "medium"
+    | "high";
+
+export interface MarketMetric {
+    id: string;
+    name: string;
+    value: number;
+    unit: string;
+    direction: MarketDirection;
+    changePercent: number;
+    confidence: MarketConfidence;
+    sourceStatus: "foundation";
+}
+
+export interface MarketSnapshot {
+    id: string;
+    name: string;
+    locale: MarketLocale;
+    countryCode: string;
+    currency: string;
+    segment: MarketSegment;
+    priceIndex: number;
+    annualChangePercent: number;
+    transactionActivity: number;
+    demandIndex: number;
+    supplyIndex: number;
+    investmentScore: number;
+    risk: MarketRisk;
+    direction: MarketDirection;
+    metrics: MarketMetric[];
+    updatedAt: string;
+}
+
+export interface MarketQuery {
+    locale: MarketLocale;
+    segment?: MarketSegment;
+    minInvestmentScore?: number;
+    limit?: number;
+}
+
+export interface MarketIntelligenceResponse {
+    locale: MarketLocale;
+    generatedAt: string;
+    dataStatus: "foundation";
+    markets: MarketSnapshot[];
+    total: number;
+}
+
+/**
+ * Backward-compatible indicator model.
+ *
+ * MarketMetric is the canonical v5.3 metric representation.
+ * MarketIndicator is retained for pre-existing market services
+ * that depend on this name.
+ */
+export type MarketIndicator = MarketMetric;
+
+/**
+ * Backward-compatible market trend model.
+ *
+ * The model intentionally supports both point-based and
+ * period-based trend consumers used by the existing platform.
+ */
+export interface MarketTrend {
+    id: string;
+    name: string;
+    period: string;
+    value: number;
+    startValue?: number;
+    endValue?: number;
+    changePercent: number;
+    direction: MarketDirection;
+    confidence: MarketConfidence;
+    unit?: string;
+    description?: string;
+
+    /**
+     * Backward-compatible indicator identifier
+     * used by the existing market trend service.
+     */
+    indicator?: string;
+}
+
+
+
+============================================================
+FILE: lib\market-intelligence-platform\trend.service.ts
+============================================================
+import type {
+MarketTrend
+} from "./market.types";
+
+
+export function analyzeTrend(
+value:number
+):MarketTrend{
+
+
+return {
+
+indicator:"market",
+
+direction:
+value>0
+?"up"
+:
+value<0
+?"down"
+:
+"stable"
+
+};
+
+}
+
+
+
+============================================================
+FILE: lib\market-intelligence-platform\indicator.service.ts
+============================================================
+import type {
+MarketIndicator
+} from "./market.types";
+
+
+export function calculateIndicator(
+indicator:MarketIndicator
+){
+
+return {
+
+...indicator,
+
+normalized:
+indicator.value
+
+};
+
+}
+
+
+
+============================================================
+FILE: lib\market-intelligence-platform\market.registry.ts
+============================================================
+import type {
+MarketIndicator
+} from "./market.types";
+
+
+const indicators:
+MarketIndicator[]=[];
+
+
+
+export function registerIndicator(
+indicator:MarketIndicator
+){
+
+indicators.push(indicator);
+
+}
+
+
+
+export function getIndicators(){
+
+return [...indicators];
+
+}
+
+
+
+============================================================
+FILE: lib\market-intelligence-platform\index.ts
+============================================================
+export * from "./market.types";
+export * from "./market.service";
+
+
+============================================================
+TYPE REFERENCES
+============================================================
+
+FILE: lib\market-intelligence-platform\indicator.service.ts
+Line 2: MarketIndicator
+Line 7: indicator:MarketIndicator
+
+FILE: lib\market-intelligence-platform\market.registry.ts
+Line 2: MarketIndicator
+Line 7: MarketIndicator[]=[];
+Line 12: indicator:MarketIndicator
+
+FILE: lib\market-intelligence-platform\market.types.ts
+Line 80: * MarketIndicator is retained for pre-existing market services
+Line 83: export type MarketIndicator = MarketMetric;
+Line 91: export interface MarketTrend {
+
+FILE: lib\market-intelligence-platform\trend.service.ts
+Line 2: MarketTrend
+Line 8: ):MarketTrend{
+
+============================================================
+IMPORT / EXPORT REFERENCES
+============================================================
+lib\market-intelligence-platform\market.types.ts:83: export type MarketIndicator = MarketMetric;
+lib\market-intelligence-platform\market.types.ts:91: export interface MarketTrend {

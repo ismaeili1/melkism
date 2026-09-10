@@ -1,0 +1,9 @@
+
+export {
+
+processKnowledgeGraphGovernance
+
+} from "./processor";
+
+
+

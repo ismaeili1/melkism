@@ -1,0 +1,8 @@
+
+export {
+
+processCrossDomainIntelligenceCoordinator
+
+} from "./processor";
+
+

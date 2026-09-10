@@ -1,0 +1,8 @@
+
+export {
+
+processGlobalRealEstateMarketIntelligenceCore
+
+} from "./processor";
+
+

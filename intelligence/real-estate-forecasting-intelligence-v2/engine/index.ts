@@ -1,0 +1,8 @@
+
+export {
+
+processRealEstateForecastingIntelligence
+
+} from "./processor";
+
+

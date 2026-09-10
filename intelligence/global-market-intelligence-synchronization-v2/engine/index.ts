@@ -1,0 +1,8 @@
+
+export {
+
+processGlobalMarketIntelligenceSynchronization
+
+} from "./processor";
+
+

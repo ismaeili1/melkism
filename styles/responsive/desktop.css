@@ -1,0 +1,12 @@
+@media(min-width:1024px){
+
+
+.property-grid {
+
+grid-template-columns:
+repeat(3,1fr);
+
+}
+
+
+}

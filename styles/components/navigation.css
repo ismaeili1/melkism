@@ -1,0 +1,20 @@
+
+.melkism-nav {
+
+display:flex;
+
+gap:
+24px;
+
+align-items:center;
+
+}
+
+
+.melkism-nav a:hover {
+
+color:
+var(--color-primary);
+
+}
+

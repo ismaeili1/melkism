@@ -1,0 +1,12 @@
+export const EventRegistry = [
+
+"AGENT_STARTED",
+
+"KNOWLEDGE_UPDATED",
+
+"DECISION_CREATED",
+
+"LEARNING_COMPLETED"
+
+];
+

@@ -1,0 +1,8 @@
+
+export {
+
+processKnowledgeMonetization
+
+} from "./processor";
+
+

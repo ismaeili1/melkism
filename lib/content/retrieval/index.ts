@@ -52,3 +52,7 @@ export type {
  ContentIndexProvider,
  RetrievalOrchestrationDependencies,
 } from "./integration";
+
+export * from "./semantic";
+
+export * from "./ranking";

@@ -1,0 +1,1 @@
+export const INTELLIGENT_OPERATIONS='MELKISM';

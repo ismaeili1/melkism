@@ -1,0 +1,30 @@
+﻿MELKISM v6.16 - Production HTTP Security Header Smoke Verification
+Generated: 2026-09-08T19:42:06
+ProjectRoot: C:\Projects\melkism
+Port: 31655
+
+Locale route: http://127.0.0.1:31655/fa
+Locale status: 200
+API route: http://127.0.0.1:31655/api/security-header-http-smoke
+API status: 200
+
+Content-Security-Policy
+  Locale: PASS
+  API: PASS
+Referrer-Policy
+  Locale: PASS
+  API: PASS
+X-Frame-Options
+  Locale: PASS
+  API: PASS
+X-Content-Type-Options
+  Locale: PASS
+  API: PASS
+Permissions-Policy
+  Locale: PASS
+  API: PASS
+
+Cache-Control API scope: PASS
+HSTS disabled policy: PASS
+
+OVERALL STATUS: PASS

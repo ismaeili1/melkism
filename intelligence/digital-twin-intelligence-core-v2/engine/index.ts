@@ -1,0 +1,8 @@
+
+export {
+
+processDigitalTwinIntelligenceCore
+
+} from "./processor";
+
+

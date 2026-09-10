@@ -1,0 +1,8 @@
+
+export {
+
+processAutonomousPlatformGovernance
+
+} from "./processor";
+
+

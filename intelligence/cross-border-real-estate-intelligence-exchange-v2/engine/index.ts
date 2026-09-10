@@ -1,0 +1,8 @@
+
+export {
+
+processCrossBorderRealEstateIntelligenceExchange
+
+} from "./processor";
+
+

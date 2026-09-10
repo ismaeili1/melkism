@@ -1,0 +1,1 @@
+export const TRUST_INTELLIGENCE='MELKISM';

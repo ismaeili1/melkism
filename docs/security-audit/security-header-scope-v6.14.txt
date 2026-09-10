@@ -1,0 +1,14 @@
+﻿MELKISM v6.14 Security Header Scope Verification
+Generated: 2026-09-08T19:19:43.8888192+03:30
+ProjectRoot: C:\Projects\melkism
+
+Global security headers: 5
+Global Cache-Control: OFF
+API Cache-Control: ON
+HSTS: OFF
+
+Content-Security-Policy
+Referrer-Policy
+X-Frame-Options
+X-Content-Type-Options
+Permissions-Policy

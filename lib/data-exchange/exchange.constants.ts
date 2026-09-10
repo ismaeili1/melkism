@@ -1,0 +1,2 @@
+export const DATA_EXCHANGE_PLATFORM = "MELKISM";
+export const DATA_EXCHANGE_PHASE = "2.82";

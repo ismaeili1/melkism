@@ -1,0 +1,1 @@
+export const CONTENT_TYPES=['ARTICLE','REPORT','RESEARCH'];

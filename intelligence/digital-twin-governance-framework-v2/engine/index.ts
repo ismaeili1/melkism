@@ -1,0 +1,8 @@
+
+export {
+
+processDigitalTwinGovernance
+
+} from "./processor";
+
+

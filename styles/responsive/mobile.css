@@ -1,0 +1,45 @@
+@media(max-width:640px){
+
+
+.hero {
+
+display:flex;
+flex-direction:column;
+
+padding:48px 20px;
+
+}
+
+
+.property-grid {
+
+grid-template-columns:
+1fr;
+
+}
+
+
+.knowledge-grid {
+
+grid-template-columns:
+1fr;
+
+}
+
+
+.architecture-grid {
+
+grid-template-columns:
+1fr;
+
+}
+
+
+.melkism-button {
+
+width:100%;
+
+}
+
+
+}

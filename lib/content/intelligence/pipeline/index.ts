@@ -6,3 +6,7 @@ export type {
 export {
  DefaultContentIntelligencePipeline,
 } from "./content.intelligence.pipeline";
+
+export * from "./provider";
+
+export * from "./integration";

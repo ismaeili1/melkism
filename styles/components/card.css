@@ -1,0 +1,32 @@
+
+.melkism-card {
+
+background:
+var(--color-background);
+
+border-radius:
+var(--radius-lg);
+
+box-shadow:
+var(--shadow-sm);
+
+padding:
+var(--space-lg);
+
+transition:
+var(--transition-normal);
+
+}
+
+
+
+.melkism-card:hover {
+
+box-shadow:
+var(--shadow-lg);
+
+transform:
+translateY(-4px);
+
+}
+

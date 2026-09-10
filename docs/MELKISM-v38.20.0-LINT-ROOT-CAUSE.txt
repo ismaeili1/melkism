@@ -1,0 +1,985 @@
+
+  node_modules\@types\estree\flow.d.ts:1:declare namespace ESTree {
+> node_modules\@types\estree\flow.d.ts:2:    interface FlowTypeAnnotation extends Node {}
+  node_modules\@types\estree\flow.d.ts:3:
+> node_modules\@types\estree\flow.d.ts:4:    interface FlowBaseTypeAnnotation extends FlowTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:5:
+> node_modules\@types\estree\flow.d.ts:6:    interface FlowLiteralTypeAnnotation extends FlowTypeAnnotation, Literal {}
+  node_modules\@types\estree\flow.d.ts:7:
+> node_modules\@types\estree\flow.d.ts:8:    interface FlowDeclaration extends Declaration {}
+  node_modules\@types\estree\flow.d.ts:9:
+> node_modules\@types\estree\flow.d.ts:10:    interface AnyTypeAnnotation extends FlowBaseTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:11:
+  node_modules\@types\estree\flow.d.ts:12:    interface ArrayTypeAnnotation extends FlowTypeAnnotation {
+  node_modules\@types\estree\flow.d.ts:13:        elementType: FlowTypeAnnotation;
+  node_modules\@types\estree\flow.d.ts:14:    }
+  node_modules\@types\estree\flow.d.ts:15:
+> node_modules\@types\estree\flow.d.ts:16:    interface BooleanLiteralTypeAnnotation extends FlowLiteralTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:17:
+> node_modules\@types\estree\flow.d.ts:18:    interface BooleanTypeAnnotation extends FlowBaseTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:19:
+  node_modules\@types\estree\flow.d.ts:20:    interface ClassImplements extends Node {
+  node_modules\@types\estree\flow.d.ts:21:        id: Identifier;
+  node_modules\@types\estree\flow.d.ts:84:        types: FlowTypeAnnotation[];
+  node_modules\@types\estree\flow.d.ts:85:    }
+  node_modules\@types\estree\flow.d.ts:86:
+> node_modules\@types\estree\flow.d.ts:87:    interface MixedTypeAnnotation extends FlowBaseTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:88:
+  node_modules\@types\estree\flow.d.ts:89:    interface NullableTypeAnnotation extends FlowTypeAnnotation {
+  node_modules\@types\estree\flow.d.ts:90:        typeAnnotation: TypeAnnotation;
+  node_modules\@types\estree\flow.d.ts:91:    }
+  node_modules\@types\estree\flow.d.ts:92:
+> node_modules\@types\estree\flow.d.ts:93:    interface NumberLiteralTypeAnnotation extends FlowLiteralTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:94:
+> node_modules\@types\estree\flow.d.ts:95:    interface NumberTypeAnnotation extends FlowBaseTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:96:
+> node_modules\@types\estree\flow.d.ts:97:    interface StringLiteralTypeAnnotation extends FlowLiteralTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:98:
+> node_modules\@types\estree\flow.d.ts:99:    interface StringTypeAnnotation extends FlowBaseTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:100:
+  node_modules\@types\estree\flow.d.ts:101:    interface TupleTypeAnnotation extends FlowTypeAnnotation {
+  node_modules\@types\estree\flow.d.ts:102:        types: FlowTypeAnnotation[];
+  node_modules\@types\estree\flow.d.ts:163:        types: FlowTypeAnnotation[];
+  node_modules\@types\estree\flow.d.ts:164:    }
+  node_modules\@types\estree\flow.d.ts:165:
+> node_modules\@types\estree\flow.d.ts:166:    interface VoidTypeAnnotation extends FlowBaseTypeAnnotation {}
+  node_modules\@types\estree\flow.d.ts:167:}
+  node_modules\@types\estree\index.d.ts:122:    | ForOfStatement
+  node_modules\@types\estree\index.d.ts:123:    | Declaration;
+  node_modules\@types\estree\index.d.ts:124:
+> node_modules\@types\estree\index.d.ts:125:export interface BaseStatement extends BaseNode {}
+  node_modules\@types\estree\index.d.ts:126:
+  node_modules\@types\estree\index.d.ts:127:export interface EmptyStatement extends BaseStatement {
+  node_modules\@types\estree\index.d.ts:128:    type: "EmptyStatement";
+  node_modules\@types\estree\index.d.ts:231:
+  node_modules\@types\estree\index.d.ts:232:export type Declaration = FunctionDeclaration | VariableDeclaration | ClassDeclaration;
+  node_modules\@types\estree\index.d.ts:233:
+> node_modules\@types\estree\index.d.ts:234:export interface BaseDeclaration extends BaseStatement {}
+  node_modules\@types\estree\index.d.ts:235:
+  node_modules\@types\estree\index.d.ts:236:export interface MaybeNamedFunctionDeclaration extends BaseFunction, BaseDeclaration {
+  node_modules\@types\estree\index.d.ts:237:    type: "FunctionDeclaration";
+  node_modules\@types\estree\index.d.ts:286:
+  node_modules\@types\estree\index.d.ts:287:export type Expression = ExpressionMap[keyof ExpressionMap];
+  node_modules\@types\estree\index.d.ts:288:
+> node_modules\@types\estree\index.d.ts:289:export interface BaseExpression extends BaseNode {}
+  node_modules\@types\estree\index.d.ts:290:
+  node_modules\@types\estree\index.d.ts:291:export type ChainElement = SimpleCallExpression | MemberExpression;
+  node_modules\@types\estree\index.d.ts:292:
+  node_modules\@types\estree\index.d.ts:410:
+  node_modules\@types\estree\index.d.ts:411:export type Pattern = Identifier | ObjectPattern | ArrayPattern | RestElement | AssignmentPattern | MemberExpression;
+  node_modules\@types\estree\index.d.ts:412:
+> node_modules\@types\estree\index.d.ts:413:export interface BasePattern extends BaseNode {}
+  node_modules\@types\estree\index.d.ts:414:
+  node_modules\@types\estree\index.d.ts:415:export interface SwitchCase extends BaseNode {
+  node_modules\@types\estree\index.d.ts:416:    type: "SwitchCase";
+  node_modules\@types\estree\index.d.ts:623:    | ExportNamedDeclaration
+  node_modules\@types\estree\index.d.ts:624:    | ExportDefaultDeclaration
+  node_modules\@types\estree\index.d.ts:625:    | ExportAllDeclaration;
+> node_modules\@types\estree\index.d.ts:626:export interface BaseModuleDeclaration extends BaseNode {}
+  node_modules\@types\estree\index.d.ts:627:
+  node_modules\@types\estree\index.d.ts:628:export type ModuleSpecifier = ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier | ExportSpecifier;
+  node_modules\@types\estree\index.d.ts:629:export interface BaseModuleSpecifier extends BaseNode {
+  node_modules\@types\json-schema\index.d.ts:33:
+  node_modules\@types\json-schema\index.d.ts:34:// Workaround for infinite type recursion
+  node_modules\@types\json-schema\index.d.ts:35:// https://github.com/Microsoft/TypeScript/issues/3496#issuecomment-128553540
+> node_modules\@types\json-schema\index.d.ts:36:export interface JSONSchema4Array extends Array<JSONSchema4Type> {}
+  node_modules\@types\json-schema\index.d.ts:37:
+  node_modules\@types\json-schema\index.d.ts:38:/**
+  node_modules\@types\json-schema\index.d.ts:39: * Meta schema
+  node_modules\@types\json-schema\index.d.ts:260:
+  node_modules\@types\json-schema\index.d.ts:261:// Workaround for infinite type recursion
+  node_modules\@types\json-schema\index.d.ts:262:// https://github.com/Microsoft/TypeScript/issues/3496#issuecomment-128553540
+> node_modules\@types\json-schema\index.d.ts:263:export interface JSONSchema6Array extends Array<JSONSchema6Type> {}
+  node_modules\@types\json-schema\index.d.ts:264:
+  node_modules\@types\json-schema\index.d.ts:265:/**
+  node_modules\@types\json-schema\index.d.ts:266: * Meta schema
+  node_modules\@types\json-schema\index.d.ts:585:
+  node_modules\@types\json-schema\index.d.ts:586:// Workaround for infinite type recursion
+  node_modules\@types\json-schema\index.d.ts:587:// https://github.com/Microsoft/TypeScript/issues/3496#issuecomment-128553540
+> node_modules\@types\json-schema\index.d.ts:588:export interface JSONSchema7Array extends Array<JSONSchema7Type> {}
+  node_modules\@types\json-schema\index.d.ts:589:
+  node_modules\@types\json-schema\index.d.ts:590:/**
+  node_modules\@types\json-schema\index.d.ts:591: * Meta schema
+  node_modules\@types\node\compatibility\indexable.d.ts:4:    at(index: number): T | undefined;
+  node_modules\@types\node\compatibility\indexable.d.ts:5:}
+  node_modules\@types\node\compatibility\indexable.d.ts:6:
+> node_modules\@types\node\compatibility\indexable.d.ts:7:interface String extends RelativeIndexable<string> {}
+  node_modules\@types\node\compatibility\indexable.d.ts:8:interface Array<T> extends RelativeIndexable<T> {}
+  node_modules\@types\node\compatibility\indexable.d.ts:9:interface ReadonlyArray<T> extends RelativeIndexable<T> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:10:interface Int8Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:11:interface Uint8Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:12:interface Uint8ClampedArray extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:13:interface Int16Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:14:interface Uint16Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:15:interface Int32Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:16:interface Uint32Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:17:interface Float32Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:18:interface Float64Array extends RelativeIndexable<number> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:19:interface BigInt64Array extends RelativeIndexable<bigint> {}
+> node_modules\@types\node\compatibility\indexable.d.ts:20:interface BigUint64Array extends RelativeIndexable<bigint> {}
+  node_modules\@types\node\stream\web.d.ts:426:    };
+  node_modules\@types\node\stream\web.d.ts:427:
+  node_modules\@types\node\stream\web.d.ts:428:    global {
+> node_modules\@types\node\stream\web.d.ts:429:        interface ByteLengthQueuingStrategy extends _ByteLengthQueuingStrategy {}
+  node_modules\@types\node\stream\web.d.ts:430:        var ByteLengthQueuingStrategy: typeof globalThis extends { onmessage: any; ByteLengthQueuingStrategy: infer T }
+  node_modules\@types\node\stream\web.d.ts:431:            ? T
+  node_modules\@types\node\stream\web.d.ts:432:            : typeof import("stream/web").ByteLengthQueuingStrategy;
+  node_modules\@types\node\stream\web.d.ts:433:
+> node_modules\@types\node\stream\web.d.ts:434:        interface CompressionStream extends _CompressionStream {}
+  node_modules\@types\node\stream\web.d.ts:435:        var CompressionStream: typeof globalThis extends {
+  node_modules\@types\node\stream\web.d.ts:436:            onmessage: any;
+  node_modules\@types\node\stream\web.d.ts:437:            // CompressionStream, DecompressionStream and ReportingObserver was introduced in the same commit.
+  node_modules\@types\node\stream\web.d.ts:446:                }
+  node_modules\@types\node\stream\web.d.ts:447:            : typeof import("stream/web").CompressionStream;
+  node_modules\@types\node\stream\web.d.ts:448:
+> node_modules\@types\node\stream\web.d.ts:449:        interface CountQueuingStrategy extends _CountQueuingStrategy {}
+  node_modules\@types\node\stream\web.d.ts:450:        var CountQueuingStrategy: typeof globalThis extends { onmessage: any; CountQueuingStrategy: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:451:            : typeof import("stream/web").CountQueuingStrategy;
+  node_modules\@types\node\stream\web.d.ts:452:
+> node_modules\@types\node\stream\web.d.ts:453:        interface DecompressionStream extends _DecompressionStream {}
+  node_modules\@types\node\stream\web.d.ts:454:        var DecompressionStream: typeof globalThis extends {
+  node_modules\@types\node\stream\web.d.ts:455:            onmessage: any;
+  node_modules\@types\node\stream\web.d.ts:456:            // CompressionStream, DecompressionStream and ReportingObserver was introduced in the same commit.
+  node_modules\@types\node\stream\web.d.ts:467:
+  node_modules\@types\node\stream\web.d.ts:468:        interface QueuingStrategy<T = any> extends _QueuingStrategy<T> {}
+  node_modules\@types\node\stream\web.d.ts:469:
+> node_modules\@types\node\stream\web.d.ts:470:        interface ReadableByteStreamController extends _ReadableByteStreamController {}
+  node_modules\@types\node\stream\web.d.ts:471:        var ReadableByteStreamController: typeof globalThis extends
+  node_modules\@types\node\stream\web.d.ts:472:            { onmessage: any; ReadableByteStreamController: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:473:            : typeof import("stream/web").ReadableByteStreamController;
+  node_modules\@types\node\stream\web.d.ts:476:        var ReadableStream: typeof globalThis extends { onmessage: any; ReadableStream: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:477:            : typeof import("stream/web").ReadableStream;
+  node_modules\@types\node\stream\web.d.ts:478:
+> node_modules\@types\node\stream\web.d.ts:479:        interface ReadableStreamBYOBReader extends _ReadableStreamBYOBReader {}
+  node_modules\@types\node\stream\web.d.ts:480:        var ReadableStreamBYOBReader: typeof globalThis extends { onmessage: any; ReadableStreamBYOBReader: infer T }
+  node_modules\@types\node\stream\web.d.ts:481:            ? T
+  node_modules\@types\node\stream\web.d.ts:482:            : typeof import("stream/web").ReadableStreamBYOBReader;
+  node_modules\@types\node\stream\web.d.ts:483:
+> node_modules\@types\node\stream\web.d.ts:484:        interface ReadableStreamBYOBRequest extends _ReadableStreamBYOBRequest {}
+  node_modules\@types\node\stream\web.d.ts:485:        var ReadableStreamBYOBRequest: typeof globalThis extends { onmessage: any; ReadableStreamBYOBRequest: infer T }
+  node_modules\@types\node\stream\web.d.ts:486:            ? T
+  node_modules\@types\node\stream\web.d.ts:487:            : typeof import("stream/web").ReadableStreamBYOBRequest;
+  node_modules\@types\node\stream\web.d.ts:496:            { onmessage: any; ReadableStreamDefaultReader: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:497:            : typeof import("stream/web").ReadableStreamDefaultReader;
+  node_modules\@types\node\stream\web.d.ts:498:
+> node_modules\@types\node\stream\web.d.ts:499:        interface TextDecoderStream extends _TextDecoderStream {}
+  node_modules\@types\node\stream\web.d.ts:500:        var TextDecoderStream: typeof globalThis extends { onmessage: any; TextDecoderStream: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:501:            : typeof import("stream/web").TextDecoderStream;
+  node_modules\@types\node\stream\web.d.ts:502:
+> node_modules\@types\node\stream\web.d.ts:503:        interface TextEncoderStream extends _TextEncoderStream {}
+  node_modules\@types\node\stream\web.d.ts:504:        var TextEncoderStream: typeof globalThis extends { onmessage: any; TextEncoderStream: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:505:            : typeof import("stream/web").TextEncoderStream;
+  node_modules\@types\node\stream\web.d.ts:506:
+  node_modules\@types\node\stream\web.d.ts:517:        var WritableStream: typeof globalThis extends { onmessage: any; WritableStream: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:518:            : typeof import("stream/web").WritableStream;
+  node_modules\@types\node\stream\web.d.ts:519:
+> node_modules\@types\node\stream\web.d.ts:520:        interface WritableStreamDefaultController extends _WritableStreamDefaultController {}
+  node_modules\@types\node\stream\web.d.ts:521:        var WritableStreamDefaultController: typeof globalThis extends
+  node_modules\@types\node\stream\web.d.ts:522:            { onmessage: any; WritableStreamDefaultController: infer T } ? T
+  node_modules\@types\node\stream\web.d.ts:523:            : typeof import("stream/web").WritableStreamDefaultController;
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:15:}
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:16:
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:17:declare global {
+> node_modules\@types\node\web-globals\abortcontroller.d.ts:18:    interface AbortController extends _AbortController {}
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:19:    var AbortController: typeof globalThis extends { onmessage: any; AbortController: infer T } ? T
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:20:        : {
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:21:            prototype: AbortController;
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:22:            new(): AbortController;
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:23:        };
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:24:
+> node_modules\@types\node\web-globals\abortcontroller.d.ts:25:    interface AbortSignal extends _AbortSignal {}
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:26:    var AbortSignal: typeof globalThis extends { onmessage: any; AbortSignal: infer T } ? T
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:27:        : {
+  node_modules\@types\node\web-globals\abortcontroller.d.ts:28:            prototype: AbortSignal;
+  node_modules\@types\node\web-globals\domexception.d.ts:33:}
+  node_modules\@types\node\web-globals\domexception.d.ts:34:
+  node_modules\@types\node\web-globals\domexception.d.ts:35:declare global {
+> node_modules\@types\node\web-globals\domexception.d.ts:36:    interface DOMException extends _DOMException {}
+  node_modules\@types\node\web-globals\domexception.d.ts:37:    var DOMException: typeof globalThis extends { onmessage: any; DOMException: infer T } ? T
+  node_modules\@types\node\web-globals\domexception.d.ts:38:        : {
+  node_modules\@types\node\web-globals\domexception.d.ts:39:            prototype: DOMException;
+  node_modules\@types\node\web-globals\events.d.ts:79:            new<T>(type: string, eventInitDict?: CustomEventInit<T>): CustomEvent<T>;
+  node_modules\@types\node\web-globals\events.d.ts:80:        };
+  node_modules\@types\node\web-globals\events.d.ts:81:
+> node_modules\@types\node\web-globals\events.d.ts:82:    interface Event extends _Event {}
+  node_modules\@types\node\web-globals\events.d.ts:83:    var Event: typeof globalThis extends { onmessage: any; Event: infer T } ? T
+  node_modules\@types\node\web-globals\events.d.ts:84:        : {
+  node_modules\@types\node\web-globals\events.d.ts:85:            prototype: Event;
+  node_modules\@types\node\web-globals\events.d.ts:86:            new(type: string, eventInitDict?: EventInit): Event;
+  node_modules\@types\node\web-globals\events.d.ts:87:        };
+  node_modules\@types\node\web-globals\events.d.ts:88:
+> node_modules\@types\node\web-globals\events.d.ts:89:    interface EventListenerOptions extends _EventListenerOptions {}
+  node_modules\@types\node\web-globals\events.d.ts:90:
+> node_modules\@types\node\web-globals\events.d.ts:91:    interface EventTarget extends _EventTarget {}
+  node_modules\@types\node\web-globals\events.d.ts:92:    var EventTarget: typeof globalThis extends { onmessage: any; EventTarget: infer T } ? T
+  node_modules\@types\node\web-globals\events.d.ts:93:        : {
+  node_modules\@types\node\web-globals\events.d.ts:94:            prototype: EventTarget;
+  node_modules\@types\node\web-globals\fetch.d.ts:21:        init?: RequestInit,
+  node_modules\@types\node\web-globals\fetch.d.ts:22:    ): Promise<Response>;
+  node_modules\@types\node\web-globals\fetch.d.ts:23:
+> node_modules\@types\node\web-globals\fetch.d.ts:24:    interface EventSource extends _EventSource {}
+  node_modules\@types\node\web-globals\fetch.d.ts:25:    var EventSource: typeof globalThis extends { onmessage: any; EventSource: infer T } ? T : typeof undici.EventSource;
+  node_modules\@types\node\web-globals\fetch.d.ts:26:
+> node_modules\@types\node\web-globals\fetch.d.ts:27:    interface EventSourceInit extends _EventSourceInit {}
+  node_modules\@types\node\web-globals\fetch.d.ts:28:
+> node_modules\@types\node\web-globals\fetch.d.ts:29:    interface FormData extends _FormData {}
+  node_modules\@types\node\web-globals\fetch.d.ts:30:    var FormData: typeof globalThis extends { onmessage: any; FormData: infer T } ? T : typeof undici.FormData;
+  node_modules\@types\node\web-globals\fetch.d.ts:31:
+> node_modules\@types\node\web-globals\fetch.d.ts:32:    interface Headers extends _Headers {}
+  node_modules\@types\node\web-globals\fetch.d.ts:33:    var Headers: typeof globalThis extends { onmessage: any; Headers: infer T } ? T : typeof undici.Headers;
+  node_modules\@types\node\web-globals\fetch.d.ts:34:
+> node_modules\@types\node\web-globals\fetch.d.ts:35:    interface MessageEvent extends _MessageEvent {}
+  node_modules\@types\node\web-globals\fetch.d.ts:36:    var MessageEvent: typeof globalThis extends { onmessage: any; MessageEvent: infer T } ? T
+  node_modules\@types\node\web-globals\fetch.d.ts:37:        : typeof undici.MessageEvent;
+  node_modules\@types\node\web-globals\fetch.d.ts:38:
+> node_modules\@types\node\web-globals\fetch.d.ts:39:    interface MessageEventInit extends _MessageEventInit {}
+  node_modules\@types\node\web-globals\fetch.d.ts:40:
+> node_modules\@types\node\web-globals\fetch.d.ts:41:    interface Request extends _Request {}
+  node_modules\@types\node\web-globals\fetch.d.ts:42:    var Request: typeof globalThis extends { onmessage: any; Request: infer T } ? T : typeof undici.Request;
+  node_modules\@types\node\web-globals\fetch.d.ts:43:
+> node_modules\@types\node\web-globals\fetch.d.ts:44:    interface RequestInit extends _RequestInit {}
+  node_modules\@types\node\web-globals\fetch.d.ts:45:
+> node_modules\@types\node\web-globals\fetch.d.ts:46:    interface Response extends _Response {}
+  node_modules\@types\node\web-globals\fetch.d.ts:47:    var Response: typeof globalThis extends { onmessage: any; Response: infer T } ? T : typeof undici.Response;
+  node_modules\@types\node\web-globals\fetch.d.ts:48:
+> node_modules\@types\node\web-globals\fetch.d.ts:49:    interface ResponseInit extends _ResponseInit {}
+  node_modules\@types\node\web-globals\fetch.d.ts:50:
+> node_modules\@types\node\web-globals\fetch.d.ts:51:    interface WebSocket extends _WebSocket {}
+  node_modules\@types\node\web-globals\fetch.d.ts:52:    var WebSocket: typeof globalThis extends { onmessage: any; WebSocket: infer T } ? T : typeof undici.WebSocket;
+  node_modules\@types\node\web-globals\fetch.d.ts:53:
+> node_modules\@types\node\web-globals\fetch.d.ts:54:    interface WebSocketInit extends _WebSocketInit {}
+  node_modules\@types\node\web-globals\fetch.d.ts:55:}
+  node_modules\@types\node\buffer.d.ts:1913:         * @param data An ASCII (Latin1) string.
+  node_modules\@types\node\buffer.d.ts:1914:         */
+  node_modules\@types\node\buffer.d.ts:1915:        function btoa(data: string): string;
+> node_modules\@types\node\buffer.d.ts:1916:        interface Blob extends _Blob {}
+  node_modules\@types\node\buffer.d.ts:1917:        /**
+  node_modules\@types\node\buffer.d.ts:1918:         * `Blob` class is a global reference for `import { Blob } from 'node:node:buffer'`
+  node_modules\@types\node\buffer.d.ts:1919:         * https://nodejs.org/api/buffer.html#class-blob
+  node_modules\@types\node\buffer.d.ts:1921:         */
+  node_modules\@types\node\buffer.d.ts:1922:        var Blob: typeof globalThis extends { onmessage: any; Blob: infer T } ? T
+  node_modules\@types\node\buffer.d.ts:1923:            : typeof import("buffer").Blob;
+> node_modules\@types\node\buffer.d.ts:1924:        interface File extends _File {}
+  node_modules\@types\node\buffer.d.ts:1925:        /**
+  node_modules\@types\node\buffer.d.ts:1926:         * `File` class is a global reference for `import { File } from 'node:node:buffer'`
+  node_modules\@types\node\buffer.d.ts:1927:         * https://nodejs.org/api/buffer.html#class-file
+  node_modules\@types\node\child_process.d.ts:1065:        encoding: "buffer" | null;
+  node_modules\@types\node\child_process.d.ts:1066:    }
+  node_modules\@types\node\child_process.d.ts:1067:    /** @deprecated Use `ExecFileOptions` instead. */
+> node_modules\@types\node\child_process.d.ts:1068:    interface ExecFileOptionsWithOtherEncoding extends ExecFileOptions {}
+  node_modules\@types\node\child_process.d.ts:1069:    // TODO: execFile exceptions can take many forms... this accurately describes none of them
+  node_modules\@types\node\child_process.d.ts:1070:    type ExecFileException =
+  node_modules\@types\node\child_process.d.ts:1071:        & Omit<ExecException, "code">
+  node_modules\@types\node\crypto.d.ts:1407:        saltLength?: number | undefined;
+  node_modules\@types\node\crypto.d.ts:1408:        dsaEncoding?: DSAEncoding | undefined;
+  node_modules\@types\node\crypto.d.ts:1409:    }
+> node_modules\@types\node\crypto.d.ts:1410:    interface SignPrivateKeyInput extends PrivateKeyInput, SigningOptions {}
+  node_modules\@types\node\crypto.d.ts:1411:    interface SignKeyObjectInput extends SigningOptions {
+  node_modules\@types\node\crypto.d.ts:1412:        key: KeyObject;
+  node_modules\@types\node\crypto.d.ts:1413:    }
+> node_modules\@types\node\crypto.d.ts:1414:    interface SignJsonWebKeyInput extends JsonWebKeyInput, SigningOptions {}
+> node_modules\@types\node\crypto.d.ts:1415:    interface VerifyPublicKeyInput extends PublicKeyInput, SigningOptions {}
+  node_modules\@types\node\crypto.d.ts:1416:    interface VerifyKeyObjectInput extends SigningOptions {
+  node_modules\@types\node\crypto.d.ts:1417:        key: KeyObject;
+  node_modules\@types\node\crypto.d.ts:1418:    }
+> node_modules\@types\node\crypto.d.ts:1419:    interface VerifyJsonWebKeyInput extends JsonWebKeyInput, SigningOptions {}
+  node_modules\@types\node\crypto.d.ts:1420:    type KeyLike = string | Buffer | KeyObject;
+  node_modules\@types\node\crypto.d.ts:1421:    /**
+  node_modules\@types\node\crypto.d.ts:1422:     * The `Sign` class is a utility for generating signatures. It can be used in one
+  node_modules\@types\node\fs.d.ts:70:        ctime: Date;
+  node_modules\@types\node\fs.d.ts:71:        birthtime: Date;
+  node_modules\@types\node\fs.d.ts:72:    }
+> node_modules\@types\node\fs.d.ts:73:    export interface Stats extends StatsBase<number> {}
+  node_modules\@types\node\fs.d.ts:74:    /**
+  node_modules\@types\node\fs.d.ts:75:     * A `fs.Stats` object provides information about a file.
+  node_modules\@types\node\fs.d.ts:76:     *
+  node_modules\@types\node\fs.d.ts:148:        /** Free file nodes in file system. */
+  node_modules\@types\node\fs.d.ts:149:        ffree: T;
+  node_modules\@types\node\fs.d.ts:150:    }
+> node_modules\@types\node\fs.d.ts:151:    export interface StatsFs extends StatsFsBase<number> {}
+  node_modules\@types\node\fs.d.ts:152:    /**
+  node_modules\@types\node\fs.d.ts:153:     * Provides information about a mounted file system.
+  node_modules\@types\node\fs.d.ts:154:     *
+  node_modules\@types\node\fs.d.ts:184:     * @since v19.6.0, v18.15.0
+  node_modules\@types\node\fs.d.ts:185:     */
+  node_modules\@types\node\fs.d.ts:186:    export class StatsFs {}
+> node_modules\@types\node\fs.d.ts:187:    export interface BigIntStatsFs extends StatsFsBase<bigint> {}
+  node_modules\@types\node\fs.d.ts:188:    export interface StatFsOptions {
+  node_modules\@types\node\fs.d.ts:189:        bigint?: boolean | undefined;
+  node_modules\@types\node\fs.d.ts:190:    }
+  node_modules\@types\node\fs.d.ts:2592:    }
+  node_modules\@types\node\fs.d.ts:2593:    /** @deprecated Use `ReadOptions` instead. */
+  node_modules\@types\node\fs.d.ts:2594:    // TODO: remove in future major
+> node_modules\@types\node\fs.d.ts:2595:    export interface ReadSyncOptions extends ReadOptions {}
+  node_modules\@types\node\fs.d.ts:2596:    /** @deprecated Use `ReadOptionsWithBuffer` instead. */
+  node_modules\@types\node\fs.d.ts:2597:    // TODO: remove in future major
+  node_modules\@types\node\fs.d.ts:2598:    export interface ReadAsyncOptions<T extends NodeJS.ArrayBufferView> extends ReadOptionsWithBuffer<T> {}
+  node_modules\@types\node\globals.d.ts:128:        end(str: string, encoding?: BufferEncoding, cb?: () => void): this;
+  node_modules\@types\node\globals.d.ts:129:    }
+  node_modules\@types\node\globals.d.ts:130:
+> node_modules\@types\node\globals.d.ts:131:    interface ReadWriteStream extends ReadableStream, WritableStream {}
+  node_modules\@types\node\globals.d.ts:132:
+  node_modules\@types\node\globals.d.ts:133:    interface RefCounted {
+  node_modules\@types\node\globals.d.ts:134:        ref(): this;
+  node_modules\@types\node\http.d.ts:1705:    ): Server<Request, Response>;
+  node_modules\@types\node\http.d.ts:1706:    // although RequestOptions are passed as ClientRequestArgs to ClientRequest directly,
+  node_modules\@types\node\http.d.ts:1707:    // create interface RequestOptions would make the naming more clear to developers
+> node_modules\@types\node\http.d.ts:1708:    interface RequestOptions extends ClientRequestArgs {}
+  node_modules\@types\node\http.d.ts:1709:    /**
+  node_modules\@types\node\http.d.ts:1710:     * `options` in `socket.connect()` are also supported.
+  node_modules\@types\node\http.d.ts:1711:     *
+  node_modules\@types\node\http2.d.ts:1346:        Http2ServerRequest?: Http2Request | undefined;
+  node_modules\@types\node\http2.d.ts:1347:        Http2ServerResponse?: Http2Response | undefined;
+  node_modules\@types\node\http2.d.ts:1348:    }
+> node_modules\@types\node\http2.d.ts:1349:    export interface SecureClientSessionOptions extends ClientSessionOptions, tls.ConnectionOptions {}
+  node_modules\@types\node\http2.d.ts:1350:    export interface SecureServerSessionOptions<
+  node_modules\@types\node\http2.d.ts:1351:        Http1Request extends typeof IncomingMessage = typeof IncomingMessage,
+  node_modules\@types\node\http2.d.ts:1352:        Http1Response extends typeof ServerResponse<InstanceType<Http1Request>> = typeof ServerResponse,
+  node_modules\@types\node\module.d.ts:7:    class Module {
+  node_modules\@types\node\module.d.ts:8:        constructor(id: string, parent?: Module);
+  node_modules\@types\node\module.d.ts:9:    }
+> node_modules\@types\node\module.d.ts:10:    interface Module extends NodeJS.Module {}
+  node_modules\@types\node\module.d.ts:11:    namespace Module {
+  node_modules\@types\node\module.d.ts:12:        export { Module };
+  node_modules\@types\node\module.d.ts:13:    }
+  node_modules\@types\node\module.d.ts:106:         */
+  node_modules\@types\node\module.d.ts:107:        function syncBuiltinESMExports(): void;
+  node_modules\@types\node\module.d.ts:108:        /** @deprecated Use `ImportAttributes` instead */
+> node_modules\@types\node\module.d.ts:109:        interface ImportAssertions extends ImportAttributes {}
+  node_modules\@types\node\module.d.ts:110:        interface ImportAttributes extends NodeJS.Dict<string> {
+  node_modules\@types\node\module.d.ts:111:            type?: string | undefined;
+  node_modules\@types\node\module.d.ts:112:        }
+  node_modules\@types\node\module.d.ts:525:        var require: NodeJS.Require;
+  node_modules\@types\node\module.d.ts:526:        // Global-scope aliases for backwards compatibility with @types/node <13.0.x
+  node_modules\@types\node\module.d.ts:527:        /** @deprecated Use `NodeJS.Module` instead. */
+> node_modules\@types\node\module.d.ts:528:        interface NodeModule extends NodeJS.Module {}
+  node_modules\@types\node\module.d.ts:529:        /** @deprecated Use `NodeJS.Require` instead. */
+> node_modules\@types\node\module.d.ts:530:        interface NodeRequire extends NodeJS.Require {}
+  node_modules\@types\node\module.d.ts:531:        /** @deprecated Use `NodeJS.RequireResolve` instead. */
+> node_modules\@types\node\module.d.ts:532:        interface RequireResolve extends NodeJS.RequireResolve {}
+  node_modules\@types\node\module.d.ts:533:    }
+  node_modules\@types\node\module.d.ts:534:    export = Module;
+  node_modules\@types\node\module.d.ts:535:}
+  node_modules\@types\node\process.d.ts:124:            // this namespace merge is here because these are specifically used
+  node_modules\@types\node\process.d.ts:125:            // as the type for process.stdin, process.stdout, and process.stderr.
+  node_modules\@types\node\process.d.ts:126:            // they can't live in tty.d.ts because we need to disambiguate the imported name.
+> node_modules\@types\node\process.d.ts:127:            interface ReadStream extends tty.ReadStream {}
+> node_modules\@types\node\process.d.ts:128:            interface WriteStream extends tty.WriteStream {}
+  node_modules\@types\node\process.d.ts:129:            interface MemoryUsageFn {
+  node_modules\@types\node\process.d.ts:130:                /**
+  node_modules\@types\node\process.d.ts:131:                 * The `process.memoryUsage()` method iterate over each page to gather informations about memory
+  node_modules\@types\node\process.d.ts:321:                isTTY?: true | undefined;
+  node_modules\@types\node\process.d.ts:322:            }
+  node_modules\@types\node\process.d.ts:323:            // Alias for compatibility
+> node_modules\@types\node\process.d.ts:324:            interface ProcessEnv extends Dict<string> {}
+  node_modules\@types\node\process.d.ts:325:            interface HRTime {
+  node_modules\@types\node\process.d.ts:326:                /**
+  node_modules\@types\node\process.d.ts:327:                 * This is the legacy version of {@link process.hrtime.bigint()}
+  node_modules\@types\node\querystring.d.ts:31:         */
+  node_modules\@types\node\querystring.d.ts:32:        decodeURIComponent?: ((str: string) => string) | undefined;
+  node_modules\@types\node\querystring.d.ts:33:    }
+> node_modules\@types\node\querystring.d.ts:34:    interface ParsedUrlQuery extends NodeJS.Dict<string | string[]> {}
+  node_modules\@types\node\querystring.d.ts:35:    interface ParsedUrlQueryInput extends
+  node_modules\@types\node\querystring.d.ts:36:        NodeJS.Dict<
+  node_modules\@types\node\querystring.d.ts:37:            | string
+  node_modules\@types\node\stream.d.ts:1238:            removeListener(event: "unpipe", listener: (src: Readable) => void): this;
+  node_modules\@types\node\stream.d.ts:1239:            removeListener(event: string | symbol, listener: (...args: any[]) => void): this;
+  node_modules\@types\node\stream.d.ts:1240:        }
+> node_modules\@types\node\stream.d.ts:1241:        interface Duplex extends Readable, Writable {}
+  node_modules\@types\node\stream.d.ts:1242:        /**
+  node_modules\@types\node\stream.d.ts:1243:         * The utility function `duplexPair` returns an Array with two items,
+  node_modules\@types\node\stream.d.ts:1244:         * each being a `Duplex` stream connected to the other side:
+  node_modules\@types\node\test.d.ts:934:             */
+  node_modules\@types\node\test.d.ts:935:            readonly mock: MockTracker;
+  node_modules\@types\node\test.d.ts:936:        }
+> node_modules\@types\node\test.d.ts:937:        interface TestContextAssert extends Pick<typeof import("assert"), AssertMethodNames> {}
+  node_modules\@types\node\test.d.ts:938:        /**
+  node_modules\@types\node\test.d.ts:939:         * An instance of `SuiteContext` is passed to each suite function in order to
+  node_modules\@types\node\test.d.ts:940:         * interact with the test runner. However, the `SuiteContext` constructor is not
+  node_modules\@types\node\url.d.ts:53:         */
+  node_modules\@types\node\url.d.ts:54:        windows?: boolean | undefined;
+  node_modules\@types\node\url.d.ts:55:    }
+> node_modules\@types\node\url.d.ts:56:    interface PathToFileUrlOptions extends FileUrlToPathOptions {}
+  node_modules\@types\node\url.d.ts:57:    /**
+  node_modules\@types\node\url.d.ts:58:     * The `url.parse()` method takes a URL string, parses it, and returns a URL
+  node_modules\@types\node\url.d.ts:59:     * object.
+  node_modules\@types\node\url.d.ts:931:    }
+  node_modules\@types\node\url.d.ts:932:    import { URL as _URL, URLSearchParams as _URLSearchParams } from "url";
+  node_modules\@types\node\url.d.ts:933:    global {
+> node_modules\@types\node\url.d.ts:934:        interface URLSearchParams extends _URLSearchParams {}
+> node_modules\@types\node\url.d.ts:935:        interface URL extends _URL {}
+  node_modules\@types\node\url.d.ts:936:        interface Global {
+  node_modules\@types\node\url.d.ts:937:            URL: typeof _URL;
+  node_modules\@types\node\url.d.ts:938:            URLSearchParams: typeof _URLSearchParams;
+  node_modules\@types\node\vm.d.ts:39:declare module "vm" {
+  node_modules\@types\node\vm.d.ts:40:    import { NonSharedBuffer } from "node:buffer";
+  node_modules\@types\node\vm.d.ts:41:    import { ImportAttributes } from "node:module";
+> node_modules\@types\node\vm.d.ts:42:    interface Context extends NodeJS.Dict<any> {}
+  node_modules\@types\node\vm.d.ts:43:    interface BaseOptions {
+  node_modules\@types\node\vm.d.ts:44:        /**
+  node_modules\@types\node\vm.d.ts:45:         * Specifies the filename used in stack traces produced by this script.
+  node_modules\@types\node\vm.d.ts:656:     * @experimental
+  node_modules\@types\node\vm.d.ts:657:     */
+  node_modules\@types\node\vm.d.ts:658:    function measureMemory(options?: MeasureMemoryOptions): Promise<MemoryMeasurement>;
+> node_modules\@types\node\vm.d.ts:659:    interface ModuleEvaluateOptions extends Pick<RunningScriptOptions, "breakOnSigint" | "timeout"> {}
+  node_modules\@types\node\vm.d.ts:660:    type ModuleLinker = (
+  node_modules\@types\node\vm.d.ts:661:        specifier: string,
+  node_modules\@types\node\vm.d.ts:662:        referencingModule: Module,
+  node_modules\@types\node\worker_threads.d.ts:239:        removeListener(event: "messageerror", listener: (error: Error) => void, options?: EventListenerOptions): this;
+  node_modules\@types\node\worker_threads.d.ts:240:        removeListener(event: string, listener: (arg: any) => void, options?: EventListenerOptions): this;
+  node_modules\@types\node\worker_threads.d.ts:241:    }
+> node_modules\@types\node\worker_threads.d.ts:242:    interface MessagePort extends NodeEventTarget {}
+  node_modules\@types\node\worker_threads.d.ts:243:    interface WorkerOptions {
+  node_modules\@types\node\worker_threads.d.ts:244:        /**
+  node_modules\@types\node\worker_threads.d.ts:245:         * List of arguments which would be stringified and appended to
+  node_modules\@types\node\worker_threads.d.ts:486:        off(event: "online", listener: () => void): this;
+  node_modules\@types\node\worker_threads.d.ts:487:        off(event: string | symbol, listener: (...args: any[]) => void): this;
+  node_modules\@types\node\worker_threads.d.ts:488:    }
+> node_modules\@types\node\worker_threads.d.ts:489:    interface BroadcastChannel extends NodeJS.RefCounted {}
+  node_modules\@types\node\worker_threads.d.ts:490:    /**
+  node_modules\@types\node\worker_threads.d.ts:491:     * Instances of `BroadcastChannel` allow asynchronous one-to-many communication
+  node_modules\@types\node\worker_threads.d.ts:492:     * with all other `BroadcastChannel` instances bound to the same channel name.
+  node_modules\@types\node\zlib.d.ts:174:    class BrotliCompress extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:175:        constructor(options?: BrotliOptions);
+  node_modules\@types\node\zlib.d.ts:176:    }
+> node_modules\@types\node\zlib.d.ts:177:    interface BrotliCompress extends stream.Transform, Zlib {}
+  node_modules\@types\node\zlib.d.ts:178:    /**
+  node_modules\@types\node\zlib.d.ts:179:     * @since v10.16.0
+  node_modules\@types\node\zlib.d.ts:180:     */
+  node_modules\@types\node\zlib.d.ts:181:    class BrotliDecompress extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:182:        constructor(options?: BrotliOptions);
+  node_modules\@types\node\zlib.d.ts:183:    }
+> node_modules\@types\node\zlib.d.ts:184:    interface BrotliDecompress extends stream.Transform, Zlib {}
+  node_modules\@types\node\zlib.d.ts:185:    /**
+  node_modules\@types\node\zlib.d.ts:186:     * @since v0.5.8
+  node_modules\@types\node\zlib.d.ts:187:     */
+  node_modules\@types\node\zlib.d.ts:188:    class Gzip extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:189:        constructor(options?: ZlibOptions);
+  node_modules\@types\node\zlib.d.ts:190:    }
+> node_modules\@types\node\zlib.d.ts:191:    interface Gzip extends stream.Transform, Zlib {}
+  node_modules\@types\node\zlib.d.ts:192:    /**
+  node_modules\@types\node\zlib.d.ts:193:     * @since v0.5.8
+  node_modules\@types\node\zlib.d.ts:194:     */
+  node_modules\@types\node\zlib.d.ts:195:    class Gunzip extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:196:        constructor(options?: ZlibOptions);
+  node_modules\@types\node\zlib.d.ts:197:    }
+> node_modules\@types\node\zlib.d.ts:198:    interface Gunzip extends stream.Transform, Zlib {}
+  node_modules\@types\node\zlib.d.ts:199:    /**
+  node_modules\@types\node\zlib.d.ts:200:     * @since v0.5.8
+  node_modules\@types\node\zlib.d.ts:201:     */
+  node_modules\@types\node\zlib.d.ts:202:    class Deflate extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:203:        constructor(options?: ZlibOptions);
+  node_modules\@types\node\zlib.d.ts:204:    }
+> node_modules\@types\node\zlib.d.ts:205:    interface Deflate extends stream.Transform, Zlib, ZlibReset, ZlibParams {}
+  node_modules\@types\node\zlib.d.ts:206:    /**
+  node_modules\@types\node\zlib.d.ts:207:     * @since v0.5.8
+  node_modules\@types\node\zlib.d.ts:208:     */
+  node_modules\@types\node\zlib.d.ts:209:    class Inflate extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:210:        constructor(options?: ZlibOptions);
+  node_modules\@types\node\zlib.d.ts:211:    }
+> node_modules\@types\node\zlib.d.ts:212:    interface Inflate extends stream.Transform, Zlib, ZlibReset {}
+  node_modules\@types\node\zlib.d.ts:213:    /**
+  node_modules\@types\node\zlib.d.ts:214:     * @since v0.5.8
+  node_modules\@types\node\zlib.d.ts:215:     */
+  node_modules\@types\node\zlib.d.ts:216:    class DeflateRaw extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:217:        constructor(options?: ZlibOptions);
+  node_modules\@types\node\zlib.d.ts:218:    }
+> node_modules\@types\node\zlib.d.ts:219:    interface DeflateRaw extends stream.Transform, Zlib, ZlibReset, ZlibParams {}
+  node_modules\@types\node\zlib.d.ts:220:    /**
+  node_modules\@types\node\zlib.d.ts:221:     * @since v0.5.8
+  node_modules\@types\node\zlib.d.ts:222:     */
+  node_modules\@types\node\zlib.d.ts:223:    class InflateRaw extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:224:        constructor(options?: ZlibOptions);
+  node_modules\@types\node\zlib.d.ts:225:    }
+> node_modules\@types\node\zlib.d.ts:226:    interface InflateRaw extends stream.Transform, Zlib, ZlibReset {}
+  node_modules\@types\node\zlib.d.ts:227:    /**
+  node_modules\@types\node\zlib.d.ts:228:     * @since v0.5.8
+  node_modules\@types\node\zlib.d.ts:229:     */
+  node_modules\@types\node\zlib.d.ts:230:    class Unzip extends stream.Transform {
+  node_modules\@types\node\zlib.d.ts:231:        constructor(options?: ZlibOptions);
+  node_modules\@types\node\zlib.d.ts:232:    }
+> node_modules\@types\node\zlib.d.ts:233:    interface Unzip extends stream.Transform, Zlib {}
+  node_modules\@types\node\zlib.d.ts:234:    /**
+  node_modules\@types\node\zlib.d.ts:235:     * Computes a 32-bit [Cyclic Redundancy Check](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) checksum of `data`.
+  node_modules\@types\node\zlib.d.ts:236:     * If `value` is specified, it is used as the starting value of the checksum, otherwise, 0 is used as the starting value.
+  node_modules\@types\react\ts5.0\global.d.ts:8:*/
+  node_modules\@types\react\ts5.0\global.d.ts:9:
+  node_modules\@types\react\ts5.0\global.d.ts:10:interface Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:11:interface AnimationEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:12:interface ClipboardEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:13:interface CompositionEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:14:interface DragEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:15:interface FocusEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:16:interface InputEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:17:interface KeyboardEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:18:interface MouseEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:19:interface TouchEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:20:interface PointerEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:21:interface SubmitEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:22:interface ToggleEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:23:interface TransitionEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:24:interface UIEvent extends Event {}
+> node_modules\@types\react\ts5.0\global.d.ts:25:interface WheelEvent extends Event {}
+  node_modules\@types\react\ts5.0\global.d.ts:26:
+  node_modules\@types\react\ts5.0\global.d.ts:27:interface EventTarget {}
+  node_modules\@types\react\ts5.0\global.d.ts:28:interface Document {}
+  node_modules\@types\react\ts5.0\global.d.ts:32:interface Element {}
+  node_modules\@types\react\ts5.0\global.d.ts:33:interface DocumentFragment {}
+  node_modules\@types\react\ts5.0\global.d.ts:34:
+> node_modules\@types\react\ts5.0\global.d.ts:35:interface HTMLElement extends Element {}
+> node_modules\@types\react\ts5.0\global.d.ts:36:interface HTMLAnchorElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:37:interface HTMLAreaElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:38:interface HTMLAudioElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:39:interface HTMLBaseElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:40:interface HTMLBodyElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:41:interface HTMLBRElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:42:interface HTMLButtonElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:43:interface HTMLCanvasElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:44:interface HTMLDataElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:45:interface HTMLDataListElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:46:interface HTMLDetailsElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:47:interface HTMLDialogElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:48:interface HTMLDivElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:49:interface HTMLDListElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:50:interface HTMLEmbedElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:51:interface HTMLFieldSetElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:52:interface HTMLFormElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:53:interface HTMLHeadingElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:54:interface HTMLHeadElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:55:interface HTMLHRElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:56:interface HTMLHtmlElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:57:interface HTMLIFrameElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:58:interface HTMLImageElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:59:interface HTMLInputElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:60:interface HTMLModElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:61:interface HTMLLabelElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:62:interface HTMLLegendElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:63:interface HTMLLIElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:64:interface HTMLLinkElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:65:interface HTMLMapElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:66:interface HTMLMetaElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:67:interface HTMLMeterElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:68:interface HTMLObjectElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:69:interface HTMLOListElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:70:interface HTMLOptGroupElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:71:interface HTMLOptionElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:72:interface HTMLOutputElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:73:interface HTMLParagraphElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:74:interface HTMLParamElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:75:interface HTMLPreElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:76:interface HTMLProgressElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:77:interface HTMLQuoteElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:78:interface HTMLSlotElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:79:interface HTMLScriptElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:80:interface HTMLSelectElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:81:interface HTMLSourceElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:82:interface HTMLSpanElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:83:interface HTMLStyleElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:84:interface HTMLTableElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:85:interface HTMLTableColElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:86:interface HTMLTableDataCellElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:87:interface HTMLTableHeaderCellElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:88:interface HTMLTableRowElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:89:interface HTMLTableSectionElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:90:interface HTMLTemplateElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:91:interface HTMLTextAreaElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:92:interface HTMLTimeElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:93:interface HTMLTitleElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:94:interface HTMLTrackElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:95:interface HTMLUListElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:96:interface HTMLVideoElement extends HTMLElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:97:interface HTMLWebViewElement extends HTMLElement {}
+  node_modules\@types\react\ts5.0\global.d.ts:98:
+> node_modules\@types\react\ts5.0\global.d.ts:99:interface SVGElement extends Element {}
+> node_modules\@types\react\ts5.0\global.d.ts:100:interface SVGSVGElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:101:interface SVGCircleElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:102:interface SVGClipPathElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:103:interface SVGDefsElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:104:interface SVGDescElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:105:interface SVGEllipseElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:106:interface SVGFEBlendElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:107:interface SVGFEColorMatrixElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:108:interface SVGFEComponentTransferElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:109:interface SVGFECompositeElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:110:interface SVGFEConvolveMatrixElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:111:interface SVGFEDiffuseLightingElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:112:interface SVGFEDisplacementMapElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:113:interface SVGFEDistantLightElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:114:interface SVGFEDropShadowElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:115:interface SVGFEFloodElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:116:interface SVGFEFuncAElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:117:interface SVGFEFuncBElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:118:interface SVGFEFuncGElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:119:interface SVGFEFuncRElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:120:interface SVGFEGaussianBlurElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:121:interface SVGFEImageElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:122:interface SVGFEMergeElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:123:interface SVGFEMergeNodeElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:124:interface SVGFEMorphologyElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:125:interface SVGFEOffsetElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:126:interface SVGFEPointLightElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:127:interface SVGFESpecularLightingElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:128:interface SVGFESpotLightElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:129:interface SVGFETileElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:130:interface SVGFETurbulenceElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:131:interface SVGFilterElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:132:interface SVGForeignObjectElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:133:interface SVGGElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:134:interface SVGImageElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:135:interface SVGLineElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:136:interface SVGLinearGradientElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:137:interface SVGMarkerElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:138:interface SVGMaskElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:139:interface SVGMetadataElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:140:interface SVGPathElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:141:interface SVGPatternElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:142:interface SVGPolygonElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:143:interface SVGPolylineElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:144:interface SVGRadialGradientElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:145:interface SVGRectElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:146:interface SVGSetElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:147:interface SVGStopElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:148:interface SVGSwitchElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:149:interface SVGSymbolElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:150:interface SVGTextElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:151:interface SVGTextPathElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:152:interface SVGTSpanElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:153:interface SVGUseElement extends SVGElement {}
+> node_modules\@types\react\ts5.0\global.d.ts:154:interface SVGViewElement extends SVGElement {}
+  node_modules\@types\react\ts5.0\global.d.ts:155:
+  node_modules\@types\react\ts5.0\global.d.ts:156:interface FormData {}
+  node_modules\@types\react\ts5.0\global.d.ts:157:interface Text {}
+  node_modules\@types\react\ts5.0\index.d.ts:4138:    }
+  node_modules\@types\react\ts5.0\index.d.ts:4139:
+  node_modules\@types\react\ts5.0\index.d.ts:4140:    namespace JSX {
+> node_modules\@types\react\ts5.0\index.d.ts:4141:        interface Element extends React.ReactElement<any, any> {}
+  node_modules\@types\react\ts5.0\index.d.ts:4142:        interface ElementClass extends React.Component<any> {
+  node_modules\@types\react\ts5.0\index.d.ts:4143:            render(): React.ReactNode;
+  node_modules\@types\react\ts5.0\index.d.ts:4144:        }
+  node_modules\@types\react\ts5.0\index.d.ts:4158:            : ReactManagedAttributes<T, P>
+  node_modules\@types\react\ts5.0\index.d.ts:4159:            : ReactManagedAttributes<C, P>;
+  node_modules\@types\react\ts5.0\index.d.ts:4160:
+> node_modules\@types\react\ts5.0\index.d.ts:4161:        interface IntrinsicAttributes extends React.Attributes {}
+  node_modules\@types\react\ts5.0\index.d.ts:4162:        interface IntrinsicClassAttributes<T> extends React.ClassAttributes<T> {}
+  node_modules\@types\react\ts5.0\index.d.ts:4163:
+  node_modules\@types\react\ts5.0\index.d.ts:4164:        interface IntrinsicElements {
+  node_modules\@types\react\global.d.ts:8:*/
+  node_modules\@types\react\global.d.ts:9:
+  node_modules\@types\react\global.d.ts:10:interface Event {}
+> node_modules\@types\react\global.d.ts:11:interface AnimationEvent extends Event {}
+> node_modules\@types\react\global.d.ts:12:interface ClipboardEvent extends Event {}
+> node_modules\@types\react\global.d.ts:13:interface CompositionEvent extends Event {}
+> node_modules\@types\react\global.d.ts:14:interface DragEvent extends Event {}
+> node_modules\@types\react\global.d.ts:15:interface FocusEvent extends Event {}
+> node_modules\@types\react\global.d.ts:16:interface InputEvent extends Event {}
+> node_modules\@types\react\global.d.ts:17:interface KeyboardEvent extends Event {}
+> node_modules\@types\react\global.d.ts:18:interface MouseEvent extends Event {}
+> node_modules\@types\react\global.d.ts:19:interface TouchEvent extends Event {}
+> node_modules\@types\react\global.d.ts:20:interface PointerEvent extends Event {}
+> node_modules\@types\react\global.d.ts:21:interface SubmitEvent extends Event {}
+> node_modules\@types\react\global.d.ts:22:interface ToggleEvent extends Event {}
+> node_modules\@types\react\global.d.ts:23:interface TransitionEvent extends Event {}
+> node_modules\@types\react\global.d.ts:24:interface UIEvent extends Event {}
+> node_modules\@types\react\global.d.ts:25:interface WheelEvent extends Event {}
+  node_modules\@types\react\global.d.ts:26:
+  node_modules\@types\react\global.d.ts:27:interface EventTarget {}
+  node_modules\@types\react\global.d.ts:28:interface Document {}
+  node_modules\@types\react\global.d.ts:32:interface Element {}
+  node_modules\@types\react\global.d.ts:33:interface DocumentFragment {}
+  node_modules\@types\react\global.d.ts:34:
+> node_modules\@types\react\global.d.ts:35:interface HTMLElement extends Element {}
+> node_modules\@types\react\global.d.ts:36:interface HTMLAnchorElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:37:interface HTMLAreaElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:38:interface HTMLAudioElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:39:interface HTMLBaseElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:40:interface HTMLBodyElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:41:interface HTMLBRElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:42:interface HTMLButtonElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:43:interface HTMLCanvasElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:44:interface HTMLDataElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:45:interface HTMLDataListElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:46:interface HTMLDetailsElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:47:interface HTMLDialogElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:48:interface HTMLDivElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:49:interface HTMLDListElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:50:interface HTMLEmbedElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:51:interface HTMLFieldSetElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:52:interface HTMLFormElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:53:interface HTMLHeadingElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:54:interface HTMLHeadElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:55:interface HTMLHRElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:56:interface HTMLHtmlElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:57:interface HTMLIFrameElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:58:interface HTMLImageElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:59:interface HTMLInputElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:60:interface HTMLModElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:61:interface HTMLLabelElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:62:interface HTMLLegendElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:63:interface HTMLLIElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:64:interface HTMLLinkElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:65:interface HTMLMapElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:66:interface HTMLMetaElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:67:interface HTMLMeterElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:68:interface HTMLObjectElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:69:interface HTMLOListElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:70:interface HTMLOptGroupElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:71:interface HTMLOptionElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:72:interface HTMLOutputElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:73:interface HTMLParagraphElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:74:interface HTMLParamElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:75:interface HTMLPreElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:76:interface HTMLProgressElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:77:interface HTMLQuoteElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:78:interface HTMLSlotElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:79:interface HTMLScriptElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:80:interface HTMLSelectElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:81:interface HTMLSourceElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:82:interface HTMLSpanElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:83:interface HTMLStyleElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:84:interface HTMLTableElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:85:interface HTMLTableColElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:86:interface HTMLTableDataCellElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:87:interface HTMLTableHeaderCellElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:88:interface HTMLTableRowElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:89:interface HTMLTableSectionElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:90:interface HTMLTemplateElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:91:interface HTMLTextAreaElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:92:interface HTMLTimeElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:93:interface HTMLTitleElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:94:interface HTMLTrackElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:95:interface HTMLUListElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:96:interface HTMLVideoElement extends HTMLElement {}
+> node_modules\@types\react\global.d.ts:97:interface HTMLWebViewElement extends HTMLElement {}
+  node_modules\@types\react\global.d.ts:98:
+> node_modules\@types\react\global.d.ts:99:interface SVGElement extends Element {}
+> node_modules\@types\react\global.d.ts:100:interface SVGSVGElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:101:interface SVGCircleElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:102:interface SVGClipPathElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:103:interface SVGDefsElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:104:interface SVGDescElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:105:interface SVGEllipseElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:106:interface SVGFEBlendElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:107:interface SVGFEColorMatrixElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:108:interface SVGFEComponentTransferElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:109:interface SVGFECompositeElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:110:interface SVGFEConvolveMatrixElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:111:interface SVGFEDiffuseLightingElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:112:interface SVGFEDisplacementMapElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:113:interface SVGFEDistantLightElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:114:interface SVGFEDropShadowElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:115:interface SVGFEFloodElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:116:interface SVGFEFuncAElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:117:interface SVGFEFuncBElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:118:interface SVGFEFuncGElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:119:interface SVGFEFuncRElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:120:interface SVGFEGaussianBlurElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:121:interface SVGFEImageElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:122:interface SVGFEMergeElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:123:interface SVGFEMergeNodeElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:124:interface SVGFEMorphologyElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:125:interface SVGFEOffsetElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:126:interface SVGFEPointLightElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:127:interface SVGFESpecularLightingElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:128:interface SVGFESpotLightElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:129:interface SVGFETileElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:130:interface SVGFETurbulenceElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:131:interface SVGFilterElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:132:interface SVGForeignObjectElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:133:interface SVGGElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:134:interface SVGImageElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:135:interface SVGLineElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:136:interface SVGLinearGradientElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:137:interface SVGMarkerElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:138:interface SVGMaskElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:139:interface SVGMetadataElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:140:interface SVGPathElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:141:interface SVGPatternElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:142:interface SVGPolygonElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:143:interface SVGPolylineElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:144:interface SVGRadialGradientElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:145:interface SVGRectElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:146:interface SVGSetElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:147:interface SVGStopElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:148:interface SVGSwitchElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:149:interface SVGSymbolElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:150:interface SVGTextElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:151:interface SVGTextPathElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:152:interface SVGTSpanElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:153:interface SVGUseElement extends SVGElement {}
+> node_modules\@types\react\global.d.ts:154:interface SVGViewElement extends SVGElement {}
+  node_modules\@types\react\global.d.ts:155:
+  node_modules\@types\react\global.d.ts:156:interface FormData {}
+  node_modules\@types\react\global.d.ts:157:interface Text {}
+  node_modules\@types\react\index.d.ts:4151:        //  reduce the work of the type-checker.
+  node_modules\@types\react\index.d.ts:4152:        // TODO: Check impact of making React.ElementType<P = any> = React.JSXElementConstructor<P>
+  node_modules\@types\react\index.d.ts:4153:        type ElementType = string | React.JSXElementConstructor<any>;
+> node_modules\@types\react\index.d.ts:4154:        interface Element extends React.ReactElement<any, any> {}
+  node_modules\@types\react\index.d.ts:4155:        interface ElementClass extends React.Component<any> {
+  node_modules\@types\react\index.d.ts:4156:            render(): React.ReactNode;
+  node_modules\@types\react\index.d.ts:4157:        }
+  node_modules\@types\react\index.d.ts:4171:            : ReactManagedAttributes<T, P>
+  node_modules\@types\react\index.d.ts:4172:            : ReactManagedAttributes<C, P>;
+  node_modules\@types\react\index.d.ts:4173:
+> node_modules\@types\react\index.d.ts:4174:        interface IntrinsicAttributes extends React.Attributes {}
+  node_modules\@types\react\index.d.ts:4175:        interface IntrinsicClassAttributes<T> extends React.ClassAttributes<T> {}
+  node_modules\@types\react\index.d.ts:4176:
+  node_modules\@types\react\index.d.ts:4177:        interface IntrinsicElements {
+  node_modules\@types\react-dom\experimental.d.ts:40:
+  node_modules\@types\react-dom\experimental.d.ts:41:declare module "react" {
+  node_modules\@types\react-dom\experimental.d.ts:42:    // eslint-disable-next-line @typescript-eslint/no-empty-interface
+> node_modules\@types\react-dom\experimental.d.ts:43:    interface GestureProvider extends AnimationTimeline {}
+  node_modules\@types\react-dom\experimental.d.ts:44:}
+  node_modules\@types\react-dom\experimental.d.ts:45:
+  node_modules\@types\react-dom\experimental.d.ts:46:declare module "./client" {
+  node_modules\@types\react-dom\index.d.ts:8:
+  node_modules\@types\react-dom\index.d.ts:9:declare module "react" {
+  node_modules\@types\react-dom\index.d.ts:10:    // eslint-disable-next-line @typescript-eslint/no-empty-interface
+> node_modules\@types\react-dom\index.d.ts:11:    interface CacheSignal extends AbortSignal {}
+  node_modules\@types\react-dom\index.d.ts:12:}
+  node_modules\@types\react-dom\index.d.ts:13:
+  node_modules\@types\react-dom\index.d.ts:14:export function createPortal(
+  node_modules\find-up\index.d.ts:4:declare const stop: unique symbol;
+  node_modules\find-up\index.d.ts:5:
+  node_modules\find-up\index.d.ts:6:declare namespace findUp {
+> node_modules\find-up\index.d.ts:7:	interface Options extends LocatePathOptions {}
+  node_modules\find-up\index.d.ts:8:
+  node_modules\find-up\index.d.ts:9:	type StopSymbol = typeof stop;
+  node_modules\find-up\index.d.ts:10:
+  node_modules\undici-types\dispatcher.d.ts:96:}
+  node_modules\undici-types\dispatcher.d.ts:97:
+  node_modules\undici-types\dispatcher.d.ts:98:declare namespace Dispatcher {
+> node_modules\undici-types\dispatcher.d.ts:99:  export interface ComposedDispatcher extends Dispatcher {}
+  node_modules\undici-types\dispatcher.d.ts:100:  export type DispatcherComposeInterceptor = (dispatch: Dispatcher['dispatch']) => Dispatcher['dispatch'];
+  node_modules\undici-types\dispatcher.d.ts:101:  export interface DispatchOptions {
+  node_modules\undici-types\dispatcher.d.ts:102:    origin?: string | URL;
+  node_modules\zod\src\v4\classic\schemas.ts:993:  format: string | null;
+  node_modules\zod\src\v4\classic\schemas.ts:994:}
+  node_modules\zod\src\v4\classic\schemas.ts:995:
+> node_modules\zod\src\v4\classic\schemas.ts:996:export interface ZodNumber extends _ZodNumber<core.$ZodNumberInternals<number>> {}
+  node_modules\zod\src\v4\classic\schemas.ts:997:
+  node_modules\zod\src\v4\classic\schemas.ts:998:export const ZodNumber: core.$constructor<ZodNumber> = /*@__PURE__*/ core.$constructor("ZodNumber", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:999:  core.$ZodNumber.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1077:);
+  node_modules\zod\src\v4\classic\schemas.ts:1078:
+  node_modules\zod\src\v4\classic\schemas.ts:1079:// int
+> node_modules\zod\src\v4\classic\schemas.ts:1080:export interface ZodInt extends ZodNumberFormat {}
+  node_modules\zod\src\v4\classic\schemas.ts:1081:export function int(params?: string | core.$ZodCheckNumberFormatParams): ZodInt {
+  node_modules\zod\src\v4\classic\schemas.ts:1082:  return core._int(ZodNumberFormat, params);
+  node_modules\zod\src\v4\classic\schemas.ts:1083:}
+  node_modules\zod\src\v4\classic\schemas.ts:1084:
+  node_modules\zod\src\v4\classic\schemas.ts:1085:// float32
+> node_modules\zod\src\v4\classic\schemas.ts:1086:export interface ZodFloat32 extends ZodNumberFormat {}
+  node_modules\zod\src\v4\classic\schemas.ts:1087:export function float32(params?: string | core.$ZodCheckNumberFormatParams): ZodFloat32 {
+  node_modules\zod\src\v4\classic\schemas.ts:1088:  return core._float32(ZodNumberFormat, params);
+  node_modules\zod\src\v4\classic\schemas.ts:1089:}
+  node_modules\zod\src\v4\classic\schemas.ts:1090:
+  node_modules\zod\src\v4\classic\schemas.ts:1091:// float64
+> node_modules\zod\src\v4\classic\schemas.ts:1092:export interface ZodFloat64 extends ZodNumberFormat {}
+  node_modules\zod\src\v4\classic\schemas.ts:1093:export function float64(params?: string | core.$ZodCheckNumberFormatParams): ZodFloat64 {
+  node_modules\zod\src\v4\classic\schemas.ts:1094:  return core._float64(ZodNumberFormat, params);
+  node_modules\zod\src\v4\classic\schemas.ts:1095:}
+  node_modules\zod\src\v4\classic\schemas.ts:1096:
+  node_modules\zod\src\v4\classic\schemas.ts:1097:// int32
+> node_modules\zod\src\v4\classic\schemas.ts:1098:export interface ZodInt32 extends ZodNumberFormat {}
+  node_modules\zod\src\v4\classic\schemas.ts:1099:export function int32(params?: string | core.$ZodCheckNumberFormatParams): ZodInt32 {
+  node_modules\zod\src\v4\classic\schemas.ts:1100:  return core._int32(ZodNumberFormat, params);
+  node_modules\zod\src\v4\classic\schemas.ts:1101:}
+  node_modules\zod\src\v4\classic\schemas.ts:1102:
+  node_modules\zod\src\v4\classic\schemas.ts:1103:// uint32
+> node_modules\zod\src\v4\classic\schemas.ts:1104:export interface ZodUInt32 extends ZodNumberFormat {}
+  node_modules\zod\src\v4\classic\schemas.ts:1105:export function uint32(params?: string | core.$ZodCheckNumberFormatParams): ZodUInt32 {
+  node_modules\zod\src\v4\classic\schemas.ts:1106:  return core._uint32(ZodNumberFormat, params);
+  node_modules\zod\src\v4\classic\schemas.ts:1107:}
+  node_modules\zod\src\v4\classic\schemas.ts:1108:
+  node_modules\zod\src\v4\classic\schemas.ts:1109:// boolean
+  node_modules\zod\src\v4\classic\schemas.ts:1110:export interface _ZodBoolean<T extends core.$ZodBooleanInternals = core.$ZodBooleanInternals> extends _ZodType<T> {}
+> node_modules\zod\src\v4\classic\schemas.ts:1111:export interface ZodBoolean extends _ZodBoolean<core.$ZodBooleanInternals<boolean>> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1112:export const ZodBoolean: core.$constructor<ZodBoolean> = /*@__PURE__*/ core.$constructor("ZodBoolean", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1113:  core.$ZodBoolean.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1114:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1140:  format: string | null;
+  node_modules\zod\src\v4\classic\schemas.ts:1141:}
+  node_modules\zod\src\v4\classic\schemas.ts:1142:
+> node_modules\zod\src\v4\classic\schemas.ts:1143:export interface ZodBigInt extends _ZodBigInt<core.$ZodBigIntInternals<bigint>> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1144:export const ZodBigInt: core.$constructor<ZodBigInt> = /*@__PURE__*/ core.$constructor("ZodBigInt", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1145:  core.$ZodBigInt.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1146:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1194:}
+  node_modules\zod\src\v4\classic\schemas.ts:1195:
+  node_modules\zod\src\v4\classic\schemas.ts:1196:// symbol
+> node_modules\zod\src\v4\classic\schemas.ts:1197:export interface ZodSymbol extends _ZodType<core.$ZodSymbolInternals> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1198:export const ZodSymbol: core.$constructor<ZodSymbol> = /*@__PURE__*/ core.$constructor("ZodSymbol", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1199:  core.$ZodSymbol.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1200:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1206:}
+  node_modules\zod\src\v4\classic\schemas.ts:1207:
+  node_modules\zod\src\v4\classic\schemas.ts:1208:// ZodUndefined
+> node_modules\zod\src\v4\classic\schemas.ts:1209:export interface ZodUndefined extends _ZodType<core.$ZodUndefinedInternals> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1210:export const ZodUndefined: core.$constructor<ZodUndefined> = /*@__PURE__*/ core.$constructor(
+  node_modules\zod\src\v4\classic\schemas.ts:1211:  "ZodUndefined",
+  node_modules\zod\src\v4\classic\schemas.ts:1212:  (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1222:export { _undefined as undefined };
+  node_modules\zod\src\v4\classic\schemas.ts:1223:
+  node_modules\zod\src\v4\classic\schemas.ts:1224:// ZodNull
+> node_modules\zod\src\v4\classic\schemas.ts:1225:export interface ZodNull extends _ZodType<core.$ZodNullInternals> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1226:export const ZodNull: core.$constructor<ZodNull> = /*@__PURE__*/ core.$constructor("ZodNull", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1227:  core.$ZodNull.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1228:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1235:export { _null as null };
+  node_modules\zod\src\v4\classic\schemas.ts:1236:
+  node_modules\zod\src\v4\classic\schemas.ts:1237:// ZodAny
+> node_modules\zod\src\v4\classic\schemas.ts:1238:export interface ZodAny extends _ZodType<core.$ZodAnyInternals> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1239:export const ZodAny: core.$constructor<ZodAny> = /*@__PURE__*/ core.$constructor("ZodAny", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1240:  core.$ZodAny.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1241:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1247:}
+  node_modules\zod\src\v4\classic\schemas.ts:1248:
+  node_modules\zod\src\v4\classic\schemas.ts:1249:// ZodUnknown
+> node_modules\zod\src\v4\classic\schemas.ts:1250:export interface ZodUnknown extends _ZodType<core.$ZodUnknownInternals> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1251:export const ZodUnknown: core.$constructor<ZodUnknown> = /*@__PURE__*/ core.$constructor("ZodUnknown", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1252:  core.$ZodUnknown.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1253:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1259:}
+  node_modules\zod\src\v4\classic\schemas.ts:1260:
+  node_modules\zod\src\v4\classic\schemas.ts:1261:// ZodNever
+> node_modules\zod\src\v4\classic\schemas.ts:1262:export interface ZodNever extends _ZodType<core.$ZodNeverInternals> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1263:export const ZodNever: core.$constructor<ZodNever> = /*@__PURE__*/ core.$constructor("ZodNever", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1264:  core.$ZodNever.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1265:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1271:}
+  node_modules\zod\src\v4\classic\schemas.ts:1272:
+  node_modules\zod\src\v4\classic\schemas.ts:1273:// ZodVoid
+> node_modules\zod\src\v4\classic\schemas.ts:1274:export interface ZodVoid extends _ZodType<core.$ZodVoidInternals> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1275:export const ZodVoid: core.$constructor<ZodVoid> = /*@__PURE__*/ core.$constructor("ZodVoid", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1276:  core.$ZodVoid.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1277:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1294:  maxDate: Date | null;
+  node_modules\zod\src\v4\classic\schemas.ts:1295:}
+  node_modules\zod\src\v4\classic\schemas.ts:1296:
+> node_modules\zod\src\v4\classic\schemas.ts:1297:export interface ZodDate extends _ZodDate<core.$ZodDateInternals<Date>> {}
+  node_modules\zod\src\v4\classic\schemas.ts:1298:export const ZodDate: core.$constructor<ZodDate> = /*@__PURE__*/ core.$constructor("ZodDate", (inst, def) => {
+  node_modules\zod\src\v4\classic\schemas.ts:1299:  core.$ZodDate.init(inst, def);
+  node_modules\zod\src\v4\classic\schemas.ts:1300:  ZodType.init(inst, def);
+  node_modules\zod\src\v4\core\registries.ts:84:  [k: string]: unknown;
+  node_modules\zod\src\v4\core\registries.ts:85:}
+  node_modules\zod\src\v4\core\registries.ts:86:
+> node_modules\zod\src\v4\core\registries.ts:87:export interface GlobalMeta extends JSONSchemaMeta {}
+  node_modules\zod\src\v4\core\registries.ts:88:
+  node_modules\zod\src\v4\core\registries.ts:89:// registries
+  node_modules\zod\src\v4\core\registries.ts:90:export function registry<T extends MetadataType = MetadataType, S extends $ZodType = $ZodType>(): $ZodRegistry<T, S> {
+  node_modules\zod\src\v4\mini\schemas.ts:120:);
+  node_modules\zod\src\v4\mini\schemas.ts:121:
+  node_modules\zod\src\v4\mini\schemas.ts:122:// ZodMiniEmail
+> node_modules\zod\src\v4\mini\schemas.ts:123:export interface ZodMiniEmail extends _ZodMiniString<core.$ZodEmailInternals> {}
+  node_modules\zod\src\v4\mini\schemas.ts:124:export const ZodMiniEmail: core.$constructor<ZodMiniEmail> = /*@__PURE__*/ core.$constructor(
+  node_modules\zod\src\v4\mini\schemas.ts:125:  "ZodMiniEmail",
+  node_modules\zod\src\v4\mini\schemas.ts:126:  (inst, def) => {
+  node_modules\zod\src\v4\mini\schemas.ts:559:}
+  node_modules\zod\src\v4\mini\schemas.ts:560:
+  node_modules\zod\src\v4\mini\schemas.ts:561:// ZodMiniNumberFormat
+> node_modules\zod\src\v4\mini\schemas.ts:562:export interface ZodMiniNumberFormat extends _ZodMiniNumber<core.$ZodNumberFormatInternals>, core.$ZodNumberFormat {}
+  node_modules\zod\src\v4\mini\schemas.ts:563:export const ZodMiniNumberFormat: core.$constructor<ZodMiniNumberFormat> = /*@__PURE__*/ core.$constructor(
+  node_modules\zod\src\v4\mini\schemas.ts:564:  "ZodMiniNumberFormat",
+  node_modules\zod\src\v4\mini\schemas.ts:565:  (inst, def) => {
+
+

@@ -1,0 +1,20 @@
+﻿MELKISM v6.12 Security Headers Deployment Audit
+Generated: 2026-09-08T18:40:32.1057302+03:30
+ProjectRoot: C:\Projects\melkism
+
+Global configuration files: 1
+Middleware files detected: 0
+Next.js config files detected: 1
+Known security headers detected: 6
+Manual review required: True
+
+Detected configuration files:
+C:\Projects\melkism\next.config.ts
+
+Detected security headers:
+Content-Security-Policy
+Referrer-Policy
+X-Frame-Options
+X-Content-Type-Options
+Permissions-Policy
+Cache-Control

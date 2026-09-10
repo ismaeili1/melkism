@@ -1,0 +1,6 @@
+
+C:\Projects\melkism\lib\property-platform\property.service.ts
+  10:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+ظ£û 1 problem (1 error, 0 warnings)
+

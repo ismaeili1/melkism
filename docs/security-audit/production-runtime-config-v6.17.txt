@@ -1,0 +1,31 @@
+MELKISM v6.17 - Production Runtime & Environment Configuration
+Generated: 2026-09-08T19:56:00
+ProjectRoot: C:\Projects\melkism
+
+Node.js: v24.19.0
+npm: 11.17.0
+
+Git repository: PASS
+package.json build script: PASS
+package.json start script: PASS
+Environment-file hygiene: PASS
+.gitignore environment protection: PASS
+Environment reference discovery: PASS
+Browser exposure boundary: PASS
+Tracked secret-pattern audit: PASS
+TypeScript: PASS
+ESLint: PASS
+Production build: PASS
+Production runtime startup: PASS
+Production HTTP endpoint: PASS
+Production runtime environment: PASS
+
+Environment references discovered: 4
+Files scanned: 10292
+Non-fatal scan notes: 0
+
+Environment contract: C:\Projects\melkism\docs\runtime\environment-contract-v6.17.txt
+Secret values were not written to this report.
+next.config.ts was not modified by v6.17.
+
+OVERALL STATUS: PASS

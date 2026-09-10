@@ -1,0 +1,30 @@
+
+.melkism-input {
+
+width:100%;
+
+padding:
+16px;
+
+border-radius:
+var(--radius-md);
+
+border:
+1px solid #E5E7EB;
+
+font-family:
+Vazirmatn,sans-serif;
+
+}
+
+
+
+.melkism-input:focus {
+
+outline:none;
+
+border-color:
+var(--color-primary);
+
+}
+

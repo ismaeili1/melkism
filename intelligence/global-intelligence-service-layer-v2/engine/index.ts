@@ -1,0 +1,8 @@
+
+export {
+
+processGlobalIntelligenceServiceLayer
+
+} from "./processor";
+
+

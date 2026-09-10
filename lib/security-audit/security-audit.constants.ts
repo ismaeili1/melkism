@@ -1,0 +1,17 @@
+export const SECURITY_AUDIT_SERVICE =
+  "MELKISM";
+
+export const SECURITY_AUDIT_VERSION =
+  "v6.8";
+
+export const SECURITY_AUDIT_MAX_EVENTS =
+  500;
+
+export const SECURITY_AUDIT_MAX_ACTION_LENGTH =
+  120;
+
+export const SECURITY_AUDIT_MAX_PATH_LENGTH =
+  2048;
+
+export const SECURITY_AUDIT_MAX_REQUEST_ID_LENGTH =
+  128;

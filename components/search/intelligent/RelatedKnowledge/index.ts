@@ -1,0 +1,1 @@
+export { RelatedKnowledge } from "./RelatedKnowledge";

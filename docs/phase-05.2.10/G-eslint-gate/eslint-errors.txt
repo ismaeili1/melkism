@@ -1,0 +1,13 @@
+
+File    : C:\Projects\melkism\docs\phase-05.2.10\G4-backup-20260905-091346\intelligence\orchestration\intelligence.registry.bridge.ts
+Line    : 20
+Column  : 2
+Rule    : @next/next/no-assign-module-variable
+Message : Do not assign to the variable `module`. See: https://nextjs.org/docs/messages/no-assign-module-variable
+
+File    : C:\Projects\melkism\docs\phase-05.2.10\G4-backup-20260905-091346\intelligence\runtime\intelligence.runtime.executor.ts
+Line    : 15
+Column  : 1
+Rule    : @next/next/no-assign-module-variable
+Message : Do not assign to the variable `module`. See: https://nextjs.org/docs/messages/no-assign-module-variable
+

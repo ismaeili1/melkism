@@ -1,0 +1,12 @@
+
+lib\workflow\adaptive\melkism.adaptive.execution.layer.ts:8:return {
+lib\workflow\core\melkism.autonomous.workflow.core.ts:8:return {
+lib\workflow\evaluation\melkism.workflow.performance.evaluation.ts:8:return {
+lib\workflow\execution\melkism.agent.execution.manager.ts:8:return {
+lib\workflow\intelligence\melkism.self.improving.workflow.core.ts:8:return {
+lib\workflow\learning\melkism.workflow.learning.layer.ts:8:return {
+lib\workflow\monitoring\melkism.workflow.monitoring.layer.ts:8:return {
+lib\workflow\optimization\melkism.workflow.optimization.engine.ts:8:return {
+lib\workflow\orchestration\melkism.task.orchestration.engine.ts:8:return {
+lib\workflow\planner\melkism.workflow.planner.ts:8:return {
+

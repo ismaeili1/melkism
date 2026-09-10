@@ -1,0 +1,9 @@
+
+export {
+
+processRealEstateKnowledgeGraph
+
+} from "./processor";
+
+
+

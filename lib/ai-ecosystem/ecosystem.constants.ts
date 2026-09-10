@@ -1,0 +1,1 @@
+export const AI_ECOSYSTEM_PLATFORM='MELKISM';

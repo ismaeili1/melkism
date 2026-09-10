@@ -33,6 +33,7 @@ export default async function LocaleLayout({
   children,
   params,
 }: LocaleLayoutProps) {
+
   const { locale } = await params;
 
   if (!isLocale(locale)) {
@@ -41,15 +42,16 @@ export default async function LocaleLayout({
 
   const typedLocale = locale as Locale;
 
+
   return (
-    <html
-      lang={typedLocale}
-      dir={localeDirection[typedLocale]}
-    >
-      <body>
-        <SiteHeader locale={typedLocale} />
-        <main>{children}</main>
-      </body>
-    </html>
+    <div dir={localeDirection[typedLocale]}>
+
+      <SiteHeader locale={typedLocale} />
+
+      <main>
+        {children}
+      </main>
+
+    </div>
   );
 }

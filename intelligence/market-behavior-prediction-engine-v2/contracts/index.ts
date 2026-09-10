@@ -1,0 +1,3 @@
+
+export * from "./prediction.contracts";
+

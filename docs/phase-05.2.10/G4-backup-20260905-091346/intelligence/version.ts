@@ -1,0 +1,7 @@
+export const MELKISM_INTELLIGENCE_VERSION =
+"37.9.0-R1";
+
+
+export const MELKISM_INTELLIGENCE_STATUS =
+"locked";
+

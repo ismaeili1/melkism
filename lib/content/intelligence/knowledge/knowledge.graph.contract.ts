@@ -1,82 +1,108 @@
 /**
  * MELKISM Knowledge Graph Contract
  *
- * v0.4.0
- *
- * Defines semantic relationships
- * between content entities.
+ * v0.8.0
  */
 
 
 import type {
- KnowledgeRelationshipType,
-} from "./knowledge.relationship.types";
+ KnowledgeEntityContract
+} from "./contracts/knowledge.entity.contract";
+
+
+import type {
+ KnowledgeRelationship,
+ KnowledgeRelationshipType
+} from "./contracts/knowledge.relation.contract";
+
+
+export type {
+ KnowledgeRelationship,
+ KnowledgeRelationshipType
+};
 
 
 
-export type KnowledgeNode = {
+export interface KnowledgeGraphContract {
 
+
+ addEntity(
+  entity:
+   KnowledgeEntityContract
+ ):
+  void;
+
+
+
+ removeEntity(
+  id:
+   string
+ ):
+  void;
+
+
+
+ addRelationship(
+  relationship:
+   KnowledgeRelationship
+ ):
+  void;
+
+
+
+ findRelationships(
+  entityId:
+   string
+ ):
+  readonly KnowledgeRelationship[];
+
+
+
+ getNeighbors(
+  entityId:
+   string
+ ):
+  readonly KnowledgeEntityContract[];
+
+
+}
+
+
+/**
+ * Compatibility Node Contract
+ *
+ * Used by Knowledge Graph Persistence layer.
+ */
+
+/**
+ * MELKISM Knowledge Graph Node Contract
+ *
+ * Compatibility contract for
+ * persistence and integration layers.
+ */
+
+export interface KnowledgeNode {
 
  id:
- string;
-
+  string;
 
 
  entityId:
- string;
+  string;
 
 
-};
+ entityType?: string;
 
 
-
-export type KnowledgeRelationship = {
-
-
- id:
- string;
+ label?:
+  string;
 
 
-
- from:
- string;
-
-
-
- to:
- string;
-
-
-
- type:
- KnowledgeRelationshipType;
-
-
-
- weight?:
- number;
-
+ type?:
+  string;
 
 
  metadata?:
- Record<string, unknown>;
+  Record<string, unknown>;
 
-
-
-};
-
-
-
-export type KnowledgeGraph = {
-
-
- nodes:
- readonly KnowledgeNode[];
-
-
-
- relationships:
- readonly KnowledgeRelationship[];
-
-
-};
+}

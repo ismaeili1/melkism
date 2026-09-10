@@ -1,0 +1,1 @@
+export { SearchIntent } from "./SearchIntent";

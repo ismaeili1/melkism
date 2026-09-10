@@ -1,0 +1,27 @@
+
+import type {
+
+GovernanceOptimizationEvolutionAdaptiveOptimizationV2InputContract,
+GovernanceOptimizationEvolutionAdaptiveOptimizationV2RecordContract
+
+} from "../contracts";
+
+
+export interface GovernanceOptimizationEvolutionAdaptiveOptimizationV2Context {
+
+request:GovernanceOptimizationEvolutionAdaptiveOptimizationV2InputContract;
+
+history:GovernanceOptimizationEvolutionAdaptiveOptimizationV2RecordContract[];
+
+}
+
+
+
+export interface GovernanceOptimizationEvolutionAdaptiveOptimizationV2Result {
+
+record:GovernanceOptimizationEvolutionAdaptiveOptimizationV2RecordContract;
+
+executionTime:number;
+
+}
+

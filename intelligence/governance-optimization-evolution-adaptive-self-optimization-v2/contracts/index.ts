@@ -1,0 +1,9 @@
+
+export type {
+
+GovernanceOptimizationEvolutionAdaptiveSelfOptimizationV2InputContract,
+GovernanceOptimizationEvolutionAdaptiveSelfOptimizationV2RecordContract,
+GovernanceOptimizationEvolutionAdaptiveSelfOptimizationV2EvaluationContract
+
+} from "./governance-optimization-evolution-adaptive-self-optimization.v2.contracts";
+

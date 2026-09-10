@@ -1,0 +1,8 @@
+
+export {
+
+processIntelligenceCloudCore
+
+} from "./processor";
+
+

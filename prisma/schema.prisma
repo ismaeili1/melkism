@@ -1,0 +1,412 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ContentStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum ContentKind {
+  ARTICLE
+  NEWS
+  REPORT
+  RESEARCH
+  DATA
+  MARKET
+  ARCHITECTURE
+}
+
+enum SourceType {
+  ORGANIZATION
+  PUBLICATION
+  WEBSITE
+  DATASET
+  RESEARCH
+  GOVERNMENT
+  ACADEMIC
+  EXPERT
+}
+
+enum ProvenanceType {
+  ORIGINAL
+  DERIVED
+  TRANSLATED
+  AGGREGATED
+  INFERRED
+}
+
+enum TaxonomyKind {
+  TOPIC
+  CATEGORY
+  REGION
+  TAG
+  SECTOR
+}
+
+enum MediaKind {
+  IMAGE
+  VIDEO
+  AUDIO
+  DOCUMENT
+  OTHER
+}
+
+enum KnowledgeNodeType {
+  CONCEPT
+  ENTITY
+  LOCATION
+  PROPERTY
+  ORGANIZATION
+  PERSON
+  METRIC
+  TOPIC
+}
+
+enum KnowledgeRelationType {
+  RELATED_TO
+  PART_OF
+  LOCATED_IN
+  DERIVED_FROM
+  SUPPORTS
+  CONTRADICTS
+  REFERENCES
+}
+
+enum IntelligenceRecordType {
+  MARKET
+  ARCHITECTURE
+  CONTENT
+  URBAN
+  INVESTMENT
+  RISK
+  TREND
+  FORECAST
+}
+
+enum UserRole {
+  USER
+  EDITOR
+  ANALYST
+  MODERATOR
+  ADMIN
+  SUPERADMIN
+}
+model Locale {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  direction String
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  contents Content[]
+
+  @@index([isActive])
+  @@map("locales")
+}
+
+model Country {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  cities City[]
+
+  @@map("countries")
+}
+
+model City {
+  id        String   @id @default(cuid())
+  countryId String
+  code      String?
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  country Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+
+  @@index([countryId])
+  @@index([name])
+  @@map("cities")
+}
+
+model User {
+  id                String   @id @default(cuid())
+  email             String   @unique
+  displayName       String?
+  passwordHash       String?
+  emailVerifiedAt    DateTime?
+  lastLoginAt        DateTime?
+  role        UserRole @default(USER)
+  isActive          Boolean  @default(true)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  authoredContents Content[]
+  preferences      UserPreference[]
+
+  @@index([isActive])
+  @@map("users")
+}
+
+model UserPreference {
+  id        String   @id @default(cuid())
+  userId    String
+  key       String
+  value     Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, key])
+  @@index([userId])
+  @@map("user_preferences")
+}
+
+model Source {
+  id          String       @id @default(cuid())
+  name        String
+  type        SourceType
+  url         String?
+  publisher   String?
+  description String?
+  isActive    Boolean      @default(true)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  references  SourceReference[]
+  contents    ContentSource[]
+  provenances Provenance[]
+
+  @@index([type])
+  @@index([isActive])
+  @@map("sources")
+}
+
+model SourceReference {
+  id         String    @id @default(cuid())
+  sourceId   String
+  url        String?
+  title      String?
+  externalId String?
+  capturedAt DateTime?
+  metadata   Json?
+  createdAt  DateTime  @default(now())
+
+  source Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@index([sourceId])
+  @@map("source_references")
+}
+
+model Content {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  title       String
+  summary     String?
+  body        String?
+  kind        ContentKind
+  status      ContentStatus @default(DRAFT)
+  localeId    String
+  authorId    String?
+  publishedAt DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  locale      Locale          @relation(fields: [localeId], references: [id], onDelete: Restrict)
+  author      User?           @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  revisions   ContentRevision[]
+  sources     ContentSource[]
+  provenances Provenance[]
+  taxonomy    ContentTaxonomy[]
+  media       ContentMedia[]
+
+  @@index([kind])
+  @@index([status])
+  @@index([localeId])
+  @@index([authorId])
+  @@index([publishedAt])
+  @@map("contents")
+}
+
+model ContentRevision {
+  id        String   @id @default(cuid())
+  contentId String
+  version   Int
+  title     String
+  summary   String?
+  body      String?
+  createdAt DateTime @default(now())
+
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+
+  @@unique([contentId, version])
+  @@index([contentId])
+  @@map("content_revisions")
+}
+
+model ContentSource {
+  contentId String
+  sourceId  String
+  createdAt DateTime @default(now())
+
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  source  Source  @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@id([contentId, sourceId])
+  @@index([sourceId])
+  @@map("content_sources")
+}
+
+model Provenance {
+  id         String         @id @default(cuid())
+  contentId  String
+  sourceId   String?
+  type       ProvenanceType
+  confidence Decimal?       @db.Decimal(5, 4)
+  note       String?
+  createdAt  DateTime       @default(now())
+
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  source  Source?  @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@index([contentId])
+  @@index([sourceId])
+  @@index([type])
+  @@map("provenance")
+}
+
+model TaxonomyTerm {
+  id        String       @id @default(cuid())
+  key       String       @unique
+  label     String
+  kind      TaxonomyKind
+  parentId  String?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  parent   TaxonomyTerm?  @relation("TaxonomyHierarchy", fields: [parentId], references: [id], onDelete: SetNull)
+  children TaxonomyTerm[] @relation("TaxonomyHierarchy")
+  contents ContentTaxonomy[]
+
+  @@index([kind])
+  @@index([parentId])
+  @@map("taxonomy_terms")
+}
+
+model ContentTaxonomy {
+  contentId String
+  termId    String
+  createdAt DateTime @default(now())
+
+  content Content     @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  term    TaxonomyTerm @relation(fields: [termId], references: [id], onDelete: Cascade)
+
+  @@id([contentId, termId])
+  @@index([termId])
+  @@map("content_taxonomy")
+}
+
+model MediaAsset {
+  id         String    @id @default(cuid())
+  kind       MediaKind
+  storageKey String    @unique
+  url        String?
+  mimeType   String?
+  sizeBytes  BigInt?
+  width      Int?
+  height     Int?
+  metadata   Json?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  contents ContentMedia[]
+
+  @@index([kind])
+  @@map("media_assets")
+}
+
+model ContentMedia {
+  contentId String
+  mediaId   String
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+
+  content Content    @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  media   MediaAsset @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+
+  @@id([contentId, mediaId])
+  @@index([mediaId])
+  @@index([contentId, sortOrder])
+  @@map("content_media")
+}
+
+model KnowledgeNode {
+  id          String            @id @default(cuid())
+  key         String            @unique
+  label       String
+  nodeType    KnowledgeNodeType
+  description String?
+  metadata    Json?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  outgoing KnowledgeRelation[] @relation("KnowledgeRelationFrom")
+  incoming KnowledgeRelation[] @relation("KnowledgeRelationTo")
+
+  @@index([nodeType])
+  @@map("knowledge_nodes")
+}
+
+model KnowledgeRelation {
+  id         String                @id @default(cuid())
+  fromNodeId String
+  toNodeId   String
+  type       KnowledgeRelationType
+  weight     Decimal?              @db.Decimal(10, 6)
+  confidence Decimal?              @db.Decimal(5, 4)
+  metadata   Json?
+  createdAt  DateTime              @default(now())
+
+  fromNode KnowledgeNode @relation("KnowledgeRelationFrom", fields: [fromNodeId], references: [id], onDelete: Cascade)
+  toNode   KnowledgeNode @relation("KnowledgeRelationTo", fields: [toNodeId], references: [id], onDelete: Cascade)
+
+  @@unique([fromNodeId, toNodeId, type])
+  @@index([fromNodeId])
+  @@index([toNodeId])
+  @@index([type])
+  @@map("knowledge_relations")
+}
+
+model IntelligenceRecord {
+  id         String                 @id @default(cuid())
+  key        String                 @unique
+  type       IntelligenceRecordType
+  title      String
+  summary    String?
+  confidence Decimal?               @db.Decimal(5, 4)
+  payload    Json
+  recordedAt DateTime               @default(now())
+  createdAt  DateTime               @default(now())
+  updatedAt  DateTime               @updatedAt
+
+  @@index([type])
+  @@index([recordedAt])
+  @@map("intelligence_records")
+}
+
+
+
+

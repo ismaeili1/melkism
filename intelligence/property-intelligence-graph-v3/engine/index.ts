@@ -1,0 +1,9 @@
+
+export {
+
+processPropertyIntelligenceGraph
+
+} from "./processor";
+
+
+

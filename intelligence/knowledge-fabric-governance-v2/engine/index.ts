@@ -1,0 +1,8 @@
+
+export {
+
+processKnowledgeFabricGovernance
+
+} from "./processor";
+
+

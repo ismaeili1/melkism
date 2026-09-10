@@ -1,0 +1,5 @@
+
+docs\phase-05.2.10\G-runtime-audit\eslint-output.txt:4451:  20:2  error  Do not assign to the variable `module`. See: https://nextjs.org/docs/messages/no-assign-module-variable  @next/next/no-assign-module-variable
+docs\phase-05.2.10\G-runtime-audit\eslint-output.txt:4460:  15:1  error  Do not assign to the variable `module`. See: https://nextjs.org/docs/messages/no-assign-module-variable  @next/next/no-assign-module-variable
+docs\phase-05.2.10\G-runtime-audit\eslint-output.txt:4765:ظ£û 1807 problems (2 errors, 1805 warnings)
+

@@ -1,0 +1,18 @@
+:root {
+
+  --brand-primary: #6F8CC6;
+  --brand-accent: #E63C24;
+
+  --brand-white: #FFFFFF;
+  --brand-dark: #222222;
+
+  --brand-logo-primary:
+    url("/brand/melkism-logo.svg");
+
+  --brand-logo-mark:
+    url("/brand/melkism-mark.svg");
+
+  --brand-logo-type:
+    url("/brand/melkism-logotype.svg");
+
+}

@@ -1,0 +1,1 @@
+export const AGENTIC_PLATFORM='MELKISM';

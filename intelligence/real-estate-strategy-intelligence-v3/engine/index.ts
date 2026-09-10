@@ -1,0 +1,8 @@
+
+export {
+
+executeRealEstateStrategy
+
+} from "./processor";
+
+

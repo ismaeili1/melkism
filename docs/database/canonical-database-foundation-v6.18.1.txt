@@ -1,0 +1,29 @@
+MELKISM v6.18.1 - Canonical Database Foundation
+Finalized: 2026-09-09T18:47:47
+
+Prisma CLI: 7.9.0
+@prisma/client: 7.9.0
+Prisma config: PRESENT
+Schema: prisma/schema.prisma
+Database provider: postgresql
+content-domain.prisma: EMPTY / PRESERVED
+
+Prisma validate: PASS
+Prisma generate: PASS
+Generated client files: 26
+TypeScript: PASS
+ESLint: PASS
+ESLint errors: 0
+ESLint warnings: 18
+
+Migration executed: NO
+Database mutation executed: NO
+prisma db push executed: NO
+prisma migrate executed: NO
+MELKIST changes: NO
+
+QUALITY NOTE:
+ESLint completed successfully but warnings remain.
+Warnings are not treated as errors and require a separate code-quality cleanup phase.
+
+STATUS: PASS WITH ESLINT WARNINGS

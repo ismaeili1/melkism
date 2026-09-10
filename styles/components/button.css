@@ -1,0 +1,52 @@
+
+.melkism-button {
+
+font-family: Vazirmatn, sans-serif;
+
+border-radius:
+var(--radius-md);
+
+padding:
+12px 24px;
+
+transition:
+var(--transition-normal);
+
+cursor:pointer;
+
+}
+
+
+
+.melkism-button.primary {
+
+background:
+var(--color-primary);
+
+color:white;
+
+}
+
+
+
+.melkism-button.primary:hover {
+
+transform:
+translateY(-2px);
+
+box-shadow:
+var(--shadow-md);
+
+}
+
+
+
+.melkism-button.accent {
+
+background:
+var(--color-accent);
+
+color:white;
+
+}
+
