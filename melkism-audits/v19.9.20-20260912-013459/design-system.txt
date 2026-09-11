@@ -1,0 +1,25 @@
+MELKISM DESIGN SYSTEM REVIEW
+
+
+Tokens:
+
+- Colors
+- Typography
+- Spacing
+- Responsive
+- Interaction
+
+
+Brand:
+
+Primary:
+#6699FF
+
+
+Background:
+#FFFFFF
+
+
+Style:
+
+Minimal Professional Intelligence Platform

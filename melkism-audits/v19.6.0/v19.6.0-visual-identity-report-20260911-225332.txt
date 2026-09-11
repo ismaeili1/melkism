@@ -1,0 +1,6 @@
+
+MELKISM v19.6.0
+Visual Identity & Canonical UI Reconstruction
+Timestamp: 20260911-225332
+ProjectRoot: C:\Projects\melkism
+ReferenceRoot: C:\Projects\melkist

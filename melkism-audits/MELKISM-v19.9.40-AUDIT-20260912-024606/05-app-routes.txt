@@ -1,0 +1,3833 @@
+Folder PATH listing
+Volume serial number is 000000DE 2AEF:3CBC
+C:\PROJECTS\MELKISM\APP
+|   favicon.ico
+|   globals.css
+|   layout.tsx
+|   page.module.css
+|   page.tsx
+|   robots.ts
+|   sitemap.ts
+|   
++---api
+|   +---admin
+|   |   \---content
+|   |       |   route.ts
+|   |       |   
+|   |       +---publish
+|   |       |       route.ts
+|   |       |       
+|   |       +---review
+|   |       |       route.ts
+|   |       |       
+|   |       \---translation
+|   |               route.ts
+|   |               
+|   +---agent-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---collaboration
+|   |   |       route.ts
+|   |   |       
+|   |   +---learning
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---messages
+|   |   |       route.ts
+|   |   |       
+|   |   +---orchestration
+|   |   |       route.ts
+|   |   |       
+|   |   \---tasks
+|   |           route.ts
+|   |           
+|   +---agentic-ai
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---communication
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---orchestration
+|   |   |       route.ts
+|   |   |       
+|   |   +---plans
+|   |   |       route.ts
+|   |   |       
+|   |   +---tasks
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflows
+|   |           route.ts
+|   |           
+|   +---ai
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---analyze
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---automation
+|   |   |       route.ts
+|   |   |       
+|   |   +---chat
+|   |   |       route.ts
+|   |   |       
+|   |   +---context
+|   |   |       route.ts
+|   |   |       
+|   |   +---decision
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---document
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---models
+|   |   |       route.ts
+|   |   |       
+|   |   +---predict
+|   |   |       route.ts
+|   |   |       
+|   |   +---prediction
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---prompts
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommend
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendation
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---search
+|   |   |       route.ts
+|   |   |       
+|   |   +---semantic
+|   |   |       route.ts
+|   |   |       
+|   |   +---spatial
+|   |   |       route.ts
+|   |   |       
+|   |   +---text
+|   |   |       route.ts
+|   |   |       
+|   |   +---vision
+|   |   |       route.ts
+|   |   |       
+|   |   \---voice
+|   |           route.ts
+|   |           
+|   +---ai-agents
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---automation
+|   |   |       route.ts
+|   |   |       
+|   |   +---collaboration
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---execution
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---messages
+|   |   |       route.ts
+|   |   |       
+|   |   +---orchestration
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---tasks
+|   |   |       route.ts
+|   |   |       
+|   |   +---tools
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflows
+|   |           route.ts
+|   |           
+|   +---ai-cloud
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---cloud
+|   |   |       route.ts
+|   |   |       
+|   |   +---clusters
+|   |   |       route.ts
+|   |   |       
+|   |   +---compute
+|   |   |       route.ts
+|   |   |       
+|   |   +---deployments
+|   |   |       route.ts
+|   |   |       
+|   |   +---edge
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---nodes
+|   |   |       route.ts
+|   |   |       
+|   |   \---scaling
+|   |           route.ts
+|   |           
+|   +---ai-copilot
+|   |   |   route.ts
+|   |   |   
+|   |   +---actions
+|   |   |       route.ts
+|   |   |       
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---conversations
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---feedback
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   \---tasks
+|   |           route.ts
+|   |           
+|   +---ai-ecosystem
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---developers
+|   |   |       route.ts
+|   |   |       
+|   |   +---extensions
+|   |   |       route.ts
+|   |   |       
+|   |   +---integrations
+|   |   |       route.ts
+|   |   |       
+|   |   +---marketplace
+|   |   |       route.ts
+|   |   |       
+|   |   +---packages
+|   |   |       route.ts
+|   |   |       
+|   |   +---permissions
+|   |   |       route.ts
+|   |   |       
+|   |   \---plugins
+|   |           route.ts
+|   |           
+|   +---ai-governance
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---audits
+|   |   |       route.ts
+|   |   |       
+|   |   +---compliance
+|   |   |       route.ts
+|   |   |       
+|   |   +---ethics
+|   |   |       route.ts
+|   |   |       
+|   |   +---explanations
+|   |   |       route.ts
+|   |   |       
+|   |   +---health
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---optimization
+|   |   |       route.ts
+|   |   |       
+|   |   +---permissions
+|   |   |       route.ts
+|   |   |       
+|   |   +---policies
+|   |   |       route.ts
+|   |   |       
+|   |   +---privacy
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   +---rules
+|   |   |       route.ts
+|   |   |       
+|   |   +---safety
+|   |   |       route.ts
+|   |   |       
+|   |   +---security
+|   |   |       route.ts
+|   |   |       
+|   |   +---traces
+|   |   |       route.ts
+|   |   |       
+|   |   +---transparency
+|   |   |       route.ts
+|   |   |       
+|   |   \---trust
+|   |           route.ts
+|   |           
+|   +---ai-orchestration
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---approvals
+|   |   |       route.ts
+|   |   |       
+|   |   +---audit
+|   |   |       route.ts
+|   |   |       
+|   |   +---automation
+|   |   |       route.ts
+|   |   |       
+|   |   +---command
+|   |   |       route.ts
+|   |   |       
+|   |   +---context
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---execute
+|   |   |       route.ts
+|   |   |       
+|   |   +---execution
+|   |   |       route.ts
+|   |   |       
+|   |   +---executions
+|   |   |       route.ts
+|   |   |       
+|   |   +---governance
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---models
+|   |   |       route.ts
+|   |   |       
+|   |   +---permissions
+|   |   |       route.ts
+|   |   |       
+|   |   +---pipeline
+|   |   |       route.ts
+|   |   |       
+|   |   +---planning
+|   |   |       route.ts
+|   |   |       
+|   |   +---prompts
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---response
+|   |   |       route.ts
+|   |   |       
+|   |   +---routing
+|   |   |       route.ts
+|   |   |       
+|   |   +---tasks
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflows
+|   |           route.ts
+|   |           
+|   +---ai-reasoning
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---inference
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   \---scenarios
+|   |           route.ts
+|   |           
+|   +---ai-research
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---authors
+|   |   |       route.ts
+|   |   |       
+|   |   +---citations
+|   |   |       route.ts
+|   |   |       
+|   |   +---discovery
+|   |   |       route.ts
+|   |   |       
+|   |   +---evidence
+|   |   |       route.ts
+|   |   |       
+|   |   +---evolution
+|   |   |       route.ts
+|   |   |       
+|   |   +---experiments
+|   |   |       route.ts
+|   |   |       
+|   |   +---hypotheses
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---learning
+|   |   |       route.ts
+|   |   |       
+|   |   +---papers
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   +---research
+|   |   |       route.ts
+|   |   |       
+|   |   +---sources
+|   |   |       route.ts
+|   |   |       
+|   |   \---synthesis
+|   |           route.ts
+|   |           
+|   +---ai-search
+|   |   |   route.ts
+|   |   |   
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---discovery
+|   |   |       route.ts
+|   |   |       
+|   |   +---filters
+|   |   |       route.ts
+|   |   |       
+|   |   +---location
+|   |   |       route.ts
+|   |   |       
+|   |   +---personalization
+|   |   |       route.ts
+|   |   |       
+|   |   +---query
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   \---semantic
+|   |           route.ts
+|   |           
+|   +---ai-search-intelligence
+|   |       route.ts
+|   |       
+|   +---analytics
+|   |   |   route.ts
+|   |   |   
+|   |   +---dashboards
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecasts
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---kpi
+|   |   |       route.ts
+|   |   |       
+|   |   +---market
+|   |   |       route.ts
+|   |   |       
+|   |   +---metrics
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   \---visualization
+|   |           route.ts
+|   |           
+|   +---api-ecosystem
+|   |   |   route.ts
+|   |   |   
+|   |   +---applications
+|   |   |       route.ts
+|   |   |       
+|   |   +---consumers
+|   |   |       route.ts
+|   |   |       
+|   |   +---endpoints
+|   |   |       route.ts
+|   |   |       
+|   |   +---governance
+|   |   |       route.ts
+|   |   |       
+|   |   +---health
+|   |   |       route.ts
+|   |   |       
+|   |   +---keys
+|   |   |       route.ts
+|   |   |       
+|   |   +---quotas
+|   |   |       route.ts
+|   |   |       
+|   |   +---rate-limits
+|   |   |       route.ts
+|   |   |       
+|   |   +---registry
+|   |   |       route.ts
+|   |   |       
+|   |   +---subscriptions
+|   |   |       route.ts
+|   |   |       
+|   |   +---usage
+|   |   |       route.ts
+|   |   |       
+|   |   \---webhooks
+|   |           route.ts
+|   |           
+|   +---architecture
+|   |   |   route.ts
+|   |   |   
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---architects
+|   |   |       route.ts
+|   |   |       
+|   |   +---firms
+|   |   |       route.ts
+|   |   |       
+|   |   +---materials
+|   |   |       route.ts
+|   |   |       
+|   |   +---projects
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   \---styles
+|   |           route.ts
+|   |           
+|   +---architecture-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---architects
+|   |   |       route.ts
+|   |   |       
+|   |   +---bim
+|   |   |       route.ts
+|   |   |       
+|   |   +---buildings
+|   |   |       route.ts
+|   |   |       
+|   |   +---design
+|   |   |       route.ts
+|   |   |       
+|   |   +---generation
+|   |   |       route.ts
+|   |   |       
+|   |   +---performance
+|   |   |       route.ts
+|   |   |       
+|   |   +---projects
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---sites
+|   |   |       route.ts
+|   |   |       
+|   |   +---styles
+|   |   |       route.ts
+|   |   |       
+|   |   +---sustainability
+|   |   |       route.ts
+|   |   |       
+|   |   \---urban
+|   |           route.ts
+|   |           
+|   +---auth
+|   |   |   route.ts
+|   |   |   
+|   |   +---forgot-password
+|   |   |       route.ts
+|   |   |       
+|   |   +---login
+|   |   |       route.ts
+|   |   |       
+|   |   +---logout
+|   |   |       route.ts
+|   |   |       
+|   |   +---register
+|   |   |       route.ts
+|   |   |       
+|   |   +---reset-password
+|   |   |       route.ts
+|   |   |       
+|   |   +---session
+|   |   |       route.ts
+|   |   |       
+|   |   +---social
+|   |   |       route.ts
+|   |   |       
+|   |   +---verify
+|   |   |       route.ts
+|   |   |       
+|   |   \---[...nextauth]
+|   |           route.ts
+|   |           
+|   +---autonomous-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---actions
+|   |   |       route.ts
+|   |   |       
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---execution
+|   |   |       route.ts
+|   |   |       
+|   |   +---goals
+|   |   |       route.ts
+|   |   |       
+|   |   +---learning
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---plans
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---tasks
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflows
+|   |           route.ts
+|   |           
+|   +---business-subscription
+|   |       route.ts
+|   |       
+|   +---cities
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai-insight
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---architecture
+|   |   |       route.ts
+|   |   |       
+|   |   +---comparison
+|   |   |       route.ts
+|   |   |       
+|   |   +---indicators
+|   |   |       route.ts
+|   |   |       
+|   |   +---investment
+|   |   |       route.ts
+|   |   |       
+|   |   +---market
+|   |   |       route.ts
+|   |   |       
+|   |   +---profile
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   \---search
+|   |           route.ts
+|   |           
+|   +---cities-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---cities
+|   |   |       route.ts
+|   |   |       
+|   |   +---countries
+|   |   |       route.ts
+|   |   |       
+|   |   +---indicators
+|   |   |       route.ts
+|   |   |       
+|   |   +---infrastructure
+|   |   |       route.ts
+|   |   |       
+|   |   +---overview
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   \---sustainability
+|   |           route.ts
+|   |           
+|   +---city-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---ai-assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---cities
+|   |   |       route.ts
+|   |   |       
+|   |   +---growth
+|   |   |       route.ts
+|   |   |       
+|   |   +---infrastructure
+|   |   |       route.ts
+|   |   |       
+|   |   +---livability
+|   |   |       route.ts
+|   |   |       
+|   |   +---market
+|   |   |       route.ts
+|   |   |       
+|   |   +---neighborhoods
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   \---urban-data
+|   |           route.ts
+|   |           
+|   +---climate-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---adaptation
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---buildings
+|   |   |       route.ts
+|   |   |       
+|   |   +---carbon
+|   |   |       route.ts
+|   |   |       
+|   |   +---climate
+|   |   |       route.ts
+|   |   |       
+|   |   +---energy
+|   |   |       route.ts
+|   |   |       
+|   |   +---mitigation
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---resilience
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   \---sustainability
+|   |           route.ts
+|   |           
+|   +---cloud
+|   |   |   route.ts
+|   |   |   
+|   |   +---backup
+|   |   |       route.ts
+|   |   |       
+|   |   +---deployment
+|   |   |       route.ts
+|   |   |       
+|   |   +---environments
+|   |   |       route.ts
+|   |   |       
+|   |   +---health
+|   |   |       route.ts
+|   |   |       
+|   |   +---logs
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   \---releases
+|   |           route.ts
+|   |           
+|   +---collaboration
+|   |   |   route.ts
+|   |   |   
+|   |   +---activities
+|   |   |       route.ts
+|   |   |       
+|   |   +---appointments
+|   |   |       route.ts
+|   |   |       
+|   |   +---automation
+|   |   |       route.ts
+|   |   |       
+|   |   +---conversations
+|   |   |       route.ts
+|   |   |       
+|   |   +---messages
+|   |   |       route.ts
+|   |   |       
+|   |   +---notifications
+|   |   |       route.ts
+|   |   |       
+|   |   +---teams
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflows
+|   |           route.ts
+|   |           
+|   +---communication
+|   |   |   route.ts
+|   |   |   
+|   |   +---appointments
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---conversations
+|   |   |       route.ts
+|   |   |       
+|   |   +---inquiries
+|   |   |       route.ts
+|   |   |       
+|   |   +---interactions
+|   |   |       route.ts
+|   |   |       
+|   |   +---messages
+|   |   |       route.ts
+|   |   |       
+|   |   +---negotiations
+|   |   |       route.ts
+|   |   |       
+|   |   \---notifications
+|   |           route.ts
+|   |           
+|   +---communication-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---automation
+|   |   |       route.ts
+|   |   |       
+|   |   +---channels
+|   |   |       route.ts
+|   |   |       
+|   |   +---collaboration
+|   |   |       route.ts
+|   |   |       
+|   |   +---conversations
+|   |   |       route.ts
+|   |   |       
+|   |   +---messages
+|   |   |       route.ts
+|   |   |       
+|   |   +---notifications
+|   |   |       route.ts
+|   |   |       
+|   |   +---routing
+|   |   |       route.ts
+|   |   |       
+|   |   \---sentiment
+|   |           route.ts
+|   |           
+|   +---construction-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---cost
+|   |   |       route.ts
+|   |   |       
+|   |   +---materials
+|   |   |       route.ts
+|   |   |       
+|   |   +---progress
+|   |   |       route.ts
+|   |   |       
+|   |   +---projects
+|   |   |       route.ts
+|   |   |       
+|   |   +---quality
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---risk
+|   |   |       route.ts
+|   |   |       
+|   |   \---schedule
+|   |           route.ts
+|   |           
+|   +---content
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai-summary
+|   |   |       route.ts
+|   |   |       
+|   |   +---articles
+|   |   |       route.ts
+|   |   |       
+|   |   +---classify
+|   |   |       route.ts
+|   |   |       
+|   |   +---news
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   +---seo
+|   |   |       route.ts
+|   |   |       
+|   |   \---translate
+|   |           route.ts
+|   |           
+|   +---content-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai-assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---analyze
+|   |   |       route.ts
+|   |   |       
+|   |   +---articles
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---citations
+|   |   |       route.ts
+|   |   |       
+|   |   +---classification
+|   |   |       route.ts
+|   |   |       
+|   |   +---contents
+|   |   |       route.ts
+|   |   |       
+|   |   +---editorial
+|   |   |       route.ts
+|   |   |       
+|   |   +---knowledge
+|   |   |       route.ts
+|   |   |       
+|   |   +---knowledge-links
+|   |   |       route.ts
+|   |   |       
+|   |   +---localization
+|   |   |       route.ts
+|   |   |       
+|   |   +---publications
+|   |   |       route.ts
+|   |   |       
+|   |   +---publish
+|   |   |       route.ts
+|   |   |       
+|   |   +---publishing
+|   |   |       route.ts
+|   |   |       
+|   |   +---quality
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---relations
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   +---research
+|   |   |       route.ts
+|   |   |       
+|   |   +---semantic
+|   |   |       route.ts
+|   |   |       
+|   |   +---seo
+|   |   |       route.ts
+|   |   |       
+|   |   +---sources
+|   |   |       route.ts
+|   |   |       
+|   |   +---summary
+|   |   |       route.ts
+|   |   |       
+|   |   +---taxonomy
+|   |   |       route.ts
+|   |   |       
+|   |   +---translate
+|   |   |       route.ts
+|   |   |       
+|   |   +---translation
+|   |   |       route.ts
+|   |   |       
+|   |   \---translations
+|   |           route.ts
+|   |           
+|   +---content-platform
+|   |   |   route.ts
+|   |   |   
+|   |   +---articles
+|   |   |       route.ts
+|   |   |       
+|   |   +---authors
+|   |   |       route.ts
+|   |   |       
+|   |   +---editorial
+|   |   |       route.ts
+|   |   |       
+|   |   +---knowledge
+|   |   |       route.ts
+|   |   |       
+|   |   +---media
+|   |   |       route.ts
+|   |   |       
+|   |   +---publishing
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   \---research
+|   |           route.ts
+|   |           
+|   +---continuous-learning
+|   |   |   route.ts
+|   |   |   
+|   |   +---adaptation
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---evaluation
+|   |   |       route.ts
+|   |   |       
+|   |   +---evolution
+|   |   |       route.ts
+|   |   |       
+|   |   +---experiences
+|   |   |       route.ts
+|   |   |       
+|   |   +---feedback
+|   |   |       route.ts
+|   |   |       
+|   |   +---models
+|   |   |       route.ts
+|   |   |       
+|   |   \---optimization
+|   |           route.ts
+|   |           
+|   +---conversational-ai
+|   |   |   route.ts
+|   |   |   
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---chat
+|   |   |       route.ts
+|   |   |       
+|   |   +---context
+|   |   |       route.ts
+|   |   |       
+|   |   +---intents
+|   |   |       route.ts
+|   |   |       
+|   |   +---languages
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---messages
+|   |   |       route.ts
+|   |   |       
+|   |   \---voice
+|   |           route.ts
+|   |           
+|   +---dashboard
+|   |   |   route.ts
+|   |   |   
+|   |   +---activity
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   \---preferences
+|   |           route.ts
+|   |           
+|   +---data-exchange
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---apis
+|   |   |       route.ts
+|   |   |       
+|   |   +---contracts
+|   |   |       route.ts
+|   |   |       
+|   |   +---datasets
+|   |   |       route.ts
+|   |   |       
+|   |   +---delivery
+|   |   |       route.ts
+|   |   |       
+|   |   +---intelligence
+|   |   |       route.ts
+|   |   |       
+|   |   +---licenses
+|   |   |       route.ts
+|   |   |       
+|   |   +---providers
+|   |   |       route.ts
+|   |   |       
+|   |   \---quality
+|   |           route.ts
+|   |           
+|   +---data-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---business
+|   |   |       route.ts
+|   |   |       
+|   |   +---dashboards
+|   |   |       route.ts
+|   |   |       
+|   |   +---datasets
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---executive
+|   |   |       route.ts
+|   |   |       
+|   |   +---geographic
+|   |   |       route.ts
+|   |   |       
+|   |   +---indicators
+|   |   |       route.ts
+|   |   |       
+|   |   +---ingestion
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---kpis
+|   |   |       route.ts
+|   |   |       
+|   |   +---market
+|   |   |       route.ts
+|   |   |       
+|   |   +---metrics
+|   |   |       route.ts
+|   |   |       
+|   |   +---pipelines
+|   |   |       route.ts
+|   |   |       
+|   |   +---quality
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   +---sources
+|   |   |       route.ts
+|   |   |       
+|   |   +---users
+|   |   |       route.ts
+|   |   |       
+|   |   \---warehouse
+|   |           route.ts
+|   |           
+|   +---data-marketplace
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---apis
+|   |   |       route.ts
+|   |   |       
+|   |   +---datasets
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---knowledge
+|   |   |       route.ts
+|   |   |       
+|   |   +---products
+|   |   |       route.ts
+|   |   |       
+|   |   +---providers
+|   |   |       route.ts
+|   |   |       
+|   |   \---subscriptions
+|   |           route.ts
+|   |           
+|   +---data-platform
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---connectors
+|   |   |       route.ts
+|   |   |       
+|   |   +---datasets
+|   |   |       route.ts
+|   |   |       
+|   |   +---lake
+|   |   |       route.ts
+|   |   |       
+|   |   +---pipeline
+|   |   |       route.ts
+|   |   |       
+|   |   +---quality
+|   |   |       route.ts
+|   |   |       
+|   |   +---sources
+|   |   |       route.ts
+|   |   |       
+|   |   \---warehouse
+|   |           route.ts
+|   |           
+|   +---database-production-readiness
+|   |       route.ts
+|   |       
+|   +---decision-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---criteria
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---executives
+|   |   |       route.ts
+|   |   |       
+|   |   +---explanations
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---opportunities
+|   |   |       route.ts
+|   |   |       
+|   |   +---planning
+|   |   |       route.ts
+|   |   |       
+|   |   +---rankings
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   +---scenarios
+|   |   |       route.ts
+|   |   |       
+|   |   +---scores
+|   |   |       route.ts
+|   |   |       
+|   |   +---simulations
+|   |   |       route.ts
+|   |   |       
+|   |   \---strategies
+|   |           route.ts
+|   |           
+|   +---deployment-readiness
+|   |       route.ts
+|   |       
+|   +---digital-twin
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---assets
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---building
+|   |   |       route.ts
+|   |   |       
+|   |   +---buildings
+|   |   |       route.ts
+|   |   |       
+|   |   +---cities
+|   |   |       route.ts
+|   |   |       
+|   |   +---environment
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecasts
+|   |   |       route.ts
+|   |   |       
+|   |   +---future-city
+|   |   |       route.ts
+|   |   |       
+|   |   +---lifecycle
+|   |   |       route.ts
+|   |   |       
+|   |   +---markets
+|   |   |       route.ts
+|   |   |       
+|   |   +---models
+|   |   |       route.ts
+|   |   |       
+|   |   +---optimization
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---property
+|   |   |       route.ts
+|   |   |       
+|   |   +---scenarios
+|   |   |       route.ts
+|   |   |       
+|   |   +---simulation
+|   |   |       route.ts
+|   |   |       
+|   |   +---simulations
+|   |   |       route.ts
+|   |   |       
+|   |   +---spatial
+|   |   |       route.ts
+|   |   |       
+|   |   +---synchronization
+|   |   |       route.ts
+|   |   |       
+|   |   +---twins
+|   |   |       route.ts
+|   |   |       
+|   |   \---urban
+|   |           route.ts
+|   |           
+|   +---digital-twin-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---buildings
+|   |   |       route.ts
+|   |   |       
+|   |   +---cities
+|   |   |       route.ts
+|   |   |       
+|   |   +---prediction
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---scenarios
+|   |   |       route.ts
+|   |   |       
+|   |   +---sensors
+|   |   |       route.ts
+|   |   |       
+|   |   +---simulation
+|   |   |       route.ts
+|   |   |       
+|   |   +---simulations
+|   |   |       route.ts
+|   |   |       
+|   |   +---telemetry
+|   |   |       route.ts
+|   |   |       
+|   |   +---twins
+|   |   |       route.ts
+|   |   |       
+|   |   \---urban
+|   |           route.ts
+|   |           
+|   +---discovery
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---filters
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---search
+|   |   |       route.ts
+|   |   |       
+|   |   \---semantic
+|   |           route.ts
+|   |           
+|   +---enterprise-governance
+|   |   |   route.ts
+|   |   |   
+|   |   +---compliance
+|   |   |       route.ts
+|   |   |       
+|   |   +---data
+|   |   |       route.ts
+|   |   |       
+|   |   +---decisions
+|   |   |       route.ts
+|   |   |       
+|   |   +---organizations
+|   |   |       route.ts
+|   |   |       
+|   |   +---policies
+|   |   |       route.ts
+|   |   |       
+|   |   +---risk
+|   |   |       route.ts
+|   |   |       
+|   |   +---roles
+|   |   |       route.ts
+|   |   |       
+|   |   \---tenants
+|   |           route.ts
+|   |           
+|   +---enterprise-platform
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---members
+|   |   |       route.ts
+|   |   |       
+|   |   +---organizations
+|   |   |       route.ts
+|   |   |       
+|   |   +---permissions
+|   |   |       route.ts
+|   |   |       
+|   |   +---roles
+|   |   |       route.ts
+|   |   |       
+|   |   +---services
+|   |   |       route.ts
+|   |   |       
+|   |   +---teams
+|   |   |       route.ts
+|   |   |       
+|   |   \---workspaces
+|   |           route.ts
+|   |           
+|   +---experience
+|   |   |   route.ts
+|   |   |   
+|   |   +---adaptive
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---context
+|   |   |       route.ts
+|   |   |       
+|   |   +---interaction
+|   |   |       route.ts
+|   |   |       
+|   |   +---journey
+|   |   |       route.ts
+|   |   |       
+|   |   +---personalization
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   \---search
+|   |           route.ts
+|   |           
+|   +---financial-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecasts
+|   |   |       route.ts
+|   |   |       
+|   |   +---investments
+|   |   |       route.ts
+|   |   |       
+|   |   +---portfolios
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   +---roi
+|   |   |       route.ts
+|   |   |       
+|   |   +---simulations
+|   |   |       route.ts
+|   |   |       
+|   |   \---strategies
+|   |           route.ts
+|   |           
+|   +---geospatial
+|   |   |   route.ts
+|   |   |   
+|   |   +---cities
+|   |   |       route.ts
+|   |   |       
+|   |   +---climate
+|   |   |       route.ts
+|   |   |       
+|   |   +---environmental
+|   |   |       route.ts
+|   |   |       
+|   |   +---intelligence
+|   |   |       route.ts
+|   |   |       
+|   |   +---locations
+|   |   |       route.ts
+|   |   |       
+|   |   +---map
+|   |   |       route.ts
+|   |   |       
+|   |   +---spatial-analysis
+|   |   |       route.ts
+|   |   |       
+|   |   \---urban
+|   |           route.ts
+|   |           
+|   +---global-expansion
+|   |   |   route.ts
+|   |   |   
+|   |   +---countries
+|   |   |       route.ts
+|   |   |       
+|   |   +---coverage
+|   |   |       route.ts
+|   |   |       
+|   |   +---currencies
+|   |   |       route.ts
+|   |   |       
+|   |   +---jurisdictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---locales
+|   |   |       route.ts
+|   |   |       
+|   |   +---markets
+|   |   |       route.ts
+|   |   |       
+|   |   \---regions
+|   |           route.ts
+|   |           
+|   +---health
+|   |       route.ts
+|   |       
+|   +---infrastructure
+|   |   |   route.ts
+|   |   |   
+|   |   +---backups
+|   |   |       route.ts
+|   |   |       
+|   |   +---cloud
+|   |   |       route.ts
+|   |   |       
+|   |   +---deployments
+|   |   |       route.ts
+|   |   |       
+|   |   +---logs
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---operations
+|   |   |       route.ts
+|   |   |       
+|   |   +---performance
+|   |   |       route.ts
+|   |   |       
+|   |   \---security
+|   |           route.ts
+|   |           
+|   +---integration
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---apis
+|   |   |       route.ts
+|   |   |       
+|   |   +---connectors
+|   |   |       route.ts
+|   |   |       
+|   |   +---enterprise
+|   |   |       route.ts
+|   |   |       
+|   |   +---events
+|   |   |       route.ts
+|   |   |       
+|   |   +---exchange
+|   |   |       route.ts
+|   |   |       
+|   |   +---federation
+|   |   |       route.ts
+|   |   |       
+|   |   +---gateway
+|   |   |       route.ts
+|   |   |       
+|   |   +---messages
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---partners
+|   |   |       route.ts
+|   |   |       
+|   |   +---security
+|   |   |       route.ts
+|   |   |       
+|   |   +---services
+|   |   |       route.ts
+|   |   |       
+|   |   \---webhooks
+|   |           route.ts
+|   |           
+|   +---intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---decision
+|   |   |       route.ts
+|   |   |       
+|   |   +---health
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---orchestration
+|   |   |       route.ts
+|   |   |       
+|   |   +---platform
+|   |   |       route.ts
+|   |   |       
+|   |   +---query
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---semantic
+|   |   |       route.ts
+|   |   |       
+|   |   \---services
+|   |           route.ts
+|   |           
+|   +---intelligent-operations
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---automations
+|   |   |       route.ts
+|   |   |       
+|   |   +---events
+|   |   |       route.ts
+|   |   |       
+|   |   +---executions
+|   |   |       route.ts
+|   |   |       
+|   |   +---rules
+|   |   |       route.ts
+|   |   |       
+|   |   +---schedules
+|   |   |       route.ts
+|   |   |       
+|   |   +---tasks
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflows
+|   |           route.ts
+|   |           
+|   +---investment
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---opportunities
+|   |   |       route.ts
+|   |   |       
+|   |   +---portfolio
+|   |   |       route.ts
+|   |   |       
+|   |   +---risk
+|   |   |       route.ts
+|   |   |       
+|   |   +---roi
+|   |   |       route.ts
+|   |   |       
+|   |   \---strategy
+|   |           route.ts
+|   |           
+|   +---investment-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---allocation
+|   |   |       route.ts
+|   |   |       
+|   |   +---assets
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecast
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecasts
+|   |   |       route.ts
+|   |   |       
+|   |   +---investments
+|   |   |       route.ts
+|   |   |       
+|   |   +---investor
+|   |   |       route.ts
+|   |   |       
+|   |   +---investors
+|   |   |       route.ts
+|   |   |       
+|   |   +---opportunities
+|   |   |       route.ts
+|   |   |       
+|   |   +---portfolio
+|   |   |       route.ts
+|   |   |       
+|   |   +---portfolios
+|   |   |       route.ts
+|   |   |       
+|   |   +---prediction
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---risk
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   +---roi
+|   |   |       route.ts
+|   |   |       
+|   |   +---strategies
+|   |   |       route.ts
+|   |   |       
+|   |   \---strategy
+|   |           route.ts
+|   |           
+|   +---knowledge
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---discovery
+|   |   |       route.ts
+|   |   |       
+|   |   +---entities
+|   |   |       route.ts
+|   |   |       
+|   |   +---entity
+|   |   |       route.ts
+|   |   |       
+|   |   +---explore
+|   |   |       route.ts
+|   |   |       
+|   |   +---graph
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---ontology
+|   |   |       route.ts
+|   |   |       
+|   |   +---query
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---relation
+|   |   |       route.ts
+|   |   |       
+|   |   +---relations
+|   |   |       route.ts
+|   |   |       
+|   |   +---search
+|   |   |       route.ts
+|   |   |       
+|   |   +---semantic
+|   |   |       route.ts
+|   |   |       
+|   |   \---sources
+|   |           route.ts
+|   |           
+|   +---knowledge-fabric
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---concepts
+|   |   |       route.ts
+|   |   |       
+|   |   +---entities
+|   |   |       route.ts
+|   |   |       
+|   |   +---graph
+|   |   |       route.ts
+|   |   |       
+|   |   +---ontology
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---relations
+|   |   |       route.ts
+|   |   |       
+|   |   \---semantics
+|   |           route.ts
+|   |           
+|   +---knowledge-graph
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---architecture
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---city
+|   |   |       route.ts
+|   |   |       
+|   |   +---concepts
+|   |   |       route.ts
+|   |   |       
+|   |   +---context
+|   |   |       route.ts
+|   |   |       
+|   |   +---discovery
+|   |   |       route.ts
+|   |   |       
+|   |   +---entities
+|   |   |       route.ts
+|   |   |       
+|   |   +---fusion
+|   |   |       route.ts
+|   |   |       
+|   |   +---graph
+|   |   |       route.ts
+|   |   |       
+|   |   +---inference
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---investment
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---nodes
+|   |   |       route.ts
+|   |   |       
+|   |   +---ontology
+|   |   |       route.ts
+|   |   |       
+|   |   +---property
+|   |   |       route.ts
+|   |   |       
+|   |   +---query
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---relations
+|   |   |       route.ts
+|   |   |       
+|   |   +---relationships
+|   |   |       route.ts
+|   |   |       
+|   |   +---search
+|   |   |       route.ts
+|   |   |       
+|   |   \---semantic
+|   |           route.ts
+|   |           
+|   +---knowledge-graph-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---discovery
+|   |   |       route.ts
+|   |   |       
+|   |   +---entities
+|   |   |       route.ts
+|   |   |       
+|   |   +---inference
+|   |   |       route.ts
+|   |   |       
+|   |   +---ontology
+|   |   |       route.ts
+|   |   |       
+|   |   +---query
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---relationships
+|   |   |       route.ts
+|   |   |       
+|   |   \---semantic
+|   |           route.ts
+|   |           
+|   +---knowledge-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---concepts
+|   |   |       route.ts
+|   |   |       
+|   |   +---entities
+|   |   |       route.ts
+|   |   |       
+|   |   +---graph
+|   |   |       route.ts
+|   |   |       
+|   |   +---ontology
+|   |   |       route.ts
+|   |   |       
+|   |   +---reasoning
+|   |   |       route.ts
+|   |   |       
+|   |   +---relationships
+|   |   |       route.ts
+|   |   |       
+|   |   \---semantic-search
+|   |           route.ts
+|   |           
+|   +---localization-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---cultures
+|   |   |       route.ts
+|   |   |       
+|   |   +---currencies
+|   |   |       route.ts
+|   |   |       
+|   |   +---languages
+|   |   |       route.ts
+|   |   |       
+|   |   +---locales
+|   |   |       route.ts
+|   |   |       
+|   |   +---markets
+|   |   |       route.ts
+|   |   |       
+|   |   +---regions
+|   |   |       route.ts
+|   |   |       
+|   |   \---translations
+|   |           route.ts
+|   |           
+|   +---market
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecast
+|   |   |       route.ts
+|   |   |       
+|   |   +---investment
+|   |   |       route.ts
+|   |   |       
+|   |   +---overview
+|   |   |       route.ts
+|   |   |       
+|   |   +---prices
+|   |   |       route.ts
+|   |   |       
+|   |   +---reports
+|   |   |       route.ts
+|   |   |       
+|   |   \---trends
+|   |           route.ts
+|   |           
+|   +---market-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---ai-analyst
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---cycle
+|   |   |       route.ts
+|   |   |       
+|   |   +---cycles
+|   |   |       route.ts
+|   |   |       
+|   |   +---demand
+|   |   |       route.ts
+|   |   |       
+|   |   +---economics
+|   |   |       route.ts
+|   |   |       
+|   |   +---economy
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecast
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecasts
+|   |   |       route.ts
+|   |   |       
+|   |   +---heatmap
+|   |   |       route.ts
+|   |   |       
+|   |   +---indicators
+|   |   |       route.ts
+|   |   |       
+|   |   +---investment
+|   |   |       route.ts
+|   |   |       
+|   |   +---investments
+|   |   |       route.ts
+|   |   |       
+|   |   +---market
+|   |   |       route.ts
+|   |   |       
+|   |   +---markets
+|   |   |       route.ts
+|   |   |       
+|   |   +---opportunities
+|   |   |       route.ts
+|   |   |       
+|   |   +---prediction
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---prices
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   +---signals
+|   |   |       route.ts
+|   |   |       
+|   |   +---simulation
+|   |   |       route.ts
+|   |   |       
+|   |   +---streaming
+|   |   |       route.ts
+|   |   |       
+|   |   +---supply
+|   |   |       route.ts
+|   |   |       
+|   |   +---supply-demand
+|   |   |       route.ts
+|   |   |       
+|   |   +---trends
+|   |   |       route.ts
+|   |   |       
+|   |   +---valuation
+|   |   |       route.ts
+|   |   |       
+|   |   \---valuations
+|   |           route.ts
+|   |           
+|   +---marketplace
+|   |   |   route.ts
+|   |   |   
+|   |   +---agents
+|   |   |       route.ts
+|   |   |       
+|   |   +---ai-analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---ai-assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---buyer-intent
+|   |   |       route.ts
+|   |   |       
+|   |   +---buyers
+|   |   |       route.ts
+|   |   |       
+|   |   +---contracts
+|   |   |       route.ts
+|   |   |       
+|   |   +---documents
+|   |   |       route.ts
+|   |   |       
+|   |   +---favorites
+|   |   |       route.ts
+|   |   |       
+|   |   +---inquiries
+|   |   |       route.ts
+|   |   |       
+|   |   +---interactions
+|   |   |       route.ts
+|   |   |       
+|   |   +---listings
+|   |   |       route.ts
+|   |   |       
+|   |   +---matching
+|   |   |       route.ts
+|   |   |       
+|   |   +---media
+|   |   |       route.ts
+|   |   |       
+|   |   +---mortgage
+|   |   |       route.ts
+|   |   |       
+|   |   +---negotiation
+|   |   |       route.ts
+|   |   |       
+|   |   +---negotiations
+|   |   |       route.ts
+|   |   |       
+|   |   +---notifications
+|   |   |       route.ts
+|   |   |       
+|   |   +---offers
+|   |   |       route.ts
+|   |   |       
+|   |   +---orders
+|   |   |       route.ts
+|   |   |       
+|   |   +---payments
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---rental
+|   |   |       route.ts
+|   |   |       
+|   |   +---saved-searches
+|   |   |       route.ts
+|   |   |       
+|   |   +---search
+|   |   |       route.ts
+|   |   |       
+|   |   +---sellers
+|   |   |       route.ts
+|   |   |       
+|   |   +---services
+|   |   |       route.ts
+|   |   |       
+|   |   +---transactions
+|   |   |       route.ts
+|   |   |       
+|   |   +---vendors
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflow
+|   |           route.ts
+|   |           
+|   +---marketplace-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---demand
+|   |   |       route.ts
+|   |   |       
+|   |   +---discovery
+|   |   |       route.ts
+|   |   |       
+|   |   +---investments
+|   |   |       route.ts
+|   |   |       
+|   |   +---listings
+|   |   |       route.ts
+|   |   |       
+|   |   +---pricing
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---search
+|   |   |       route.ts
+|   |   |       
+|   |   +---signals
+|   |   |       route.ts
+|   |   |       
+|   |   +---supply
+|   |   |       route.ts
+|   |   |       
+|   |   +---transactions
+|   |   |       route.ts
+|   |   |       
+|   |   \---valuation
+|   |           route.ts
+|   |           
+|   +---markets
+|   |   |   route.ts
+|   |   |   
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---comparison
+|   |   |       route.ts
+|   |   |       
+|   |   +---economics
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecast
+|   |   |       route.ts
+|   |   |       
+|   |   +---indexes
+|   |   |       route.ts
+|   |   |       
+|   |   +---investment
+|   |   |       route.ts
+|   |   |       
+|   |   +---risk
+|   |   |       route.ts
+|   |   |       
+|   |   \---trends
+|   |           route.ts
+|   |           
+|   +---mobile
+|   |   |   route.ts
+|   |   |   
+|   |   +---channels
+|   |   |       route.ts
+|   |   |       
+|   |   +---devices
+|   |   |       route.ts
+|   |   |       
+|   |   +---notifications
+|   |   |       route.ts
+|   |   |       
+|   |   +---offline
+|   |   |       route.ts
+|   |   |       
+|   |   +---preferences
+|   |   |       route.ts
+|   |   |       
+|   |   +---push
+|   |   |       route.ts
+|   |   |       
+|   |   \---sync
+|   |           route.ts
+|   |           
+|   +---moderation
+|   |   |   route.ts
+|   |   |   
+|   |   +---approve
+|   |   |       route.ts
+|   |   |       
+|   |   +---quality
+|   |   |       route.ts
+|   |   |       
+|   |   +---reject
+|   |   |       route.ts
+|   |   |       
+|   |   \---review
+|   |           route.ts
+|   |           
+|   +---notifications
+|   |   |   route.ts
+|   |   |   
+|   |   +---events
+|   |   |       route.ts
+|   |   |       
+|   |   +---read
+|   |   |       route.ts
+|   |   |       
+|   |   \---settings
+|   |           route.ts
+|   |           
+|   +---observability-status
+|   |       route.ts
+|   |       
+|   +---open-platform
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---apis
+|   |   |       route.ts
+|   |   |       
+|   |   +---developers
+|   |   |       route.ts
+|   |   |       
+|   |   +---exchange
+|   |   |       route.ts
+|   |   |       
+|   |   +---gateway
+|   |   |       route.ts
+|   |   |       
+|   |   +---integrations
+|   |   |       route.ts
+|   |   |       
+|   |   +---partners
+|   |   |       route.ts
+|   |   |       
+|   |   \---webhooks
+|   |           route.ts
+|   |           
+|   +---operational-events
+|   |       route.ts
+|   |       
+|   +---performance
+|   |   |   route.ts
+|   |   |   
+|   |   +---availability
+|   |   |       route.ts
+|   |   |       
+|   |   +---cache
+|   |   |       route.ts
+|   |   |       
+|   |   +---insights
+|   |   |       route.ts
+|   |   |       
+|   |   +---load
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---optimization
+|   |   |       route.ts
+|   |   |       
+|   |   \---scaling
+|   |           route.ts
+|   |           
+|   +---platform
+|   |   +---health
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---security
+|   |   |       route.ts
+|   |   |       
+|   |   +---status
+|   |   |       route.ts
+|   |   |       
+|   |   +---system
+|   |   |       route.ts
+|   |   |       
+|   |   \---users
+|   |           route.ts
+|   |           
+|   +---predictive-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---confidence
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecasts
+|   |   |       route.ts
+|   |   |       
+|   |   +---models
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   +---scenarios
+|   |   |       route.ts
+|   |   |       
+|   |   \---trends
+|   |           route.ts
+|   |           
+|   +---product-experience
+|   |   |   route.ts
+|   |   |   
+|   |   +---accessibility
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---help
+|   |   |       route.ts
+|   |   |       
+|   |   +---journeys
+|   |   |       route.ts
+|   |   |       
+|   |   +---onboarding
+|   |   |       route.ts
+|   |   |       
+|   |   +---personalization
+|   |   |       route.ts
+|   |   |       
+|   |   \---preferences
+|   |           route.ts
+|   |           
+|   +---production-readiness
+|   |       route.ts
+|   |       
+|   +---production-runtime-config
+|   |       route.ts
+|   |       
+|   +---professional-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---architects
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---availability
+|   |   |       route.ts
+|   |   |       
+|   |   +---engineers
+|   |   |       route.ts
+|   |   |       
+|   |   +---expertise
+|   |   |       route.ts
+|   |   |       
+|   |   +---experts
+|   |   |       route.ts
+|   |   |       
+|   |   +---matching
+|   |   |       route.ts
+|   |   |       
+|   |   +---organizations
+|   |   |       route.ts
+|   |   |       
+|   |   +---portfolio
+|   |   |       route.ts
+|   |   |       
+|   |   +---professionals
+|   |   |       route.ts
+|   |   |       
+|   |   +---projects
+|   |   |       route.ts
+|   |   |       
+|   |   +---ratings
+|   |   |       route.ts
+|   |   |       
+|   |   +---reputation
+|   |   |       route.ts
+|   |   |       
+|   |   +---reviews
+|   |   |       route.ts
+|   |   |       
+|   |   +---services
+|   |   |       route.ts
+|   |   |       
+|   |   \---skills
+|   |           route.ts
+|   |           
+|   +---professionals
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai-insight
+|   |   |       route.ts
+|   |   |       
+|   |   +---expertise
+|   |   |       route.ts
+|   |   |       
+|   |   +---experts
+|   |   |       route.ts
+|   |   |       
+|   |   +---featured
+|   |   |       route.ts
+|   |   |       
+|   |   +---matching
+|   |   |       route.ts
+|   |   |       
+|   |   +---organizations
+|   |   |       route.ts
+|   |   |       
+|   |   +---portfolio
+|   |   |       route.ts
+|   |   |       
+|   |   +---profile
+|   |   |       route.ts
+|   |   |       
+|   |   +---profiles
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---reputation
+|   |   |       route.ts
+|   |   |       
+|   |   +---reviews
+|   |   |       route.ts
+|   |   |       
+|   |   +---search
+|   |   |       route.ts
+|   |   |       
+|   |   +---services
+|   |   |       route.ts
+|   |   |       
+|   |   +---skills
+|   |   |       route.ts
+|   |   |       
+|   |   +---verification
+|   |   |       route.ts
+|   |   |       
+|   |   \---verify
+|   |           route.ts
+|   |           
+|   +---profile
+|   |   |   route.ts
+|   |   |   
+|   |   +---activity
+|   |   |       route.ts
+|   |   |       
+|   |   +---dashboard
+|   |   |       route.ts
+|   |   |       
+|   |   +---organization
+|   |   |       route.ts
+|   |   |       
+|   |   +---preferences
+|   |   |       route.ts
+|   |   |       
+|   |   +---professional
+|   |   |       route.ts
+|   |   |       
+|   |   \---user
+|   |           route.ts
+|   |           
+|   +---properties
+|   |   |   route.ts
+|   |   |   
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---compare
+|   |   |       route.ts
+|   |   |       
+|   |   +---detail
+|   |   |       route.ts
+|   |   |       
+|   |   +---features
+|   |   |       route.ts
+|   |   |       
+|   |   +---investment
+|   |   |       route.ts
+|   |   |       
+|   |   +---match
+|   |   |       route.ts
+|   |   |       
+|   |   +---profile
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendation
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---score
+|   |   |       route.ts
+|   |   |       
+|   |   \---search
+|   |           route.ts
+|   |           
+|   +---property-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---ai
+|   |   |       route.ts
+|   |   |       
+|   |   +---ai-insight
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---architecture
+|   |   |       route.ts
+|   |   |       
+|   |   +---comparison
+|   |   |       route.ts
+|   |   |       
+|   |   +---features
+|   |   |       route.ts
+|   |   |       
+|   |   +---images
+|   |   |       route.ts
+|   |   |       
+|   |   +---investment
+|   |   |       route.ts
+|   |   |       
+|   |   +---lifecycle
+|   |   |       route.ts
+|   |   |       
+|   |   +---location
+|   |   |       route.ts
+|   |   |       
+|   |   +---matching
+|   |   |       route.ts
+|   |   |       
+|   |   +---opportunities
+|   |   |       route.ts
+|   |   |       
+|   |   +---performance
+|   |   |       route.ts
+|   |   |       
+|   |   +---profiles
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---quality
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendation
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   +---risk
+|   |   |       route.ts
+|   |   |       
+|   |   +---score
+|   |   |       route.ts
+|   |   |       
+|   |   +---scoring
+|   |   |       route.ts
+|   |   |       
+|   |   \---valuation
+|   |           route.ts
+|   |           
+|   +---property-marketplace
+|   |       route.ts
+|   |       
+|   +---property-platform
+|   |   |   route.ts
+|   |   |   
+|   |   +---availability
+|   |   |       route.ts
+|   |   |       
+|   |   +---listings
+|   |   |   |   route.ts
+|   |   |   |   
+|   |   |   \---[id]
+|   |   |           route.ts
+|   |   |           
+|   |   +---media
+|   |   |       route.ts
+|   |   |       
+|   |   +---pricing
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |   |   route.ts
+|   |   |   |   
+|   |   |   \---[id]
+|   |   |           route.ts
+|   |   |           
+|   |   \---search
+|   |           route.ts
+|   |           
+|   +---ready
+|   |       route.ts
+|   |       
+|   +---real-estate
+|   |   +---intelligence
+|   |   |       route.ts
+|   |   |       
+|   |   +---markets
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---trends
+|   |   |       route.ts
+|   |   |       
+|   |   \---valuation
+|   |           route.ts
+|   |           
+|   +---real-estate-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---demand
+|   |   |       route.ts
+|   |   |       
+|   |   +---investments
+|   |   |       route.ts
+|   |   |       
+|   |   +---locations
+|   |   |       route.ts
+|   |   |       
+|   |   +---markets
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   \---valuation
+|   |           route.ts
+|   |           
+|   +---realtime-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---events
+|   |   |       route.ts
+|   |   |       
+|   |   +---market
+|   |   |       route.ts
+|   |   |       
+|   |   +---processing
+|   |   |       route.ts
+|   |   |       
+|   |   +---property
+|   |   |       route.ts
+|   |   |       
+|   |   +---signals
+|   |   |       route.ts
+|   |   |       
+|   |   +---streams
+|   |   |       route.ts
+|   |   |       
+|   |   +---subscriptions
+|   |   |       route.ts
+|   |   |       
+|   |   \---urban
+|   |           route.ts
+|   |           
+|   +---recommendation
+|   |   |   route.ts
+|   |   |   
+|   |   +---feed
+|   |   |       route.ts
+|   |   |       
+|   |   +---personalized
+|   |   |       route.ts
+|   |   |       
+|   |   \---preferences
+|   |           route.ts
+|   |           
+|   +---recommendations
+|   |       route.ts
+|   |       
+|   +---regulations
+|   |   |   route.ts
+|   |   |   
+|   |   +---authorities
+|   |   |       route.ts
+|   |   |       
+|   |   +---categories
+|   |   |       route.ts
+|   |   |       
+|   |   +---compliance
+|   |   |       route.ts
+|   |   |       
+|   |   \---sources
+|   |           route.ts
+|   |           
+|   +---release-status
+|   |       route.ts
+|   |       
+|   +---reliability-status
+|   |       route.ts
+|   |       
+|   +---request-protection
+|   |       route.ts
+|   |       
+|   +---research-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---authors
+|   |   |       route.ts
+|   |   |       
+|   |   +---citations
+|   |   |       route.ts
+|   |   |       
+|   |   +---discoveries
+|   |   |       route.ts
+|   |   |       
+|   |   +---forecasts
+|   |   |       route.ts
+|   |   |       
+|   |   +---graph
+|   |   |       route.ts
+|   |   |       
+|   |   +---papers
+|   |   |       route.ts
+|   |   |       
+|   |   +---publications
+|   |   |       route.ts
+|   |   |       
+|   |   \---topics
+|   |           route.ts
+|   |           
+|   +---runtime-metrics
+|   |       route.ts
+|   |       
+|   +---search
+|   |   |   route.ts
+|   |   |   
+|   |   +---filters
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---semantic
+|   |   |       route.ts
+|   |   |       
+|   |   \---suggestions
+|   |           route.ts
+|   |           
+|   +---security
+|   |   |   route.ts
+|   |   |   
+|   |   +---audit
+|   |   |       route.ts
+|   |   |       
+|   |   +---auth
+|   |   |       route.ts
+|   |   |       
+|   |   +---authentication
+|   |   |       route.ts
+|   |   |       
+|   |   +---authorization
+|   |   |       route.ts
+|   |   |       
+|   |   +---compliance
+|   |   |       route.ts
+|   |   |       
+|   |   +---consent
+|   |   |       route.ts
+|   |   |       
+|   |   +---identity
+|   |   |       route.ts
+|   |   |       
+|   |   +---monitoring
+|   |   |       route.ts
+|   |   |       
+|   |   +---permissions
+|   |   |       route.ts
+|   |   |       
+|   |   +---privacy
+|   |   |       route.ts
+|   |   |       
+|   |   +---roles
+|   |   |       route.ts
+|   |   |       
+|   |   +---sessions
+|   |   |       route.ts
+|   |   |       
+|   |   +---trust
+|   |   |       route.ts
+|   |   |       
+|   |   +---users
+|   |   |       route.ts
+|   |   |       
+|   |   \---verification
+|   |           route.ts
+|   |           
+|   +---security-audit
+|   |       route.ts
+|   |       
+|   +---security-deployment-audit
+|   |       route.ts
+|   |       
+|   +---security-enforcement
+|   |       route.ts
+|   |       
+|   +---security-global-headers
+|   |       route.ts
+|   |       
+|   +---security-header-http-smoke
+|   |       route.ts
+|   |       
+|   +---security-header-scope
+|   |       route.ts
+|   |       
+|   +---security-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---access-control
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---authentication
+|   |   |       route.ts
+|   |   |       
+|   |   +---authorization
+|   |   |       route.ts
+|   |   |       
+|   |   +---compliance
+|   |   |       route.ts
+|   |   |       
+|   |   +---identity
+|   |   |       route.ts
+|   |   |       
+|   |   +---privacy
+|   |   |       route.ts
+|   |   |       
+|   |   +---sessions
+|   |   |       route.ts
+|   |   |       
+|   |   \---trust-score
+|   |           route.ts
+|   |           
+|   +---security-policy
+|   |       route.ts
+|   |       
+|   +---security-posture
+|   |       route.ts
+|   |       
+|   +---security-status
+|   |       route.ts
+|   |       
+|   +---security-trust
+|   |   |   route.ts
+|   |   |   
+|   |   +---audit
+|   |   |       route.ts
+|   |   |       
+|   |   +---authorization
+|   |   |       route.ts
+|   |   |       
+|   |   +---events
+|   |   |       route.ts
+|   |   |       
+|   |   +---identity
+|   |   |       route.ts
+|   |   |       
+|   |   +---policies
+|   |   |       route.ts
+|   |   |       
+|   |   +---sessions
+|   |   |       route.ts
+|   |   |       
+|   |   \---trust
+|   |           route.ts
+|   |           
+|   +---security-validate
+|   |       route.ts
+|   |       
+|   +---smart-city-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---cities
+|   |   |       route.ts
+|   |   |       
+|   |   +---districts
+|   |   |       route.ts
+|   |   |       
+|   |   +---environment
+|   |   |       route.ts
+|   |   |       
+|   |   +---indicators
+|   |   |       route.ts
+|   |   |       
+|   |   +---infrastructure
+|   |   |       route.ts
+|   |   |       
+|   |   +---mobility
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   \---risks
+|   |           route.ts
+|   |           
+|   +---smart-search
+|   |   |   route.ts
+|   |   |   
+|   |   +---discovery
+|   |   |       route.ts
+|   |   |       
+|   |   +---geo
+|   |   |       route.ts
+|   |   |       
+|   |   +---natural-language
+|   |   |       route.ts
+|   |   |       
+|   |   +---personalized
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---semantic
+|   |   |       route.ts
+|   |   |       
+|   |   \---visual
+|   |           route.ts
+|   |           
+|   +---sources
+|   |   |   route.ts
+|   |   |   
+|   |   +---authorities
+|   |   |       route.ts
+|   |   |       
+|   |   +---citations
+|   |   |       route.ts
+|   |   |       
+|   |   +---organizations
+|   |   |       route.ts
+|   |   |       
+|   |   +---regulations
+|   |   |       route.ts
+|   |   |       
+|   |   +---standards
+|   |   |       route.ts
+|   |   |       
+|   |   \---verify
+|   |           route.ts
+|   |           
+|   +---spatial-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---analysis
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---ar
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---buildings
+|   |   |       route.ts
+|   |   |       
+|   |   +---districts
+|   |   |       route.ts
+|   |   |       
+|   |   +---geo-data
+|   |   |       route.ts
+|   |   |       
+|   |   +---gis
+|   |   |       route.ts
+|   |   |       
+|   |   +---locations
+|   |   |       route.ts
+|   |   |       
+|   |   +---maps
+|   |   |       route.ts
+|   |   |       
+|   |   +---models
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---properties
+|   |   |       route.ts
+|   |   |       
+|   |   +---proximity
+|   |   |       route.ts
+|   |   |       
+|   |   +---queries
+|   |   |       route.ts
+|   |   |       
+|   |   +---ranking
+|   |   |       route.ts
+|   |   |       
+|   |   +---regions
+|   |   |       route.ts
+|   |   |       
+|   |   +---scenes
+|   |   |       route.ts
+|   |   |       
+|   |   +---urban
+|   |   |       route.ts
+|   |   |       
+|   |   +---vr
+|   |   |       route.ts
+|   |   |       
+|   |   \---xr
+|   |           route.ts
+|   |           
+|   +---system-health
+|   |       route.ts
+|   |       
+|   +---transaction-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---contracts
+|   |   |       route.ts
+|   |   |       
+|   |   +---deals
+|   |   |       route.ts
+|   |   |       
+|   |   +---offers
+|   |   |       route.ts
+|   |   |       
+|   |   +---payments
+|   |   |       route.ts
+|   |   |       
+|   |   +---risks
+|   |   |       route.ts
+|   |   |       
+|   |   +---transactions
+|   |   |       route.ts
+|   |   |       
+|   |   +---verification
+|   |   |       route.ts
+|   |   |       
+|   |   \---workflows
+|   |           route.ts
+|   |           
+|   +---transactions
+|   |   |   route.ts
+|   |   |   
+|   |   +---agreements
+|   |   |       route.ts
+|   |   |       
+|   |   +---milestones
+|   |   |       route.ts
+|   |   |       
+|   |   +---negotiations
+|   |   |       route.ts
+|   |   |       
+|   |   +---offers
+|   |   |       route.ts
+|   |   |       
+|   |   +---parties
+|   |   |       route.ts
+|   |   |       
+|   |   +---payments
+|   |   |       route.ts
+|   |   |       
+|   |   +---workflow
+|   |   |       route.ts
+|   |   |       
+|   |   \---[id]
+|   |           route.ts
+|   |           
+|   +---translation
+|   |   +---cache
+|   |   |       route.ts
+|   |   |       
+|   |   +---detect
+|   |   |       route.ts
+|   |   |       
+|   |   +---languages
+|   |   |       route.ts
+|   |   |       
+|   |   +---status
+|   |   |       route.ts
+|   |   |       
+|   |   \---translate
+|   |           route.ts
+|   |           
+|   +---trust-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---audits
+|   |   |       route.ts
+|   |   |       
+|   |   +---compliance
+|   |   |       route.ts
+|   |   |       
+|   |   +---explainability
+|   |   |       route.ts
+|   |   |       
+|   |   +---governance
+|   |   |       route.ts
+|   |   |       
+|   |   +---policies
+|   |   |       route.ts
+|   |   |       
+|   |   +---privacy
+|   |   |       route.ts
+|   |   |       
+|   |   \---security
+|   |           route.ts
+|   |           
+|   +---urban-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---advisor
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---cities
+|   |   |       route.ts
+|   |   |       
+|   |   +---districts
+|   |   |       route.ts
+|   |   |       
+|   |   +---growth
+|   |   |       route.ts
+|   |   |       
+|   |   +---infrastructure
+|   |   |       route.ts
+|   |   |       
+|   |   +---metrics
+|   |   |       route.ts
+|   |   |       
+|   |   +---mobility
+|   |   |       route.ts
+|   |   |       
+|   |   +---models
+|   |   |       route.ts
+|   |   |       
+|   |   +---profiles
+|   |   |       route.ts
+|   |   |       
+|   |   +---quality
+|   |   |       route.ts
+|   |   |       
+|   |   +---scenarios
+|   |   |       route.ts
+|   |   |       
+|   |   \---sustainability
+|   |           route.ts
+|   |           
+|   +---user-intelligence
+|   |   |   route.ts
+|   |   |   
+|   |   +---ai-assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---analytics
+|   |   |       route.ts
+|   |   |       
+|   |   +---assistant
+|   |   |       route.ts
+|   |   |       
+|   |   +---behavior
+|   |   |       route.ts
+|   |   |       
+|   |   +---feedback
+|   |   |       route.ts
+|   |   |       
+|   |   +---goals
+|   |   |       route.ts
+|   |   |       
+|   |   +---interactions
+|   |   |       route.ts
+|   |   |       
+|   |   +---interests
+|   |   |       route.ts
+|   |   |       
+|   |   +---journey
+|   |   |       route.ts
+|   |   |       
+|   |   +---memory
+|   |   |       route.ts
+|   |   |       
+|   |   +---personalization
+|   |   |       route.ts
+|   |   |       
+|   |   +---predictions
+|   |   |       route.ts
+|   |   |       
+|   |   +---preferences
+|   |   |       route.ts
+|   |   |       
+|   |   +---profile
+|   |   |       route.ts
+|   |   |       
+|   |   +---recommendations
+|   |   |       route.ts
+|   |   |       
+|   |   \---segments
+|   |           route.ts
+|   |           
+|   +---users
+|   |   +---account
+|   |   |       route.ts
+|   |   |       
+|   |   +---activity
+|   |   |       route.ts
+|   |   |       
+|   |   +---dashboard
+|   |   |       route.ts
+|   |   |       
+|   |   +---preferences
+|   |   |       route.ts
+|   |   |       
+|   |   \---profile
+|   |           route.ts
+|   |           
+|   \---v1
+|       +---content
+|       |   |   route.ts
+|       |   |   
+|       |   \---[id]
+|       |       |   route.ts
+|       |       |   
+|       |       +---archive
+|       |       |       route.ts
+|       |       |       
+|       |       +---media
+|       |       |   |   route.ts
+|       |       |   |   
+|       |       |   \---[mediaId]
+|       |       |           route.ts
+|       |       |           
+|       |       +---publish
+|       |       |       route.ts
+|       |       |       
+|       |       +---revisions
+|       |       |   |   route.ts
+|       |       |   |   
+|       |       |   \---[revisionId]
+|       |       |       \---restore
+|       |       |               route.ts
+|       |       |               
+|       |       \---submit-review
+|       |               route.ts
+|       |               
+|       +---health
+|       |       route.ts
+|       |       
+|       +---knowledge
+|       |   +---nodes
+|       |   |   |   route.ts
+|       |   |   |   
+|       |   |   \---[id]
+|       |   |           route.ts
+|       |   |           
+|       |   \---relations
+|       |       |   route.ts
+|       |       |   
+|       |       \---[id]
+|       |               route.ts
+|       |               
+|       +---media
+|       |   |   route.ts
+|       |   |   
+|       |   \---[id]
+|       |           route.ts
+|       |           
+|       \---search
+|               route.ts
+|               
++---login
+|       page.tsx
+|       
+\---[locale]
+    |   layout.tsx
+    |   layout.tsx.before-hydration-final.backup
+    |   layout.tsx.hydration.backup
+    |   layout.tsx.patch14.backup
+    |   page.tsx
+    |   
+    +---about
+    |       page.tsx
+    |       
+    +---admin
+    |   \---operations
+    |           page.tsx
+    |           
+    +---agents
+    |       page.tsx
+    |       
+    +---ai-ecosystem
+    |       page.tsx
+    |       
+    +---ai-governance
+    |       page.tsx
+    |       
+    +---ai-marketplace
+    |       page.tsx
+    |       
+    +---ai-workspace
+    |       page.tsx
+    |       
+    +---architecture-intelligence
+    |       page.tsx
+    |       
+    +---articles
+    |       page.tsx
+    |       
+    +---automation
+    |       page.tsx
+    |       
+    +---autonomous-business
+    |       page.tsx
+    |       
+    +---autonomous-intelligence
+    |   |   page.tsx
+    |   |   
+    |   \---platform
+    |           page.tsx
+    |           
+    +---business
+    |       page.tsx
+    |       
+    +---business-operations
+    |       page.tsx
+    |       
+    +---cities
+    |       page.tsx
+    |       
+    +---collaboration
+    |       page.tsx
+    |       
+    +---commercial-intelligence
+    |       page.tsx
+    |       
+    +---components
+    +---countries
+    |       page.tsx
+    |       
+    +---data
+    |       page.tsx
+    |       
+    +---data-federation
+    |       page.tsx
+    |       
+    +---database-production-readiness
+    |       page.tsx
+    |       
+    +---deployment-status
+    |       page.tsx
+    |       
+    +---ecosystem
+    |       page.tsx
+    |       
+    +---enterprise
+    |       page.tsx
+    |       
+    +---enterprise-growth
+    |       page.tsx
+    |       
+    +---enterprise-intelligence
+    |       page.tsx
+    |       
+    +---evolution
+    |       page.tsx
+    |       
+    +---experience
+    |       page.tsx
+    |       
+    +---global-ai
+    |       page.tsx
+    |       
+    +---global-intelligence
+    |       page.tsx
+    |       
+    +---global-market
+    |       page.tsx
+    |       
+    +---global-network
+    |       page.tsx
+    |       
+    +---global-real-estate
+    |       page.tsx
+    |       
+    +---intelligence
+    |       page.tsx
+    |       
+    +---intelligence-optimization
+    |       page.tsx
+    |       
+    +---intelligence-os
+    |       page.tsx
+    |       
+    +---market-intelligence
+    |       page.tsx
+    |       
+    +---marketplace
+    |       page.tsx
+    |       
+    +---markets
+    |       page.tsx
+    |       
+    +---news
+    |       page.tsx
+    |       
+    +---observability-status
+    |       page.tsx
+    |       
+    +---operations
+    |       page.tsx
+    |       
+    +---operations-status
+    |       page.tsx
+    |       
+    +---optimization
+    |       page.tsx
+    |       
+    +---production-runtime-config
+    |       page.tsx
+    |       
+    +---production-status
+    |       page.tsx
+    |       
+    +---professionals
+    |       page.tsx
+    |       
+    +---recommendations
+    |       page.tsx
+    |       
+    +---release-status
+    |       page.tsx
+    |       
+    +---reliability-status
+    |       page.tsx
+    |       
+    +---reports
+    |       page.tsx
+    |       
+    +---request-protection
+    |       page.tsx
+    |       
+    +---research
+    |       page.tsx
+    |       
+    +---search
+    |       page.tsx
+    |       
+    +---security-audit
+    |       page.tsx
+    |       
+    +---security-deployment-audit
+    |       page.tsx
+    |       
+    +---security-enforcement
+    |       page.tsx
+    |       
+    +---security-global-headers
+    |       page.tsx
+    |       
+    +---security-header-http-smoke
+    |       page.tsx
+    |       
+    +---security-header-scope
+    |       page.tsx
+    |       
+    +---security-policy
+    |       page.tsx
+    |       
+    +---security-posture
+    |       page.tsx
+    |       
+    +---security-status
+    |       page.tsx
+    |       
+    +---self-optimization
+    |       page.tsx
+    |       
+    \---trends
+            page.tsx
+            

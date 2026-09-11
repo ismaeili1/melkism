@@ -1,0 +1,21 @@
+MELKISM COMPONENT INVENTORY
+
+
+Total Components:
+
+1836
+
+
+Main Experience Layers:
+
+
+- Layout
+- Navigation
+- Home
+- Content
+- Intelligence
+- Data
+- Reports
+- AI Experience
+- Experience States
+- Design System

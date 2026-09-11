@@ -1,0 +1,41 @@
+USER EXPERIENCE FLOW
+
+
+Visitor:
+
+Landing Page
+ |
+Search
+ |
+Content Discovery
+ |
+Knowledge Consumption
+
+
+Professional User:
+
+Markets
+ |
+Cities
+ |
+Countries
+ |
+Reports
+
+
+Research User:
+
+Articles
+ |
+Research
+ |
+Data
+
+
+AI User:
+
+AI Assistant
+ |
+Recommendations
+ |
+Intelligence

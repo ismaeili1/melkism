@@ -1,0 +1,2 @@
+TypeScriptExitCode=0
+LintExitCode=0

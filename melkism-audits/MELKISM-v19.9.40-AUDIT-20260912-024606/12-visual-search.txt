@@ -1,0 +1,52 @@
+
+components\brand\BrandLogo.tsx:1:export default function BrandLogo(){
+components\brand\BrandLogo.tsx:6:<div className="brand-logo">
+components\brand\BrandLogo.tsx:9:src="/brand/logo.png"
+components\brand\Logo.tsx:1:export default function Logo(){
+components\brand\Logo.tsx:8:src="/brand/melkist-logo.png"
+components\brand\MELKISMLogo.tsx:1:export default function MELKISMLogo(){
+components\brand\MELKISMLogo.tsx:10:src="/brand/melkist-logo.png"
+components\layout\VisualHeader.tsx:1:import Logo from "@/components/brand/Logo";
+components\layout\VisualHeader.tsx:11:<Logo/>
+components\brand\BrandIdentity.tsx:1:export default function BrandIdentity(){
+components\brand\BrandLogo.tsx:1:export default function BrandLogo(){
+components\brand\BrandLogo.tsx:6:<div className="brand-logo">
+components\brand\BrandLogo.tsx:9:src="/brand/logo.png"
+components\brand\BrandMark.tsx:3:type BrandMarkProps = {
+components\brand\BrandMark.tsx:7:export function BrandMark({ locale }: BrandMarkProps) {
+components\brand\Logo.tsx:8:src="/brand/melkist-logo.png"
+components\brand\MELKISMLogo.tsx:10:src="/brand/melkist-logo.png"
+components\home\HeroExperience.tsx:28:<p className="brand-label">
+components\layout\VisualHeader.tsx:1:import Logo from "@/components/brand/Logo";
+components\navigation\SiteHeader.tsx:2:import { BrandMark } from "../brand/BrandMark";
+components\navigation\SiteHeader.tsx:40:          <BrandMark locale={locale} />
+components\design-system\hero\Hero.tsx:2:export default function Hero(){
+components\discovery\IntelligenceHero.tsx:1:export default function IntelligenceHero(){
+components\experience\hero\MainHero.tsx:2:export default function MainHero(){
+components\home\ExperienceHero.tsx:1:export default function ExperienceHero(){
+components\home\Hero.tsx:7:export default function Hero({
+components\home\HeroExperience.tsx:1:type HeroProps={
+components\home\HeroExperience.tsx:11:export default function HeroExperience({
+components\home\HeroExperience.tsx:17:}:HeroProps){
+components\home\HeroExperience.tsx:22:<section className="hero">
+components\home\HeroExperience.tsx:25:<div className="hero-content">
+components\home\HeroExperience.tsx:56:<div className="hero-actions">
+components\home\HomeExperience.tsx:1:import HeroExperience from "./HeroExperience";
+components\home\HomeExperience.tsx:15:<HeroExperience />
+components\home\HomePage.tsx:3:Hero,
+components\home\HomePage.tsx:15:<Hero
+components\home\Hero\Hero.tsx:4:export function Hero(){
+components\pages\PageHero.tsx:4:export default function PageHero(
+components\search-experience\SearchExperience.tsx:1:import SearchHero from "./SearchHero";
+components\search-experience\SearchExperience.tsx:11:<SearchHero />
+components\search-experience\SearchHero.tsx:1:export default function SearchHero(){
+components\property-intelligence\PropertyImageAnalysis.tsx:1:export function PropertyImageAnalysis(){ return <section>PropertyImageAnalysis</section>; }
+components\data-intelligence\DataVisualization.tsx:1:export function DataVisualization(){return <section>DataVisualization</section>;}
+components\home\VisualHomepage.tsx:1:export default function VisualHomepage(){
+components\knowledge-graph\GraphVisualization.tsx:1:export function GraphVisualization(){return <section>GraphVisualization</section>;}
+components\layout\VisualFooter.tsx:1:export default function VisualFooter(){
+components\layout\VisualHeader.tsx:4:export default function VisualHeader(){
+components\media\MediaPlaceholder.tsx:8:MELKISM Visual Intelligence Media
+components\smart-search\VisualSearchPanel.tsx:1:export function VisualSearchPanel(){return <section>VisualSearchPanel</section>;}
+
+

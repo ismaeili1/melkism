@@ -1,0 +1,1572 @@
+
+> melkism@0.1.0 build
+> next build
+
+ظû▓ Next.js 16.3.0 (Turbopack)
+- Environments: .env.local
+ظ£ô Running next.config.ts took 351ms
+
+  Creating an optimized production build ...
+ظ£ô Compiled successfully in 26.7s
+  Running TypeScript ...
+ظ£ô Finished filesystem cache database compaction in 25.8s
+  Finished TypeScript in 43s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/1453) ...
+  Generating static pages using 3 workers (363/1453) 
+  Generating static pages using 3 workers (726/1453) 
+  Generating static pages using 3 workers (1089/1453) 
+ظ£ô Generating static pages using 3 workers (1453/1453) in 10.3s
+  Finalizing page optimization ...
+
+Route (app)
+ظ¤î ظùï /
+ظ¤£ ظùï /_not-found
+ظ¤£   /[locale]
+ظ¤é ظ¤£ ظù /fa
+ظ¤é ظ¤£ ظù /en
+ظ¤é ظ¤£ ظù /ar
+ظ¤é ظ¤¤ ظù /tr
+ظ¤£   /[locale]/about
+ظ¤é ظ¤£ ظù /fa/about
+ظ¤é ظ¤£ ظù /en/about
+ظ¤é ظ¤£ ظù /ar/about
+ظ¤é ظ¤¤ ظù /tr/about
+ظ¤£   /[locale]/admin/operations
+ظ¤é ظ¤£ ظù /fa/admin/operations
+ظ¤é ظ¤£ ظù /en/admin/operations
+ظ¤é ظ¤£ ظù /ar/admin/operations
+ظ¤é ظ¤¤ ظù /tr/admin/operations
+ظ¤£   /[locale]/agents
+ظ¤é ظ¤£ ظù /fa/agents
+ظ¤é ظ¤£ ظù /en/agents
+ظ¤é ظ¤£ ظù /ar/agents
+ظ¤é ظ¤¤ ظù /tr/agents
+ظ¤£   /[locale]/ai-ecosystem
+ظ¤é ظ¤£ ظù /fa/ai-ecosystem
+ظ¤é ظ¤£ ظù /en/ai-ecosystem
+ظ¤é ظ¤£ ظù /ar/ai-ecosystem
+ظ¤é ظ¤¤ ظù /tr/ai-ecosystem
+ظ¤£   /[locale]/ai-governance
+ظ¤é ظ¤£ ظù /fa/ai-governance
+ظ¤é ظ¤£ ظù /en/ai-governance
+ظ¤é ظ¤£ ظù /ar/ai-governance
+ظ¤é ظ¤¤ ظù /tr/ai-governance
+ظ¤£   /[locale]/ai-marketplace
+ظ¤é ظ¤£ ظù /fa/ai-marketplace
+ظ¤é ظ¤£ ظù /en/ai-marketplace
+ظ¤é ظ¤£ ظù /ar/ai-marketplace
+ظ¤é ظ¤¤ ظù /tr/ai-marketplace
+ظ¤£   /[locale]/ai-workspace
+ظ¤é ظ¤£ ظù /fa/ai-workspace
+ظ¤é ظ¤£ ظù /en/ai-workspace
+ظ¤é ظ¤£ ظù /ar/ai-workspace
+ظ¤é ظ¤¤ ظù /tr/ai-workspace
+ظ¤£   /[locale]/architecture-intelligence
+ظ¤é ظ¤£ ظù /fa/architecture-intelligence
+ظ¤é ظ¤£ ظù /en/architecture-intelligence
+ظ¤é ظ¤£ ظù /ar/architecture-intelligence
+ظ¤é ظ¤¤ ظù /tr/architecture-intelligence
+ظ¤£   /[locale]/articles
+ظ¤é ظ¤£ ظù /fa/articles
+ظ¤é ظ¤£ ظù /en/articles
+ظ¤é ظ¤£ ظù /ar/articles
+ظ¤é ظ¤¤ ظù /tr/articles
+ظ¤£   /[locale]/automation
+ظ¤é ظ¤£ ظù /fa/automation
+ظ¤é ظ¤£ ظù /en/automation
+ظ¤é ظ¤£ ظù /ar/automation
+ظ¤é ظ¤¤ ظù /tr/automation
+ظ¤£   /[locale]/autonomous-business
+ظ¤é ظ¤£ ظù /fa/autonomous-business
+ظ¤é ظ¤£ ظù /en/autonomous-business
+ظ¤é ظ¤£ ظù /ar/autonomous-business
+ظ¤é ظ¤¤ ظù /tr/autonomous-business
+ظ¤£   /[locale]/autonomous-intelligence
+ظ¤é ظ¤£ ظù /fa/autonomous-intelligence
+ظ¤é ظ¤£ ظù /en/autonomous-intelligence
+ظ¤é ظ¤£ ظù /ar/autonomous-intelligence
+ظ¤é ظ¤¤ ظù /tr/autonomous-intelligence
+ظ¤£   /[locale]/autonomous-intelligence/platform
+ظ¤é ظ¤£ ظù /fa/autonomous-intelligence/platform
+ظ¤é ظ¤£ ظù /en/autonomous-intelligence/platform
+ظ¤é ظ¤£ ظù /ar/autonomous-intelligence/platform
+ظ¤é ظ¤¤ ظù /tr/autonomous-intelligence/platform
+ظ¤£   /[locale]/business
+ظ¤é ظ¤£ ظù /fa/business
+ظ¤é ظ¤£ ظù /en/business
+ظ¤é ظ¤£ ظù /ar/business
+ظ¤é ظ¤¤ ظù /tr/business
+ظ¤£   /[locale]/business-operations
+ظ¤é ظ¤£ ظù /fa/business-operations
+ظ¤é ظ¤£ ظù /en/business-operations
+ظ¤é ظ¤£ ظù /ar/business-operations
+ظ¤é ظ¤¤ ظù /tr/business-operations
+ظ¤£   /[locale]/cities
+ظ¤é ظ¤£ ظù /fa/cities
+ظ¤é ظ¤£ ظù /en/cities
+ظ¤é ظ¤£ ظù /ar/cities
+ظ¤é ظ¤¤ ظù /tr/cities
+ظ¤£   /[locale]/collaboration
+ظ¤é ظ¤£ ظù /fa/collaboration
+ظ¤é ظ¤£ ظù /en/collaboration
+ظ¤é ظ¤£ ظù /ar/collaboration
+ظ¤é ظ¤¤ ظù /tr/collaboration
+ظ¤£   /[locale]/commercial-intelligence
+ظ¤é ظ¤£ ظù /fa/commercial-intelligence
+ظ¤é ظ¤£ ظù /en/commercial-intelligence
+ظ¤é ظ¤£ ظù /ar/commercial-intelligence
+ظ¤é ظ¤¤ ظù /tr/commercial-intelligence
+ظ¤£   /[locale]/countries
+ظ¤é ظ¤£ ظù /fa/countries
+ظ¤é ظ¤£ ظù /en/countries
+ظ¤é ظ¤£ ظù /ar/countries
+ظ¤é ظ¤¤ ظù /tr/countries
+ظ¤£   /[locale]/data
+ظ¤é ظ¤£ ظù /fa/data
+ظ¤é ظ¤£ ظù /en/data
+ظ¤é ظ¤£ ظù /ar/data
+ظ¤é ظ¤¤ ظù /tr/data
+ظ¤£   /[locale]/data-federation
+ظ¤é ظ¤£ ظù /fa/data-federation
+ظ¤é ظ¤£ ظù /en/data-federation
+ظ¤é ظ¤£ ظù /ar/data-federation
+ظ¤é ظ¤¤ ظù /tr/data-federation
+ظ¤£   /[locale]/database-production-readiness
+ظ¤é ظ¤£ ظù /fa/database-production-readiness
+ظ¤é ظ¤£ ظù /en/database-production-readiness
+ظ¤é ظ¤£ ظù /ar/database-production-readiness
+ظ¤é ظ¤¤ ظù /tr/database-production-readiness
+ظ¤£   /[locale]/deployment-status
+ظ¤é ظ¤£ ظù /fa/deployment-status
+ظ¤é ظ¤£ ظù /en/deployment-status
+ظ¤é ظ¤£ ظù /ar/deployment-status
+ظ¤é ظ¤¤ ظù /tr/deployment-status
+ظ¤£   /[locale]/ecosystem
+ظ¤é ظ¤£ ظù /fa/ecosystem
+ظ¤é ظ¤£ ظù /en/ecosystem
+ظ¤é ظ¤£ ظù /ar/ecosystem
+ظ¤é ظ¤¤ ظù /tr/ecosystem
+ظ¤£   /[locale]/enterprise
+ظ¤é ظ¤£ ظù /fa/enterprise
+ظ¤é ظ¤£ ظù /en/enterprise
+ظ¤é ظ¤£ ظù /ar/enterprise
+ظ¤é ظ¤¤ ظù /tr/enterprise
+ظ¤£   /[locale]/enterprise-growth
+ظ¤é ظ¤£ ظù /fa/enterprise-growth
+ظ¤é ظ¤£ ظù /en/enterprise-growth
+ظ¤é ظ¤£ ظù /ar/enterprise-growth
+ظ¤é ظ¤¤ ظù /tr/enterprise-growth
+ظ¤£   /[locale]/enterprise-intelligence
+ظ¤é ظ¤£ ظù /fa/enterprise-intelligence
+ظ¤é ظ¤£ ظù /en/enterprise-intelligence
+ظ¤é ظ¤£ ظù /ar/enterprise-intelligence
+ظ¤é ظ¤¤ ظù /tr/enterprise-intelligence
+ظ¤£   /[locale]/evolution
+ظ¤é ظ¤£ ظù /fa/evolution
+ظ¤é ظ¤£ ظù /en/evolution
+ظ¤é ظ¤£ ظù /ar/evolution
+ظ¤é ظ¤¤ ظù /tr/evolution
+ظ¤£   /[locale]/experience
+ظ¤é ظ¤£ ظù /fa/experience
+ظ¤é ظ¤£ ظù /en/experience
+ظ¤é ظ¤£ ظù /ar/experience
+ظ¤é ظ¤¤ ظù /tr/experience
+ظ¤£   /[locale]/global-ai
+ظ¤é ظ¤£ ظù /fa/global-ai
+ظ¤é ظ¤£ ظù /en/global-ai
+ظ¤é ظ¤£ ظù /ar/global-ai
+ظ¤é ظ¤¤ ظù /tr/global-ai
+ظ¤£   /[locale]/global-intelligence
+ظ¤é ظ¤£ ظù /fa/global-intelligence
+ظ¤é ظ¤£ ظù /en/global-intelligence
+ظ¤é ظ¤£ ظù /ar/global-intelligence
+ظ¤é ظ¤¤ ظù /tr/global-intelligence
+ظ¤£   /[locale]/global-market
+ظ¤é ظ¤£ ظù /fa/global-market
+ظ¤é ظ¤£ ظù /en/global-market
+ظ¤é ظ¤£ ظù /ar/global-market
+ظ¤é ظ¤¤ ظù /tr/global-market
+ظ¤£   /[locale]/global-network
+ظ¤é ظ¤£ ظù /fa/global-network
+ظ¤é ظ¤£ ظù /en/global-network
+ظ¤é ظ¤£ ظù /ar/global-network
+ظ¤é ظ¤¤ ظù /tr/global-network
+ظ¤£   /[locale]/global-real-estate
+ظ¤é ظ¤£ ظù /fa/global-real-estate
+ظ¤é ظ¤£ ظù /en/global-real-estate
+ظ¤é ظ¤£ ظù /ar/global-real-estate
+ظ¤é ظ¤¤ ظù /tr/global-real-estate
+ظ¤£   /[locale]/intelligence
+ظ¤é ظ¤£ ظù /fa/intelligence
+ظ¤é ظ¤£ ظù /en/intelligence
+ظ¤é ظ¤£ ظù /ar/intelligence
+ظ¤é ظ¤¤ ظù /tr/intelligence
+ظ¤£   /[locale]/intelligence-optimization
+ظ¤é ظ¤£ ظù /fa/intelligence-optimization
+ظ¤é ظ¤£ ظù /en/intelligence-optimization
+ظ¤é ظ¤£ ظù /ar/intelligence-optimization
+ظ¤é ظ¤¤ ظù /tr/intelligence-optimization
+ظ¤£   /[locale]/intelligence-os
+ظ¤é ظ¤£ ظù /fa/intelligence-os
+ظ¤é ظ¤£ ظù /en/intelligence-os
+ظ¤é ظ¤£ ظù /ar/intelligence-os
+ظ¤é ظ¤¤ ظù /tr/intelligence-os
+ظ¤£   /[locale]/market-intelligence
+ظ¤é ظ¤£ ظù /fa/market-intelligence
+ظ¤é ظ¤£ ظù /en/market-intelligence
+ظ¤é ظ¤£ ظù /ar/market-intelligence
+ظ¤é ظ¤¤ ظù /tr/market-intelligence
+ظ¤£   /[locale]/marketplace
+ظ¤é ظ¤£ ظù /fa/marketplace
+ظ¤é ظ¤£ ظù /en/marketplace
+ظ¤é ظ¤£ ظù /ar/marketplace
+ظ¤é ظ¤¤ ظù /tr/marketplace
+ظ¤£   /[locale]/markets
+ظ¤é ظ¤£ ظù /fa/markets
+ظ¤é ظ¤£ ظù /en/markets
+ظ¤é ظ¤£ ظù /ar/markets
+ظ¤é ظ¤¤ ظù /tr/markets
+ظ¤£   /[locale]/news
+ظ¤é ظ¤£ ظù /fa/news
+ظ¤é ظ¤£ ظù /en/news
+ظ¤é ظ¤£ ظù /ar/news
+ظ¤é ظ¤¤ ظù /tr/news
+ظ¤£   /[locale]/observability-status
+ظ¤é ظ¤£ ظù /fa/observability-status
+ظ¤é ظ¤£ ظù /en/observability-status
+ظ¤é ظ¤£ ظù /ar/observability-status
+ظ¤é ظ¤¤ ظù /tr/observability-status
+ظ¤£   /[locale]/operations
+ظ¤é ظ¤£ ظù /fa/operations
+ظ¤é ظ¤£ ظù /en/operations
+ظ¤é ظ¤£ ظù /ar/operations
+ظ¤é ظ¤¤ ظù /tr/operations
+ظ¤£   /[locale]/operations-status
+ظ¤é ظ¤£ ظù /fa/operations-status
+ظ¤é ظ¤£ ظù /en/operations-status
+ظ¤é ظ¤£ ظù /ar/operations-status
+ظ¤é ظ¤¤ ظù /tr/operations-status
+ظ¤£   /[locale]/optimization
+ظ¤é ظ¤£ ظù /fa/optimization
+ظ¤é ظ¤£ ظù /en/optimization
+ظ¤é ظ¤£ ظù /ar/optimization
+ظ¤é ظ¤¤ ظù /tr/optimization
+ظ¤£   /[locale]/production-runtime-config
+ظ¤é ظ¤£ ظù /fa/production-runtime-config
+ظ¤é ظ¤£ ظù /en/production-runtime-config
+ظ¤é ظ¤£ ظù /ar/production-runtime-config
+ظ¤é ظ¤¤ ظù /tr/production-runtime-config
+ظ¤£   /[locale]/production-status
+ظ¤é ظ¤£ ظù /fa/production-status
+ظ¤é ظ¤£ ظù /en/production-status
+ظ¤é ظ¤£ ظù /ar/production-status
+ظ¤é ظ¤¤ ظù /tr/production-status
+ظ¤£   /[locale]/professionals
+ظ¤é ظ¤£ ظù /fa/professionals
+ظ¤é ظ¤£ ظù /en/professionals
+ظ¤é ظ¤£ ظù /ar/professionals
+ظ¤é ظ¤¤ ظù /tr/professionals
+ظ¤£   /[locale]/recommendations
+ظ¤é ظ¤£ ظù /fa/recommendations
+ظ¤é ظ¤£ ظù /en/recommendations
+ظ¤é ظ¤£ ظù /ar/recommendations
+ظ¤é ظ¤¤ ظù /tr/recommendations
+ظ¤£   /[locale]/release-status
+ظ¤é ظ¤£ ظù /fa/release-status
+ظ¤é ظ¤£ ظù /en/release-status
+ظ¤é ظ¤£ ظù /ar/release-status
+ظ¤é ظ¤¤ ظù /tr/release-status
+ظ¤£   /[locale]/reliability-status
+ظ¤é ظ¤£ ظù /fa/reliability-status
+ظ¤é ظ¤£ ظù /en/reliability-status
+ظ¤é ظ¤£ ظù /ar/reliability-status
+ظ¤é ظ¤¤ ظù /tr/reliability-status
+ظ¤£   /[locale]/reports
+ظ¤é ظ¤£ ظù /fa/reports
+ظ¤é ظ¤£ ظù /en/reports
+ظ¤é ظ¤£ ظù /ar/reports
+ظ¤é ظ¤¤ ظù /tr/reports
+ظ¤£   /[locale]/request-protection
+ظ¤é ظ¤£ ظù /fa/request-protection
+ظ¤é ظ¤£ ظù /en/request-protection
+ظ¤é ظ¤£ ظù /ar/request-protection
+ظ¤é ظ¤¤ ظù /tr/request-protection
+ظ¤£   /[locale]/research
+ظ¤é ظ¤£ ظù /fa/research
+ظ¤é ظ¤£ ظù /en/research
+ظ¤é ظ¤£ ظù /ar/research
+ظ¤é ظ¤¤ ظù /tr/research
+ظ¤£   /[locale]/search
+ظ¤é ظ¤£ ظù /fa/search
+ظ¤é ظ¤£ ظù /en/search
+ظ¤é ظ¤£ ظù /ar/search
+ظ¤é ظ¤¤ ظù /tr/search
+ظ¤£   /[locale]/security-audit
+ظ¤é ظ¤£ ظù /fa/security-audit
+ظ¤é ظ¤£ ظù /en/security-audit
+ظ¤é ظ¤£ ظù /ar/security-audit
+ظ¤é ظ¤¤ ظù /tr/security-audit
+ظ¤£   /[locale]/security-deployment-audit
+ظ¤é ظ¤£ ظù /fa/security-deployment-audit
+ظ¤é ظ¤£ ظù /en/security-deployment-audit
+ظ¤é ظ¤£ ظù /ar/security-deployment-audit
+ظ¤é ظ¤¤ ظù /tr/security-deployment-audit
+ظ¤£   /[locale]/security-enforcement
+ظ¤é ظ¤£ ظù /fa/security-enforcement
+ظ¤é ظ¤£ ظù /en/security-enforcement
+ظ¤é ظ¤£ ظù /ar/security-enforcement
+ظ¤é ظ¤¤ ظù /tr/security-enforcement
+ظ¤£   /[locale]/security-global-headers
+ظ¤é ظ¤£ ظù /fa/security-global-headers
+ظ¤é ظ¤£ ظù /en/security-global-headers
+ظ¤é ظ¤£ ظù /ar/security-global-headers
+ظ¤é ظ¤¤ ظù /tr/security-global-headers
+ظ¤£   /[locale]/security-header-http-smoke
+ظ¤é ظ¤£ ظù /fa/security-header-http-smoke
+ظ¤é ظ¤£ ظù /en/security-header-http-smoke
+ظ¤é ظ¤£ ظù /ar/security-header-http-smoke
+ظ¤é ظ¤¤ ظù /tr/security-header-http-smoke
+ظ¤£   /[locale]/security-header-scope
+ظ¤é ظ¤£ ظù /fa/security-header-scope
+ظ¤é ظ¤£ ظù /en/security-header-scope
+ظ¤é ظ¤£ ظù /ar/security-header-scope
+ظ¤é ظ¤¤ ظù /tr/security-header-scope
+ظ¤£   /[locale]/security-policy
+ظ¤é ظ¤£ ظù /fa/security-policy
+ظ¤é ظ¤£ ظù /en/security-policy
+ظ¤é ظ¤£ ظù /ar/security-policy
+ظ¤é ظ¤¤ ظù /tr/security-policy
+ظ¤£   /[locale]/security-posture
+ظ¤é ظ¤£ ظù /fa/security-posture
+ظ¤é ظ¤£ ظù /en/security-posture
+ظ¤é ظ¤£ ظù /ar/security-posture
+ظ¤é ظ¤¤ ظù /tr/security-posture
+ظ¤£   /[locale]/security-status
+ظ¤é ظ¤£ ظù /fa/security-status
+ظ¤é ظ¤£ ظù /en/security-status
+ظ¤é ظ¤£ ظù /ar/security-status
+ظ¤é ظ¤¤ ظù /tr/security-status
+ظ¤£   /[locale]/self-optimization
+ظ¤é ظ¤£ ظù /fa/self-optimization
+ظ¤é ظ¤£ ظù /en/self-optimization
+ظ¤é ظ¤£ ظù /ar/self-optimization
+ظ¤é ظ¤¤ ظù /tr/self-optimization
+ظ¤£   /[locale]/trends
+ظ¤é ظ¤£ ظù /fa/trends
+ظ¤é ظ¤£ ظù /en/trends
+ظ¤é ظ¤£ ظù /ar/trends
+ظ¤é ظ¤¤ ظù /tr/trends
+ظ¤£ ╞ْ /api/admin/content
+ظ¤£ ╞ْ /api/admin/content/publish
+ظ¤£ ╞ْ /api/admin/content/review
+ظ¤£ ╞ْ /api/admin/content/translation
+ظ¤£ ╞ْ /api/agent-intelligence
+ظ¤£ ╞ْ /api/agent-intelligence/agents
+ظ¤£ ╞ْ /api/agent-intelligence/analytics
+ظ¤£ ╞ْ /api/agent-intelligence/collaboration
+ظ¤£ ╞ْ /api/agent-intelligence/learning
+ظ¤£ ╞ْ /api/agent-intelligence/memory
+ظ¤£ ╞ْ /api/agent-intelligence/messages
+ظ¤£ ╞ْ /api/agent-intelligence/orchestration
+ظ¤£ ╞ْ /api/agent-intelligence/tasks
+ظ¤£ ╞ْ /api/agentic-ai
+ظ¤£ ╞ْ /api/agentic-ai/agents
+ظ¤£ ╞ْ /api/agentic-ai/analytics
+ظ¤£ ╞ْ /api/agentic-ai/communication
+ظ¤£ ╞ْ /api/agentic-ai/memory
+ظ¤£ ╞ْ /api/agentic-ai/orchestration
+ظ¤£ ╞ْ /api/agentic-ai/plans
+ظ¤£ ╞ْ /api/agentic-ai/tasks
+ظ¤£ ╞ْ /api/agentic-ai/workflows
+ظ¤£ ╞ْ /api/ai
+ظ¤£ ╞ْ /api/ai-agents
+ظ¤£ ╞ْ /api/ai-agents/agents
+ظ¤£ ╞ْ /api/ai-agents/analytics
+ظ¤£ ╞ْ /api/ai-agents/automation
+ظ¤£ ╞ْ /api/ai-agents/collaboration
+ظ¤£ ╞ْ /api/ai-agents/decisions
+ظ¤£ ╞ْ /api/ai-agents/execution
+ظ¤£ ╞ْ /api/ai-agents/memory
+ظ¤£ ╞ْ /api/ai-agents/messages
+ظ¤£ ╞ْ /api/ai-agents/orchestration
+ظ¤£ ╞ْ /api/ai-agents/reasoning
+ظ¤£ ╞ْ /api/ai-agents/tasks
+ظ¤£ ╞ْ /api/ai-agents/tools
+ظ¤£ ╞ْ /api/ai-agents/workflows
+ظ¤£ ╞ْ /api/ai-cloud
+ظ¤£ ╞ْ /api/ai-cloud/analytics
+ظ¤£ ╞ْ /api/ai-cloud/cloud
+ظ¤£ ╞ْ /api/ai-cloud/clusters
+ظ¤£ ╞ْ /api/ai-cloud/compute
+ظ¤£ ╞ْ /api/ai-cloud/deployments
+ظ¤£ ╞ْ /api/ai-cloud/edge
+ظ¤£ ╞ْ /api/ai-cloud/monitoring
+ظ¤£ ╞ْ /api/ai-cloud/nodes
+ظ¤£ ╞ْ /api/ai-cloud/scaling
+ظ¤£ ╞ْ /api/ai-copilot
+ظ¤£ ╞ْ /api/ai-copilot/actions
+ظ¤£ ╞ْ /api/ai-copilot/agents
+ظ¤£ ╞ْ /api/ai-copilot/conversations
+ظ¤£ ╞ْ /api/ai-copilot/decisions
+ظ¤£ ╞ْ /api/ai-copilot/feedback
+ظ¤£ ╞ْ /api/ai-copilot/reasoning
+ظ¤£ ╞ْ /api/ai-copilot/recommendations
+ظ¤£ ╞ْ /api/ai-copilot/tasks
+ظ¤£ ╞ْ /api/ai-ecosystem
+ظ¤£ ╞ْ /api/ai-ecosystem/analytics
+ظ¤£ ╞ْ /api/ai-ecosystem/developers
+ظ¤£ ╞ْ /api/ai-ecosystem/extensions
+ظ¤£ ╞ْ /api/ai-ecosystem/integrations
+ظ¤£ ╞ْ /api/ai-ecosystem/marketplace
+ظ¤£ ╞ْ /api/ai-ecosystem/packages
+ظ¤£ ╞ْ /api/ai-ecosystem/permissions
+ظ¤£ ╞ْ /api/ai-ecosystem/plugins
+ظ¤£ ╞ْ /api/ai-governance
+ظ¤£ ╞ْ /api/ai-governance/analytics
+ظ¤£ ╞ْ /api/ai-governance/audits
+ظ¤£ ╞ْ /api/ai-governance/compliance
+ظ¤£ ╞ْ /api/ai-governance/ethics
+ظ¤£ ╞ْ /api/ai-governance/explanations
+ظ¤£ ╞ْ /api/ai-governance/health
+ظ¤£ ╞ْ /api/ai-governance/monitoring
+ظ¤£ ╞ْ /api/ai-governance/optimization
+ظ¤£ ╞ْ /api/ai-governance/permissions
+ظ¤£ ╞ْ /api/ai-governance/policies
+ظ¤£ ╞ْ /api/ai-governance/privacy
+ظ¤£ ╞ْ /api/ai-governance/risks
+ظ¤£ ╞ْ /api/ai-governance/rules
+ظ¤£ ╞ْ /api/ai-governance/safety
+ظ¤£ ╞ْ /api/ai-governance/security
+ظ¤£ ╞ْ /api/ai-governance/traces
+ظ¤£ ╞ْ /api/ai-governance/transparency
+ظ¤£ ╞ْ /api/ai-governance/trust
+ظ¤£ ╞ْ /api/ai-orchestration
+ظ¤£ ╞ْ /api/ai-orchestration/agents
+ظ¤£ ╞ْ /api/ai-orchestration/approvals
+ظ¤£ ╞ْ /api/ai-orchestration/audit
+ظ¤£ ╞ْ /api/ai-orchestration/automation
+ظ¤£ ╞ْ /api/ai-orchestration/command
+ظ¤£ ╞ْ /api/ai-orchestration/context
+ظ¤£ ╞ْ /api/ai-orchestration/decisions
+ظ¤£ ╞ْ /api/ai-orchestration/execute
+ظ¤£ ╞ْ /api/ai-orchestration/execution
+ظ¤£ ╞ْ /api/ai-orchestration/executions
+ظ¤£ ╞ْ /api/ai-orchestration/governance
+ظ¤£ ╞ْ /api/ai-orchestration/memory
+ظ¤£ ╞ْ /api/ai-orchestration/models
+ظ¤£ ╞ْ /api/ai-orchestration/permissions
+ظ¤£ ╞ْ /api/ai-orchestration/pipeline
+ظ¤£ ╞ْ /api/ai-orchestration/planning
+ظ¤£ ╞ْ /api/ai-orchestration/prompts
+ظ¤£ ╞ْ /api/ai-orchestration/reasoning
+ظ¤£ ╞ْ /api/ai-orchestration/response
+ظ¤£ ╞ْ /api/ai-orchestration/routing
+ظ¤£ ╞ْ /api/ai-orchestration/tasks
+ظ¤£ ╞ْ /api/ai-orchestration/workflows
+ظ¤£ ╞ْ /api/ai-reasoning
+ظ¤£ ╞ْ /api/ai-reasoning/analytics
+ظ¤£ ╞ْ /api/ai-reasoning/decisions
+ظ¤£ ╞ْ /api/ai-reasoning/inference
+ظ¤£ ╞ْ /api/ai-reasoning/reasoning
+ظ¤£ ╞ْ /api/ai-reasoning/recommendations
+ظ¤£ ╞ْ /api/ai-reasoning/risks
+ظ¤£ ╞ْ /api/ai-reasoning/scenarios
+ظ¤£ ╞ْ /api/ai-research
+ظ¤£ ╞ْ /api/ai-research/agents
+ظ¤£ ╞ْ /api/ai-research/analysis
+ظ¤£ ╞ْ /api/ai-research/analytics
+ظ¤£ ╞ْ /api/ai-research/authors
+ظ¤£ ╞ْ /api/ai-research/citations
+ظ¤£ ╞ْ /api/ai-research/discovery
+ظ¤£ ╞ْ /api/ai-research/evidence
+ظ¤£ ╞ْ /api/ai-research/evolution
+ظ¤£ ╞ْ /api/ai-research/experiments
+ظ¤£ ╞ْ /api/ai-research/hypotheses
+ظ¤£ ╞ْ /api/ai-research/insights
+ظ¤£ ╞ْ /api/ai-research/learning
+ظ¤£ ╞ْ /api/ai-research/papers
+ظ¤£ ╞ْ /api/ai-research/reports
+ظ¤£ ╞ْ /api/ai-research/research
+ظ¤£ ╞ْ /api/ai-research/sources
+ظ¤£ ╞ْ /api/ai-research/synthesis
+ظ¤£ ╞ْ /api/ai-search
+ظ¤£ ╞ْ /api/ai-search-intelligence
+ظ¤£ ╞ْ /api/ai-search/assistant
+ظ¤£ ╞ْ /api/ai-search/discovery
+ظ¤£ ╞ْ /api/ai-search/filters
+ظ¤£ ╞ْ /api/ai-search/location
+ظ¤£ ╞ْ /api/ai-search/personalization
+ظ¤£ ╞ْ /api/ai-search/query
+ظ¤£ ╞ْ /api/ai-search/ranking
+ظ¤£ ╞ْ /api/ai-search/semantic
+ظ¤£ ╞ْ /api/ai/agents
+ظ¤£ ╞ْ /api/ai/analysis
+ظ¤£ ╞ْ /api/ai/analyze
+ظ¤£ ╞ْ /api/ai/assistant
+ظ¤£ ╞ْ /api/ai/automation
+ظ¤£ ╞ْ /api/ai/chat
+ظ¤£ ╞ْ /api/ai/context
+ظ¤£ ╞ْ /api/ai/decision
+ظ¤£ ╞ْ /api/ai/decisions
+ظ¤£ ╞ْ /api/ai/document
+ظ¤£ ╞ْ /api/ai/insights
+ظ¤£ ╞ْ /api/ai/models
+ظ¤£ ╞ْ /api/ai/predict
+ظ¤£ ╞ْ /api/ai/prediction
+ظ¤£ ╞ْ /api/ai/predictions
+ظ¤£ ╞ْ /api/ai/prompts
+ظ¤£ ╞ْ /api/ai/reasoning
+ظ¤£ ╞ْ /api/ai/recommend
+ظ¤£ ╞ْ /api/ai/recommendation
+ظ¤£ ╞ْ /api/ai/recommendations
+ظ¤£ ╞ْ /api/ai/search
+ظ¤£ ╞ْ /api/ai/semantic
+ظ¤£ ╞ْ /api/ai/spatial
+ظ¤£ ╞ْ /api/ai/text
+ظ¤£ ╞ْ /api/ai/vision
+ظ¤£ ╞ْ /api/ai/voice
+ظ¤£ ╞ْ /api/analytics
+ظ¤£ ╞ْ /api/analytics/dashboards
+ظ¤£ ╞ْ /api/analytics/forecasts
+ظ¤£ ╞ْ /api/analytics/insights
+ظ¤£ ╞ْ /api/analytics/kpi
+ظ¤£ ╞ْ /api/analytics/market
+ظ¤£ ╞ْ /api/analytics/metrics
+ظ¤£ ╞ْ /api/analytics/reports
+ظ¤£ ╞ْ /api/analytics/visualization
+ظ¤£ ╞ْ /api/api-ecosystem
+ظ¤£ ╞ْ /api/api-ecosystem/applications
+ظ¤£ ╞ْ /api/api-ecosystem/consumers
+ظ¤£ ╞ْ /api/api-ecosystem/endpoints
+ظ¤£ ╞ْ /api/api-ecosystem/governance
+ظ¤£ ╞ْ /api/api-ecosystem/health
+ظ¤£ ╞ْ /api/api-ecosystem/keys
+ظ¤£ ╞ْ /api/api-ecosystem/quotas
+ظ¤£ ╞ْ /api/api-ecosystem/rate-limits
+ظ¤£ ╞ْ /api/api-ecosystem/registry
+ظ¤£ ╞ْ /api/api-ecosystem/subscriptions
+ظ¤£ ╞ْ /api/api-ecosystem/usage
+ظ¤£ ╞ْ /api/api-ecosystem/webhooks
+ظ¤£ ╞ْ /api/architecture
+ظ¤£ ╞ْ /api/architecture-intelligence
+ظ¤£ ╞ْ /api/architecture-intelligence/analysis
+ظ¤£ ╞ْ /api/architecture-intelligence/analytics
+ظ¤£ ╞ْ /api/architecture-intelligence/architects
+ظ¤£ ╞ْ /api/architecture-intelligence/bim
+ظ¤£ ╞ْ /api/architecture-intelligence/buildings
+ظ¤£ ╞ْ /api/architecture-intelligence/design
+ظ¤£ ╞ْ /api/architecture-intelligence/generation
+ظ¤£ ╞ْ /api/architecture-intelligence/performance
+ظ¤£ ╞ْ /api/architecture-intelligence/projects
+ظ¤£ ╞ْ /api/architecture-intelligence/ranking
+ظ¤£ ╞ْ /api/architecture-intelligence/recommendations
+ظ¤£ ╞ْ /api/architecture-intelligence/sites
+ظ¤£ ╞ْ /api/architecture-intelligence/styles
+ظ¤£ ╞ْ /api/architecture-intelligence/sustainability
+ظ¤£ ╞ْ /api/architecture-intelligence/urban
+ظ¤£ ╞ْ /api/architecture/analysis
+ظ¤£ ╞ْ /api/architecture/architects
+ظ¤£ ╞ْ /api/architecture/firms
+ظ¤£ ╞ْ /api/architecture/materials
+ظ¤£ ╞ْ /api/architecture/projects
+ظ¤£ ╞ْ /api/architecture/ranking
+ظ¤£ ╞ْ /api/architecture/styles
+ظ¤£ ╞ْ /api/auth
+ظ¤£ ╞ْ /api/auth/[...nextauth]
+ظ¤£ ╞ْ /api/auth/forgot-password
+ظ¤£ ╞ْ /api/auth/login
+ظ¤£ ╞ْ /api/auth/logout
+ظ¤£ ╞ْ /api/auth/register
+ظ¤£ ╞ْ /api/auth/reset-password
+ظ¤£ ╞ْ /api/auth/session
+ظ¤£ ╞ْ /api/auth/social
+ظ¤£ ╞ْ /api/auth/verify
+ظ¤£ ╞ْ /api/autonomous-intelligence
+ظ¤£ ╞ْ /api/autonomous-intelligence/actions
+ظ¤£ ╞ْ /api/autonomous-intelligence/agents
+ظ¤£ ╞ْ /api/autonomous-intelligence/assistant
+ظ¤£ ╞ْ /api/autonomous-intelligence/decisions
+ظ¤£ ╞ْ /api/autonomous-intelligence/execution
+ظ¤£ ╞ْ /api/autonomous-intelligence/goals
+ظ¤£ ╞ْ /api/autonomous-intelligence/learning
+ظ¤£ ╞ْ /api/autonomous-intelligence/memory
+ظ¤£ ╞ْ /api/autonomous-intelligence/monitoring
+ظ¤£ ╞ْ /api/autonomous-intelligence/plans
+ظ¤£ ╞ْ /api/autonomous-intelligence/predictions
+ظ¤£ ╞ْ /api/autonomous-intelligence/tasks
+ظ¤£ ╞ْ /api/autonomous-intelligence/workflows
+ظ¤£ ╞ْ /api/business-subscription
+ظ¤£ ╞ْ /api/cities
+ظ¤£ ╞ْ /api/cities-intelligence
+ظ¤£ ╞ْ /api/cities-intelligence/analysis
+ظ¤£ ╞ْ /api/cities-intelligence/cities
+ظ¤£ ╞ْ /api/cities-intelligence/countries
+ظ¤£ ╞ْ /api/cities-intelligence/indicators
+ظ¤£ ╞ْ /api/cities-intelligence/infrastructure
+ظ¤£ ╞ْ /api/cities-intelligence/overview
+ظ¤£ ╞ْ /api/cities-intelligence/ranking
+ظ¤£ ╞ْ /api/cities-intelligence/reports
+ظ¤£ ╞ْ /api/cities-intelligence/sustainability
+ظ¤£ ╞ْ /api/cities/ai-insight
+ظ¤£ ╞ْ /api/cities/analysis
+ظ¤£ ╞ْ /api/cities/architecture
+ظ¤£ ╞ْ /api/cities/comparison
+ظ¤£ ╞ْ /api/cities/indicators
+ظ¤£ ╞ْ /api/cities/investment
+ظ¤£ ╞ْ /api/cities/market
+ظ¤£ ╞ْ /api/cities/profile
+ظ¤£ ╞ْ /api/cities/ranking
+ظ¤£ ╞ْ /api/cities/search
+ظ¤£ ╞ْ /api/city-intelligence
+ظ¤£ ╞ْ /api/city-intelligence/advisor
+ظ¤£ ╞ْ /api/city-intelligence/ai-assistant
+ظ¤£ ╞ْ /api/city-intelligence/analysis
+ظ¤£ ╞ْ /api/city-intelligence/cities
+ظ¤£ ╞ْ /api/city-intelligence/growth
+ظ¤£ ╞ْ /api/city-intelligence/infrastructure
+ظ¤£ ╞ْ /api/city-intelligence/livability
+ظ¤£ ╞ْ /api/city-intelligence/market
+ظ¤£ ╞ْ /api/city-intelligence/neighborhoods
+ظ¤£ ╞ْ /api/city-intelligence/ranking
+ظ¤£ ╞ْ /api/city-intelligence/urban-data
+ظ¤£ ╞ْ /api/climate-intelligence
+ظ¤£ ╞ْ /api/climate-intelligence/adaptation
+ظ¤£ ╞ْ /api/climate-intelligence/analytics
+ظ¤£ ╞ْ /api/climate-intelligence/buildings
+ظ¤£ ╞ْ /api/climate-intelligence/carbon
+ظ¤£ ╞ْ /api/climate-intelligence/climate
+ظ¤£ ╞ْ /api/climate-intelligence/energy
+ظ¤£ ╞ْ /api/climate-intelligence/mitigation
+ظ¤£ ╞ْ /api/climate-intelligence/predictions
+ظ¤£ ╞ْ /api/climate-intelligence/resilience
+ظ¤£ ╞ْ /api/climate-intelligence/risks
+ظ¤£ ╞ْ /api/climate-intelligence/sustainability
+ظ¤£ ╞ْ /api/cloud
+ظ¤£ ╞ْ /api/cloud/backup
+ظ¤£ ╞ْ /api/cloud/deployment
+ظ¤£ ╞ْ /api/cloud/environments
+ظ¤£ ╞ْ /api/cloud/health
+ظ¤£ ╞ْ /api/cloud/logs
+ظ¤£ ╞ْ /api/cloud/monitoring
+ظ¤£ ╞ْ /api/cloud/releases
+ظ¤£ ╞ْ /api/collaboration
+ظ¤£ ╞ْ /api/collaboration/activities
+ظ¤£ ╞ْ /api/collaboration/appointments
+ظ¤£ ╞ْ /api/collaboration/automation
+ظ¤£ ╞ْ /api/collaboration/conversations
+ظ¤£ ╞ْ /api/collaboration/messages
+ظ¤£ ╞ْ /api/collaboration/notifications
+ظ¤£ ╞ْ /api/collaboration/teams
+ظ¤£ ╞ْ /api/collaboration/workflows
+ظ¤£ ╞ْ /api/communication
+ظ¤£ ╞ْ /api/communication-intelligence
+ظ¤£ ╞ْ /api/communication-intelligence/assistant
+ظ¤£ ╞ْ /api/communication-intelligence/automation
+ظ¤£ ╞ْ /api/communication-intelligence/channels
+ظ¤£ ╞ْ /api/communication-intelligence/collaboration
+ظ¤£ ╞ْ /api/communication-intelligence/conversations
+ظ¤£ ╞ْ /api/communication-intelligence/messages
+ظ¤£ ╞ْ /api/communication-intelligence/notifications
+ظ¤£ ╞ْ /api/communication-intelligence/routing
+ظ¤£ ╞ْ /api/communication-intelligence/sentiment
+ظ¤£ ╞ْ /api/communication/appointments
+ظ¤£ ╞ْ /api/communication/assistant
+ظ¤£ ╞ْ /api/communication/conversations
+ظ¤£ ╞ْ /api/communication/inquiries
+ظ¤£ ╞ْ /api/communication/interactions
+ظ¤£ ╞ْ /api/communication/messages
+ظ¤£ ╞ْ /api/communication/negotiations
+ظ¤£ ╞ْ /api/communication/notifications
+ظ¤£ ╞ْ /api/construction-intelligence
+ظ¤£ ╞ْ /api/construction-intelligence/cost
+ظ¤£ ╞ْ /api/construction-intelligence/materials
+ظ¤£ ╞ْ /api/construction-intelligence/progress
+ظ¤£ ╞ْ /api/construction-intelligence/projects
+ظ¤£ ╞ْ /api/construction-intelligence/quality
+ظ¤£ ╞ْ /api/construction-intelligence/recommendations
+ظ¤£ ╞ْ /api/construction-intelligence/risk
+ظ¤£ ╞ْ /api/construction-intelligence/schedule
+ظ¤£ ╞ْ /api/content
+ظ¤£ ╞ْ /api/content-intelligence
+ظ¤£ ╞ْ /api/content-intelligence/ai-assistant
+ظ¤£ ╞ْ /api/content-intelligence/analysis
+ظ¤£ ╞ْ /api/content-intelligence/analyze
+ظ¤£ ╞ْ /api/content-intelligence/articles
+ظ¤£ ╞ْ /api/content-intelligence/assistant
+ظ¤£ ╞ْ /api/content-intelligence/citations
+ظ¤£ ╞ْ /api/content-intelligence/classification
+ظ¤£ ╞ْ /api/content-intelligence/contents
+ظ¤£ ╞ْ /api/content-intelligence/editorial
+ظ¤£ ╞ْ /api/content-intelligence/knowledge
+ظ¤£ ╞ْ /api/content-intelligence/knowledge-links
+ظ¤£ ╞ْ /api/content-intelligence/localization
+ظ¤£ ╞ْ /api/content-intelligence/publications
+ظ¤£ ╞ْ /api/content-intelligence/publish
+ظ¤£ ╞ْ /api/content-intelligence/publishing
+ظ¤£ ╞ْ /api/content-intelligence/quality
+ظ¤£ ╞ْ /api/content-intelligence/ranking
+ظ¤£ ╞ْ /api/content-intelligence/relations
+ظ¤£ ╞ْ /api/content-intelligence/reports
+ظ¤£ ╞ْ /api/content-intelligence/research
+ظ¤£ ╞ْ /api/content-intelligence/semantic
+ظ¤£ ╞ْ /api/content-intelligence/seo
+ظ¤£ ╞ْ /api/content-intelligence/sources
+ظ¤£ ╞ْ /api/content-intelligence/summary
+ظ¤£ ╞ْ /api/content-intelligence/taxonomy
+ظ¤£ ╞ْ /api/content-intelligence/translate
+ظ¤£ ╞ْ /api/content-intelligence/translation
+ظ¤£ ╞ْ /api/content-intelligence/translations
+ظ¤£ ╞ْ /api/content-platform
+ظ¤£ ╞ْ /api/content-platform/articles
+ظ¤£ ╞ْ /api/content-platform/authors
+ظ¤£ ╞ْ /api/content-platform/editorial
+ظ¤£ ╞ْ /api/content-platform/knowledge
+ظ¤£ ╞ْ /api/content-platform/media
+ظ¤£ ╞ْ /api/content-platform/publishing
+ظ¤£ ╞ْ /api/content-platform/reports
+ظ¤£ ╞ْ /api/content-platform/research
+ظ¤£ ╞ْ /api/content/ai-summary
+ظ¤£ ╞ْ /api/content/articles
+ظ¤£ ╞ْ /api/content/classify
+ظ¤£ ╞ْ /api/content/news
+ظ¤£ ╞ْ /api/content/reports
+ظ¤£ ╞ْ /api/content/seo
+ظ¤£ ╞ْ /api/content/translate
+ظ¤£ ╞ْ /api/continuous-learning
+ظ¤£ ╞ْ /api/continuous-learning/adaptation
+ظ¤£ ╞ْ /api/continuous-learning/analytics
+ظ¤£ ╞ْ /api/continuous-learning/evaluation
+ظ¤£ ╞ْ /api/continuous-learning/evolution
+ظ¤£ ╞ْ /api/continuous-learning/experiences
+ظ¤£ ╞ْ /api/continuous-learning/feedback
+ظ¤£ ╞ْ /api/continuous-learning/models
+ظ¤£ ╞ْ /api/continuous-learning/optimization
+ظ¤£ ╞ْ /api/conversational-ai
+ظ¤£ ╞ْ /api/conversational-ai/assistant
+ظ¤£ ╞ْ /api/conversational-ai/chat
+ظ¤£ ╞ْ /api/conversational-ai/context
+ظ¤£ ╞ْ /api/conversational-ai/intents
+ظ¤£ ╞ْ /api/conversational-ai/languages
+ظ¤£ ╞ْ /api/conversational-ai/memory
+ظ¤£ ╞ْ /api/conversational-ai/messages
+ظ¤£ ╞ْ /api/conversational-ai/voice
+ظ¤£ ╞ْ /api/dashboard
+ظ¤£ ╞ْ /api/dashboard/activity
+ظ¤£ ╞ْ /api/dashboard/insights
+ظ¤£ ╞ْ /api/dashboard/preferences
+ظ¤£ ╞ْ /api/data-exchange
+ظ¤£ ╞ْ /api/data-exchange/analytics
+ظ¤£ ╞ْ /api/data-exchange/apis
+ظ¤£ ╞ْ /api/data-exchange/contracts
+ظ¤£ ╞ْ /api/data-exchange/datasets
+ظ¤£ ╞ْ /api/data-exchange/delivery
+ظ¤£ ╞ْ /api/data-exchange/intelligence
+ظ¤£ ╞ْ /api/data-exchange/licenses
+ظ¤£ ╞ْ /api/data-exchange/providers
+ظ¤£ ╞ْ /api/data-exchange/quality
+ظ¤£ ╞ْ /api/data-intelligence
+ظ¤£ ╞ْ /api/data-intelligence/ai
+ظ¤£ ╞ْ /api/data-intelligence/analytics
+ظ¤£ ╞ْ /api/data-intelligence/assistant
+ظ¤£ ╞ْ /api/data-intelligence/business
+ظ¤£ ╞ْ /api/data-intelligence/dashboards
+ظ¤£ ╞ْ /api/data-intelligence/datasets
+ظ¤£ ╞ْ /api/data-intelligence/decisions
+ظ¤£ ╞ْ /api/data-intelligence/executive
+ظ¤£ ╞ْ /api/data-intelligence/geographic
+ظ¤£ ╞ْ /api/data-intelligence/indicators
+ظ¤£ ╞ْ /api/data-intelligence/ingestion
+ظ¤£ ╞ْ /api/data-intelligence/insights
+ظ¤£ ╞ْ /api/data-intelligence/kpis
+ظ¤£ ╞ْ /api/data-intelligence/market
+ظ¤£ ╞ْ /api/data-intelligence/metrics
+ظ¤£ ╞ْ /api/data-intelligence/pipelines
+ظ¤£ ╞ْ /api/data-intelligence/quality
+ظ¤£ ╞ْ /api/data-intelligence/reports
+ظ¤£ ╞ْ /api/data-intelligence/sources
+ظ¤£ ╞ْ /api/data-intelligence/users
+ظ¤£ ╞ْ /api/data-intelligence/warehouse
+ظ¤£ ╞ْ /api/data-marketplace
+ظ¤£ ╞ْ /api/data-marketplace/analytics
+ظ¤£ ╞ْ /api/data-marketplace/apis
+ظ¤£ ╞ْ /api/data-marketplace/datasets
+ظ¤£ ╞ْ /api/data-marketplace/insights
+ظ¤£ ╞ْ /api/data-marketplace/knowledge
+ظ¤£ ╞ْ /api/data-marketplace/products
+ظ¤£ ╞ْ /api/data-marketplace/providers
+ظ¤£ ╞ْ /api/data-marketplace/subscriptions
+ظ¤£ ╞ْ /api/data-platform
+ظ¤£ ╞ْ /api/data-platform/analytics
+ظ¤£ ╞ْ /api/data-platform/connectors
+ظ¤£ ╞ْ /api/data-platform/datasets
+ظ¤£ ╞ْ /api/data-platform/lake
+ظ¤£ ╞ْ /api/data-platform/pipeline
+ظ¤£ ╞ْ /api/data-platform/quality
+ظ¤£ ╞ْ /api/data-platform/sources
+ظ¤£ ╞ْ /api/data-platform/warehouse
+ظ¤£ ╞ْ /api/database-production-readiness
+ظ¤£ ╞ْ /api/decision-intelligence
+ظ¤£ ╞ْ /api/decision-intelligence/analytics
+ظ¤£ ╞ْ /api/decision-intelligence/assistant
+ظ¤£ ╞ْ /api/decision-intelligence/criteria
+ظ¤£ ╞ْ /api/decision-intelligence/decisions
+ظ¤£ ╞ْ /api/decision-intelligence/executives
+ظ¤£ ╞ْ /api/decision-intelligence/explanations
+ظ¤£ ╞ْ /api/decision-intelligence/insights
+ظ¤£ ╞ْ /api/decision-intelligence/opportunities
+ظ¤£ ╞ْ /api/decision-intelligence/planning
+ظ¤£ ╞ْ /api/decision-intelligence/rankings
+ظ¤£ ╞ْ /api/decision-intelligence/reasoning
+ظ¤£ ╞ْ /api/decision-intelligence/recommendations
+ظ¤£ ╞ْ /api/decision-intelligence/risks
+ظ¤£ ╞ْ /api/decision-intelligence/scenarios
+ظ¤£ ╞ْ /api/decision-intelligence/scores
+ظ¤£ ╞ْ /api/decision-intelligence/simulations
+ظ¤£ ╞ْ /api/decision-intelligence/strategies
+ظ¤£ ╞ْ /api/deployment-readiness
+ظ¤£ ╞ْ /api/digital-twin
+ظ¤£ ╞ْ /api/digital-twin-intelligence
+ظ¤£ ╞ْ /api/digital-twin-intelligence/analytics
+ظ¤£ ╞ْ /api/digital-twin-intelligence/buildings
+ظ¤£ ╞ْ /api/digital-twin-intelligence/cities
+ظ¤£ ╞ْ /api/digital-twin-intelligence/prediction
+ظ¤£ ╞ْ /api/digital-twin-intelligence/predictions
+ظ¤£ ╞ْ /api/digital-twin-intelligence/properties
+ظ¤£ ╞ْ /api/digital-twin-intelligence/scenarios
+ظ¤£ ╞ْ /api/digital-twin-intelligence/sensors
+ظ¤£ ╞ْ /api/digital-twin-intelligence/simulation
+ظ¤£ ╞ْ /api/digital-twin-intelligence/simulations
+ظ¤£ ╞ْ /api/digital-twin-intelligence/telemetry
+ظ¤£ ╞ْ /api/digital-twin-intelligence/twins
+ظ¤£ ╞ْ /api/digital-twin-intelligence/urban
+ظ¤£ ╞ْ /api/digital-twin/advisor
+ظ¤£ ╞ْ /api/digital-twin/analytics
+ظ¤£ ╞ْ /api/digital-twin/assets
+ظ¤£ ╞ْ /api/digital-twin/assistant
+ظ¤£ ╞ْ /api/digital-twin/building
+ظ¤£ ╞ْ /api/digital-twin/buildings
+ظ¤£ ╞ْ /api/digital-twin/cities
+ظ¤£ ╞ْ /api/digital-twin/environment
+ظ¤£ ╞ْ /api/digital-twin/forecasts
+ظ¤£ ╞ْ /api/digital-twin/future-city
+ظ¤£ ╞ْ /api/digital-twin/lifecycle
+ظ¤£ ╞ْ /api/digital-twin/markets
+ظ¤£ ╞ْ /api/digital-twin/models
+ظ¤£ ╞ْ /api/digital-twin/optimization
+ظ¤£ ╞ْ /api/digital-twin/predictions
+ظ¤£ ╞ْ /api/digital-twin/properties
+ظ¤£ ╞ْ /api/digital-twin/property
+ظ¤£ ╞ْ /api/digital-twin/scenarios
+ظ¤£ ╞ْ /api/digital-twin/simulation
+ظ¤£ ╞ْ /api/digital-twin/simulations
+ظ¤£ ╞ْ /api/digital-twin/spatial
+ظ¤£ ╞ْ /api/digital-twin/synchronization
+ظ¤£ ╞ْ /api/digital-twin/twins
+ظ¤£ ╞ْ /api/digital-twin/urban
+ظ¤£ ╞ْ /api/discovery
+ظ¤£ ╞ْ /api/discovery/analytics
+ظ¤£ ╞ْ /api/discovery/filters
+ظ¤£ ╞ْ /api/discovery/properties
+ظ¤£ ╞ْ /api/discovery/ranking
+ظ¤£ ╞ْ /api/discovery/recommendations
+ظ¤£ ╞ْ /api/discovery/search
+ظ¤£ ╞ْ /api/discovery/semantic
+ظ¤£ ╞ْ /api/enterprise-governance
+ظ¤£ ╞ْ /api/enterprise-governance/compliance
+ظ¤£ ╞ْ /api/enterprise-governance/data
+ظ¤£ ╞ْ /api/enterprise-governance/decisions
+ظ¤£ ╞ْ /api/enterprise-governance/organizations
+ظ¤£ ╞ْ /api/enterprise-governance/policies
+ظ¤£ ╞ْ /api/enterprise-governance/risk
+ظ¤£ ╞ْ /api/enterprise-governance/roles
+ظ¤£ ╞ْ /api/enterprise-governance/tenants
+ظ¤£ ╞ْ /api/enterprise-platform
+ظ¤£ ╞ْ /api/enterprise-platform/analytics
+ظ¤£ ╞ْ /api/enterprise-platform/members
+ظ¤£ ╞ْ /api/enterprise-platform/organizations
+ظ¤£ ╞ْ /api/enterprise-platform/permissions
+ظ¤£ ╞ْ /api/enterprise-platform/roles
+ظ¤£ ╞ْ /api/enterprise-platform/services
+ظ¤£ ╞ْ /api/enterprise-platform/teams
+ظ¤£ ╞ْ /api/enterprise-platform/workspaces
+ظ¤£ ╞ْ /api/experience
+ظ¤£ ╞ْ /api/experience/adaptive
+ظ¤£ ╞ْ /api/experience/analytics
+ظ¤£ ╞ْ /api/experience/context
+ظ¤£ ╞ْ /api/experience/interaction
+ظ¤£ ╞ْ /api/experience/journey
+ظ¤£ ╞ْ /api/experience/personalization
+ظ¤£ ╞ْ /api/experience/recommendations
+ظ¤£ ╞ْ /api/experience/search
+ظ¤£ ╞ْ /api/financial-intelligence
+ظ¤£ ╞ْ /api/financial-intelligence/analytics
+ظ¤£ ╞ْ /api/financial-intelligence/forecasts
+ظ¤£ ╞ْ /api/financial-intelligence/investments
+ظ¤£ ╞ْ /api/financial-intelligence/portfolios
+ظ¤£ ╞ْ /api/financial-intelligence/risks
+ظ¤£ ╞ْ /api/financial-intelligence/roi
+ظ¤£ ╞ْ /api/financial-intelligence/simulations
+ظ¤£ ╞ْ /api/financial-intelligence/strategies
+ظ¤£ ╞ْ /api/geospatial
+ظ¤£ ╞ْ /api/geospatial/cities
+ظ¤£ ╞ْ /api/geospatial/climate
+ظ¤£ ╞ْ /api/geospatial/environmental
+ظ¤£ ╞ْ /api/geospatial/intelligence
+ظ¤£ ╞ْ /api/geospatial/locations
+ظ¤£ ╞ْ /api/geospatial/map
+ظ¤£ ╞ْ /api/geospatial/spatial-analysis
+ظ¤£ ╞ْ /api/geospatial/urban
+ظ¤£ ╞ْ /api/global-expansion
+ظ¤£ ╞ْ /api/global-expansion/countries
+ظ¤£ ╞ْ /api/global-expansion/coverage
+ظ¤£ ╞ْ /api/global-expansion/currencies
+ظ¤£ ╞ْ /api/global-expansion/jurisdictions
+ظ¤£ ╞ْ /api/global-expansion/locales
+ظ¤£ ╞ْ /api/global-expansion/markets
+ظ¤£ ╞ْ /api/global-expansion/regions
+ظ¤£ ╞ْ /api/health
+ظ¤£ ╞ْ /api/infrastructure
+ظ¤£ ╞ْ /api/infrastructure/backups
+ظ¤£ ╞ْ /api/infrastructure/cloud
+ظ¤£ ╞ْ /api/infrastructure/deployments
+ظ¤£ ╞ْ /api/infrastructure/logs
+ظ¤£ ╞ْ /api/infrastructure/monitoring
+ظ¤£ ╞ْ /api/infrastructure/operations
+ظ¤£ ╞ْ /api/infrastructure/performance
+ظ¤£ ╞ْ /api/infrastructure/security
+ظ¤£ ╞ْ /api/integration
+ظ¤£ ╞ْ /api/integration/analytics
+ظ¤£ ╞ْ /api/integration/apis
+ظ¤£ ╞ْ /api/integration/connectors
+ظ¤£ ╞ْ /api/integration/enterprise
+ظ¤£ ╞ْ /api/integration/events
+ظ¤£ ╞ْ /api/integration/exchange
+ظ¤£ ╞ْ /api/integration/federation
+ظ¤£ ╞ْ /api/integration/gateway
+ظ¤£ ╞ْ /api/integration/messages
+ظ¤£ ╞ْ /api/integration/monitoring
+ظ¤£ ╞ْ /api/integration/partners
+ظ¤£ ╞ْ /api/integration/security
+ظ¤£ ╞ْ /api/integration/services
+ظ¤£ ╞ْ /api/integration/webhooks
+ظ¤£ ╞ْ /api/intelligence
+ظ¤£ ╞ْ /api/intelligence/agents
+ظ¤£ ╞ْ /api/intelligence/assistant
+ظ¤£ ╞ْ /api/intelligence/decision
+ظ¤£ ╞ْ /api/intelligence/health
+ظ¤£ ╞ْ /api/intelligence/memory
+ظ¤£ ╞ْ /api/intelligence/orchestration
+ظ¤£ ╞ْ /api/intelligence/platform
+ظ¤£ ╞ْ /api/intelligence/query
+ظ¤£ ╞ْ /api/intelligence/reasoning
+ظ¤£ ╞ْ /api/intelligence/semantic
+ظ¤£ ╞ْ /api/intelligence/services
+ظ¤£ ╞ْ /api/intelligent-operations
+ظ¤£ ╞ْ /api/intelligent-operations/analytics
+ظ¤£ ╞ْ /api/intelligent-operations/automations
+ظ¤£ ╞ْ /api/intelligent-operations/events
+ظ¤£ ╞ْ /api/intelligent-operations/executions
+ظ¤£ ╞ْ /api/intelligent-operations/rules
+ظ¤£ ╞ْ /api/intelligent-operations/schedules
+ظ¤£ ╞ْ /api/intelligent-operations/tasks
+ظ¤£ ╞ْ /api/intelligent-operations/workflows
+ظ¤£ ╞ْ /api/investment
+ظ¤£ ╞ْ /api/investment-intelligence
+ظ¤£ ╞ْ /api/investment-intelligence/advisor
+ظ¤£ ╞ْ /api/investment-intelligence/allocation
+ظ¤£ ╞ْ /api/investment-intelligence/assets
+ظ¤£ ╞ْ /api/investment-intelligence/assistant
+ظ¤£ ╞ْ /api/investment-intelligence/forecast
+ظ¤£ ╞ْ /api/investment-intelligence/forecasts
+ظ¤£ ╞ْ /api/investment-intelligence/investments
+ظ¤£ ╞ْ /api/investment-intelligence/investor
+ظ¤£ ╞ْ /api/investment-intelligence/investors
+ظ¤£ ╞ْ /api/investment-intelligence/opportunities
+ظ¤£ ╞ْ /api/investment-intelligence/portfolio
+ظ¤£ ╞ْ /api/investment-intelligence/portfolios
+ظ¤£ ╞ْ /api/investment-intelligence/prediction
+ظ¤£ ╞ْ /api/investment-intelligence/ranking
+ظ¤£ ╞ْ /api/investment-intelligence/risk
+ظ¤£ ╞ْ /api/investment-intelligence/risks
+ظ¤£ ╞ْ /api/investment-intelligence/roi
+ظ¤£ ╞ْ /api/investment-intelligence/strategies
+ظ¤£ ╞ْ /api/investment-intelligence/strategy
+ظ¤£ ╞ْ /api/investment/advisor
+ظ¤£ ╞ْ /api/investment/analysis
+ظ¤£ ╞ْ /api/investment/opportunities
+ظ¤£ ╞ْ /api/investment/portfolio
+ظ¤£ ╞ْ /api/investment/risk
+ظ¤£ ╞ْ /api/investment/roi
+ظ¤£ ╞ْ /api/investment/strategy
+ظ¤£ ╞ْ /api/knowledge
+ظ¤£ ╞ْ /api/knowledge-fabric
+ظ¤£ ╞ْ /api/knowledge-fabric/analytics
+ظ¤£ ╞ْ /api/knowledge-fabric/concepts
+ظ¤£ ╞ْ /api/knowledge-fabric/entities
+ظ¤£ ╞ْ /api/knowledge-fabric/graph
+ظ¤£ ╞ْ /api/knowledge-fabric/ontology
+ظ¤£ ╞ْ /api/knowledge-fabric/reasoning
+ظ¤£ ╞ْ /api/knowledge-fabric/relations
+ظ¤£ ╞ْ /api/knowledge-fabric/semantics
+ظ¤£ ╞ْ /api/knowledge-graph
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/assistant
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/discovery
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/entities
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/inference
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/ontology
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/query
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/reasoning
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/relationships
+ظ¤£ ╞ْ /api/knowledge-graph-intelligence/semantic
+ظ¤£ ╞ْ /api/knowledge-graph/ai
+ظ¤£ ╞ْ /api/knowledge-graph/analytics
+ظ¤£ ╞ْ /api/knowledge-graph/architecture
+ظ¤£ ╞ْ /api/knowledge-graph/assistant
+ظ¤£ ╞ْ /api/knowledge-graph/city
+ظ¤£ ╞ْ /api/knowledge-graph/concepts
+ظ¤£ ╞ْ /api/knowledge-graph/context
+ظ¤£ ╞ْ /api/knowledge-graph/discovery
+ظ¤£ ╞ْ /api/knowledge-graph/entities
+ظ¤£ ╞ْ /api/knowledge-graph/fusion
+ظ¤£ ╞ْ /api/knowledge-graph/graph
+ظ¤£ ╞ْ /api/knowledge-graph/inference
+ظ¤£ ╞ْ /api/knowledge-graph/insights
+ظ¤£ ╞ْ /api/knowledge-graph/investment
+ظ¤£ ╞ْ /api/knowledge-graph/memory
+ظ¤£ ╞ْ /api/knowledge-graph/nodes
+ظ¤£ ╞ْ /api/knowledge-graph/ontology
+ظ¤£ ╞ْ /api/knowledge-graph/property
+ظ¤£ ╞ْ /api/knowledge-graph/query
+ظ¤£ ╞ْ /api/knowledge-graph/reasoning
+ظ¤£ ╞ْ /api/knowledge-graph/relations
+ظ¤£ ╞ْ /api/knowledge-graph/relationships
+ظ¤£ ╞ْ /api/knowledge-graph/search
+ظ¤£ ╞ْ /api/knowledge-graph/semantic
+ظ¤£ ╞ْ /api/knowledge-intelligence
+ظ¤£ ╞ْ /api/knowledge-intelligence/analytics
+ظ¤£ ╞ْ /api/knowledge-intelligence/concepts
+ظ¤£ ╞ْ /api/knowledge-intelligence/entities
+ظ¤£ ╞ْ /api/knowledge-intelligence/graph
+ظ¤£ ╞ْ /api/knowledge-intelligence/ontology
+ظ¤£ ╞ْ /api/knowledge-intelligence/reasoning
+ظ¤£ ╞ْ /api/knowledge-intelligence/relationships
+ظ¤£ ╞ْ /api/knowledge-intelligence/semantic-search
+ظ¤£ ╞ْ /api/knowledge/ai
+ظ¤£ ╞ْ /api/knowledge/analysis
+ظ¤£ ╞ْ /api/knowledge/discovery
+ظ¤£ ╞ْ /api/knowledge/entities
+ظ¤£ ╞ْ /api/knowledge/entity
+ظ¤£ ╞ْ /api/knowledge/explore
+ظ¤£ ╞ْ /api/knowledge/graph
+ظ¤£ ╞ْ /api/knowledge/insights
+ظ¤£ ╞ْ /api/knowledge/ontology
+ظ¤£ ╞ْ /api/knowledge/query
+ظ¤£ ╞ْ /api/knowledge/reasoning
+ظ¤£ ╞ْ /api/knowledge/relation
+ظ¤£ ╞ْ /api/knowledge/relations
+ظ¤£ ╞ْ /api/knowledge/search
+ظ¤£ ╞ْ /api/knowledge/semantic
+ظ¤£ ╞ْ /api/knowledge/sources
+ظ¤£ ╞ْ /api/localization-intelligence
+ظ¤£ ╞ْ /api/localization-intelligence/analytics
+ظ¤£ ╞ْ /api/localization-intelligence/cultures
+ظ¤£ ╞ْ /api/localization-intelligence/currencies
+ظ¤£ ╞ْ /api/localization-intelligence/languages
+ظ¤£ ╞ْ /api/localization-intelligence/locales
+ظ¤£ ╞ْ /api/localization-intelligence/markets
+ظ¤£ ╞ْ /api/localization-intelligence/regions
+ظ¤£ ╞ْ /api/localization-intelligence/translations
+ظ¤£ ╞ْ /api/market
+ظ¤£ ╞ْ /api/market-intelligence
+ظ¤£ ╞ْ /api/market-intelligence/advisor
+ظ¤£ ╞ْ /api/market-intelligence/ai-analyst
+ظ¤£ ╞ْ /api/market-intelligence/analytics
+ظ¤£ ╞ْ /api/market-intelligence/assistant
+ظ¤£ ╞ْ /api/market-intelligence/cycle
+ظ¤£ ╞ْ /api/market-intelligence/cycles
+ظ¤£ ╞ْ /api/market-intelligence/demand
+ظ¤£ ╞ْ /api/market-intelligence/economics
+ظ¤£ ╞ْ /api/market-intelligence/economy
+ظ¤£ ╞ْ /api/market-intelligence/forecast
+ظ¤£ ╞ْ /api/market-intelligence/forecasts
+ظ¤£ ╞ْ /api/market-intelligence/heatmap
+ظ¤£ ╞ْ /api/market-intelligence/indicators
+ظ¤£ ╞ْ /api/market-intelligence/investment
+ظ¤£ ╞ْ /api/market-intelligence/investments
+ظ¤£ ╞ْ /api/market-intelligence/market
+ظ¤£ ╞ْ /api/market-intelligence/markets
+ظ¤£ ╞ْ /api/market-intelligence/opportunities
+ظ¤£ ╞ْ /api/market-intelligence/prediction
+ظ¤£ ╞ْ /api/market-intelligence/predictions
+ظ¤£ ╞ْ /api/market-intelligence/prices
+ظ¤£ ╞ْ /api/market-intelligence/properties
+ظ¤£ ╞ْ /api/market-intelligence/ranking
+ظ¤£ ╞ْ /api/market-intelligence/risks
+ظ¤£ ╞ْ /api/market-intelligence/signals
+ظ¤£ ╞ْ /api/market-intelligence/simulation
+ظ¤£ ╞ْ /api/market-intelligence/streaming
+ظ¤£ ╞ْ /api/market-intelligence/supply
+ظ¤£ ╞ْ /api/market-intelligence/supply-demand
+ظ¤£ ╞ْ /api/market-intelligence/trends
+ظ¤£ ╞ْ /api/market-intelligence/valuation
+ظ¤£ ╞ْ /api/market-intelligence/valuations
+ظ¤£ ╞ْ /api/market/analytics
+ظ¤£ ╞ْ /api/market/forecast
+ظ¤£ ╞ْ /api/market/investment
+ظ¤£ ╞ْ /api/market/overview
+ظ¤£ ╞ْ /api/market/prices
+ظ¤£ ╞ْ /api/market/reports
+ظ¤£ ╞ْ /api/market/trends
+ظ¤£ ╞ْ /api/marketplace
+ظ¤£ ╞ْ /api/marketplace-intelligence
+ظ¤£ ╞ْ /api/marketplace-intelligence/assistant
+ظ¤£ ╞ْ /api/marketplace-intelligence/demand
+ظ¤£ ╞ْ /api/marketplace-intelligence/discovery
+ظ¤£ ╞ْ /api/marketplace-intelligence/investments
+ظ¤£ ╞ْ /api/marketplace-intelligence/listings
+ظ¤£ ╞ْ /api/marketplace-intelligence/pricing
+ظ¤£ ╞ْ /api/marketplace-intelligence/ranking
+ظ¤£ ╞ْ /api/marketplace-intelligence/recommendations
+ظ¤£ ╞ْ /api/marketplace-intelligence/search
+ظ¤£ ╞ْ /api/marketplace-intelligence/signals
+ظ¤£ ╞ْ /api/marketplace-intelligence/supply
+ظ¤£ ╞ْ /api/marketplace-intelligence/transactions
+ظ¤£ ╞ْ /api/marketplace-intelligence/valuation
+ظ¤£ ╞ْ /api/marketplace/agents
+ظ¤£ ╞ْ /api/marketplace/ai-analysis
+ظ¤£ ╞ْ /api/marketplace/ai-assistant
+ظ¤£ ╞ْ /api/marketplace/buyer-intent
+ظ¤£ ╞ْ /api/marketplace/buyers
+ظ¤£ ╞ْ /api/marketplace/contracts
+ظ¤£ ╞ْ /api/marketplace/documents
+ظ¤£ ╞ْ /api/marketplace/favorites
+ظ¤£ ╞ْ /api/marketplace/inquiries
+ظ¤£ ╞ْ /api/marketplace/interactions
+ظ¤£ ╞ْ /api/marketplace/listings
+ظ¤£ ╞ْ /api/marketplace/matching
+ظ¤£ ╞ْ /api/marketplace/media
+ظ¤£ ╞ْ /api/marketplace/mortgage
+ظ¤£ ╞ْ /api/marketplace/negotiation
+ظ¤£ ╞ْ /api/marketplace/negotiations
+ظ¤£ ╞ْ /api/marketplace/notifications
+ظ¤£ ╞ْ /api/marketplace/offers
+ظ¤£ ╞ْ /api/marketplace/orders
+ظ¤£ ╞ْ /api/marketplace/payments
+ظ¤£ ╞ْ /api/marketplace/properties
+ظ¤£ ╞ْ /api/marketplace/recommendations
+ظ¤£ ╞ْ /api/marketplace/rental
+ظ¤£ ╞ْ /api/marketplace/saved-searches
+ظ¤£ ╞ْ /api/marketplace/search
+ظ¤£ ╞ْ /api/marketplace/sellers
+ظ¤£ ╞ْ /api/marketplace/services
+ظ¤£ ╞ْ /api/marketplace/transactions
+ظ¤£ ╞ْ /api/marketplace/vendors
+ظ¤£ ╞ْ /api/marketplace/workflow
+ظ¤£ ╞ْ /api/markets
+ظ¤£ ╞ْ /api/markets/analysis
+ظ¤£ ╞ْ /api/markets/comparison
+ظ¤£ ╞ْ /api/markets/economics
+ظ¤£ ╞ْ /api/markets/forecast
+ظ¤£ ╞ْ /api/markets/indexes
+ظ¤£ ╞ْ /api/markets/investment
+ظ¤£ ╞ْ /api/markets/risk
+ظ¤£ ╞ْ /api/markets/trends
+ظ¤£ ╞ْ /api/mobile
+ظ¤£ ╞ْ /api/mobile/channels
+ظ¤£ ╞ْ /api/mobile/devices
+ظ¤£ ╞ْ /api/mobile/notifications
+ظ¤£ ╞ْ /api/mobile/offline
+ظ¤£ ╞ْ /api/mobile/preferences
+ظ¤£ ╞ْ /api/mobile/push
+ظ¤£ ╞ْ /api/mobile/sync
+ظ¤£ ╞ْ /api/moderation
+ظ¤£ ╞ْ /api/moderation/approve
+ظ¤£ ╞ْ /api/moderation/quality
+ظ¤£ ╞ْ /api/moderation/reject
+ظ¤£ ╞ْ /api/moderation/review
+ظ¤£ ╞ْ /api/notifications
+ظ¤£ ╞ْ /api/notifications/events
+ظ¤£ ╞ْ /api/notifications/read
+ظ¤£ ╞ْ /api/notifications/settings
+ظ¤£ ╞ْ /api/observability-status
+ظ¤£ ╞ْ /api/open-platform
+ظ¤£ ╞ْ /api/open-platform/analytics
+ظ¤£ ╞ْ /api/open-platform/apis
+ظ¤£ ╞ْ /api/open-platform/developers
+ظ¤£ ╞ْ /api/open-platform/exchange
+ظ¤£ ╞ْ /api/open-platform/gateway
+ظ¤£ ╞ْ /api/open-platform/integrations
+ظ¤£ ╞ْ /api/open-platform/partners
+ظ¤£ ╞ْ /api/open-platform/webhooks
+ظ¤£ ╞ْ /api/operational-events
+ظ¤£ ╞ْ /api/performance
+ظ¤£ ╞ْ /api/performance/availability
+ظ¤£ ╞ْ /api/performance/cache
+ظ¤£ ╞ْ /api/performance/insights
+ظ¤£ ╞ْ /api/performance/load
+ظ¤£ ╞ْ /api/performance/monitoring
+ظ¤£ ╞ْ /api/performance/optimization
+ظ¤£ ╞ْ /api/performance/scaling
+ظ¤£ ╞ْ /api/platform/health
+ظ¤£ ╞ْ /api/platform/monitoring
+ظ¤£ ╞ْ /api/platform/security
+ظ¤£ ╞ْ /api/platform/status
+ظ¤£ ╞ْ /api/platform/system
+ظ¤£ ╞ْ /api/platform/users
+ظ¤£ ╞ْ /api/predictive-intelligence
+ظ¤£ ╞ْ /api/predictive-intelligence/assistant
+ظ¤£ ╞ْ /api/predictive-intelligence/confidence
+ظ¤£ ╞ْ /api/predictive-intelligence/forecasts
+ظ¤£ ╞ْ /api/predictive-intelligence/models
+ظ¤£ ╞ْ /api/predictive-intelligence/predictions
+ظ¤£ ╞ْ /api/predictive-intelligence/risks
+ظ¤£ ╞ْ /api/predictive-intelligence/scenarios
+ظ¤£ ╞ْ /api/predictive-intelligence/trends
+ظ¤£ ╞ْ /api/product-experience
+ظ¤£ ╞ْ /api/product-experience/accessibility
+ظ¤£ ╞ْ /api/product-experience/analytics
+ظ¤£ ╞ْ /api/product-experience/help
+ظ¤£ ╞ْ /api/product-experience/journeys
+ظ¤£ ╞ْ /api/product-experience/onboarding
+ظ¤£ ╞ْ /api/product-experience/personalization
+ظ¤£ ╞ْ /api/product-experience/preferences
+ظ¤£ ╞ْ /api/production-readiness
+ظ¤£ ╞ْ /api/production-runtime-config
+ظ¤£ ╞ْ /api/professional-intelligence
+ظ¤£ ╞ْ /api/professional-intelligence/advisor
+ظ¤£ ╞ْ /api/professional-intelligence/architects
+ظ¤£ ╞ْ /api/professional-intelligence/assistant
+ظ¤£ ╞ْ /api/professional-intelligence/availability
+ظ¤£ ╞ْ /api/professional-intelligence/engineers
+ظ¤£ ╞ْ /api/professional-intelligence/expertise
+ظ¤£ ╞ْ /api/professional-intelligence/experts
+ظ¤£ ╞ْ /api/professional-intelligence/matching
+ظ¤£ ╞ْ /api/professional-intelligence/organizations
+ظ¤£ ╞ْ /api/professional-intelligence/portfolio
+ظ¤£ ╞ْ /api/professional-intelligence/professionals
+ظ¤£ ╞ْ /api/professional-intelligence/projects
+ظ¤£ ╞ْ /api/professional-intelligence/ratings
+ظ¤£ ╞ْ /api/professional-intelligence/reputation
+ظ¤£ ╞ْ /api/professional-intelligence/reviews
+ظ¤£ ╞ْ /api/professional-intelligence/services
+ظ¤£ ╞ْ /api/professional-intelligence/skills
+ظ¤£ ╞ْ /api/professionals
+ظ¤£ ╞ْ /api/professionals/ai-insight
+ظ¤£ ╞ْ /api/professionals/expertise
+ظ¤£ ╞ْ /api/professionals/experts
+ظ¤£ ╞ْ /api/professionals/featured
+ظ¤£ ╞ْ /api/professionals/matching
+ظ¤£ ╞ْ /api/professionals/organizations
+ظ¤£ ╞ْ /api/professionals/portfolio
+ظ¤£ ╞ْ /api/professionals/profile
+ظ¤£ ╞ْ /api/professionals/profiles
+ظ¤£ ╞ْ /api/professionals/ranking
+ظ¤£ ╞ْ /api/professionals/recommendations
+ظ¤£ ╞ْ /api/professionals/reputation
+ظ¤£ ╞ْ /api/professionals/reviews
+ظ¤£ ╞ْ /api/professionals/search
+ظ¤£ ╞ْ /api/professionals/services
+ظ¤£ ╞ْ /api/professionals/skills
+ظ¤£ ╞ْ /api/professionals/verification
+ظ¤£ ╞ْ /api/professionals/verify
+ظ¤£ ╞ْ /api/profile
+ظ¤£ ╞ْ /api/profile/activity
+ظ¤£ ╞ْ /api/profile/dashboard
+ظ¤£ ╞ْ /api/profile/organization
+ظ¤£ ╞ْ /api/profile/preferences
+ظ¤£ ╞ْ /api/profile/professional
+ظ¤£ ╞ْ /api/profile/user
+ظ¤£ ╞ْ /api/properties
+ظ¤£ ╞ْ /api/properties/analysis
+ظ¤£ ╞ْ /api/properties/compare
+ظ¤£ ╞ْ /api/properties/detail
+ظ¤£ ╞ْ /api/properties/features
+ظ¤£ ╞ْ /api/properties/investment
+ظ¤£ ╞ْ /api/properties/match
+ظ¤£ ╞ْ /api/properties/profile
+ظ¤£ ╞ْ /api/properties/ranking
+ظ¤£ ╞ْ /api/properties/recommendation
+ظ¤£ ╞ْ /api/properties/recommendations
+ظ¤£ ╞ْ /api/properties/score
+ظ¤£ ╞ْ /api/properties/search
+ظ¤£ ╞ْ /api/property-intelligence
+ظ¤£ ╞ْ /api/property-intelligence/advisor
+ظ¤£ ╞ْ /api/property-intelligence/ai
+ظ¤£ ╞ْ /api/property-intelligence/ai-insight
+ظ¤£ ╞ْ /api/property-intelligence/analysis
+ظ¤£ ╞ْ /api/property-intelligence/analytics
+ظ¤£ ╞ْ /api/property-intelligence/architecture
+ظ¤£ ╞ْ /api/property-intelligence/comparison
+ظ¤£ ╞ْ /api/property-intelligence/features
+ظ¤£ ╞ْ /api/property-intelligence/images
+ظ¤£ ╞ْ /api/property-intelligence/investment
+ظ¤£ ╞ْ /api/property-intelligence/lifecycle
+ظ¤£ ╞ْ /api/property-intelligence/location
+ظ¤£ ╞ْ /api/property-intelligence/matching
+ظ¤£ ╞ْ /api/property-intelligence/opportunities
+ظ¤£ ╞ْ /api/property-intelligence/performance
+ظ¤£ ╞ْ /api/property-intelligence/profiles
+ظ¤£ ╞ْ /api/property-intelligence/properties
+ظ¤£ ╞ْ /api/property-intelligence/quality
+ظ¤£ ╞ْ /api/property-intelligence/ranking
+ظ¤£ ╞ْ /api/property-intelligence/recommendation
+ظ¤£ ╞ْ /api/property-intelligence/recommendations
+ظ¤£ ╞ْ /api/property-intelligence/risk
+ظ¤£ ╞ْ /api/property-intelligence/score
+ظ¤£ ╞ْ /api/property-intelligence/scoring
+ظ¤£ ╞ْ /api/property-intelligence/valuation
+ظ¤£ ╞ْ /api/property-marketplace
+ظ¤£ ╞ْ /api/property-platform
+ظ¤£ ╞ْ /api/property-platform/availability
+ظ¤£ ╞ْ /api/property-platform/listings
+ظ¤£ ╞ْ /api/property-platform/listings/[id]
+ظ¤£ ╞ْ /api/property-platform/media
+ظ¤£ ╞ْ /api/property-platform/pricing
+ظ¤£ ╞ْ /api/property-platform/properties
+ظ¤£ ╞ْ /api/property-platform/properties/[id]
+ظ¤£ ╞ْ /api/property-platform/search
+ظ¤£ ╞ْ /api/ready
+ظ¤£ ╞ْ /api/real-estate-intelligence
+ظ¤£ ╞ْ /api/real-estate-intelligence/analytics
+ظ¤£ ╞ْ /api/real-estate-intelligence/demand
+ظ¤£ ╞ْ /api/real-estate-intelligence/investments
+ظ¤£ ╞ْ /api/real-estate-intelligence/locations
+ظ¤£ ╞ْ /api/real-estate-intelligence/markets
+ظ¤£ ╞ْ /api/real-estate-intelligence/predictions
+ظ¤£ ╞ْ /api/real-estate-intelligence/properties
+ظ¤£ ╞ْ /api/real-estate-intelligence/valuation
+ظ¤£ ╞ْ /api/real-estate/intelligence
+ظ¤£ ╞ْ /api/real-estate/markets
+ظ¤£ ╞ْ /api/real-estate/properties
+ظ¤£ ╞ْ /api/real-estate/trends
+ظ¤£ ╞ْ /api/real-estate/valuation
+ظ¤£ ╞ْ /api/realtime-intelligence
+ظ¤£ ╞ْ /api/realtime-intelligence/analytics
+ظ¤£ ╞ْ /api/realtime-intelligence/events
+ظ¤£ ╞ْ /api/realtime-intelligence/market
+ظ¤£ ╞ْ /api/realtime-intelligence/processing
+ظ¤£ ╞ْ /api/realtime-intelligence/property
+ظ¤£ ╞ْ /api/realtime-intelligence/signals
+ظ¤£ ╞ْ /api/realtime-intelligence/streams
+ظ¤£ ╞ْ /api/realtime-intelligence/subscriptions
+ظ¤£ ╞ْ /api/realtime-intelligence/urban
+ظ¤£ ╞ْ /api/recommendation
+ظ¤£ ╞ْ /api/recommendation/feed
+ظ¤£ ╞ْ /api/recommendation/personalized
+ظ¤£ ╞ْ /api/recommendation/preferences
+ظ¤£ ╞ْ /api/recommendations
+ظ¤£ ╞ْ /api/regulations
+ظ¤£ ╞ْ /api/regulations/authorities
+ظ¤£ ╞ْ /api/regulations/categories
+ظ¤£ ╞ْ /api/regulations/compliance
+ظ¤£ ╞ْ /api/regulations/sources
+ظ¤£ ╞ْ /api/release-status
+ظ¤£ ╞ْ /api/reliability-status
+ظ¤£ ╞ْ /api/request-protection
+ظ¤£ ╞ْ /api/research-intelligence
+ظ¤£ ╞ْ /api/research-intelligence/authors
+ظ¤£ ╞ْ /api/research-intelligence/citations
+ظ¤£ ╞ْ /api/research-intelligence/discoveries
+ظ¤£ ╞ْ /api/research-intelligence/forecasts
+ظ¤£ ╞ْ /api/research-intelligence/graph
+ظ¤£ ╞ْ /api/research-intelligence/papers
+ظ¤£ ╞ْ /api/research-intelligence/publications
+ظ¤£ ╞ْ /api/research-intelligence/topics
+ظ¤£ ╞ْ /api/runtime-metrics
+ظ¤£ ╞ْ /api/search
+ظ¤£ ╞ْ /api/search/filters
+ظ¤£ ╞ْ /api/search/ranking
+ظ¤£ ╞ْ /api/search/semantic
+ظ¤£ ╞ْ /api/search/suggestions
+ظ¤£ ╞ْ /api/security
+ظ¤£ ╞ْ /api/security-audit
+ظ¤£ ╞ْ /api/security-deployment-audit
+ظ¤£ ╞ْ /api/security-enforcement
+ظ¤£ ╞ْ /api/security-global-headers
+ظ¤£ ╞ْ /api/security-header-http-smoke
+ظ¤£ ╞ْ /api/security-header-scope
+ظ¤£ ╞ْ /api/security-intelligence
+ظ¤£ ╞ْ /api/security-intelligence/access-control
+ظ¤£ ╞ْ /api/security-intelligence/analytics
+ظ¤£ ╞ْ /api/security-intelligence/authentication
+ظ¤£ ╞ْ /api/security-intelligence/authorization
+ظ¤£ ╞ْ /api/security-intelligence/compliance
+ظ¤£ ╞ْ /api/security-intelligence/identity
+ظ¤£ ╞ْ /api/security-intelligence/privacy
+ظ¤£ ╞ْ /api/security-intelligence/sessions
+ظ¤£ ╞ْ /api/security-intelligence/trust-score
+ظ¤£ ╞ْ /api/security-policy
+ظ¤£ ╞ْ /api/security-posture
+ظ¤£ ╞ْ /api/security-status
+ظ¤£ ╞ْ /api/security-trust
+ظ¤£ ╞ْ /api/security-trust/audit
+ظ¤£ ╞ْ /api/security-trust/authorization
+ظ¤£ ╞ْ /api/security-trust/events
+ظ¤£ ╞ْ /api/security-trust/identity
+ظ¤£ ╞ْ /api/security-trust/policies
+ظ¤£ ╞ْ /api/security-trust/sessions
+ظ¤£ ╞ْ /api/security-trust/trust
+ظ¤£ ╞ْ /api/security-validate
+ظ¤£ ╞ْ /api/security/audit
+ظ¤£ ╞ْ /api/security/auth
+ظ¤£ ╞ْ /api/security/authentication
+ظ¤£ ╞ْ /api/security/authorization
+ظ¤£ ╞ْ /api/security/compliance
+ظ¤£ ╞ْ /api/security/consent
+ظ¤£ ╞ْ /api/security/identity
+ظ¤£ ╞ْ /api/security/monitoring
+ظ¤£ ╞ْ /api/security/permissions
+ظ¤£ ╞ْ /api/security/privacy
+ظ¤£ ╞ْ /api/security/roles
+ظ¤£ ╞ْ /api/security/sessions
+ظ¤£ ╞ْ /api/security/trust
+ظ¤£ ╞ْ /api/security/users
+ظ¤£ ╞ْ /api/security/verification
+ظ¤£ ╞ْ /api/smart-city-intelligence
+ظ¤£ ╞ْ /api/smart-city-intelligence/cities
+ظ¤£ ╞ْ /api/smart-city-intelligence/districts
+ظ¤£ ╞ْ /api/smart-city-intelligence/environment
+ظ¤£ ╞ْ /api/smart-city-intelligence/indicators
+ظ¤£ ╞ْ /api/smart-city-intelligence/infrastructure
+ظ¤£ ╞ْ /api/smart-city-intelligence/mobility
+ظ¤£ ╞ْ /api/smart-city-intelligence/recommendations
+ظ¤£ ╞ْ /api/smart-city-intelligence/risks
+ظ¤£ ╞ْ /api/smart-search
+ظ¤£ ╞ْ /api/smart-search/discovery
+ظ¤£ ╞ْ /api/smart-search/geo
+ظ¤£ ╞ْ /api/smart-search/natural-language
+ظ¤£ ╞ْ /api/smart-search/personalized
+ظ¤£ ╞ْ /api/smart-search/ranking
+ظ¤£ ╞ْ /api/smart-search/semantic
+ظ¤£ ╞ْ /api/smart-search/visual
+ظ¤£ ╞ْ /api/sources
+ظ¤£ ╞ْ /api/sources/authorities
+ظ¤£ ╞ْ /api/sources/citations
+ظ¤£ ╞ْ /api/sources/organizations
+ظ¤£ ╞ْ /api/sources/regulations
+ظ¤£ ╞ْ /api/sources/standards
+ظ¤£ ╞ْ /api/sources/verify
+ظ¤£ ╞ْ /api/spatial-intelligence
+ظ¤£ ╞ْ /api/spatial-intelligence/advisor
+ظ¤£ ╞ْ /api/spatial-intelligence/analysis
+ظ¤£ ╞ْ /api/spatial-intelligence/analytics
+ظ¤£ ╞ْ /api/spatial-intelligence/ar
+ظ¤£ ╞ْ /api/spatial-intelligence/assistant
+ظ¤£ ╞ْ /api/spatial-intelligence/buildings
+ظ¤£ ╞ْ /api/spatial-intelligence/districts
+ظ¤£ ╞ْ /api/spatial-intelligence/geo-data
+ظ¤£ ╞ْ /api/spatial-intelligence/gis
+ظ¤£ ╞ْ /api/spatial-intelligence/locations
+ظ¤£ ╞ْ /api/spatial-intelligence/maps
+ظ¤£ ╞ْ /api/spatial-intelligence/models
+ظ¤£ ╞ْ /api/spatial-intelligence/predictions
+ظ¤£ ╞ْ /api/spatial-intelligence/properties
+ظ¤£ ╞ْ /api/spatial-intelligence/proximity
+ظ¤£ ╞ْ /api/spatial-intelligence/queries
+ظ¤£ ╞ْ /api/spatial-intelligence/ranking
+ظ¤£ ╞ْ /api/spatial-intelligence/regions
+ظ¤£ ╞ْ /api/spatial-intelligence/scenes
+ظ¤£ ╞ْ /api/spatial-intelligence/urban
+ظ¤£ ╞ْ /api/spatial-intelligence/vr
+ظ¤£ ╞ْ /api/spatial-intelligence/xr
+ظ¤£ ╞ْ /api/system-health
+ظ¤£ ╞ْ /api/transaction-intelligence
+ظ¤£ ╞ْ /api/transaction-intelligence/assistant
+ظ¤£ ╞ْ /api/transaction-intelligence/contracts
+ظ¤£ ╞ْ /api/transaction-intelligence/deals
+ظ¤£ ╞ْ /api/transaction-intelligence/offers
+ظ¤£ ╞ْ /api/transaction-intelligence/payments
+ظ¤£ ╞ْ /api/transaction-intelligence/risks
+ظ¤£ ╞ْ /api/transaction-intelligence/transactions
+ظ¤£ ╞ْ /api/transaction-intelligence/verification
+ظ¤£ ╞ْ /api/transaction-intelligence/workflows
+ظ¤£ ╞ْ /api/transactions
+ظ¤£ ╞ْ /api/transactions/[id]
+ظ¤£ ╞ْ /api/transactions/agreements
+ظ¤£ ╞ْ /api/transactions/milestones
+ظ¤£ ╞ْ /api/transactions/negotiations
+ظ¤£ ╞ْ /api/transactions/offers
+ظ¤£ ╞ْ /api/transactions/parties
+ظ¤£ ╞ْ /api/transactions/payments
+ظ¤£ ╞ْ /api/transactions/workflow
+ظ¤£ ╞ْ /api/translation/cache
+ظ¤£ ╞ْ /api/translation/detect
+ظ¤£ ╞ْ /api/translation/languages
+ظ¤£ ╞ْ /api/translation/status
+ظ¤£ ╞ْ /api/translation/translate
+ظ¤£ ╞ْ /api/trust-intelligence
+ظ¤£ ╞ْ /api/trust-intelligence/analytics
+ظ¤£ ╞ْ /api/trust-intelligence/audits
+ظ¤£ ╞ْ /api/trust-intelligence/compliance
+ظ¤£ ╞ْ /api/trust-intelligence/explainability
+ظ¤£ ╞ْ /api/trust-intelligence/governance
+ظ¤£ ╞ْ /api/trust-intelligence/policies
+ظ¤£ ╞ْ /api/trust-intelligence/privacy
+ظ¤£ ╞ْ /api/trust-intelligence/security
+ظ¤£ ╞ْ /api/urban-intelligence
+ظ¤£ ╞ْ /api/urban-intelligence/advisor
+ظ¤£ ╞ْ /api/urban-intelligence/analytics
+ظ¤£ ╞ْ /api/urban-intelligence/cities
+ظ¤£ ╞ْ /api/urban-intelligence/districts
+ظ¤£ ╞ْ /api/urban-intelligence/growth
+ظ¤£ ╞ْ /api/urban-intelligence/infrastructure
+ظ¤£ ╞ْ /api/urban-intelligence/metrics
+ظ¤£ ╞ْ /api/urban-intelligence/mobility
+ظ¤£ ╞ْ /api/urban-intelligence/models
+ظ¤£ ╞ْ /api/urban-intelligence/profiles
+ظ¤£ ╞ْ /api/urban-intelligence/quality
+ظ¤£ ╞ْ /api/urban-intelligence/scenarios
+ظ¤£ ╞ْ /api/urban-intelligence/sustainability
+ظ¤£ ╞ْ /api/user-intelligence
+ظ¤£ ╞ْ /api/user-intelligence/ai-assistant
+ظ¤£ ╞ْ /api/user-intelligence/analytics
+ظ¤£ ╞ْ /api/user-intelligence/assistant
+ظ¤£ ╞ْ /api/user-intelligence/behavior
+ظ¤£ ╞ْ /api/user-intelligence/feedback
+ظ¤£ ╞ْ /api/user-intelligence/goals
+ظ¤£ ╞ْ /api/user-intelligence/interactions
+ظ¤£ ╞ْ /api/user-intelligence/interests
+ظ¤£ ╞ْ /api/user-intelligence/journey
+ظ¤£ ╞ْ /api/user-intelligence/memory
+ظ¤£ ╞ْ /api/user-intelligence/personalization
+ظ¤£ ╞ْ /api/user-intelligence/predictions
+ظ¤£ ╞ْ /api/user-intelligence/preferences
+ظ¤£ ╞ْ /api/user-intelligence/profile
+ظ¤£ ╞ْ /api/user-intelligence/recommendations
+ظ¤£ ╞ْ /api/user-intelligence/segments
+ظ¤£ ╞ْ /api/users/account
+ظ¤£ ╞ْ /api/users/activity
+ظ¤£ ╞ْ /api/users/dashboard
+ظ¤£ ╞ْ /api/users/preferences
+ظ¤£ ╞ْ /api/users/profile
+ظ¤£ ╞ْ /api/v1/content
+ظ¤£ ╞ْ /api/v1/content/[id]
+ظ¤£ ╞ْ /api/v1/content/[id]/archive
+ظ¤£ ╞ْ /api/v1/content/[id]/media
+ظ¤£ ╞ْ /api/v1/content/[id]/media/[mediaId]
+ظ¤£ ╞ْ /api/v1/content/[id]/publish
+ظ¤£ ╞ْ /api/v1/content/[id]/revisions
+ظ¤£ ╞ْ /api/v1/content/[id]/revisions/[revisionId]/restore
+ظ¤£ ╞ْ /api/v1/content/[id]/submit-review
+ظ¤£ ╞ْ /api/v1/health
+ظ¤£ ╞ْ /api/v1/knowledge/nodes
+ظ¤£ ╞ْ /api/v1/knowledge/nodes/[id]
+ظ¤£ ╞ْ /api/v1/knowledge/relations
+ظ¤£ ╞ْ /api/v1/knowledge/relations/[id]
+ظ¤£ ╞ْ /api/v1/media
+ظ¤£ ╞ْ /api/v1/media/[id]
+ظ¤£ ╞ْ /api/v1/search
+ظ¤£ ظùï /login
+ظ¤£ ظùï /robots.txt
+ظ¤¤ ظùï /sitemap.xml
+
+
+╞ْ Proxy (Middleware)
+
+ظùï  (Static)   prerendered as static content
+ظù  (SSG)      prerendered as static HTML (uses generateStaticParams)
+╞ْ  (Dynamic)  server-rendered on demand
+
+

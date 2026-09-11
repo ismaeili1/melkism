@@ -1,0 +1,9 @@
+Accessibility Review:
+
+
+- Semantic HTML
+- Keyboard navigation
+- Contrast
+- Typography
+- Language direction
+- Screen reader readiness

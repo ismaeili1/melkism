@@ -1,0 +1,36 @@
+Folder PATH listing
+Volume serial number is 000000B0 2AEF:3CBC
+C:\PROJECTS\MELKISM\PUBLIC
+|   file.svg
+|   globe.svg
+|   manifest.json
+|   next.svg
+|   sw.js
+|   vercel.svg
+|   window.svg
+|   
+\---brand
+    \---logo
+            melkist-logo-dark.png
+            melkist-logo-dark.svg
+            melkist-logo-Mark-dark.png
+            melkist-logo-Mark-dark.svg
+            melkist-logo-Mark-white.png
+            melkist-logo-Mark-white.svg
+            melkist-logo-Mark.png
+            melkist-logo-Mark.svg
+            melkist-logo-white.png
+            melkist-logo-white.svg
+            melkist-logo.png
+            melkist-logo.svg
+            melkist-logotype-dark.png
+            melkist-logotype-dark.svg
+            melkist-logotype-En.png
+            melkist-logotype-En.svg
+            melkist-logotype-Fa.png
+            melkist-logotype-Fa.svg
+            melkist-logotype-white.png
+            melkist-logotype-white.svg
+            melkist-logotype.png
+            melkist-logotype.svg
+            
