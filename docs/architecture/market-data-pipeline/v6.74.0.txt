@@ -1,0 +1,20 @@
+MELKISM v6.74.0
+
+Market Data Processing Pipeline
+
+
+Created:
+
+- Market Contracts
+- Processing Pipeline
+- Cleaning Layer
+- Metrics Layer
+- Registry
+- Engine
+
+
+Real Market Data:
+
+Disabled
+
+

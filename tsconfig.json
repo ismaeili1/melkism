@@ -42,6 +42,10 @@
     "backups",
     "docs",
     "**/*backup*",
-    "**/backup/**"
+    "**/backup/**",
+    "snapshots",
+    "coverage",
+    "dist",
+    "build"
   ]
 }

@@ -1,0 +1,18 @@
+MELKISM v6.66.0
+
+Real Estate Location Intelligence Layer
+
+
+Created:
+
+- Location Contract
+- Geographic Context
+- Factor Registry
+- Area Registry
+- Location Engine
+
+
+External GIS Data:
+
+Disabled
+

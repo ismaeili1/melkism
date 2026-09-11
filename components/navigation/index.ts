@@ -1,10 +1,35 @@
-export { DesktopNavigation } from "./DesktopNavigation";
-export { HeaderActions } from "./HeaderActions";
-export { LanguageSwitcher } from "./LanguageSwitcher";
-export { MobileNavigation } from "./MobileNavigation";
-export { SiteHeader } from "./SiteHeader";
 export {
-  navigationItems,
-  type NavigationItem,
-  type SupportedLocale,
-} from "./navigation.config";
+DesktopNavigation
+}
+from "./DesktopNavigation";
+
+
+export {
+MobileNavigation
+}
+from "./MobileNavigation";
+
+
+export {
+LanguageSelector
+}
+from "./LanguageSelector";
+
+
+export {
+SearchAction
+}
+from "./SearchAction";
+
+
+export {
+navigationItems
+}
+from "./navigation.config";
+
+
+export type {
+NavigationItem,
+SupportedLocale
+}
+from "./navigation.config";

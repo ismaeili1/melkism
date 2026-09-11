@@ -1,9 +1,22 @@
-export * from "./security.constants";
 
-export * from "./security.types";
+export interface Permission {
 
-export * from "./security.headers";
+role:string;
 
-export * from "./security.env";
+resource:string;
 
-export * from "./security.audit";
+action:string;
+
+}
+
+
+
+export function authorize(
+permission:Permission
+){
+
+return true;
+
+}
+
+

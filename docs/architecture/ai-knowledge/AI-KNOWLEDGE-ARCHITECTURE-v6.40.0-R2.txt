@@ -1,0 +1,22 @@
+MELKISM v6.40.0-R2
+
+AI Knowledge Architecture Layer
+
+Purpose:
+Foundation layer for future AI knowledge processing.
+
+Principles:
+
+- No autonomous mutation.
+- No uncontrolled memory.
+- No external data ingestion.
+- Registry first.
+- Governance first.
+- Human controlled evolution.
+
+Future extensions:
+
+- Knowledge Graph
+- Semantic Memory
+- Retrieval Intelligence
+- AI Reasoning Layer

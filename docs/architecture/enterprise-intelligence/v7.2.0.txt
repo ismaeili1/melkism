@@ -1,0 +1,17 @@
+MELKISM v7.2.0
+
+Enterprise Intelligence Platform Foundation
+
+Created:
+
+- Organization Context
+- Enterprise Workspace
+- Enterprise Services
+- Analytics
+- Governance
+
+
+STATUS:
+
+READY
+

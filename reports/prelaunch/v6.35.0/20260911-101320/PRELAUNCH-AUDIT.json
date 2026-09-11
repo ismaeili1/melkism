@@ -1,0 +1,357 @@
+{
+  "phase": "v6.35.0",
+  "generatedAt": "2026-09-11T10:18:39.2218322+03:30",
+  "decision": "BLOCKED",
+  "summary": {
+    "total": 48,
+    "passed": 46,
+    "warnings": 1,
+    "blocked": 1
+  },
+  "checks": [
+    {
+      "id": "foundation-package.json",
+      "area": "Foundation",
+      "name": "Required file: package.json",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-package-lock.json",
+      "area": "Foundation",
+      "name": "Required file: package-lock.json",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-next.config.ts",
+      "area": "Foundation",
+      "name": "Required file: next.config.ts",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-proxy.ts",
+      "area": "Foundation",
+      "name": "Required file: proxy.ts",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-prisma.config.ts",
+      "area": "Foundation",
+      "name": "Required file: prisma.config.ts",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-prisma\\schema.prisma",
+      "area": "Foundation",
+      "name": "Required file: prisma\\schema.prisma",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-app\\layout.tsx",
+      "area": "Foundation",
+      "name": "Required file: app\\layout.tsx",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-app\\page.tsx",
+      "area": "Foundation",
+      "name": "Required file: app\\page.tsx",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-app\\[locale]\\layout.tsx",
+      "area": "Foundation",
+      "name": "Required file: app\\[locale]\\layout.tsx",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-app\\sitemap.ts",
+      "area": "Foundation",
+      "name": "Required file: app\\sitemap.ts",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-app\\robots.ts",
+      "area": "Foundation",
+      "name": "Required file: app\\robots.ts",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-app\\api\\health\\route.ts",
+      "area": "Foundation",
+      "name": "Required file: app\\api\\health\\route.ts",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-app\\api\\ready\\route.ts",
+      "area": "Foundation",
+      "name": "Required file: app\\api\\ready\\route.ts",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "foundation-eslint.config.mjs",
+      "area": "Foundation",
+      "name": "Required file: eslint.config.mjs",
+      "status": "PASS",
+      "detail": "Exists."
+    },
+    {
+      "id": "package-build",
+      "area": "Runtime",
+      "name": "Production build script",
+      "status": "PASS",
+      "detail": "next build"
+    },
+    {
+      "id": "package-start",
+      "area": "Runtime",
+      "name": "Production start script",
+      "status": "PASS",
+      "detail": "next start"
+    },
+    {
+      "id": "package-test",
+      "area": "Quality",
+      "name": "Automated test script",
+      "status": "PASS",
+      "detail": "[string]@{name=melkism; version=0.1.0; private=True; scripts=; dependencies=; devDependencies=}.scripts.test"
+    },
+    {
+      "id": "git-state",
+      "area": "Source Control",
+      "name": "Working tree",
+      "status": "WARN",
+      "detail": "Local changes exist; repository was not modified by this audit."
+    },
+    {
+      "id": "i18n-contract",
+      "area": "International UX",
+      "name": "Locale and direction contract",
+      "status": "PASS",
+      "detail": "fa/en/ar/tr and RTL/LTR mapping are present."
+    },
+    {
+      "id": "i18n-layout",
+      "area": "International UX",
+      "name": "Localized layout",
+      "status": "PASS",
+      "detail": "Localized direction and main landmark are present."
+    },
+    {
+      "id": "a11y-global",
+      "area": "Accessibility",
+      "name": "Global accessibility foundation",
+      "status": "PASS",
+      "detail": "Focus, skip-link and reduced-motion support present."
+    },
+    {
+      "id": "a11y-mobile",
+      "area": "Accessibility",
+      "name": "Mobile navigation accessibility",
+      "status": "PASS",
+      "detail": "Native details/summary navigation present."
+    },
+    {
+      "id": "a11y-nav",
+      "area": "Accessibility",
+      "name": "Navigation accessible names",
+      "status": "PASS",
+      "detail": "Primary, language and search controls are named."
+    },
+    {
+      "id": "seo-root",
+      "area": "SEO",
+      "name": "Root HTML/metadata baseline",
+      "status": "PASS",
+      "detail": "fa/RTL and MELKISM SEO defaults present."
+    },
+    {
+      "id": "seo-files",
+      "area": "SEO",
+      "name": "Sitemap and robots",
+      "status": "PASS",
+      "detail": "Sitemap and robots infrastructure present."
+    },
+    {
+      "id": "security-headers",
+      "area": "Security",
+      "name": "Security headers",
+      "status": "PASS",
+      "detail": "Configured security headers are present."
+    },
+    {
+      "id": "security-cache",
+      "area": "Security",
+      "name": "API cache policy",
+      "status": "PASS",
+      "detail": "API no-store policy is configured."
+    },
+    {
+      "id": "env-local",
+      "area": "Security",
+      "name": "Local environment file",
+      "status": "PASS",
+      "detail": "No local .env file detected."
+    },
+    {
+      "id": "env-example",
+      "area": "Deployment",
+      "name": "Environment template",
+      "status": "PASS",
+      "detail": ".env.example exists."
+    },
+    {
+      "id": "deployment-foundation",
+      "area": "Deployment",
+      "name": "Deployment readiness foundation",
+      "status": "PASS",
+      "detail": "Deployment readiness service exists."
+    },
+    {
+      "id": "health",
+      "area": "Operations",
+      "name": "Health endpoint",
+      "status": "PASS",
+      "detail": "Route is non-empty."
+    },
+    {
+      "id": "ready",
+      "area": "Operations",
+      "name": "Readiness endpoint",
+      "status": "PASS",
+      "detail": "Route is non-empty."
+    },
+    {
+      "id": "default-locale",
+      "area": "International UX",
+      "name": "Default locale",
+      "status": "PASS",
+      "detail": "Root redirects to /fa."
+    },
+    {
+      "id": "search-resolution",
+      "area": "Source Integrity",
+      "name": "SearchResult module resolution",
+      "status": "PASS",
+      "detail": "Explicit nested module export is active."
+    },
+    {
+      "id": "eslint-scope",
+      "area": "Quality",
+      "name": "ESLint compatibility scope",
+      "status": "PASS",
+      "detail": "Legacy CommonJS and phase snapshots are correctly scoped."
+    },
+    {
+      "id": "accessibility-test",
+      "area": "Quality",
+      "name": "Accessibility test",
+      "status": "PASS",
+      "detail": "Test file exists."
+    },
+    {
+      "id": "audit-tools",
+      "area": "Operations",
+      "name": "Production audit tools",
+      "status": "PASS",
+      "detail": "Readiness and prelaunch tools exist."
+    },
+    {
+      "id": "framework-baseline",
+      "area": "Runtime",
+      "name": "Framework baseline",
+      "status": "PASS",
+      "detail": "Next.js 16.3.0 and React 19.2.8 retained."
+    },
+    {
+      "id": "forbidden-artifacts",
+      "area": "Safety",
+      "name": "Forbidden activation artifacts",
+      "status": "BLOCKED",
+      "detail": "Detected: node_modules\\axe-core"
+    },
+    {
+      "id": "production-readiness",
+      "area": "Deployment",
+      "name": "Production readiness",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "prisma-validate",
+      "area": "Database",
+      "name": "Prisma validate",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "prisma-generate",
+      "area": "Database",
+      "name": "Prisma generate",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "typescript",
+      "area": "Quality",
+      "name": "TypeScript",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "lint",
+      "area": "Quality",
+      "name": "Lint",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "tests",
+      "area": "Quality",
+      "name": "Project tests",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "accessibility-test",
+      "area": "Accessibility",
+      "name": "Accessibility test",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "build",
+      "area": "Deployment",
+      "name": "Production build",
+      "status": "PASS",
+      "detail": "Command completed successfully."
+    },
+    {
+      "id": "existing-prelaunch",
+      "area": "Operations",
+      "name": "Existing prelaunch audit",
+      "status": "PASS",
+      "detail": "Completed with exit code 0."
+    }
+  ],
+  "artifacts": {
+    "runDirectory": "C:\\Projects\\melkism\\reports\\prelaunch\\v6.35.0\\20260911-101320",
+    "summary": "C:\\Projects\\melkism\\reports\\prelaunch\\v6.35.0\\20260911-101320\\PRELAUNCH-AUDIT-SUMMARY.txt",
+    "json": "C:\\Projects\\melkism\\reports\\prelaunch\\v6.35.0\\20260911-101320\\PRELAUNCH-AUDIT.json",
+    "gitStatus": "C:\\Projects\\melkism\\reports\\prelaunch\\v6.35.0\\20260911-101320\\git-status.txt",
+    "gitDiffStat": "C:\\Projects\\melkism\\reports\\prelaunch\\v6.35.0\\20260911-101320\\git-diff-stat.txt",
+    "existingPrelaunchAudit": "C:\\Projects\\melkism\\reports\\prelaunch\\v6.35.0\\20260911-101320\\existing-prelaunch-audit.txt"
+  }
+}

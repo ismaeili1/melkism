@@ -1,0 +1,29 @@
+MELKISM v6.41.0
+
+Semantic Knowledge Graph Foundation
+
+Purpose:
+
+Create the semantic foundation for future AI intelligence.
+
+Layers:
+
+1. Knowledge Nodes
+2. Semantic Relations
+3. Ontology
+4. Registry
+5. Future Reasoning Engine
+
+Safety:
+
+No database mutation.
+No dependency installation.
+No external AI provider.
+No runtime activation.
+
+Future:
+
+- RAG
+- AI Agents
+- Knowledge Memory
+- Reasoning Engine

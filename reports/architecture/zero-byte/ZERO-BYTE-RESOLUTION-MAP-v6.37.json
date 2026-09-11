@@ -1,0 +1,22 @@
+[
+  {
+    "category": "AI_FUTURE_MODULE",
+    "count": 8567,
+    "action": "REVIEW_BEFORE_IMPLEMENTATION"
+  },
+  {
+    "category": "ARCHITECTURE_PLACEHOLDER",
+    "count": 97,
+    "action": "REVIEW_BEFORE_IMPLEMENTATION"
+  },
+  {
+    "category": "RUNTIME_REVIEW_REQUIRED",
+    "count": 1121,
+    "action": "REVIEW_BEFORE_IMPLEMENTATION"
+  },
+  {
+    "category": "UNKNOWN",
+    "count": 129,
+    "action": "REVIEW_BEFORE_IMPLEMENTATION"
+  }
+]

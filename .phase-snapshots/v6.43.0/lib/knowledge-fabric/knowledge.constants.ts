@@ -1,0 +1,1 @@
+export const KNOWLEDGE_FABRIC='MELKISM';

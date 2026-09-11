@@ -1,0 +1,25 @@
+MELKISM v6.41.0-R1
+
+Zero Byte Handling Policy
+
+Rules:
+
+1.
+Runtime architecture files cannot be zero byte.
+
+2.
+Future AI registry placeholders may exist.
+
+3.
+Legacy zero byte files are reported,
+not automatically deleted.
+
+4.
+New phase generated files are validated
+against ownership.
+
+5.
+No destructive cleanup is allowed.
+
+Status:
+ACTIVE

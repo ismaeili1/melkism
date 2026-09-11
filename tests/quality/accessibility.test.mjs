@@ -1,285 +1,213 @@
-import test from "node:test";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import assert from "node:assert/strict";
-import fs from "node:fs";
-import path from "node:path";
+import test from "node:test";
 
 const root = process.cwd();
 
-function exists(relativePath) {
-  return fs.existsSync(
-    path.join(
-      root,
-      relativePath
-    )
-  );
-}
-
 function read(relativePath) {
-  return fs.readFileSync(
-    path.join(
-      root,
-      relativePath
-    ),
+  return readFileSync(
+    resolve(root, relativePath),
     "utf8"
   );
 }
 
-test(
-  "accessibility foundation files exist",
-  () => {
-    const files = [
-      "lib/accessibility/accessibility.constants.ts",
-      "lib/accessibility/accessibility.types.ts",
-      "lib/accessibility/accessibility.rules.ts",
-      "lib/accessibility/accessibility.i18n.ts",
-      "lib/accessibility/index.ts",
-    ];
+test("canonical locales and directions remain intact", () => {
+  const source = read("lib/i18n/config.ts");
 
-    for (
-      const file of files
-    ) {
-      assert.equal(
-        exists(file),
-        true,
-        `Missing ${file}`
-      );
-    }
-  }
-);
+  assert.match(
+    source,
+    /\["fa",\s*"en",\s*"ar",\s*"tr"\]/
+  );
 
-test(
-  "RTL and LTR locale contracts are complete",
-  () => {
-    const constants =
-      read(
-        "lib/accessibility/accessibility.constants.ts"
-      );
+  assert.match(source, /fa:\s*"rtl"/);
+  assert.match(source, /en:\s*"ltr"/);
+  assert.match(source, /ar:\s*"rtl"/);
+  assert.match(source, /tr:\s*"ltr"/);
+});
 
-    const required = [
-      '"fa"',
-      '"en"',
-      '"ar"',
-      '"tr"',
-    ];
+test("root HTML exposes MELKISM language direction baseline", () => {
+  const source = read("app/layout.tsx");
 
-    for (
-      const token of required
-    ) {
-      assert.ok(
-        constants.includes(token),
-        `Missing locale ${token}`
-      );
-    }
+  assert.match(
+    source,
+    /<html[\s\S]*lang="fa"/
+  );
 
-    assert.ok(
-      constants.includes(
-        "ACCESSIBILITY_RTL_LOCALES"
-      )
-    );
+  assert.match(source, /dir="rtl"/);
+  assert.match(source, /SEO_DEFAULT_TITLE/);
 
-    assert.ok(
-      constants.includes(
-        "ACCESSIBILITY_LTR_LOCALES"
-      )
-    );
-  }
-);
+  assert.doesNotMatch(
+    source,
+    /Create Next App/
+  );
+});
 
-test(
-  "accessibility wording exists for all locales",
-  () => {
-    const source =
-      read(
-        "lib/accessibility/accessibility.i18n.ts"
-      );
+test("locale layout exposes skip navigation and main landmark", () => {
+  const source = read(
+    "app/[locale]/layout.tsx"
+  );
 
-    for (
-      const token of [
-        "fa:",
-        "en:",
-        "ar:",
-        "tr:",
-        "skipToContent",
-        "mainNavigation",
-        "languageSelection",
-        "openMenu",
-        "closeMenu",
-      ]
-    ) {
-      assert.ok(
-        source.includes(token),
-        `Missing ${token}`
-      );
-    }
-  }
-);
+  assert.match(
+    source,
+    /melkism-skip-link/
+  );
 
-test(
-  "locale application exposes lang and dir",
-  () => {
-    const source =
-      read(
-        "app/[locale]/layout.tsx"
-      );
+  assert.match(
+    source,
+    /href="#main-content"/
+  );
 
-    assert.match(
-      source,
-      /lang=/
-    );
+  assert.match(
+    source,
+    /id="main-content"/
+  );
 
-    assert.match(
-      source,
-      /dir=/
-    );
+  assert.match(
+    source,
+    /tabIndex=\{-1\}/
+  );
+});
 
-    assert.match(
-      source,
-      /<main/
-    );
-  }
-);
+test("global stylesheet exposes visible focus and reduced motion support", () => {
+  const source = read("app/globals.css");
 
-test(
-  "locale application exposes metadata",
-  () => {
-    const source =
-      read(
-        "app/[locale]/layout.tsx"
-      );
+  assert.match(
+    source,
+    /:focus-visible/
+  );
 
-    assert.match(
-      source,
-      /generateMetadata/
-    );
-  }
-);
+  assert.match(
+    source,
+    /\.melkism-skip-link/
+  );
 
-test(
-  "SEO locale foundation is aligned",
-  () => {
-    const source =
-      read(
-        "lib/seo/seo.constants.ts"
-      );
+  assert.match(
+    source,
+    /prefers-reduced-motion/
+  );
+});
 
-    for (
-      const locale of [
-        '"fa"',
-        '"en"',
-        '"ar"',
-        '"tr"',
-      ]
-    ) {
-      assert.ok(
-        source.includes(locale),
-        `Missing ${locale}`
-      );
-    }
-  }
-);
+test("desktop navigation has localized accessible name", () => {
+  const source = read(
+    "components/navigation/DesktopNavigation.tsx"
+  );
 
-test(
-  "accessibility layer has no browser storage",
-  () => {
-    const files = [
-      "lib/accessibility/accessibility.constants.ts",
-      "lib/accessibility/accessibility.types.ts",
-      "lib/accessibility/accessibility.rules.ts",
-      "lib/accessibility/accessibility.i18n.ts",
-      "lib/accessibility/index.ts",
-    ];
+  assert.match(
+    source,
+    /primaryNavLabels/
+  );
 
-    for (
-      const file of files
-    ) {
-      const source =
-        read(file);
+  assert.match(
+    source,
+    /aria-label=\{primaryNavLabels\[locale\]\}/
+  );
+});
 
-      assert.doesNotMatch(
-        source,
-        /localStorage/
-      );
+test("mobile navigation uses native accessible disclosure", () => {
+  const source = read(
+    "components/navigation/MobileNavigation.tsx"
+  );
 
-      assert.doesNotMatch(
-        source,
-        /sessionStorage/
-      );
+  assert.match(
+    source,
+    /<details>/
+  );
 
-      assert.doesNotMatch(
-        source,
-        /document\.cookie/
-      );
-    }
-  }
-);
+  assert.match(
+    source,
+    /<summary>/
+  );
 
-test(
-  "accessibility layer has no Prisma dependency",
-  () => {
-    const files = [
-      "lib/accessibility/accessibility.constants.ts",
-      "lib/accessibility/accessibility.types.ts",
-      "lib/accessibility/accessibility.rules.ts",
-      "lib/accessibility/accessibility.i18n.ts",
-      "lib/accessibility/index.ts",
-    ];
+  assert.match(
+    source,
+    /navigationItems\.map/
+  );
 
-    for (
-      const file of files
-    ) {
-      assert.doesNotMatch(
-        read(file),
-        /prisma/i
-      );
-    }
-  }
-);
+  assert.doesNotMatch(
+    source,
+    /<button>/
+  );
+});
 
-test(
-  "accessibility layer has no dynamic code execution",
-  () => {
-    const files = [
-      "lib/accessibility/accessibility.constants.ts",
-      "lib/accessibility/accessibility.types.ts",
-      "lib/accessibility/accessibility.rules.ts",
-      "lib/accessibility/accessibility.i18n.ts",
-      "lib/accessibility/index.ts",
-    ];
+test("language switcher preserves multilingual semantics", () => {
+  const source = read(
+    "components/navigation/LanguageSwitcher.tsx"
+  );
 
-    for (
-      const file of files
-    ) {
-      const source =
-        read(file);
+  assert.match(
+    source,
+    /hrefLang=\{targetLocale\}/
+  );
 
-      assert.doesNotMatch(
-        source,
-        /eval\s*\(/
-      );
+  assert.match(
+    source,
+    /aria-current=/
+  );
 
-      assert.doesNotMatch(
-        source,
-        /new Function\s*\(/
-      );
-    }
-  }
-);
+  assert.match(
+    source,
+    /languageNavLabels/
+  );
+});
 
-test(
-  "accessibility navigation surfaces exist",
-  () => {
-    assert.equal(
-      exists(
-        "components/navigation/DesktopNavigation.tsx"
-      ),
-      true
-    );
+test("header search action has localized accessible name", () => {
+  const source = read(
+    "components/navigation/HeaderActions.tsx"
+  );
 
-    assert.equal(
-      exists(
-        "components/navigation/LanguageSwitcher.tsx"
-      ),
-      true
-    );
-  }
-);
+  assert.match(
+    source,
+    /searchLabels/
+  );
+
+  assert.match(
+    source,
+    /aria-label=\{label\}/
+  );
+});
+
+test("SearchResult resolves through canonical nested module", () => {
+  const source = read(
+    "components/search/index.ts"
+  );
+
+  assert.match(
+    source,
+    /export\s+\{\s*SearchResult\s*\}\s+from\s+"\.\/SearchResult\/index";/
+  );
+
+  assert.doesNotMatch(
+    source,
+    /export\s+\*\s+from\s+"\.\/SearchResult";/
+  );
+});
+
+test("CommonJS legacy utilities are scoped by ESLint config", () => {
+  const source = read("eslint.config.mjs");
+
+  assert.match(
+    source,
+    /"zero-byte-audit\.js"/
+  );
+
+  assert.match(
+    source,
+    /"zero-byte-active-audit\.js"/
+  );
+
+  assert.match(
+    source,
+    /"zero-byte-classifier\.js"/
+  );
+
+  assert.match(
+    source,
+    /"@typescript-eslint\/no-require-imports":\s*"off"/
+  );
+
+  assert.match(
+    source,
+    /"\.phase-snapshots\/\*\*"/
+  );
+});

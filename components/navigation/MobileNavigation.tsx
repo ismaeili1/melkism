@@ -1,20 +1,32 @@
-import type { SupportedLocale } from "./navigation.config";
+type SupportedLocale =
+ | "fa"
+ | "en"
+ | "ar"
+ | "tr";
 
 
-interface Props {
+interface MobileNavigationProps {
 
 locale: SupportedLocale;
 
 }
 
 
-export function MobileNavigation({
+
+export function MobileNavigation(
+{
 locale
-}:Props){
+}: MobileNavigationProps
+){
+
 
 return (
 
-<nav data-locale={locale}>
+<nav 
+className="mobile-navigation"
+data-locale={locale}
+>
+
 
 <button>
 
@@ -22,9 +34,14 @@ Menu
 
 </button>
 
+
 </nav>
 
-);
+)
+
 
 }
 
+
+
+export default MobileNavigation;

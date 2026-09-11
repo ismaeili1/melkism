@@ -1,0 +1,20 @@
+MELKISM v6.55.0
+
+User Intelligence Interface Layer
+
+
+Created:
+
+- Query Contract
+- Interaction Context
+- Response Model
+- Intelligence Gateway
+
+
+Safety:
+
+User interface foundation only.
+
+Autonomous execution disabled.
+
+

@@ -1,0 +1,13 @@
+ app/[locale]/layout.tsx                            |  54 +--
+ app/globals.css                                    |  58 +++
+ app/layout.tsx                                     |  28 +-
+ components/navigation/DesktopNavigation.tsx        |  12 +-
+ components/navigation/HeaderActions.tsx            |  21 +-
+ components/navigation/LanguageSwitcher.tsx         |  15 +-
+ components/navigation/MobileNavigation.tsx         |  93 +++-
+ components/search/index.ts                         |   6 +-
+ .../ACCESSIBILITY-INTERNATIONAL-UX-v6.34.0.txt     | 150 +++----
+ eslint.config.mjs                                  |  23 +-
+ tests/quality/accessibility.test.mjs               | 480 +++++++++------------
+ tsconfig.tsbuildinfo                               |   2 +-
+ 12 files changed, 509 insertions(+), 433 deletions(-)

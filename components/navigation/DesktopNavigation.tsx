@@ -1,46 +1,45 @@
 import Link from "next/link";
 
-import type {
-  SupportedLocale,
-} from "./navigation.config";
-
 import {
-  navigationItems,
-} from "./navigation.config";
+navigationItems,
+type SupportedLocale
+}
+from "./navigation.config";
 
-import {
-  localizedPath,
-} from "@/lib/i18n/translation.utils";
 
-type Props = {
-  locale: SupportedLocale;
-};
+interface Props {
+
+locale?: SupportedLocale;
+
+}
+
 
 export function DesktopNavigation({
-  locale,
-}: Props) {
-  return (
-    <nav
-      aria-label="Primary"
-      data-locale={locale}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "1rem",
-        flexWrap: "wrap",
-      }}
-    >
-      {navigationItems.map((item) => (
-        <Link
-          key={item.key}
-          href={localizedPath(
-            locale,
-            item.href
-          )}
-        >
-          {item.labels[locale]}
-        </Link>
-      ))}
-    </nav>
-  );
+locale="en"
+}:Props){
+
+
+return (
+
+<nav>
+
+{
+navigationItems.map(item=>(
+
+<Link
+key={item.href}
+href={`/${locale}${item.href}`}
+>
+
+{item.label}
+
+</Link>
+
+))
+}
+
+</nav>
+
+)
+
 }

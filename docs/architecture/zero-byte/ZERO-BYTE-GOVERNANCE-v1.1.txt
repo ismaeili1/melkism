@@ -1,0 +1,25 @@
+
+MELKISM ZERO BYTE GOVERNANCE v1.1
+
+Purpose:
+Classify zero byte artifacts before blocking.
+
+ZERO BYTE IS NOT AUTOMATIC FAILURE.
+
+BLOCK:
+
+1. Runtime active empty modules.
+2. Imported empty files.
+3. Exported empty modules.
+4. Production execution dependencies.
+
+ALLOW:
+
+1. AI future module placeholders.
+2. Architecture registry files.
+3. Ontology extension points.
+4. Research roadmap modules.
+5. Documentation placeholders.
+
+Every zero byte artifact requires classification.
+

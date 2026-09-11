@@ -1,0 +1,19 @@
+MELKISM v6.61.0
+
+Real Estate Decision Intelligence Layer
+
+
+Created:
+
+- Decision Contract
+- Decision Context
+- Evaluation Layer
+- Recommendation Foundation
+- Decision Engine
+
+
+Autonomous Action:
+
+Disabled
+
+

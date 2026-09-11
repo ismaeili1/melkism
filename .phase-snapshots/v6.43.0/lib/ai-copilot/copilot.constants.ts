@@ -1,0 +1,1 @@
+export const AI_COPILOT_PLATFORM='MELKISM';

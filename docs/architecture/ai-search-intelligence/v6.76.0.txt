@@ -1,0 +1,19 @@
+MELKISM v6.76.0
+
+AI Search Intelligence
+
+
+Created:
+
+- Search Contracts
+- Semantic Search Layer
+- Retrieval Layer
+- Ranking Layer
+- Explanation Layer
+
+
+External Search Provider:
+
+Disabled
+
+

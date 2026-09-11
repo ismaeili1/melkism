@@ -1,0 +1,27 @@
+
+MELKISM v6.43.0-R2
+
+ZERO BYTE CLASSIFICATION
+
+Total:
+19
+
+Runtime Risk:
+0
+
+Future / Architecture:
+19
+
+
+Policy:
+
+Runtime executable:
+BLOCK
+
+AI Future Architecture:
+REGISTER
+
+Documentation:
+ALLOW
+
+

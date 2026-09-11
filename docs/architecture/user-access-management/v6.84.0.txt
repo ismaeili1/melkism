@@ -1,0 +1,14 @@
+MELKISM v6.84.0
+
+User Access Management Foundation
+
+Created:
+
+- Access Contracts
+- Role Foundation
+- Permission Registry
+- Access Validation
+
+Authentication:
+Not activated
+

@@ -1,0 +1,1 @@
+export const KNOWLEDGE_GRAPH_VERSION='3.0';

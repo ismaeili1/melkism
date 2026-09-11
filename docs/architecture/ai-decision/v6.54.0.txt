@@ -1,0 +1,19 @@
+MELKISM v6.54.0
+
+AI Decision Intelligence Layer
+
+
+Created:
+
+- Decision Contracts
+- Evaluation Layer
+- Decision Gate
+- Decision Memory
+
+
+Safety:
+
+Human governance required.
+
+Autonomous decisions disabled.
+

@@ -1,0 +1,16 @@
+MELKISM v6.44.0-R1
+
+Semantic Memory Validation Recovery
+
+Fixed:
+- PowerShell collection Count handling
+- Zero Byte Governance validation
+
+Result:
+PASS
+
+No deletion.
+No GitHub synchronization.
+No dependency changes.
+No database changes.
+

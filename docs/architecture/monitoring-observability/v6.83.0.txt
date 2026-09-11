@@ -1,0 +1,14 @@
+MELKISM v6.83.0
+
+Monitoring & Observability Foundation
+
+Created:
+
+- Metrics Layer
+- Logs Layer
+- Health Checks
+- Runtime Monitoring
+
+Production Monitoring:
+Not activated
+

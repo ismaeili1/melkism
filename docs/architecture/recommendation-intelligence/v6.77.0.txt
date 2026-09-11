@@ -1,0 +1,19 @@
+MELKISM v6.77.0
+
+Advanced Recommendation Experience
+
+
+Created:
+
+- Recommendation Contracts
+- Matching Engine
+- Ranking Layer
+- Personalization Layer
+- Explanation Layer
+
+
+Production Recommendation:
+
+Disabled
+
+

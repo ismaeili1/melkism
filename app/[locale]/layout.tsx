@@ -14,6 +14,13 @@ import {
   getDictionary,
 } from "@/lib/i18n/translation.engine";
 
+const skipLinkLabels: Record<Locale, string> = {
+  fa: "پرش به محتوای اصلی",
+  en: "Skip to main content",
+  ar: "تخطي إلى المحتوى الرئيسي",
+  tr: "Ana içeriğe geç",
+};
+
 export async function generateMetadata(
   {
     params,
@@ -23,8 +30,7 @@ export async function generateMetadata(
     }>;
   }
 ): Promise<Metadata> {
-  const { locale } =
-    await params;
+  const { locale } = await params;
 
   if (!isLocale(locale)) {
     return {
@@ -32,20 +38,14 @@ export async function generateMetadata(
     };
   }
 
-  const dictionary =
-    getDictionary(
-      locale as Locale
-    );
+  const dictionary = getDictionary(locale as Locale);
 
   return {
     title: {
-      default:
-        dictionary["site.name"],
-      template:
-        `%s | ${dictionary["site.name"]}`,
+      default: dictionary["site.name"],
+      template: `%s | ${dictionary["site.name"]}`,
     },
-    description:
-      dictionary["site.description"],
+    description: dictionary["site.description"],
     alternates: {
       languages: {
         fa: "/fa",
@@ -58,11 +58,9 @@ export async function generateMetadata(
 }
 
 export function generateStaticParams() {
-  return locales.map(
-    (locale) => ({
-      locale,
-    })
-  );
+  return locales.map((locale) => ({
+    locale,
+  }));
 }
 
 type LocaleLayoutProps = {
@@ -76,15 +74,13 @@ export default async function LocaleLayout({
   children,
   params,
 }: LocaleLayoutProps) {
-  const { locale } =
-    await params;
+  const { locale } = await params;
 
   if (!isLocale(locale)) {
     notFound();
   }
 
-  const typedLocale =
-    locale as Locale;
+  const typedLocale = locale as Locale;
 
   return (
     <div
@@ -92,11 +88,19 @@ export default async function LocaleLayout({
       dir={localeDirection[typedLocale]}
       data-locale={typedLocale}
     >
-      <SiteHeader
-        locale={typedLocale}
-      />
+      <a
+        className="melkism-skip-link"
+        href="#main-content"
+      >
+        {skipLinkLabels[typedLocale]}
+      </a>
 
-      <main>
+      <SiteHeader locale={typedLocale} />
+
+      <main
+        id="main-content"
+        tabIndex={-1}
+      >
         {children}
       </main>
     </div>

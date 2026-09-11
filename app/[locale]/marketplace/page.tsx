@@ -1,36 +1,13 @@
-import { PropertyMarketplace } from "@/components/property-marketplace/PropertyMarketplace";
+import MarketplaceDashboard
+from "@/components/marketplace/MarketplaceDashboard";
 
-type Props = {
-  params: Promise<{
-    locale: string;
-  }>;
-};
 
-const SUPPORTED_LOCALES = [
-  "fa",
-  "en",
-  "ar",
-  "tr",
-] as const;
+export default function MarketplacePage(){
 
-export default async function MarketplacePage({
-  params,
-}: Props) {
-  const { locale } =
-    await params;
+return (
 
-  const safeLocale =
-    SUPPORTED_LOCALES.includes(
-      locale as
-        (typeof SUPPORTED_LOCALES)[number],
-    )
-      ? (locale as
-          (typeof SUPPORTED_LOCALES)[number])
-      : "en";
+<MarketplaceDashboard />
 
-  return (
-    <PropertyMarketplace
-      locale={safeLocale}
-    />
-  );
+);
+
 }

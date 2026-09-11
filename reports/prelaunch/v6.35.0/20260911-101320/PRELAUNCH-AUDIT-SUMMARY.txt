@@ -1,0 +1,68 @@
+MELKISM v6.35.0
+PRODUCTION ACCEPTANCE & PRE-LAUNCH AUDIT
+
+Decision : BLOCKED
+Generated: 2026-09-11T10:18:39.2218322+03:30
+
+Total    : 48
+Passed   : 46
+Warnings : 1
+Blocked  : 1
+
+CHECKS
+======
+[PASS] Foundation | Required file: package.json | Exists.
+[PASS] Foundation | Required file: package-lock.json | Exists.
+[PASS] Foundation | Required file: next.config.ts | Exists.
+[PASS] Foundation | Required file: proxy.ts | Exists.
+[PASS] Foundation | Required file: prisma.config.ts | Exists.
+[PASS] Foundation | Required file: prisma\schema.prisma | Exists.
+[PASS] Foundation | Required file: app\layout.tsx | Exists.
+[PASS] Foundation | Required file: app\page.tsx | Exists.
+[PASS] Foundation | Required file: app\[locale]\layout.tsx | Exists.
+[PASS] Foundation | Required file: app\sitemap.ts | Exists.
+[PASS] Foundation | Required file: app\robots.ts | Exists.
+[PASS] Foundation | Required file: app\api\health\route.ts | Exists.
+[PASS] Foundation | Required file: app\api\ready\route.ts | Exists.
+[PASS] Foundation | Required file: eslint.config.mjs | Exists.
+[PASS] Runtime | Production build script | next build
+[PASS] Runtime | Production start script | next start
+[PASS] Quality | Automated test script | [string]@{name=melkism; version=0.1.0; private=True; scripts=; dependencies=; devDependencies=}.scripts.test
+[WARN] Source Control | Working tree | Local changes exist; repository was not modified by this audit.
+[PASS] International UX | Locale and direction contract | fa/en/ar/tr and RTL/LTR mapping are present.
+[PASS] International UX | Localized layout | Localized direction and main landmark are present.
+[PASS] Accessibility | Global accessibility foundation | Focus, skip-link and reduced-motion support present.
+[PASS] Accessibility | Mobile navigation accessibility | Native details/summary navigation present.
+[PASS] Accessibility | Navigation accessible names | Primary, language and search controls are named.
+[PASS] SEO | Root HTML/metadata baseline | fa/RTL and MELKISM SEO defaults present.
+[PASS] SEO | Sitemap and robots | Sitemap and robots infrastructure present.
+[PASS] Security | Security headers | Configured security headers are present.
+[PASS] Security | API cache policy | API no-store policy is configured.
+[PASS] Security | Local environment file | No local .env file detected.
+[PASS] Deployment | Environment template | .env.example exists.
+[PASS] Deployment | Deployment readiness foundation | Deployment readiness service exists.
+[PASS] Operations | Health endpoint | Route is non-empty.
+[PASS] Operations | Readiness endpoint | Route is non-empty.
+[PASS] International UX | Default locale | Root redirects to /fa.
+[PASS] Source Integrity | SearchResult module resolution | Explicit nested module export is active.
+[PASS] Quality | ESLint compatibility scope | Legacy CommonJS and phase snapshots are correctly scoped.
+[PASS] Quality | Accessibility test | Test file exists.
+[PASS] Operations | Production audit tools | Readiness and prelaunch tools exist.
+[PASS] Runtime | Framework baseline | Next.js 16.3.0 and React 19.2.8 retained.
+[BLOCKED] Safety | Forbidden activation artifacts | Detected: node_modules\axe-core
+[PASS] Deployment | Production readiness | Command completed successfully.
+[PASS] Database | Prisma validate | Command completed successfully.
+[PASS] Database | Prisma generate | Command completed successfully.
+[PASS] Quality | TypeScript | Command completed successfully.
+[PASS] Quality | Lint | Command completed successfully.
+[PASS] Quality | Project tests | Command completed successfully.
+[PASS] Accessibility | Accessibility test | Command completed successfully.
+[PASS] Deployment | Production build | Command completed successfully.
+[PASS] Operations | Existing prelaunch audit | Completed with exit code 0.
+
+Safety
+------
+Database migrations: NOT RUN
+Database writes     : NOT RUN
+Cloud activation   : NOT RUN
+Git push/sync      : NOT RUN

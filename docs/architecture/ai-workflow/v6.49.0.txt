@@ -1,0 +1,23 @@
+MELKISM v6.49.0
+
+AI Autonomous Workflow Foundation (Governed)
+
+
+Created:
+
+- Workflow Contracts
+- Task Planning
+- Validation Gate
+- Permission Boundary
+- Workflow State
+
+
+Safety:
+
+Autonomous execution disabled.
+
+Human governance required.
+
+No self modification.
+
+

@@ -1,0 +1,20 @@
+MELKISM v6.46.0
+
+Knowledge Inference Optimization &
+Context Intelligence Layer
+
+
+Added:
+
+- Context Window Foundation
+- Semantic Evidence Evaluation
+- Confidence Scoring
+
+
+Safety:
+
+No runtime activation.
+No external AI dependency.
+No database mutation.
+
+

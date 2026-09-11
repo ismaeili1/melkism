@@ -1,0 +1,1 @@
+export const AI_AGENTS=['PROPERTY','MARKET','INVESTMENT','CONTENT'];

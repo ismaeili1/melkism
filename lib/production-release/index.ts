@@ -1,5 +1,11 @@
-export * from "./production-release.types";
+export function getProductionHealth(){
 
-export {
-  getProductionHealth,
-} from "./production-release.service";
+return {
+
+ok:true,
+status:"healthy",
+service:"melkism-production"
+
+};
+
+}

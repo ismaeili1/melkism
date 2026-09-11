@@ -1,0 +1,18 @@
+MELKISM v6.69.0
+
+AI User Advisory Layer
+
+
+Created:
+
+- Advisory Contract
+- Intent Layer
+- Context Layer
+- Advisory Engine
+- Explanation Layer
+
+
+External AI Model:
+
+Disabled
+

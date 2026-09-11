@@ -1,0 +1,13 @@
+MELKISM v6.58.0
+
+Real Estate Knowledge Integration
+
+STATUS:
+FOUNDATION READY
+
+Knowledge Graph:
+Connected
+
+External Sources:
+Disabled
+

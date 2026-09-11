@@ -1,0 +1,20 @@
+MELKISM v6.56.0
+
+User Personalization Intelligence Layer
+
+
+Created:
+
+- Profile Contract
+- Preference Memory
+- Adaptation Context
+- Personalization Engine
+- Recommendation Foundation
+
+
+Safety:
+
+Adaptive learning disabled.
+
+Governance required.
+

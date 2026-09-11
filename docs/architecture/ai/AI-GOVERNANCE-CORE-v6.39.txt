@@ -1,0 +1,14 @@
+MELKISM AI Governance Core
+
+Purpose:
+Controlled foundation for future AI modules.
+
+Rules:
+
+- Registry required
+- Evaluation required
+- Audit required
+- Autonomous execution disabled by default
+
+Status:
+FOUNDATION ACTIVE

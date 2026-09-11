@@ -39,6 +39,23 @@ caughtErrorsIgnorePattern:"^_"
 },
 
 
+
+/*
+ * MELKISM v6.34.0 COMMONJS UTILITY ESLINT SCOPE
+ *
+ * These three standalone audit utilities intentionally use require()
+ * and remain CommonJS scripts. Keep this exception file-scoped.
+ */
+{
+  files: [
+    "zero-byte-audit.js",
+    "zero-byte-active-audit.js",
+    "zero-byte-classifier.js",
+  ],
+  rules: {
+    "@typescript-eslint/no-require-imports": "off",
+  },
+},
 globalIgnores([
 
 ".next/**",
@@ -49,11 +66,15 @@ globalIgnores([
 "docs/**",
 "**/*backup*/**",
 "**/backup/**",
-"coverage/**"
+"coverage/**",
+
+".phase-snapshots/**"
 
 ])
 
 
 ]);
+
+
 
 

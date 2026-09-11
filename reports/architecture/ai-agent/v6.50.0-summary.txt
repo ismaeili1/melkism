@@ -1,0 +1,13 @@
+MELKISM v6.50.0
+
+AI Agent Governance Foundation
+
+STATUS:
+PASS
+
+Execution:
+Disabled
+
+Governance:
+Enabled
+

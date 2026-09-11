@@ -1,0 +1,18 @@
+MELKISM v6.59.0
+
+Real Estate Semantic Intelligence Layer
+
+
+Created:
+
+- Semantic Entity Model
+- Relationship Model
+- Ontology Foundation
+- Semantic Context
+
+
+External Intelligence:
+
+Disabled
+
+

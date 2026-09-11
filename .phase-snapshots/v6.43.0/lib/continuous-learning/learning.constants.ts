@@ -1,0 +1,1 @@
+export const CONTINUOUS_LEARNING='MELKISM';

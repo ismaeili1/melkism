@@ -1,0 +1,1 @@
+export const AI_CLOUD_PLATFORM='MELKISM';

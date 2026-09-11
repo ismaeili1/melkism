@@ -1,0 +1,7 @@
+export const MELKISM_INTELLIGENCE_MEMORY_VERSION =
+"37.5.0-R1";
+
+
+export const MELKISM_INTELLIGENCE_MEMORY_STATUS =
+"locked";
+

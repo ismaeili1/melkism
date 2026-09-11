@@ -1,0 +1,2 @@
+export { IntelligenceSearch }
+from "./IntelligenceSearch";

@@ -1,0 +1,1 @@
+export const INVESTMENT_TYPES=['PROPERTY','PORTFOLIO'];

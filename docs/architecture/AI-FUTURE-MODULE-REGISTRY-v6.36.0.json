@@ -1,0 +1,23 @@
+{
+  "modules": [
+    {
+      "activation": "AI-PHASE-01",
+      "path": "lib/ai/reasoning",
+      "name": "AI Reasoning Engine",
+      "status": "planned"
+    },
+    {
+      "activation": "AI-PHASE-02",
+      "path": "lib/ai/agents",
+      "name": "Autonomous Knowledge Agent",
+      "status": "planned"
+    },
+    {
+      "activation": "AI-PHASE-03",
+      "path": "lib/intelligence",
+      "name": "Knowledge Intelligence Graph",
+      "status": "planned"
+    }
+  ],
+  "platform": "MELKISM"
+}

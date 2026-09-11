@@ -1,0 +1,36 @@
+
+> melkism@0.1.0 prelaunch:audit
+> node scripts/prelaunch-audit.mjs
+
+
+MELKISM v6.35.0 PRE-LAUNCH AUDIT
+===============================
+
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Required file : exists
+[PASS] Production build script : next build
+[PASS] Production start script : next start
+[PASS] Automated test command : test command exists
+[PASS] Security headers : security headers
+[PASS] API cache policy : no-store
+[PASS] Locale accessibility contract : lang/dir/main
+[PASS] SEO infrastructure : sitemap and robots exist
+[PASS] Accessibility foundation : accessibility foundation exists
+[PASS] Deployment readiness foundation : deployment readiness exists
+
+Checks : 22
+Passed : 22
+Blocked: 0
+
+PRE-LAUNCH AUDIT : PASS

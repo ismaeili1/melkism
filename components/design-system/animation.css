@@ -1,0 +1,14 @@
+.melkism-transition{
+
+transition:
+all 220ms ease;
+
+}
+
+
+.melkism-hover:hover{
+
+transform:
+scale(1.02);
+
+}

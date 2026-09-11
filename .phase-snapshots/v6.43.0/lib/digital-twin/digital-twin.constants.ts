@@ -1,0 +1,1 @@
+export const DIGITAL_TWIN_PLATFORM='MELKISM';

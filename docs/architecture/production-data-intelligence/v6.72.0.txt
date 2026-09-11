@@ -1,0 +1,16 @@
+MELKISM v6.72.0
+
+Production Data Intelligence Foundation
+
+Created:
+
+- Data Contract
+- Data Context
+- Quality Layer
+- Registry
+- Processing Foundation
+
+
+External Sources:
+Disabled
+

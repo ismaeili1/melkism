@@ -1,0 +1,18 @@
+MELKISM v6.75.0
+
+AI Model Evaluation & Monitoring
+
+
+Created:
+
+- Evaluation Contracts
+- Metrics Foundation
+- Monitoring Layer
+- Quality Engine
+
+
+External AI Model:
+
+Disabled
+
+

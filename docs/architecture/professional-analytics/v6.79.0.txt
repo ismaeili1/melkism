@@ -1,0 +1,19 @@
+MELKISM v6.79.0
+
+Professional Analytics Platform
+
+
+Created:
+
+- Analytics Contracts
+- Metrics Engine
+- Insight Engine
+- Report Foundation
+- Analytics Aggregation
+
+
+Production Analytics:
+
+Not activated
+
+

@@ -1,0 +1,13 @@
+MELKISM v6.51.0
+
+AI Agent Runtime Foundation
+
+STATUS:
+PASS
+
+Execution:
+Governed
+
+Autonomous:
+Disabled
+

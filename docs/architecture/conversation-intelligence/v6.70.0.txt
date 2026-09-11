@@ -1,0 +1,14 @@
+MELKISM v6.70.0
+
+Conversational Real Estate Intelligence
+
+Created:
+
+- Conversation Contract
+- Memory Context
+- Dialogue Engine
+- Response Explanation
+
+External LLM:
+Disabled
+

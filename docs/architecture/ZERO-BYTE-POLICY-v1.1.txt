@@ -1,0 +1,16 @@
+MELKISM ZERO BYTE POLICY v1.1
+
+Rules:
+
+1. Zero byte files are not automatically deleted.
+
+2. Zero byte files are classified before action.
+
+3. AI future modules remain registered.
+
+4. Runtime placeholders require human review.
+
+5. Generated artifacts are separated from architecture.
+
+6. No phase may activate unknown modules automatically.
+

@@ -1,0 +1,13 @@
+ M app/[locale]/layout.tsx
+ M app/globals.css
+ M app/layout.tsx
+ M components/navigation/DesktopNavigation.tsx
+ M components/navigation/HeaderActions.tsx
+ M components/navigation/LanguageSwitcher.tsx
+ M components/navigation/MobileNavigation.tsx
+ M components/search/index.ts
+ M docs/accessibility/v6.34.0/ACCESSIBILITY-INTERNATIONAL-UX-v6.34.0.txt
+ M eslint.config.mjs
+ M tests/quality/accessibility.test.mjs
+ M tsconfig.tsbuildinfo
+?? .phase-snapshots/

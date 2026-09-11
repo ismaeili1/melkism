@@ -1,0 +1,20 @@
+MELKISM ZERO BYTE POLICY
+
+Allowed:
+
+- Future AI modules
+- Architecture placeholders
+- Interface contracts
+- Documentation markers
+
+
+Forbidden:
+
+- Empty API routes
+- Empty runtime services
+- Empty imported components
+- Production execution files without implementation
+
+
+Every future phase must classify zero-byte files.
+Automatic deletion is forbidden.

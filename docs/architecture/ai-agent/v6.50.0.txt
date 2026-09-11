@@ -1,0 +1,23 @@
+MELKISM v6.50.0
+
+AI Agent Governance & Orchestration Layer
+
+
+Created:
+
+- Agent Identity
+- Agent Registry
+- Capability Model
+- Governance Policy
+- Orchestration Contract
+
+
+Safety:
+
+Agent execution disabled.
+
+Human approval required.
+
+No autonomous runtime.
+
+

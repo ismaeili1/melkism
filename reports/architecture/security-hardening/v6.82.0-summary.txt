@@ -1,0 +1,7 @@
+MELKISM v6.82.0
+
+Security Hardening Foundation
+
+STATUS:
+READY FOR MONITORING LAYER
+

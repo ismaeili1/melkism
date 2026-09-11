@@ -1,0 +1,19 @@
+MELKISM v6.80.0
+
+User Feature Integration
+
+
+Created:
+
+- Feature Contracts
+- Feature Gateway
+- Feature Registry
+- Feature Context
+- Feature Response
+
+
+Production User Features:
+
+Not activated
+
+
