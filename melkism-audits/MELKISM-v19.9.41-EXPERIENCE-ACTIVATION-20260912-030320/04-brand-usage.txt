@@ -1,0 +1,18 @@
+
+components\brand\BrandIdentity.tsx:1:export default function BrandIdentity(){
+components\brand\BrandLogo.tsx:1:export default function BrandLogo(){
+components\brand\BrandLogo.tsx:6:<div className="brand-logo">
+components\brand\BrandLogo.tsx:9:src="/brand/logo.png"
+components\brand\BrandMark.tsx:3:type BrandMarkProps = {
+components\brand\BrandMark.tsx:7:export function BrandMark({ locale }: BrandMarkProps) {
+components\brand\Logo.tsx:1:export default function Logo(){
+components\brand\Logo.tsx:8:src="/brand/melkist-logo.png"
+components\brand\MELKISMLogo.tsx:1:export default function MELKISMLogo(){
+components\brand\MELKISMLogo.tsx:10:src="/brand/melkist-logo.png"
+components\home\HeroExperience.tsx:28:<p className="brand-label">
+components\layout\VisualHeader.tsx:1:import Logo from "@/components/brand/Logo";
+components\layout\VisualHeader.tsx:11:<Logo/>
+components\navigation\SiteHeader.tsx:2:import { BrandMark } from "../brand/BrandMark";
+components\navigation\SiteHeader.tsx:40:          <BrandMark locale={locale} />
+components\property-intelligence\PropertyImageAnalysis.tsx:1:export function PropertyImageAnalysis(){ return <section>PropertyImageAnalysis</section>; }
+

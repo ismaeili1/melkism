@@ -1,0 +1,95 @@
+import { redirect } from "next/navigation";
+
+export default function RootPage() {
+  redirect("/fa");
+}
+import {
+
+Hero,
+IntelligenceCards
+
+} from "@/components/home";
+
+
+export default function HomePage(){
+
+return (
+
+<>
+
+<Hero
+
+title="MELKISM"
+description="Media Knowledge and Intelligence Platform"
+
+/>
+
+
+<IntelligenceCards />
+
+
+</>
+
+);
+
+}
+
+import HeroExperience from "./HeroExperience";
+
+import IntelligenceDomains from "./IntelligenceDomains";
+
+
+
+export default function HomeExperience(){
+
+
+return (
+
+<main>
+
+
+<HeroExperience />
+
+
+<IntelligenceDomains />
+
+
+<section>
+
+<h2>
+
+Featured Intelligence
+
+</h2>
+
+<p>
+
+Market reports, research and knowledge discovery.
+
+</p>
+
+</section>
+
+
+<section>
+
+<h2>
+
+MELKISM Reports
+
+</h2>
+
+<p>
+
+Future intelligence publications.
+
+</p>
+
+</section>
+
+
+</main>
+
+)
+
+}
