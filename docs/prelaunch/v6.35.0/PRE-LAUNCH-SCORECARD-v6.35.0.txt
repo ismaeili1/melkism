@@ -1,0 +1,57 @@
+MELKISM v6.35.0
+PRE-LAUNCH SCORECARD
+
+Gate categories
+---------------
+
+1. Foundation
+2. Security
+3. Operational readiness
+4. Internationalization
+5. Accessibility
+6. SEO
+7. Deployment readiness
+8. Observability
+9. Performance
+10. Search
+11. Production commands
+12. Database foundation
+13. Automated quality
+14. Production build
+
+Status model
+------------
+
+PASS
+WARNING
+BLOCKED
+
+Interpretation
+--------------
+
+PASS:
+Local engineering contract is satisfied.
+
+WARNING:
+The item intentionally belongs to a later real-production
+operation or requires live infrastructure.
+
+BLOCKED:
+A required local engineering condition is not satisfied.
+
+Release Candidate policy
+------------------------
+
+A BLOCKED gate prevents transition to the Release Candidate.
+
+Warnings are recorded and carried forward into the deployment
+acceptance checklist.
+
+Production deployment
+---------------------
+
+Actual production availability is NOT declared by v6.35.0.
+
+The production milestone begins only after infrastructure,
+database, deployment, smoke testing and user acceptance phases
+are completed.

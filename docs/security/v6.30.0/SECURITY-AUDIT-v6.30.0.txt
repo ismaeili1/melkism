@@ -1,0 +1,100 @@
+MELKISM v6.30.0
+SECURITY HARDENING & DEPENDENCY AUDIT
+
+Purpose
+-------
+Establish a repeatable application security baseline while preserving
+the existing architecture and dependency graph.
+
+Security modules
+----------------
+lib/security/security.constants.ts
+lib/security/security.types.ts
+lib/security/security.headers.ts
+lib/security/security.env.ts
+lib/security/security.audit.ts
+lib/security/index.ts
+
+Security headers
+----------------
+Content-Security-Policy
+Referrer-Policy
+X-Frame-Options
+X-Content-Type-Options
+Permissions-Policy
+Strict-Transport-Security
+
+Environment security
+---------------------
+Environment auditing operates on variable names and presence only.
+Sensitive values are never intentionally emitted by the audit layer.
+
+Sensitive naming patterns include:
+PASSWORD
+SECRET
+TOKEN
+API_KEY
+PRIVATE_KEY
+DATABASE_URL
+AUTH_SECRET
+NEXTAUTH_SECRET
+
+Browser security
+----------------
+The v6.30 security modules do not use:
+localStorage
+sessionStorage
+document.cookie
+
+Dependency audit
+----------------
+npm audit --json
+npm audit signatures
+
+are executed and retained as audit artifacts.
+
+Dependency mutation
+-------------------
+No:
+npm audit fix
+npm audit fix --force
+npm install
+forced dependency upgrade
+
+is performed.
+
+Database
+--------
+No Prisma schema modification.
+No migration.
+No seed.
+No database write.
+
+Authentication
+--------------
+Existing authentication and authorization architecture is preserved.
+
+Caching
+-------
+Existing API no-store policy is preserved.
+
+Observability recovery
+----------------------
+Missing or zero-byte files from v6.29 are recreated only when needed.
+Existing non-empty v6.29 files are not overwritten by recovery.
+
+GitHub
+-------
+No GitHub synchronization is performed.
+
+Validation
+----------
+npx prisma validate
+npx prisma generate
+npx tsc --noEmit
+npm run lint
+npm run build
+
+Phase
+-----
+MELKISM v6.30.0

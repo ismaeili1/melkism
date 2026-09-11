@@ -1,3 +1,6 @@
+import type {
+  ContentKind,
+} from "@/prisma/generated/prisma/client";
 import {
   getAuthPrisma,
 } from "@/lib/auth/prisma";
@@ -150,7 +153,148 @@ export const contentRepository = {
         },
       });
   },
-};
+
+  async createWithRevision(input: {
+    slug: string;
+    title: string;
+    summary?: string;
+    body?: string;
+    kind: ContentKind;
+    localeId: string;
+    authorId: string;
+  }) {
+    const prisma =
+      getAuthPrisma();
+
+    return prisma.$transaction(
+      async (tx) => {
+        const content =
+          await tx.content.create({
+            data: {
+              slug:
+                input.slug,
+              title:
+                input.title,
+              summary:
+                input.summary,
+              body:
+                input.body,
+              kind:
+                input.kind,
+              status:
+                "DRAFT",
+              localeId:
+                input.localeId,
+              authorId:
+                input.authorId,
+            },
+          });
+
+        await tx.contentRevision.create({
+          data: {
+            contentId:
+              content.id,
+            version: 1,
+            title:
+              content.title,
+            summary:
+              content.summary,
+            body:
+              content.body,
+          },
+        });
+
+        return content;
+      }
+    );
+  },
+
+  async updateWithRevision(
+    id: string,
+    input: {
+      slug?: string;
+      title?: string;
+      summary?: string;
+      body?: string;
+      kind?: ContentKind;
+      localeId?: string;
+    }
+  ) {
+    const prisma =
+      getAuthPrisma();
+
+    return prisma.$transaction(
+      async (tx) => {
+        const updated =
+          await tx.content.update({
+            where: {
+              id,
+            },
+            data: input,
+          });
+
+        const latestRevision =
+          await tx.contentRevision.findFirst({
+            where: {
+              contentId: id,
+            },
+            orderBy: {
+              version: "desc",
+            },
+            select: {
+              version: true,
+            },
+          });
+
+        const nextVersion =
+          (latestRevision?.version ?? 0) +
+          1;
+
+        await tx.contentRevision.create({
+          data: {
+            contentId:
+              updated.id,
+            version:
+              nextVersion,
+            title:
+              updated.title,
+            summary:
+              updated.summary,
+            body:
+              updated.body,
+          },
+        });
+
+        return updated;
+      }
+    );
+  },
+
+  async updateStatus(
+    id: string,
+    status:
+      | "DRAFT"
+      | "REVIEW"
+      | "PUBLISHED"
+      | "ARCHIVED"
+  ) {
+    return getAuthPrisma()
+      .content
+      .update({
+        where: {
+          id,
+        },
+        data: {
+          status,
+          publishedAt:
+            status === "PUBLISHED"
+              ? new Date()
+              : status === "ARCHIVED"
+                ? null
+                : undefined,
+        },
+      });
+  },};
 
 type ContentKindValue =
   | "ARTICLE"

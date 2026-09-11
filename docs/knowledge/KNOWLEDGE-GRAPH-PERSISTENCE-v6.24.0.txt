@@ -1,0 +1,176 @@
+MELKISM v6.24.0
+KNOWLEDGE GRAPH PERSISTENCE
+
+============================================================
+PURPOSE
+============================================================
+
+Provide the canonical PostgreSQL + Prisma persistence layer
+and protected backend API foundation for the MELKISM
+Knowledge Graph.
+
+============================================================
+PRISMA FOUNDATION
+============================================================
+
+KnowledgeNode
+KnowledgeRelation
+
+KnowledgeNodeType
+KnowledgeRelationType
+
+KnowledgeRelation uniqueness:
+
+fromNodeId + toNodeId + type
+
+============================================================
+ARCHITECTURE
+============================================================
+
+API
+  ->
+Service
+  ->
+Repository
+  ->
+Prisma
+  ->
+PostgreSQL
+
+============================================================
+KNOWLEDGE NODE
+============================================================
+
+Collection:
+GET  /api/v1/knowledge/nodes
+POST /api/v1/knowledge/nodes
+
+Item:
+GET    /api/v1/knowledge/nodes/[id]
+PATCH  /api/v1/knowledge/nodes/[id]
+DELETE /api/v1/knowledge/nodes/[id]
+
+============================================================
+KNOWLEDGE RELATION
+============================================================
+
+Collection:
+GET  /api/v1/knowledge/relations
+POST /api/v1/knowledge/relations
+
+Item:
+GET    /api/v1/knowledge/relations/[id]
+PATCH  /api/v1/knowledge/relations/[id]
+DELETE /api/v1/knowledge/relations/[id]
+
+============================================================
+SERVICE / REPOSITORY CONTRACT
+============================================================
+
+graphService.listNodes
+    ->
+graphRepository.listNodes
+
+graphService.getNode
+    ->
+graphRepository.findNodeById
+
+graphService.createNode
+    ->
+graphRepository.createNode
+
+graphService.updateNode
+    ->
+graphRepository.updateNode
+
+graphService.deleteNode
+    ->
+graphRepository.deleteNode
+
+graphService.listRelations
+    ->
+graphRepository.listRelations
+
+graphService.getRelation
+    ->
+graphRepository.findRelationById
+
+graphService.createRelation
+    ->
+graphRepository.createRelation
+
+graphService.updateRelation
+    ->
+graphRepository.updateRelation
+
+graphService.deleteRelation
+    ->
+graphRepository.deleteRelation
+
+============================================================
+AUTHORIZATION
+============================================================
+
+Read:
+intelligence:read
+
+Mutations:
+intelligence:manage
+
+============================================================
+VALIDATION
+============================================================
+
+Canonical shared validation helpers are used.
+
+page:
+positive integer
+
+pageSize:
+positive integer
+maximum 100
+
+confidence:
+0..1
+
+self-relations:
+rejected
+
+============================================================
+PERSISTENCE TYPES
+============================================================
+
+Metadata:
+Prisma.InputJsonValue
+
+Decimal:
+Prisma.Decimal
+
+Fields using Decimal:
+weight
+confidence
+
+============================================================
+OPERATIONAL CONSTRAINTS
+============================================================
+
+No new dependency.
+
+No database migration.
+
+No schema modification.
+
+No external graph database.
+
+No browser storage.
+
+No route-to-route API chaining.
+
+============================================================
+PHASE
+============================================================
+
+MELKISM v6.24.0
+Knowledge Graph Persistence
+
+============================================================

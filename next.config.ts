@@ -26,6 +26,11 @@ const nextConfig: NextConfig = {
           key: "Permissions-Policy",
           value:
             "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+        },
+        {
+          key: "Strict-Transport-Security",
+          value:
+            "max-age=31536000; includeSubDomains"
         }
       ]
     },
@@ -37,8 +42,20 @@ const nextConfig: NextConfig = {
           value: "no-store, max-age=0"
         }
       ]
+    },
+    {
+      source: "/:locale/:path*",
+      headers: [
+        {
+          key: "Cache-Control",
+          value: "public, max-age=0, s-maxage=60, stale-while-revalidate=300"
+        }
+      ]
     }
   ]
 };
 
 export default nextConfig;
+
+
+

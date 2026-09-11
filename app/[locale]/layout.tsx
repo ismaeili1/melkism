@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { SiteHeader } from "@/components/navigation/SiteHeader";
 import { notFound } from "next/navigation";
+
+import { SiteHeader } from "@/components/navigation/SiteHeader";
 
 import {
   isLocale,
@@ -9,17 +10,59 @@ import {
   type Locale,
 } from "@/lib/i18n/config";
 
-export const metadata: Metadata = {
-  title: {
-    default: "MELKISM",
-    template: "%s | MELKISM",
-  },
-  description:
-    "MELKISM — Media, Knowledge and Intelligence for Real Estate and the Built Environment.",
-};
+import {
+  getDictionary,
+} from "@/lib/i18n/translation.engine";
+
+export async function generateMetadata(
+  {
+    params,
+  }: {
+    params: Promise<{
+      locale: string;
+    }>;
+  }
+): Promise<Metadata> {
+  const { locale } =
+    await params;
+
+  if (!isLocale(locale)) {
+    return {
+      title: "MELKISM",
+    };
+  }
+
+  const dictionary =
+    getDictionary(
+      locale as Locale
+    );
+
+  return {
+    title: {
+      default:
+        dictionary["site.name"],
+      template:
+        `%s | ${dictionary["site.name"]}`,
+    },
+    description:
+      dictionary["site.description"],
+    alternates: {
+      languages: {
+        fa: "/fa",
+        en: "/en",
+        ar: "/ar",
+        tr: "/tr",
+      },
+    },
+  };
+}
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return locales.map(
+    (locale) => ({
+      locale,
+    })
+  );
 }
 
 type LocaleLayoutProps = {
@@ -33,25 +76,29 @@ export default async function LocaleLayout({
   children,
   params,
 }: LocaleLayoutProps) {
-
-  const { locale } = await params;
+  const { locale } =
+    await params;
 
   if (!isLocale(locale)) {
     notFound();
   }
 
-  const typedLocale = locale as Locale;
-
+  const typedLocale =
+    locale as Locale;
 
   return (
-    <div dir={localeDirection[typedLocale]}>
-
-      <SiteHeader locale={typedLocale} />
+    <div
+      lang={typedLocale}
+      dir={localeDirection[typedLocale]}
+      data-locale={typedLocale}
+    >
+      <SiteHeader
+        locale={typedLocale}
+      />
 
       <main>
         {children}
       </main>
-
     </div>
   );
 }

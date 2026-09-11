@@ -1,0 +1,34 @@
+MELKISM v6.23.0
+MEDIA & ASSET MANAGEMENT BACKEND
+
+Implemented:
+- MediaAsset repository.
+- Media service.
+- Media CRUD API.
+- ContentMedia association API.
+- media:manage authorization.
+- Shared rate limiting.
+- Prisma transaction for ContentMedia attachment.
+- BigInt-safe sizeBytes validation.
+- BigInt-safe API serialization.
+- Prisma 7 InputJsonValue-compatible metadata conversion.
+- Validation helpers aligned with the canonical two-argument API.
+
+Routes:
+GET    /api/v1/media
+POST   /api/v1/media
+GET    /api/v1/media/[id]
+PATCH  /api/v1/media/[id]
+DELETE /api/v1/media/[id]
+
+GET    /api/v1/content/[id]/media
+POST   /api/v1/content/[id]/media
+PATCH  /api/v1/content/[id]/media/[mediaId]
+DELETE /api/v1/content/[id]/media/[mediaId]
+
+Constraints:
+- No dependency installation.
+- No migration.
+- No database mutation during implementation.
+- No physical binary storage provider.
+- storageKey and MediaAsset metadata are managed by this backend.

@@ -1,0 +1,121 @@
+MELKISM v6.28.0
+CACHING / PERFORMANCE / SCALABILITY
+
+Purpose
+-------
+Introduce a safe performance foundation without adding external
+infrastructure or changing the persistence model.
+
+Scope
+-----
+1. Bounded in-memory cache
+2. TTL expiration
+3. Maximum cache entry enforcement
+4. Cache statistics
+5. Public HTTP/CDN cache policy
+6. Explicit API no-store policy
+7. Performance policy constants
+8. Search cache policy contract
+
+Memory cache
+------------
+The MemoryCache implementation is bounded by:
+- TTL
+- maximum entries
+- periodic expiration cleanup
+
+Eviction
+--------
+When the maximum number of entries is exceeded, the least-recently
+accessed entry is removed.
+
+Runtime model
+-------------
+The cache is process-local.
+
+This means:
+- it is useful for hot data within one application process;
+- it is not a distributed cache;
+- it is not a source of truth;
+- it must not be used for authorization state;
+- it must not be used for persistent business data.
+
+Public page cache
+-----------------
+Public locale routes receive:
+
+public, max-age=0, s-maxage=60,
+stale-while-revalidate=300
+
+This allows shared caches/CDNs to retain public responses briefly
+while preserving immediate browser revalidation.
+
+API cache
+---------
+API routes retain:
+
+no-store, max-age=0
+
+This prevents accidental caching of authenticated or mutable API
+responses.
+
+Security
+--------
+No cache is used for:
+- credentials
+- sessions
+- authorization state
+- private user data
+- database persistence
+
+Browser storage
+---------------
+No localStorage.
+No sessionStorage.
+No document.cookie.
+
+Database
+--------
+No Prisma schema changes.
+No migration.
+No seed.
+No database cache dependency.
+
+Dependencies
+------------
+No new npm package.
+No external Redis dependency.
+No external cache service.
+
+Search
+------
+Search performance policy defines:
+- short TTL
+- bounded number of entries
+
+The policy is intentionally separate from the search persistence
+model so a distributed cache can be introduced later without
+rewriting the search domain.
+
+Scalability direction
+---------------------
+This phase prepares the codebase for:
+- CDN/shared caching for public pages
+- bounded process-local hot-data caching
+- later distributed cache adoption
+- cache observability
+- request-performance measurements
+
+No distributed cache is introduced in this phase.
+
+Validation gates
+----------------
+1. npx prisma validate
+2. npx prisma generate
+3. npx tsc --noEmit
+4. npm run lint
+5. npm run build
+
+Phase
+-----
+MELKISM v6.28.0

@@ -1,0 +1,2 @@
+npm error Failed to download
+npm error A complete log of this run can be found in: C:\Users\Avat\AppData\Local\npm-cache\_logs\2026-09-10T15_53_40_761Z-debug-0.log

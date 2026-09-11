@@ -1,0 +1,8432 @@
+[
+  {
+    "file": "app\\api\\admin\\content\\publish\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\admin\\content\\review\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\admin\\content\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\admin\\content\\translation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\collaboration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\learning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\messages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\orchestration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agent-intelligence\\tasks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\communication\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\orchestration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\plans\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\tasks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\agentic-ai\\workflows\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\analyze\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\automation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\chat\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\context\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\decision\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\document\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\models\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\predict\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\prediction\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\prompts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\recommend\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\recommendation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\spatial\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\text\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\vision\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai\\voice\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\automation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\collaboration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\execution\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\messages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\orchestration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\tasks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\tools\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-agents\\workflows\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\cloud\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\clusters\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\compute\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\deployments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\edge\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\nodes\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-cloud\\scaling\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\actions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\conversations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\feedback\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-copilot\\tasks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\developers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\extensions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\integrations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\marketplace\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\packages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\permissions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\plugins\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-ecosystem\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\audits\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\compliance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\ethics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\explanations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\health\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\optimization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\permissions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\policies\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\privacy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\rules\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\safety\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\security\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\traces\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\transparency\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-governance\\trust\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\approvals\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\audit\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\automation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\command\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\context\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\execute\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\execution\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\executions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\governance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\models\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\permissions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\pipeline\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\planning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\prompts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\response\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\routing\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\tasks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-orchestration\\workflows\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\inference\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-reasoning\\scenarios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\authors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\citations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\evidence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\evolution\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\experiments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\hypotheses\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\learning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\papers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\research\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\sources\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-research\\synthesis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\filters\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\location\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\personalization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\query\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\ai-search\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\dashboards\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\forecasts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\kpi\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\market\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\metrics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\analytics\\visualization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\architects\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\firms\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\materials\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\projects\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture\\styles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\architects\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\bim\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\design\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\generation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\styles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\sustainability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\architecture-intelligence\\urban\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\forgot-password\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\login\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\logout\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\register\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\reset-password\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\session\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\social\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\auth\\verify\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\actions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\execution\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\goals\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\learning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\plans\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\tasks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\autonomous-intelligence\\workflows\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\ai-insight\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\architecture\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\comparison\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\indicators\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\market\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\profile\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\cities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\countries\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\indicators\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\infrastructure\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\overview\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cities-intelligence\\sustainability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\ai-assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\cities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\growth\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\infrastructure\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\livability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\market\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\neighborhoods\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\city-intelligence\\urban-data\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\adaptation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\buildings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\carbon\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\climate\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\energy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\mitigation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\resilience\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\climate-intelligence\\sustainability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cloud\\deployment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cloud\\environments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cloud\\health\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cloud\\logs\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cloud\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cloud\\releases\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\cloud\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\activities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\appointments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\automation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\conversations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\messages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\notifications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\teams\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\collaboration\\workflows\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\appointments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\conversations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\inquiries\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\interactions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\messages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\negotiations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\notifications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\automation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\channels\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\collaboration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\conversations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\messages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\notifications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\routing\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\communication-intelligence\\sentiment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\ai-summary\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\articles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\classify\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\news\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\seo\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content\\translate\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\ai-assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\analyze\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\articles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\citations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\classification\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\contents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\editorial\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\knowledge\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\knowledge-links\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\localization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\publications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\publish\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\publishing\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\quality\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\relations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\research\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\seo\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\sources\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\summary\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\taxonomy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\translate\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\translation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-intelligence\\translations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\articles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\authors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\editorial\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\knowledge\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\media\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\publishing\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\research\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\content-platform\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\adaptation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\evaluation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\evolution\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\experiences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\feedback\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\models\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\optimization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\continuous-learning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\chat\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\context\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\intents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\languages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\messages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\conversational-ai\\voice\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\dashboard\\activity\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\dashboard\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\dashboard\\preferences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\dashboard\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\ai\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\business\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\dashboards\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\datasets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\executive\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\geographic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\indicators\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\ingestion\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\kpis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\market\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\metrics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\pipelines\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\quality\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\sources\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\users\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-intelligence\\warehouse\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\apis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\datasets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\knowledge\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\products\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\providers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-marketplace\\subscriptions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\connectors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\datasets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\lake\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\pipeline\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\quality\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\sources\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\data-platform\\warehouse\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\criteria\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\decisions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\executives\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\explanations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\opportunities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\planning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\rankings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\scenarios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\scores\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\simulations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\decision-intelligence\\strategies\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\assets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\building\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\buildings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\cities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\environment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\forecasts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\future-city\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\lifecycle\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\markets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\models\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\optimization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\property\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\scenarios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\simulation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\simulations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\spatial\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\synchronization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\twins\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin\\urban\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\buildings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\cities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\prediction\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\scenarios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\sensors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\simulation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\simulations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\telemetry\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\twins\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\digital-twin-intelligence\\urban\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\filters\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\discovery\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\members\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\organizations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\permissions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\roles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\services\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\teams\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\enterprise-platform\\workspaces\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\adaptive\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\context\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\interaction\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\journey\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\personalization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\experience\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\forecasts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\investments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\portfolios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\roi\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\simulations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\financial-intelligence\\strategies\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\cities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\climate\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\environmental\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\locations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\map\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\spatial-analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\geospatial\\urban\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\cloud\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\deployments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\logs\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\operations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\performance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\infrastructure\\security\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\apis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\connectors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\enterprise\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\events\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\exchange\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\federation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\gateway\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\messages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\partners\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\security\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\services\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\integration\\webhooks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\decision\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\orchestration\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\query\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligence\\services\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\automations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\events\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\executions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\rules\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\schedules\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\tasks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\intelligent-operations\\workflows\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\opportunities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\portfolio\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\risk\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\roi\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment\\strategy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\allocation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\assets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\forecast\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\forecasts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\investments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\investor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\investors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\opportunities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\portfolio\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\portfolios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\prediction\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\risk\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\roi\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\strategies\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\investment-intelligence\\strategy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\ai\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\entities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\entity\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\explore\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\graph\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\ontology\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\query\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\relation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\relations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge\\sources\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\concepts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\entities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\graph\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\ontology\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\relations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-fabric\\semantics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\ai\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\architecture\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\city\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\concepts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\context\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\entities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\fusion\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\graph\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\inference\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\nodes\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\ontology\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\property\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\query\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\relations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\relationships\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\entities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\inference\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\ontology\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\query\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\relationships\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-graph-intelligence\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\concepts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\entities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\graph\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\ontology\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\reasoning\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\relationships\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\knowledge-intelligence\\semantic-search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\cultures\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\currencies\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\languages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\locales\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\markets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\regions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\localization-intelligence\\translations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\forecast\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\overview\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\prices\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\reports\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market\\trends\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\ai-analyst\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\cycle\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\cycles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\demand\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\economics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\economy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\forecast\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\forecasts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\heatmap\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\indicators\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\investments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\market\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\markets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\opportunities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\prediction\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\prices\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\signals\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\simulation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\streaming\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\supply\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\supply-demand\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\trends\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\valuation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\market-intelligence\\valuations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\agents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\ai-analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\ai-assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\buyer-intent\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\buyers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\contracts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\documents\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\favorites\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\inquiries\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\interactions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\listings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\matching\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\media\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\mortgage\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\negotiation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\negotiations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\notifications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\offers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\orders\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\payments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\rental\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\saved-searches\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\sellers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\services\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\transactions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\vendors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace\\workflow\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\demand\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\investments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\listings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\pricing\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\signals\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\supply\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\transactions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\marketplace-intelligence\\valuation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\comparison\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\economics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\forecast\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\indexes\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\risk\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\markets\\trends\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\channels\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\devices\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\notifications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\offline\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\preferences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\push\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\mobile\\sync\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\moderation\\approve\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\moderation\\quality\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\moderation\\reject\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\moderation\\review\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\moderation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\notifications\\events\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\notifications\\read\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\notifications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\notifications\\settings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\apis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\developers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\exchange\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\gateway\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\integrations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\partners\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\open-platform\\webhooks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\availability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\cache\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\insights\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\load\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\optimization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\performance\\scaling\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\platform\\health\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\platform\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\platform\\security\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\platform\\status\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\platform\\system\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\platform\\users\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\confidence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\forecasts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\models\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\scenarios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\predictive-intelligence\\trends\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\accessibility\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\help\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\journeys\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\onboarding\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\personalization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\preferences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\product-experience\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\architects\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\availability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\engineers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\expertise\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\experts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\matching\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\organizations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\portfolio\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\professionals\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\projects\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\ratings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\reputation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\reviews\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\services\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professional-intelligence\\skills\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\ai-insight\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\expertise\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\experts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\featured\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\matching\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\organizations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\portfolio\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\profile\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\profiles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\reputation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\reviews\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\services\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\skills\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\verification\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\professionals\\verify\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\profile\\activity\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\profile\\dashboard\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\profile\\organization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\profile\\preferences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\profile\\professional\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\profile\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\profile\\user\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\compare\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\detail\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\features\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\match\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\profile\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\recommendation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\score\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\properties\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\ai\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\ai-insight\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\architecture\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\comparison\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\features\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\images\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\investment\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\lifecycle\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\location\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\matching\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\opportunities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\performance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\profiles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\quality\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\recommendation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\risk\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\score\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\scoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\property-intelligence\\valuation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate\\intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate\\markets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate\\trends\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate\\valuation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\demand\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\investments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\locations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\markets\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\real-estate-intelligence\\valuation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\recommendation\\feed\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\recommendation\\personalized\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\recommendation\\preferences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\recommendation\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\regulations\\authorities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\regulations\\categories\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\regulations\\compliance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\regulations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\regulations\\sources\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\authors\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\citations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\discoveries\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\forecasts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\graph\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\papers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\publications\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\research-intelligence\\topics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\search\\filters\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\search\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\search\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\search\\suggestions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\audit\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\auth\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\authentication\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\authorization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\compliance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\consent\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\identity\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\monitoring\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\permissions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\privacy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\roles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\sessions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\trust\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\users\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security\\verification\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\access-control\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\authentication\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\authorization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\compliance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\identity\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\privacy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\sessions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\security-intelligence\\trust-score\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\discovery\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\geo\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\natural-language\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\personalized\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\semantic\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\smart-search\\visual\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\sources\\authorities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\sources\\citations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\sources\\organizations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\sources\\regulations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\sources\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\sources\\standards\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\sources\\verify\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\analysis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\ar\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\buildings\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\districts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\geo-data\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\gis\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\locations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\maps\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\models\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\properties\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\proximity\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\queries\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\ranking\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\regions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\scenes\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\urban\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\vr\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\spatial-intelligence\\xr\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\contracts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\deals\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\offers\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\payments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\risks\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\transactions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\verification\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\transaction-intelligence\\workflows\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\translation\\cache\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\translation\\detect\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\translation\\languages\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\translation\\status\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\translation\\translate\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\audits\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\compliance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\explainability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\governance\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\policies\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\privacy\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\trust-intelligence\\security\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\advisor\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\cities\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\districts\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\growth\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\infrastructure\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\metrics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\mobility\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\models\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\profiles\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\quality\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\scenarios\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\urban-intelligence\\sustainability\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\ai-assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\analytics\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\assistant\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\behavior\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\feedback\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\goals\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\interactions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\interests\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\journey\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\memory\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\personalization\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\predictions\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\preferences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\profile\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\recommendations\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\user-intelligence\\segments\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\users\\account\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\users\\activity\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\users\\dashboard\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\users\\preferences\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "app\\api\\users\\profile\\route.ts",
+    "size": 0,
+    "category": "API_ROUTE"
+  },
+  {
+    "file": "components\\admin\\content\\ContentDashboard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\content\\ContentEditor.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\content\\ContentFilters.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\content\\ContentTable.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\content\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\content\\PublishingWorkflow.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\content\\TranslationEditor.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\ContentForm.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\ContentManager.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\ReviewPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\admin\\StatusBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-core\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-intelligence\\AIConfidence.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-intelligence\\IntelligenceDashboard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-intelligence\\PredictionCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-intelligence\\RecommendationPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-intelligence\\SmartAssistant.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-orchestration\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ai-search\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\analytics\\DataSourceBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\analytics\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\analytics\\MarketIndicator.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\analytics\\MetricCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\analytics\\TrendDisplay.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\architecture-intelligence\\ArchitectProfile.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\architecture-intelligence\\ArchitectureGallery.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\architecture-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\architecture-intelligence\\ProjectCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\AccountMenu.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\AuthGuard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\ForgotPassword.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\LoginForm.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\PasswordRecovery.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\RegisterForm.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\ResetPassword.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\SocialLogin.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\SocialLoginButton.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\UserAvatar.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\VerificationForm.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\auth\\VerifyAccount.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\autonomous-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\BuiltEnvironmentDashboard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\BuiltEnvironmentReport.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\CityArchitecture.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\CityIndicators.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\CityMap.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\CityMarketInsight.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\CityOverview.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\CountryProfile.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\SustainabilityScore.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\UrbanIndicators.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\city-intelligence\\UrbanScore.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\communication\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\communication-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\community\\BookmarkButton.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\community\\CommentBox.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\community\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\community\\ReactionButton.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\ArticleCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\ContentCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\ContentFeed.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\ContentGrid.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\IntelligenceCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\KnowledgeCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\RegulationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\ReportCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content\\SourceBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\ArticleDetail.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\ContentHero.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\KnowledgeDetail.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\ReadingMeta.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\RelatedContent.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\ReportDetail.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\ShareActions.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-detail\\SourceAttribution.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-intelligence\\ContentPreview.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-intelligence\\MultilingualContent.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-intelligence\\SEOPreview.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\content-intelligence\\TranslationStatus.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\conversational-ai\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\ActivityTimeline.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\DashboardLayout.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\DashboardWidget.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\InsightCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\RecommendationWidget.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\SavedItemsPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\SmartDashboard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\dashboard\\UserPreferencePanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\data-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\decision-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\Badge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\Card.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\Container.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\Divider.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\Heading.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\Section.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\design-system\\Text.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\digital-twin\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\CategoryFilter.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\ContentTypeFilter.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\DiscoveryCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\FilterPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\ProfessionalCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\RankingBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\SearchBar.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\TagExplorer.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\discovery\\VerificationBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\editorial\\AuthorBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\editorial\\ContentStatusBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\editorial\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\editorial\\VersionInfo.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\ContentExperience.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\DiscoveryExperience.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\ExperienceContainer.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\ExperienceSection.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\ExperienceShell.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\hero\\HeroFoundation.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\home\\HomeExperience.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\HomeExperience.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\IntelligenceExperience.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\experience\\PersonalizationExperience.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\governance\\AuthorityCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\governance\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\governance\\OfficialSourceLink.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\governance\\RegulationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\AIInsights.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\ArchitectureIntelligence.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\CitiesShowcase.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\FeaturedKnowledge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\HeroSection.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\IntelligenceIntro.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\MarketIntelligence.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\home\\ReportsShowcase.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\i18n\\DirectionProvider.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\i18n\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\i18n\\LanguageSelector.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\i18n\\TranslationBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\AIInsightCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\AIInsightPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\AIRecommendationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\InsightCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\IntelligenceSignal.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\KnowledgeGraphPreview.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\MarketInsightCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\MarketSnapshot.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\PersonalizedFeed.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\RecommendationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\intelligence\\SmartSuggestion.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\investment\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\investment\\InvestmentCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\investment\\InvestorBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\investment\\RiskIndicator.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\investment-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge\\EntityBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge\\EntityCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge\\KnowledgePanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge\\RelatedEntities.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge\\RelationMap.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge\\RelationshipBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge-graph\\GraphInsight.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge-graph\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge-graph\\RelationView.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\knowledge-graph-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\layout\\MainNavigation.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\layout\\SiteFooter.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\layout\\SiteHeader.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\market-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\market-intelligence\\InvestmentScore.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\market-intelligence\\MarketOverview.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\market-intelligence\\MarketReport.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\market-intelligence\\MarketReportCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\market-intelligence\\PriceChart.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\market-intelligence\\TrendIndicator.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\marketplace\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\marketplace-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\moderation\\ApprovalBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\moderation\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\moderation\\ModerationPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\moderation\\QualityScore.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\moderation\\ReviewCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\moderation\\WorkflowStatus.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\navigation\\Breadcrumbs.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\navigation\\Header.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\navigation\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\navigation\\SearchTrigger.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notification\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notification\\NotificationBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notification\\NotificationCenter.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notification\\NotificationItem.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notification\\NotificationPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notification\\NotificationSettings.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notifications\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notifications\\NotificationBell.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notifications\\NotificationItem.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\notifications\\NotificationList.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\InterestSelector.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\PersonalizedFeed.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\ReadingHistory.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\RecentlyViewed.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\RecommendationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\SaveContentButton.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\personalization\\UserPreferences.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\predictive-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional\\FeaturedProfessionals.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional\\ProfessionalCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional\\ProfessionalDirectory.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional\\ProfessionalProfile.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional\\RatingDisplay.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional\\VerificationBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-directory\\CompanyCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-directory\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-directory\\ProfessionalCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-directory\\RankingBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-directory\\VerificationBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-ecosystem\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-ecosystem\\ProfessionalSearch.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-ecosystem\\RankingList.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-ecosystem\\ServiceMarketplace.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\CategoryFilter.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\FeaturedProfessionals.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\PortfolioGallery.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\ProfessionalCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\ProfessionalProfile.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\RatingBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professional-marketplace\\VerifiedBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professionals\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professionals\\ProfessionalBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professionals\\ProfessionalCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\professionals\\VerificationBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\ActivityFeed.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\ActivitySummary.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\DashboardCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\InterestSelector.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\ProfessionalProfile.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\ProfileCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\ProfileHeader.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile\\ProfileSettings.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\AccountSettings.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\ActivityTimeline.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\DashboardLayout.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\OrganizationProfile.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\PreferenceSettings.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\ProfessionalProfileCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\ProfileEditor.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\profile-platform\\UserProfileCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property\\PropertyCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property\\PropertyGrid.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\PropertyAnalysis.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\PropertyBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\PropertyDetail.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\PropertyDetails.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\PropertyFilters.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\PropertyMap.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\property-intelligence\\RecommendedProperties.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\quality\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\quality\\QualityBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\quality\\StatusIndicator.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate\\InvestmentScore.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate\\MarketDashboard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate\\MarketSnapshot.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate\\MarketTrend.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate\\PropertyCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate\\PropertyOverview.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate-ai\\AIInsightPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate-ai\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate-ai\\InvestmentScore.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate-ai\\MarketScoreCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate-ai\\PredictionBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\real-estate-ai\\ValuationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\recommendation\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\recommendation\\IntelligenceBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\recommendation\\InterestPanel.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\recommendation\\PersonalizedFeed.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\recommendation\\RecommendationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\recommendation\\RecommendationList.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\regulations\\AuthorityCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\regulations\\ComplianceBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\regulations\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\regulations\\RegulationCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\regulations\\RegulationExplorer.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\regulations\\RegulationProfile.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\regulations\\SourceLink.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\release\\BuildStatus.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\release\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\release\\ReleaseStatus.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\reports\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\reports\\ReportBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\reports\\ReportCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\reports\\ReportMeta.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\reports\\ReportSummary.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\AccessibilityWrapper.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\AdaptiveGrid.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\DesktopOnly.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\FocusRing.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\MobileOnly.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\ResponsiveContainer.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\responsive\\ResponsiveSection.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\EmptySearch.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\ResultCard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\SearchBox.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\SearchFilters.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\SearchHighlight.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\SearchResult.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\SearchResults.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\SearchSuggestion.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\search\\SearchSuggestions.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\sections\\FeaturedSection.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\sections\\HeroSection.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\security\\AccessDenied.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\security\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\security\\PermissionGuard.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\security\\RoleBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\security\\SecurityStatus.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\source-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\spatial-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\system-audit\\AuditReport.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\system-audit\\AuditStatus.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\system-audit\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\templates\\ContentTemplate.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\templates\\LandingTemplate.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\templates\\PropertyTemplate.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\transaction-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\translation\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\translation\\LanguageSelector.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\translation\\LanguageSwitcher.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\translation\\LocalizedContent.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\translation\\SmartTranslator.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\translation\\TranslationBadge.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\translation\\TranslationStatus.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ui\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\urban-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\user-intelligence\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ux\\AccessibilityWrapper.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ux\\EmptyState.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ux\\index.ts",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ux\\LoadingState.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "components\\ux\\SectionHeader.tsx",
+    "size": 0,
+    "category": "COMPONENT"
+  },
+  {
+    "file": "lib\\ai-intelligence\\insight.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\ai-intelligence\\insight.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\ai-intelligence\\model.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\ai-intelligence\\prompt.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\architecture-intelligence\\architect-ranking.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\architecture-intelligence\\project-analysis.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\auth.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\auth.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\auth.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\auth.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\auth.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\password.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\password.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\provider.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\role.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\session.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\session.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\social-auth.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\user.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\verification.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\auth\\verification.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\auth.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\auth.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\auth.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\auth.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\auth.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\password.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\session.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\session.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\user.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\verification.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\authentication\\verification.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-architecture.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-data.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-economy.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-history.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-indicator.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-indicator.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-location.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-market.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\city-quality.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\quality-life.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\ranking.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\sustainability.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\city-intelligence\\sustainability.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\community\\bookmark.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\community\\comment.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\community\\community.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\community\\community.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\community\\interaction.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\community\\reaction.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content\\content.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content\\language.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content\\organization.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content\\regulation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content\\source.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\content.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\content.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\content.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\content.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\content.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\content.validators.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\database\\content.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\database\\source.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\database\\translation.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\services\\content.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\services\\publishing.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-engine\\services\\translation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-intelligence\\locale.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-intelligence\\localization.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-intelligence\\localization.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-management\\content-author.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-management\\content-management.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-management\\content-status.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-management\\content-version.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\moderation.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\moderation.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\moderation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\moderation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\moderation.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\quality.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\review.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\content-moderation\\workflow.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard\\dashboard.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard\\dashboard.layout.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard\\dashboard.preferences.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard\\dashboard.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard\\dashboard.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard\\dashboard.widgets.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard-intelligence\\activity.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard-intelligence\\dashboard.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard-intelligence\\dashboard.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard-intelligence\\dashboard.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard-intelligence\\dashboard.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard-intelligence\\dashboard.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\dashboard-intelligence\\insight.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\data-intelligence\\market.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\deployment\\environment.contract.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\deployment\\runtime.config.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\design-system\\index.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\discovery\\professional.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\governance\\authority.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\governance\\document.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\governance\\governance.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\governance\\governance.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\governance\\governance.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\governance\\regulation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\governance\\source.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\identity\\identity.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\identity\\identity.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\identity\\identity.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\identity\\identity.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\identity\\session.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\identity\\verification.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\intelligence\\intelligence.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\intelligence\\intelligence.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\intelligence\\personalization.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\intelligence\\preference-engine.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\intelligence\\recommendation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\intelligence\\user-signals.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\investment\\investment.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\investment\\investment.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\investment\\investor.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\investment\\opportunity.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\investment\\project.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\investment\\risk.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\knowledge\\relationship.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\market-intelligence\\price-analysis.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\market-intelligence\\price-analysis.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\market-intelligence\\report.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\market-intelligence\\report.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notification-intelligence\\event.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notification-intelligence\\notification.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notification-intelligence\\notification.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notification-intelligence\\notification.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notification-intelligence\\notification.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notification-intelligence\\notification.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notification-intelligence\\preference.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notifications\\notification.category.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notifications\\notification.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notifications\\notification.preferences.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notifications\\notification.priority.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notifications\\notification.status.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\notifications\\notification.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\performance\\monitoring.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\company.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\directory.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\directory.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\directory.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\expert.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\professional.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\professional.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\professional.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\professional.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\professional.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\ranking.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\ranking.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\review.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\verification.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-directory\\verification.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-ecosystem\\ecosystem.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-ecosystem\\ecosystem.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-ecosystem\\provider.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-ecosystem\\review.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-ecosystem\\review.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professional-ecosystem\\service.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professionals\\professional.category.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professionals\\professional.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professionals\\professional.profile.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professionals\\professional.role.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professionals\\professional.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\professionals\\professional.verification.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile\\profile.activity.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile\\profile.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile\\profile.preferences.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile\\profile.settings.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile\\profile.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile\\profile.validators.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-intelligence\\activity-profile.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-intelligence\\preference.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-intelligence\\profile.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-intelligence\\profile.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-intelligence\\profile.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-intelligence\\profile.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-intelligence\\profile.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\activity.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\activity.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\dashboard.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\dashboard.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\organization-profile.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\preference.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\preference.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\professional-profile.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\profile.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\profile.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\profile.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\profile.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\profile.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\profile-platform\\user-profile.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\property-intelligence\\property-analysis.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\property-intelligence\\property-category.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\property-intelligence\\property-intelligence.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\property-intelligence\\property-score.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\property-intelligence\\property-search.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\analytics.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\analytics.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\analytics.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\analytics.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\investment-score.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\market-score.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\prediction.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\valuation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-ai\\valuation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-intelligence\\market.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-intelligence\\property.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\real-estate-intelligence\\trend.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\recommendation\\preference.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\recommendation\\recommendation.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\recommendation\\recommendation.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\recommendation\\recommendation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\recommendation\\recommendation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\recommendation\\recommendation.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\recommendation\\scoring.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\compliance.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\organization.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\regulation.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\regulation.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\regulation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\regulation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\regulation.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\source-link.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\regulations-intelligence\\source-validation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\release\\release.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\release\\release.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\release\\release.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\release\\release.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\reports\\reports.author.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\reports\\reports.category.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\reports\\reports.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\reports\\reports.status.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\reports\\reports.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search\\search.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search\\search.filters.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search\\search.query.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-engine\\ranking.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-engine\\search.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-engine\\search.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-engine\\search.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-engine\\search.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-engine\\search.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-engine\\semantic.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\filter.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\ranking.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\search.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\search.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\search.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\search.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\search.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\search-experience\\suggestion.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\security\\guard.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\security\\headers.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\security\\validation.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation-cache.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation-context.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation-engine.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation-memory.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation-provider.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation-service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation-validator.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-engine\\translation.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\ai-translation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\language-detection.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\locale.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\translation-cache.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\translation.constants.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\translation.repository.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\translation.service.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\translation.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\translation-intelligence\\translation.utils.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\ux\\ux.config.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  },
+  {
+    "file": "lib\\ux\\ux.types.ts",
+    "size": 0,
+    "category": "LIBRARY"
+  }
+]

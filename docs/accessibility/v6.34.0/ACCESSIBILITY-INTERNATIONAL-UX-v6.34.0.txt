@@ -1,0 +1,98 @@
+MELKISM v6.34.0
+ACCESSIBILITY & INTERNATIONAL UX COMPLIANCE
+
+Purpose
+-------
+Establish a stable accessibility and international UX baseline
+without unnecessarily rewriting the existing interface.
+
+Supported locales
+-----------------
+fa
+en
+ar
+tr
+
+Direction
+---------
+fa = RTL
+ar = RTL
+en = LTR
+tr = LTR
+
+Accessibility foundations
+-------------------------
+Language attribute
+Direction attribute
+Semantic main element
+Navigation surface
+Language selection surface
+Accessibility wording foundation
+Keyboard accessibility rule foundation
+Focus visibility policy
+Touch-target policy
+Alternative-text policy
+
+International UX
+----------------
+The locale architecture remains the canonical source for
+language and direction.
+
+The accessibility layer provides reusable contracts and does not
+replace the existing i18n runtime.
+
+SEO alignment
+-------------
+The SEO locale foundation and accessibility locale foundation use
+the same four supported locales.
+
+Security
+--------
+No browser storage is introduced.
+
+No environment values are accessed.
+
+No database access is introduced.
+
+No Prisma migration is introduced.
+
+No external accessibility dependency is introduced.
+
+Testing
+-------
+Accessibility-specific tests verify:
+
+- foundation files
+- locale completeness
+- RTL/LTR contracts
+- localized accessibility wording
+- lang and dir
+- semantic main
+- metadata integration
+- SEO locale alignment
+- browser-storage absence
+- Prisma isolation
+- dynamic execution absence
+- navigation surface existence
+
+GitHub
+------
+GitHub remains unchanged during this phase.
+
+Database
+--------
+No migration.
+No database write.
+No connectivity probe.
+
+Completion
+----------
+The phase is complete when:
+
+- accessibility tests pass
+- full quality tests pass
+- Prisma validate passes
+- Prisma generate passes
+- TypeScript passes
+- ESLint passes
+- production build passes

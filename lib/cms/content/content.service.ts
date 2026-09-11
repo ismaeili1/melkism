@@ -139,7 +139,7 @@ export const contentService = {
       );
     }
 
-    return contentRepository.create({
+    return contentRepository.createWithRevision({
       ...input,
       authorId,
     });
@@ -176,7 +176,7 @@ export const contentService = {
       }
     }
 
-    return contentRepository.update(
+    return contentRepository.updateWithRevision(
       id,
       input
     );
@@ -210,6 +210,17 @@ export const contentService = {
       "PUBLISHED"
     ) {
       return current;
+    }
+
+    if (
+      current.status !==
+        "DRAFT" &&
+      current.status !==
+        "REVIEW"
+    ) {
+      throw badRequest(
+        "Only draft or review content can be published."
+      );
     }
 
     return contentRepository.publish(

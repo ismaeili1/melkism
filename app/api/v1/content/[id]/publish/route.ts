@@ -8,10 +8,10 @@ import {
   getRateLimitHeaders,
 } from "@/lib/api/core/rate-limit";
 
+
 import {
   rateLimitResponse,
 } from "@/lib/api/core/rate-limit-response";
-
 import {
   getAuthorizationContext,
 } from "@/lib/auth/authorization";
@@ -96,14 +96,13 @@ export async function POST(
             "content-publish",
         }
       );
-
     const limited =
       rateLimitResponse(
         requestId,
         decision
       );
 
-    if (limited) {
+if (limited) {
       return limited;
     }
 
@@ -130,3 +129,4 @@ export async function POST(
     );
   }
 }
+

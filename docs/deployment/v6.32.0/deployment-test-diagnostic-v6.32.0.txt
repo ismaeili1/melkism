@@ -1,0 +1,26 @@
+MELKISM v6.32.0
+Deployment test diagnostic
+Timestamp: 2026-09-10 19:48:54
+Command: node --test tests/quality/deployment.test.mjs
+
+------------------------------------------------------------
+ظ£¤ required deployment files exist (5.864ms)
+ظ£¤ deployment constants contain required paths (0.7904ms)
+ظ£¤ package deployment command is registered (0.5668ms)
+ظ£¤ production commands remain canonical (0.6369ms)
+ظ£¤ deployment environment module exports its audit (2.1037ms)
+ظ£¤ deployment readiness module exports its report builder (1.0032ms)
+ظ£¤ deployment readiness executable has required checks (0.8952ms)
+ظ£¤ deployment files do not directly expose environment values (1.4389ms)
+ظ£¤ deployment readiness module has no Prisma runtime dependency (1.084ms)
+ظ£¤ deployment documentation exists (0.9438ms)
+ظ╣ tests 10
+ظ╣ suites 0
+ظ╣ pass 10
+ظ╣ fail 0
+ظ╣ cancelled 0
+ظ╣ skipped 0
+ظ╣ todo 0
+ظ╣ duration_ms 231.0418
+
+RESULT: PASS

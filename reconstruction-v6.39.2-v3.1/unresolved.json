@@ -1,0 +1,1314 @@
+[
+  {
+    "Source": "C:\\Projects\\melkism\\components\\admin\\ContentForm.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\admin\\ReviewPanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\admin\\StatusBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\admin\\content\\ContentEditor.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\admin\\content\\ContentFilters.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\admin\\content\\ContentTable.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\admin\\content\\TranslationEditor.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\ai-intelligence\\AIConfidence.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\ai-intelligence\\PredictionCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\ai-intelligence\\SmartAssistant.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\analytics\\DataSourceBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\analytics\\MarketIndicator.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\analytics\\TrendDisplay.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\architecture-intelligence\\ArchitectureGallery.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\architecture-intelligence\\ProjectCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\AccountMenu.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\AuthGuard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\ForgotPassword.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\LoginForm.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\PasswordRecovery.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\RegisterForm.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\ResetPassword.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\SocialLogin.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\SocialLoginButton.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\UserAvatar.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\VerificationForm.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\auth\\VerifyAccount.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\BuiltEnvironmentDashboard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\BuiltEnvironmentReport.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\CityArchitecture.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\CityIndicators.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\CityMap.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\CityMarketInsight.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\CountryProfile.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\UrbanIndicators.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\city-intelligence\\UrbanScore.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\community\\BookmarkButton.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\community\\CommentBox.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\community\\ReactionButton.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content\\ContentFeed.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content\\ContentGrid.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content\\KnowledgeCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content\\ReportCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\ArticleDetail.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\ContentHero.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\KnowledgeDetail.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\ReadingMeta.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\RelatedContent.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\ReportDetail.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\ShareActions.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-detail\\SourceAttribution.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-intelligence\\ContentPreview.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-intelligence\\MultilingualContent.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-intelligence\\SEOPreview.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\content-intelligence\\TranslationStatus.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\dashboard\\DashboardLayout.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\dashboard\\DashboardWidget.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\dashboard\\RecommendationWidget.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\dashboard\\SavedItemsPanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\dashboard\\SmartDashboard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\dashboard\\UserPreferencePanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\design-system\\Divider.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\design-system\\Heading.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\design-system\\Section.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\design-system\\Text.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\discovery\\CategoryFilter.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\discovery\\ContentTypeFilter.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\discovery\\DiscoveryCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\discovery\\FilterPanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\discovery\\RankingBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\discovery\\SearchBar.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\discovery\\TagExplorer.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\editorial\\AuthorBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\editorial\\ContentStatusBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\editorial\\VersionInfo.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\ContentExperience.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\DiscoveryExperience.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\ExperienceContainer.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\ExperienceSection.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\ExperienceShell.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\HomeExperience.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\IntelligenceExperience.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\PersonalizationExperience.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\hero\\HeroFoundation.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\experience\\home\\HomeExperience.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\governance\\AuthorityCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\governance\\OfficialSourceLink.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\home\\CitiesShowcase.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\home\\FeaturedKnowledge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\home\\HeroSection.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\home\\IntelligenceIntro.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\home\\MarketIntelligence.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\home\\ReportsShowcase.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\i18n\\DirectionProvider.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\i18n\\TranslationBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\intelligence\\IntelligenceSignal.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\intelligence\\KnowledgeGraphPreview.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\intelligence\\MarketInsightCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\intelligence\\PersonalizedFeed.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\intelligence\\SmartSuggestion.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\investment\\InvestorBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\knowledge\\EntityBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\knowledge\\KnowledgePanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\knowledge\\RelatedEntities.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\knowledge\\RelationshipBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\knowledge-graph\\GraphInsight.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\knowledge-graph\\RelationView.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\layout\\MainNavigation.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\layout\\SiteFooter.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\market-intelligence\\InvestmentScore.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\market-intelligence\\MarketOverview.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\market-intelligence\\MarketReport.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\market-intelligence\\MarketReportCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\market-intelligence\\PriceChart.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\market-intelligence\\TrendIndicator.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\moderation\\ApprovalBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\moderation\\ModerationPanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\moderation\\QualityScore.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\moderation\\ReviewCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\moderation\\WorkflowStatus.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\navigation\\Breadcrumbs.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\navigation\\SearchTrigger.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\notification\\NotificationBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\notification\\NotificationItem.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\notification\\NotificationPanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\notification\\NotificationSettings.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\notifications\\NotificationBell.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\notifications\\NotificationItem.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\notifications\\NotificationList.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\personalization\\InterestSelector.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\personalization\\PersonalizedFeed.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\personalization\\ReadingHistory.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\personalization\\RecentlyViewed.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\personalization\\SaveContentButton.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\personalization\\UserPreferences.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional\\FeaturedProfessionals.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional\\ProfessionalDirectory.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional\\RatingDisplay.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-directory\\CompanyCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-directory\\RankingBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-ecosystem\\ProfessionalSearch.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-ecosystem\\RankingList.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-marketplace\\CategoryFilter.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-marketplace\\FeaturedProfessionals.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-marketplace\\RatingBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professional-marketplace\\VerifiedBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\professionals\\ProfessionalBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile\\ActivitySummary.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile\\DashboardCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile\\InterestSelector.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile\\ProfileCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile\\ProfileHeader.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile\\ProfileSettings.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile-platform\\AccountSettings.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile-platform\\DashboardLayout.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile-platform\\OrganizationProfile.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile-platform\\PreferenceSettings.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile-platform\\ProfessionalProfileCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\profile-platform\\ProfileEditor.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property\\PropertyGrid.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property-intelligence\\PropertyAnalysis.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property-intelligence\\PropertyBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property-intelligence\\PropertyDetail.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property-intelligence\\PropertyDetails.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property-intelligence\\PropertyFilters.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property-intelligence\\PropertyMap.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\property-intelligence\\RecommendedProperties.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\quality\\QualityBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\quality\\StatusIndicator.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\real-estate\\InvestmentScore.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\real-estate\\MarketTrend.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\real-estate-ai\\InvestmentScore.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\real-estate-ai\\MarketScoreCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\real-estate-ai\\PredictionBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\real-estate-ai\\ValuationCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\recommendation\\IntelligenceBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\recommendation\\InterestPanel.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\recommendation\\PersonalizedFeed.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\regulations\\AuthorityCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\regulations\\ComplianceBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\regulations\\RegulationExplorer.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\regulations\\RegulationProfile.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\regulations\\SourceLink.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\release\\BuildStatus.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\release\\ReleaseStatus.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\reports\\ReportBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\reports\\ReportCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\reports\\ReportMeta.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\reports\\ReportSummary.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\responsive\\AccessibilityWrapper.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\responsive\\AdaptiveGrid.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\responsive\\DesktopOnly.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\responsive\\FocusRing.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\responsive\\MobileOnly.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\responsive\\ResponsiveContainer.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\responsive\\ResponsiveSection.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\search\\EmptySearch.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\search\\ResultCard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\search\\SearchBox.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\search\\SearchFilters.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\search\\SearchHighlight.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\search\\SearchSuggestion.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\search\\SearchSuggestions.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\sections\\FeaturedSection.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\sections\\HeroSection.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\security\\AccessDenied.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\security\\PermissionGuard.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\security\\RoleBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\security\\SecurityStatus.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\system-audit\\AuditReport.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\system-audit\\AuditStatus.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\templates\\ContentTemplate.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\templates\\LandingTemplate.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\templates\\PropertyTemplate.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\translation\\LocalizedContent.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\translation\\SmartTranslator.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\translation\\TranslationBadge.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\translation\\TranslationStatus.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\ux\\AccessibilityWrapper.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\components\\ux\\SectionHeader.tsx",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\architecture-intelligence\\architect-ranking.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\architecture-intelligence\\project-analysis.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\auth\\auth.repository.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\auth\\auth.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\auth\\password.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\auth\\social-auth.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\authentication\\auth.repository.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\authentication\\auth.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-architecture.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-data.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-economy.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-history.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-indicator.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-indicator.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-location.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-market.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\city-quality.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\city-intelligence\\quality-life.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\community\\bookmark.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\community\\comment.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\community\\community.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\community\\community.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\community\\reaction.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-engine\\content.validators.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-intelligence\\localization.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-management\\content-author.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-management\\content-management.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-management\\content-status.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-management\\content-version.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-moderation\\moderation.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-moderation\\moderation.repository.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-moderation\\moderation.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-moderation\\moderation.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\content-moderation\\moderation.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\dashboard\\dashboard.layout.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\dashboard\\dashboard.preferences.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\dashboard\\dashboard.widgets.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\deployment\\environment.contract.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\deployment\\runtime.config.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\identity\\identity.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\intelligence\\preference-engine.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\intelligence\\user-signals.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\market-intelligence\\price-analysis.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\market-intelligence\\price-analysis.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\notification-intelligence\\notification.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\notifications\\notification.category.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\notifications\\notification.preferences.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\notifications\\notification.priority.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\notifications\\notification.status.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\performance\\monitoring.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professional-directory\\company.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professional-directory\\directory.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professional-directory\\directory.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professional-directory\\directory.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professionals\\professional.category.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professionals\\professional.profile.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professionals\\professional.role.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\professionals\\professional.verification.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\profile\\profile.activity.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\profile\\profile.preferences.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\profile\\profile.settings.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\profile\\profile.validators.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\profile-intelligence\\activity-profile.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\profile-platform\\organization-profile.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\profile-platform\\professional-profile.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\property-intelligence\\property-analysis.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\property-intelligence\\property-category.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\property-intelligence\\property-intelligence.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\property-intelligence\\property-score.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\regulations-intelligence\\regulation.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\regulations-intelligence\\regulation.repository.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\regulations-intelligence\\regulation.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\regulations-intelligence\\source-link.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\regulations-intelligence\\source-validation.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\release\\release.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\release\\release.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\release\\release.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\release\\release.utils.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\reports\\reports.author.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\reports\\reports.category.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\reports\\reports.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\reports\\reports.status.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\reports\\reports.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\search\\search.filters.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\security\\guard.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\security\\headers.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation-cache.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation-context.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation-engine.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation-memory.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation-provider.types.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation-service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation-validator.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-engine\\translation.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-intelligence\\ai-translation.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-intelligence\\language-detection.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-intelligence\\translation-cache.service.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\translation-intelligence\\translation.constants.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\lib\\ux\\ux.config.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\prisma\\content-domain.prisma",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\theme\\index.css",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\tokens\\colors.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\tokens\\experience.tokens.css",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\tokens\\motion.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\tokens\\radius.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\tokens\\shadows.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\tokens\\spacing.ts",
+    "Reason": "NO_MATCH"
+  },
+  {
+    "Source": "C:\\Projects\\melkism\\styles\\tokens\\typography.ts",
+    "Reason": "NO_MATCH"
+  }
+]

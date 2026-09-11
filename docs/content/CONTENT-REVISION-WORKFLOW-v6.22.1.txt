@@ -1,0 +1,55 @@
+MELKISM v6.22.1
+Content Revision & Editorial Workflow
+
+Canonical branch:
+main
+
+Implementation:
+- Existing ContentRevision Prisma model reused.
+- No schema modification.
+- No migration.
+- No dependency installation.
+- No database mutation during implementation.
+
+Revision persistence:
+- Content creation creates revision version 1 atomically.
+- Content updates create a new revision atomically.
+- Revisions are listed in descending version order.
+- Revision restore is transactional.
+- Restore creates a new revision version.
+- Restored content becomes DRAFT.
+- publishedAt is cleared on restore.
+
+Editorial workflow:
+DRAFT -> REVIEW
+DRAFT -> PUBLISHED
+REVIEW -> PUBLISHED
+PUBLISHED -> ARCHIVED
+
+APIs:
+GET  /api/v1/content/[id]/revisions
+POST /api/v1/content/[id]/revisions/[revisionId]/restore
+POST /api/v1/content/[id]/submit-review
+POST /api/v1/content/[id]/archive
+
+Authorization:
+- Revision listing requires authentication and content:edit or resource ownership.
+- Revision restore uses content update resource authorization.
+- Submit review requires content:edit.
+- Publish requires content:publish.
+- Archive requires content:publish.
+
+Rate limiting:
+- Shared rateLimitResponse helper.
+- Publish API normalized to shared helper.
+- Submit review: 20 requests/minute/user.
+- Archive: 20 requests/minute/user.
+
+Validation:
+- Uses existing requireString and requirePositiveInteger.
+- Does not depend on nonexistent parsePage or parsePageSize exports.
+
+Security:
+- No Route Handler imports another Route Handler.
+- No browser storage APIs introduced.
+- No database operation executed by this implementation script.

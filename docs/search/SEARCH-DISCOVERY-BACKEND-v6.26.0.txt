@@ -1,0 +1,74 @@
+MELKISM v6.26.0
+SEARCH & DISCOVERY BACKEND
+
+Purpose:
+Unified backend search over existing MELKISM domains.
+
+Architecture:
+API -> Service -> Repository -> Prisma -> PostgreSQL
+
+Domains:
+content
+source
+taxonomy
+knowledge
+intelligence
+
+Content search:
+title
+summary
+body
+slug
+
+Only PUBLISHED content is returned.
+
+Source search:
+name
+publisher
+description
+url
+
+Only active sources are returned.
+
+Taxonomy search:
+key
+label
+
+Knowledge search:
+key
+label
+description
+
+Intelligence search:
+key
+title
+summary
+
+Query:
+q = required, 2..200 characters
+
+page:
+positive integer, default 1
+
+pageSize:
+positive integer, maximum 50
+
+entities:
+optional comma-separated domain selector
+
+Authorization:
+authenticated user
+content:read
+
+Rate limit:
+60 requests per minute per authenticated user
+
+Ranking:
+deterministic application-level text score
+then updatedAt / recorded timestamp
+
+No external search engine.
+No vector database.
+No new dependency.
+No schema migration.
+No schema modification.

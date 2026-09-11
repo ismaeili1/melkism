@@ -1,0 +1,72 @@
+MELKISM v6.32.0
+PRODUCTION INFRASTRUCTURE & DEPLOYMENT READINESS
+
+Purpose
+-------
+Establish a provider-neutral production deployment foundation
+without performing a real production deployment.
+
+Production commands
+-------------------
+npm run build
+npm start
+npm test
+
+Deployment readiness
+--------------------
+npm run production:readiness
+
+Health
+------
+/api/health
+
+Readiness
+---------
+/api/ready
+
+Environment
+-----------
+Only environment variable names may be audited.
+
+Environment values are never printed.
+
+Production secrets must be supplied by the runtime/deployment
+environment.
+
+Database
+--------
+No database migration.
+No database write.
+No database connectivity probe.
+
+Cloud
+-----
+No cloud-provider API call.
+
+The deployment foundation is provider-neutral.
+
+Security
+--------
+Existing security headers and API no-store policies remain active.
+
+Testing
+-------
+Deployment contracts cover:
+
+- required deployment files
+- production commands
+- readiness command registration
+- deployment environment audit
+- readiness engine
+- secret-value exposure protection
+- Prisma runtime dependency isolation
+- deployment documentation
+
+GitHub
+------
+GitHub remains unchanged.
+
+Rollback
+--------
+Only v6.32.0 target files are protected and restored if this phase
+fails.

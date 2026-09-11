@@ -1,0 +1,170 @@
+MELKISM v6.35.0
+PRODUCTION ACCEPTANCE & PRE-LAUNCH AUDIT
+
+============================================================
+Purpose
+============================================================
+
+This phase is the final local acceptance gate before creation of
+the Release Candidate.
+
+It evaluates the existing MELKISM foundation across:
+
+- application foundation
+- security
+- health/readiness
+- internationalization
+- accessibility
+- SEO
+- deployment readiness
+- observability
+- performance
+- search
+- production scripts
+- database foundation
+- automated testing
+- production build
+
+============================================================
+What this phase does NOT do
+============================================================
+
+It does not:
+
+- deploy MELKISM
+- modify production infrastructure
+- connect to cloud APIs
+- connect to the production database
+- execute a production migration
+- write production data
+- publish the application
+- submit URLs to search engines
+- activate external analytics
+- expose secrets
+
+============================================================
+Pre-launch principle
+============================================================
+
+A PASS in this phase means that the local repository has passed
+the defined pre-launch engineering gates.
+
+It does NOT by itself mean that public production infrastructure
+has already been provisioned.
+
+Actual deployment acceptance is performed in later phases.
+
+============================================================
+Core production gates
+============================================================
+
+Foundation
+Security
+Operational endpoints
+Internationalization
+Accessibility
+SEO
+Deployment readiness
+Observability
+Performance
+Search
+Production commands
+Database foundation
+Automated testing
+Production build
+
+============================================================
+Repository policy
+============================================================
+
+Branch:
+main
+
+GitHub:
+unchanged
+
+No reset.
+No destructive checkout.
+No force push.
+No automatic repository synchronization.
+
+============================================================
+Database policy
+============================================================
+
+No migration.
+
+No database write.
+
+No production database probe.
+
+Prisma validation and generation remain local validation gates.
+
+============================================================
+Security policy
+============================================================
+
+Secret values are never printed.
+
+Environment values are never copied into documentation.
+
+Existing security headers remain authoritative.
+
+============================================================
+Completion
+============================================================
+
+v6.35.0 is considered locally complete when:
+
+1. Pre-launch audit passes without BLOCKED gates.
+2. Pre-launch tests pass.
+3. Full automated tests pass.
+4. Production readiness passes.
+5. Prisma validate passes.
+6. Prisma generate passes.
+7. TypeScript passes.
+8. ESLint passes.
+9. Production build passes.
+
+Warnings may remain only where they represent intentionally
+deferred production operations such as actual infrastructure,
+runtime secrets, external analytics and live indexing.
+
+============================================================
+Next
+============================================================
+
+After a successful v6.35.0 phase:
+
+v6.36.0
+Release Candidate & Deployment Package
+
+Then:
+
+v6.37.0
+Production Infrastructure Provisioning
+
+v6.38.0
+Production Database & Migration Activation
+
+v6.39.0
+Production Deployment & Smoke Testing
+
+v6.40.0
+Production Security & Operational Verification
+
+v6.41.0
+Production Content & Knowledge Activation
+
+v6.42.0
+User Journey & End-to-End Acceptance
+
+v6.43.0
+Public Release / Go-Live
+
+============================================================
+Phase
+============================================================
+
+MELKISM v6.35.0
+Production Acceptance & Pre-Launch Audit

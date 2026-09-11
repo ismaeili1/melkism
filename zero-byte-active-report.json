@@ -1,0 +1,2654 @@
+[
+  {
+    "source": "app\\api\\ai-search-intelligence\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\architecture-intelligence\\route.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "app\\api\\deployment-readiness\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\enterprise-governance\\route.ts",
+    "zeroTarget": "lib\\governance\\governance.constants.ts"
+  },
+  {
+    "source": "app\\api\\experience\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\health\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\market-intelligence\\route.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "app\\api\\observability-status\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\operational-events\\route.ts",
+    "zeroTarget": "lib\\market-intelligence\\report.service.ts"
+  },
+  {
+    "source": "app\\api\\production-readiness\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\professionals\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\ready\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\recommendations\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\release-status\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\reliability-status\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\request-protection\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\runtime-metrics\\route.ts",
+    "zeroTarget": "lib\\market-intelligence\\report.service.ts"
+  },
+  {
+    "source": "app\\api\\security-audit\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\security-deployment-audit\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\security-enforcement\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\security-global-headers\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\security-header-scope\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\security-policy\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\security-posture\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\security-status\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\security-validate\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\system-health\\route.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "app\\api\\v1\\content\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\archive\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\media\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\media\\[mediaId]\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\publish\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\revisions\\route.ts",
+    "zeroTarget": "lib\\content-engine\\content.service.ts"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\revisions\\[revisionId]\\restore\\route.ts",
+    "zeroTarget": "lib\\content-engine\\content.service.ts"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\content\\[id]\\submit-review\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\health\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\knowledge\\nodes\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\knowledge\\nodes\\[id]\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\knowledge\\relations\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\knowledge\\relations\\[id]\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\media\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\media\\[id]\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\api\\v1\\search\\route.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\[locale]\\architecture-intelligence\\page.tsx",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "app\\[locale]\\layout.tsx",
+    "zeroTarget": "components\\layout\\SiteHeader.tsx"
+  },
+  {
+    "source": "app\\[locale]\\market-intelligence\\page.tsx",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "app\\[locale]\\production-status\\page.tsx",
+    "zeroTarget": "components\\release\\ReleaseStatus.tsx"
+  },
+  {
+    "source": "app\\[locale]\\recommendations\\page.tsx",
+    "zeroTarget": "components\\ai-intelligence\\RecommendationPanel.tsx"
+  },
+  {
+    "source": "app\\[locale]\\release-status\\page.tsx",
+    "zeroTarget": "components\\release\\ReleaseStatus.tsx"
+  },
+  {
+    "source": "app\\[locale]\\search\\page.tsx",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "app\\[locale]\\security-audit\\page.tsx",
+    "zeroTarget": "components\\system-audit\\AuditStatus.tsx"
+  },
+  {
+    "source": "app\\[locale]\\security-deployment-audit\\page.tsx",
+    "zeroTarget": "components\\system-audit\\AuditStatus.tsx"
+  },
+  {
+    "source": "app\\[locale]\\security-global-headers\\page.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\[locale]\\security-header-http-smoke\\page.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\[locale]\\security-header-scope\\page.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "app\\[locale]\\security-status\\page.tsx",
+    "zeroTarget": "components\\security\\SecurityStatus.tsx"
+  },
+  {
+    "source": "components\\ai\\AIInsights.tsx",
+    "zeroTarget": "components\\home\\AIInsights.tsx"
+  },
+  {
+    "source": "components\\ai-copilot\\AIInsights.tsx",
+    "zeroTarget": "components\\home\\AIInsights.tsx"
+  },
+  {
+    "source": "components\\ai-copilot\\RecommendationPanel.tsx",
+    "zeroTarget": "components\\ai-intelligence\\RecommendationPanel.tsx"
+  },
+  {
+    "source": "components\\ai-core\\AIInsightPanel.tsx",
+    "zeroTarget": "components\\intelligence\\AIInsightPanel.tsx"
+  },
+  {
+    "source": "components\\ai-intelligence\\AIInsightCard.tsx",
+    "zeroTarget": "components\\dashboard\\InsightCard.tsx"
+  },
+  {
+    "source": "components\\ai-intelligence\\AIPredictionCard.tsx",
+    "zeroTarget": "components\\ai-intelligence\\PredictionCard.tsx"
+  },
+  {
+    "source": "components\\ai-intelligence\\RecommendationCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\ai-search\\AISearchBox.tsx",
+    "zeroTarget": "components\\search\\SearchBox.tsx"
+  },
+  {
+    "source": "components\\ai-search\\SearchResults.tsx",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "components\\analytics\\InsightCard.tsx",
+    "zeroTarget": "components\\dashboard\\InsightCard.tsx"
+  },
+  {
+    "source": "components\\analytics\\MarketDashboard.tsx",
+    "zeroTarget": "components\\real-estate\\MarketDashboard.tsx"
+  },
+  {
+    "source": "components\\application-security\\ApplicationSecurityStatus.tsx",
+    "zeroTarget": "components\\security\\SecurityStatus.tsx"
+  },
+  {
+    "source": "components\\architecture-intelligence\\ArchitectCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\architecture-intelligence\\ArchitectureIntelligence.tsx",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "components\\architecture-intelligence\\ArchitectureIntelligencePanel.tsx",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "components\\architecture-intelligence\\ArchitectureProjectCard.tsx",
+    "zeroTarget": "components\\architecture-intelligence\\ProjectCard.tsx"
+  },
+  {
+    "source": "components\\architecture-intelligence\\ArchitectureRecommendations.tsx",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "components\\city-intelligence\\CityCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\city-intelligence\\NeighborhoodCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\climate-intelligence\\SustainabilityScore.tsx",
+    "zeroTarget": "components\\city-intelligence\\SustainabilityScore.tsx"
+  },
+  {
+    "source": "components\\collaboration\\ActivityTimeline.tsx",
+    "zeroTarget": "components\\dashboard\\ActivityTimeline.tsx"
+  },
+  {
+    "source": "components\\collaboration\\NotificationCenter.tsx",
+    "zeroTarget": "components\\notification\\NotificationCenter.tsx"
+  },
+  {
+    "source": "components\\communication\\InquiryCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\communication\\NotificationCenter.tsx",
+    "zeroTarget": "components\\notification\\NotificationCenter.tsx"
+  },
+  {
+    "source": "components\\communication-intelligence\\NotificationCenter.tsx",
+    "zeroTarget": "components\\notification\\NotificationCenter.tsx"
+  },
+  {
+    "source": "components\\construction-intelligence\\ConstructionRecommendations.tsx",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "components\\construction-intelligence\\ConstructionRiskPanel.tsx",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "components\\content-intelligence\\ArticleCard.tsx",
+    "zeroTarget": "components\\content\\ArticleCard.tsx"
+  },
+  {
+    "source": "components\\content-intelligence\\ContentCard.tsx",
+    "zeroTarget": "components\\content\\ContentCard.tsx"
+  },
+  {
+    "source": "components\\content-intelligence\\ContentDashboard.tsx",
+    "zeroTarget": "components\\admin\\content\\ContentDashboard.tsx"
+  },
+  {
+    "source": "components\\content-intelligence\\ContentQualityScore.tsx",
+    "zeroTarget": "components\\moderation\\QualityScore.tsx"
+  },
+  {
+    "source": "components\\content-intelligence\\LanguageSelector.tsx",
+    "zeroTarget": "components\\i18n\\LanguageSelector.tsx"
+  },
+  {
+    "source": "components\\content-platform\\ContentManager.tsx",
+    "zeroTarget": "components\\admin\\ContentManager.tsx"
+  },
+  {
+    "source": "components\\content-platform\\PublishingWorkflow.tsx",
+    "zeroTarget": "components\\admin\\content\\PublishingWorkflow.tsx"
+  },
+  {
+    "source": "components\\conversational-ai\\LanguageSelector.tsx",
+    "zeroTarget": "components\\i18n\\LanguageSelector.tsx"
+  },
+  {
+    "source": "components\\data-intelligence\\DataQualityScore.tsx",
+    "zeroTarget": "components\\moderation\\QualityScore.tsx"
+  },
+  {
+    "source": "components\\data-intelligence\\DatasetCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\data-intelligence\\MarketIntelligencePanel.tsx",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "components\\database-production-readiness\\DatabaseProductionReadinessStatus.tsx",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "components\\decision-intelligence\\AIRecommendationPanel.tsx",
+    "zeroTarget": "components\\ai-intelligence\\RecommendationPanel.tsx"
+  },
+  {
+    "source": "components\\decision-intelligence\\RecommendationPanel.tsx",
+    "zeroTarget": "components\\ai-intelligence\\RecommendationPanel.tsx"
+  },
+  {
+    "source": "components\\discovery\\AIRecommendationCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\discovery\\RecommendationPanel.tsx",
+    "zeroTarget": "components\\ai-intelligence\\RecommendationPanel.tsx"
+  },
+  {
+    "source": "components\\discovery\\SearchResults.tsx",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "components\\discovery\\SemanticSearchBox.tsx",
+    "zeroTarget": "components\\search\\SearchBox.tsx"
+  },
+  {
+    "source": "components\\enterprise-governance\\DataGovernancePanel.tsx",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "components\\enterprise-governance\\GovernanceRiskPanel.tsx",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "components\\experience\\RecommendationCards.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\feedback\\EmptyState\\EmptyState.tsx",
+    "zeroTarget": "components\\ux\\EmptyState.tsx"
+  },
+  {
+    "source": "components\\feedback\\EmptyState\\index.ts",
+    "zeroTarget": "components\\ux\\EmptyState.tsx"
+  },
+  {
+    "source": "components\\feedback\\index.ts",
+    "zeroTarget": "components\\ux\\EmptyState.tsx"
+  },
+  {
+    "source": "components\\feedback\\LoadingState\\index.ts",
+    "zeroTarget": "components\\ux\\LoadingState.tsx"
+  },
+  {
+    "source": "components\\feedback\\LoadingState\\LoadingState.tsx",
+    "zeroTarget": "components\\ux\\LoadingState.tsx"
+  },
+  {
+    "source": "components\\geospatial-intelligence\\CityIntelligenceDashboard.tsx",
+    "zeroTarget": "components\\ai-intelligence\\IntelligenceDashboard.tsx"
+  },
+  {
+    "source": "components\\geospatial-intelligence\\LocationScoreCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\geospatial-intelligence\\PropertyMapLayer.tsx",
+    "zeroTarget": "components\\property-intelligence\\PropertyMap.tsx"
+  },
+  {
+    "source": "components\\global-expansion\\LocaleCoveragePanel.tsx",
+    "zeroTarget": "lib\\content-intelligence\\locale.types.ts"
+  },
+  {
+    "source": "components\\home\\HomePage.tsx",
+    "zeroTarget": "components\\intelligence\\MarketSnapshot.tsx"
+  },
+  {
+    "source": "components\\home\\index.ts",
+    "zeroTarget": "components\\intelligence\\MarketSnapshot.tsx"
+  },
+  {
+    "source": "components\\home\\MarketSnapshot\\index.ts",
+    "zeroTarget": "components\\intelligence\\MarketSnapshot.tsx"
+  },
+  {
+    "source": "components\\home\\MarketSnapshot\\MarketSnapshot.tsx",
+    "zeroTarget": "components\\intelligence\\MarketSnapshot.tsx"
+  },
+  {
+    "source": "components\\integration\\ServiceMarketplace.tsx",
+    "zeroTarget": "components\\professional-ecosystem\\ServiceMarketplace.tsx"
+  },
+  {
+    "source": "components\\intelligence\\dashboard\\ActivityFeed.tsx",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "components\\intelligence\\dashboard\\index.ts",
+    "zeroTarget": "components\\ai-intelligence\\IntelligenceDashboard.tsx"
+  },
+  {
+    "source": "components\\intelligence\\dashboard\\IntelligenceDashboard.tsx",
+    "zeroTarget": "components\\ai-intelligence\\IntelligenceDashboard.tsx"
+  },
+  {
+    "source": "components\\intelligence\\dashboard\\MetricCard.tsx",
+    "zeroTarget": "components\\analytics\\MetricCard.tsx"
+  },
+  {
+    "source": "components\\intelligence\\IntelligenceCard\\index.ts",
+    "zeroTarget": "components\\content\\IntelligenceCard.tsx"
+  },
+  {
+    "source": "components\\intelligence\\IntelligenceCard\\IntelligenceCard.tsx",
+    "zeroTarget": "components\\content\\IntelligenceCard.tsx"
+  },
+  {
+    "source": "components\\interaction\\AnimatedContainer\\AnimatedContainer.tsx",
+    "zeroTarget": "components\\design-system\\Container.tsx"
+  },
+  {
+    "source": "components\\interaction\\AnimatedContainer\\index.ts",
+    "zeroTarget": "components\\design-system\\Container.tsx"
+  },
+  {
+    "source": "components\\investment-intelligence\\InvestmentCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\investment-intelligence\\OpportunityCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\investment-intelligence\\RiskIndicator.tsx",
+    "zeroTarget": "components\\investment\\RiskIndicator.tsx"
+  },
+  {
+    "source": "components\\knowledge-fabric\\RelationMap.tsx",
+    "zeroTarget": "components\\knowledge\\RelationMap.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\ArchitectureKnowledgePanel.tsx",
+    "zeroTarget": "components\\knowledge\\KnowledgePanel.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\CityKnowledgePanel.tsx",
+    "zeroTarget": "components\\knowledge\\KnowledgePanel.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\EntityCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\InvestmentKnowledgePanel.tsx",
+    "zeroTarget": "components\\knowledge\\KnowledgePanel.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\PropertyKnowledgePanel.tsx",
+    "zeroTarget": "components\\knowledge\\KnowledgePanel.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\RelationMap.tsx",
+    "zeroTarget": "components\\knowledge\\RelationMap.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\RelationViewer.tsx",
+    "zeroTarget": "components\\knowledge-graph\\RelationView.tsx"
+  },
+  {
+    "source": "components\\knowledge-graph\\SourceBadge.tsx",
+    "zeroTarget": "components\\content\\SourceBadge.tsx"
+  },
+  {
+    "source": "components\\layout\\header\\Header.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\layout\\header\\index.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\layout\\language\\index.ts",
+    "zeroTarget": "components\\translation\\LanguageSwitcher.tsx"
+  },
+  {
+    "source": "components\\layout\\language\\LanguageSwitcher.tsx",
+    "zeroTarget": "components\\translation\\LanguageSwitcher.tsx"
+  },
+  {
+    "source": "components\\market-intelligence\\EconomicIndicatorCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\market-intelligence\\MarketCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\market-intelligence\\MarketDashboard.tsx",
+    "zeroTarget": "components\\real-estate\\MarketDashboard.tsx"
+  },
+  {
+    "source": "components\\market-intelligence\\MarketIntelligencePanel.tsx",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "components\\market-intelligence\\MarketTrendViewer.tsx",
+    "zeroTarget": "components\\real-estate\\MarketTrend.tsx"
+  },
+  {
+    "source": "components\\marketplace\\ListingCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\marketplace\\OfferCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\marketplace\\PropertyListingCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\marketplace\\ServiceMarketplace.tsx",
+    "zeroTarget": "components\\professional-ecosystem\\ServiceMarketplace.tsx"
+  },
+  {
+    "source": "components\\marketplace-intelligence\\ListingCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\marketplace-intelligence\\PropertyMatchCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\mobile\\NotificationCenter.tsx",
+    "zeroTarget": "components\\notification\\NotificationCenter.tsx"
+  },
+  {
+    "source": "components\\navigation\\DesktopNavigation.tsx",
+    "zeroTarget": "lib\\translation-intelligence\\translation.utils.ts"
+  },
+  {
+    "source": "components\\navigation\\HeaderActions.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\navigation\\LanguageSwitcher.tsx",
+    "zeroTarget": "components\\translation\\LanguageSwitcher.tsx"
+  },
+  {
+    "source": "components\\navigation\\SiteHeader.tsx",
+    "zeroTarget": "components\\design-system\\Container.tsx"
+  },
+  {
+    "source": "components\\observability-foundation\\ObservabilityStatus.tsx",
+    "zeroTarget": "lib\\market-intelligence\\report.service.ts"
+  },
+  {
+    "source": "components\\production-release\\ProductionReleaseStatus.tsx",
+    "zeroTarget": "components\\release\\ReleaseStatus.tsx"
+  },
+  {
+    "source": "components\\production-reliability\\ProductionReliabilityStatus.tsx",
+    "zeroTarget": "lib\\market-intelligence\\report.service.ts"
+  },
+  {
+    "source": "components\\production-runtime-config\\ProductionRuntimeConfigStatus.tsx",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "components\\professional-ecosystem\\ExpertiseBadge.tsx",
+    "zeroTarget": "components\\design-system\\Badge.tsx"
+  },
+  {
+    "source": "components\\professional-ecosystem\\OrganizationCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\professional-ecosystem\\PortfolioGallery.tsx",
+    "zeroTarget": "components\\professional-marketplace\\PortfolioGallery.tsx"
+  },
+  {
+    "source": "components\\professional-ecosystem\\ProfessionalCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\professional-ecosystem\\ProfessionalProfile.tsx",
+    "zeroTarget": "components\\professional\\ProfessionalProfile.tsx"
+  },
+  {
+    "source": "components\\professional-ecosystem\\SkillBadge.tsx",
+    "zeroTarget": "components\\design-system\\Badge.tsx"
+  },
+  {
+    "source": "components\\professional-ecosystem\\VerificationBadge.tsx",
+    "zeroTarget": "components\\design-system\\Badge.tsx"
+  },
+  {
+    "source": "components\\professional-intelligence\\ArchitectProfile.tsx",
+    "zeroTarget": "components\\architecture-intelligence\\ArchitectProfile.tsx"
+  },
+  {
+    "source": "components\\professional-intelligence\\ExpertiseBadge.tsx",
+    "zeroTarget": "components\\design-system\\Badge.tsx"
+  },
+  {
+    "source": "components\\professional-intelligence\\OrganizationCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\professional-intelligence\\ProfessionalCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\professional-intelligence\\ProfessionalProfile.tsx",
+    "zeroTarget": "components\\professional\\ProfessionalProfile.tsx"
+  },
+  {
+    "source": "components\\professional-intelligence\\ServiceMarketplace.tsx",
+    "zeroTarget": "components\\professional-ecosystem\\ServiceMarketplace.tsx"
+  },
+  {
+    "source": "components\\professional-platform\\ProfessionalDiscovery.tsx",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "components\\property-intelligence\\PropertyCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\property-intelligence\\PropertyIntelligenceCard.tsx",
+    "zeroTarget": "components\\content\\IntelligenceCard.tsx"
+  },
+  {
+    "source": "components\\property-intelligence\\PropertyIntelligenceDashboard.tsx",
+    "zeroTarget": "components\\ai-intelligence\\IntelligenceDashboard.tsx"
+  },
+  {
+    "source": "components\\property-intelligence\\PropertyScoreCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\property-intelligence\\QualityScorePanel.tsx",
+    "zeroTarget": "components\\moderation\\QualityScore.tsx"
+  },
+  {
+    "source": "components\\property-marketplace\\PropertyMarketplace.tsx",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "components\\property-platform\\PropertyAvailability.tsx",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "components\\property-platform\\PropertyCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\property-platform\\PropertyLocation.tsx",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "components\\property-platform\\PropertyMediaGallery.tsx",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "components\\property-platform\\PropertyOverview.tsx",
+    "zeroTarget": "components\\real-estate\\PropertyOverview.tsx"
+  },
+  {
+    "source": "components\\property-platform\\PropertyPricing.tsx",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "components\\real-estate-intelligence\\MarketIntelligencePanel.tsx",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "components\\real-estate-intelligence\\MarketTrendDashboard.tsx",
+    "zeroTarget": "components\\real-estate\\MarketTrend.tsx"
+  },
+  {
+    "source": "components\\real-estate-intelligence\\PropertyIntelligenceDashboard.tsx",
+    "zeroTarget": "components\\ai-intelligence\\IntelligenceDashboard.tsx"
+  },
+  {
+    "source": "components\\recommendation\\RecommendationPanel.tsx",
+    "zeroTarget": "components\\ai-intelligence\\RecommendationPanel.tsx"
+  },
+  {
+    "source": "components\\request-protection\\RequestProtectionStatus.tsx",
+    "zeroTarget": "lib\\market-intelligence\\report.service.ts"
+  },
+  {
+    "source": "components\\search\\SearchResult\\index.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "components\\search\\SearchResult\\SearchResult.tsx",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "components\\security\\TrustScoreCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\security-audit\\SecurityAuditStatus.tsx",
+    "zeroTarget": "components\\system-audit\\AuditStatus.tsx"
+  },
+  {
+    "source": "components\\security-deployment-audit\\SecurityDeploymentAuditStatus.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\security-enforcement\\SecurityEnforcementStatus.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\security-global-headers\\SecurityGlobalHeadersStatus.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\security-header-http-smoke\\SecurityHeaderHttpSmokeStatus.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\security-header-scope\\SecurityHeaderScopeStatus.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\security-policy\\SecurityPolicyStatus.tsx",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "components\\security-trust\\SecurityRiskPanel.tsx",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "components\\smart-city-intelligence\\CityOverview.tsx",
+    "zeroTarget": "components\\city-intelligence\\CityOverview.tsx"
+  },
+  {
+    "source": "components\\smart-city-intelligence\\CityRecommendations.tsx",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "components\\smart-city-intelligence\\SmartCityDashboard.tsx",
+    "zeroTarget": "components\\city-intelligence\\CityOverview.tsx"
+  },
+  {
+    "source": "components\\smart-city-intelligence\\UrbanIndicatorsPanel.tsx",
+    "zeroTarget": "components\\city-intelligence\\UrbanIndicators.tsx"
+  },
+  {
+    "source": "components\\smart-city-intelligence\\UrbanRiskPanel.tsx",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "components\\smart-search\\SmartSearchBox.tsx",
+    "zeroTarget": "components\\search\\SearchBox.tsx"
+  },
+  {
+    "source": "components\\source-intelligence\\AuthorityBadge.tsx",
+    "zeroTarget": "components\\design-system\\Badge.tsx"
+  },
+  {
+    "source": "components\\source-intelligence\\RegulationCard.tsx",
+    "zeroTarget": "components\\content\\RegulationCard.tsx"
+  },
+  {
+    "source": "components\\source-intelligence\\SourceCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\ui\\badge\\Badge.tsx",
+    "zeroTarget": "components\\design-system\\Badge.tsx"
+  },
+  {
+    "source": "components\\ui\\badge\\index.ts",
+    "zeroTarget": "components\\design-system\\Badge.tsx"
+  },
+  {
+    "source": "components\\ui\\card\\Card.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\ui\\card\\index.ts",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\ui\\Card.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\ui\\container\\Container.tsx",
+    "zeroTarget": "components\\design-system\\Container.tsx"
+  },
+  {
+    "source": "components\\ui\\container\\index.ts",
+    "zeroTarget": "components\\design-system\\Container.tsx"
+  },
+  {
+    "source": "components\\ui\\Container.tsx",
+    "zeroTarget": "components\\design-system\\Container.tsx"
+  },
+  {
+    "source": "components\\user-intelligence\\ActivityTimeline.tsx",
+    "zeroTarget": "components\\dashboard\\ActivityTimeline.tsx"
+  },
+  {
+    "source": "components\\user-intelligence\\RecommendationList.tsx",
+    "zeroTarget": "components\\recommendation\\RecommendationList.tsx"
+  },
+  {
+    "source": "components\\user-intelligence\\RecommendationPanel.tsx",
+    "zeroTarget": "components\\ai-intelligence\\RecommendationPanel.tsx"
+  },
+  {
+    "source": "components\\user-intelligence\\UserInsightCard.tsx",
+    "zeroTarget": "components\\dashboard\\InsightCard.tsx"
+  },
+  {
+    "source": "components\\user-intelligence\\UserIntelligenceDashboard.tsx",
+    "zeroTarget": "components\\ai-intelligence\\IntelligenceDashboard.tsx"
+  },
+  {
+    "source": "components\\user-intelligence\\UserProfileCard.tsx",
+    "zeroTarget": "components\\design-system\\Card.tsx"
+  },
+  {
+    "source": "components\\user-platform\\NotificationCenter.tsx",
+    "zeroTarget": "components\\notification\\NotificationCenter.tsx"
+  },
+  {
+    "source": "lib\\accessibility\\accessibility.types.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\agents\\domain\\architecture\\melkism.architecture.intelligence.agent.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\agents\\domain\\market\\melkism.market.intelligence.agent.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\ai-cloud\\monitoring.service.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\ai-core\\ai-router.service.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\ai-core\\text-ai.types.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\ai-decision-support\\index.ts",
+    "zeroTarget": "lib\\recommendation\\scoring.service.ts"
+  },
+  {
+    "source": "lib\\ai-orchestration\\ai-router.service.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\ai-orchestration\\index.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\ai-orchestration\\intelligence-router.service.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\ai-orchestration\\request-router.service.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\ai-orchestration\\router.service.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\ai-recommendation\\index.ts",
+    "zeroTarget": "lib\\city-intelligence\\ranking.service.ts"
+  },
+  {
+    "source": "lib\\ai-recommendation\\recommendation.registry.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\ai-recommendation\\recommendation.repository.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\ai-recommendation\\recommendation.service.ts",
+    "zeroTarget": "lib\\recommendation\\recommendation.repository.ts"
+  },
+  {
+    "source": "lib\\ai-recommendation-engine\\index.ts",
+    "zeroTarget": "lib\\city-intelligence\\ranking.service.ts"
+  },
+  {
+    "source": "lib\\ai-recommendation-engine\\recommendation.registry.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\api\\core\\errors.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\api\\core\\index.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\api\\core\\json.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "lib\\api\\core\\rate-limit-handler.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\api\\core\\rate-limit-response.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\api\\core\\rate-limit.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\api\\core\\request.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "lib\\api\\core\\response.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "lib\\api\\core\\validation.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\api\\index.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\api\\route-registry.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\api\\versioning\\api-version.ts",
+    "zeroTarget": "components\\editorial\\VersionInfo.tsx"
+  },
+  {
+    "source": "lib\\api\\versioning\\api-version.types.ts",
+    "zeroTarget": "components\\editorial\\VersionInfo.tsx"
+  },
+  {
+    "source": "lib\\api-ecosystem\\api-governance.service.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\api-ecosystem\\api-quota.service.ts",
+    "zeroTarget": "lib\\professional-ecosystem\\ecosystem.constants.ts"
+  },
+  {
+    "source": "lib\\api-ecosystem\\api-rate-limit.service.ts",
+    "zeroTarget": "lib\\professional-ecosystem\\ecosystem.constants.ts"
+  },
+  {
+    "source": "lib\\api-ecosystem\\api-version.service.ts",
+    "zeroTarget": "lib\\professional-ecosystem\\ecosystem.constants.ts"
+  },
+  {
+    "source": "lib\\api-ecosystem\\api.registry.ts",
+    "zeroTarget": "lib\\professional-ecosystem\\ecosystem.constants.ts"
+  },
+  {
+    "source": "lib\\api-ecosystem\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\api-gateway-platform\\index.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\application-security\\application-security.types.ts",
+    "zeroTarget": "components\\security\\SecurityStatus.tsx"
+  },
+  {
+    "source": "lib\\architecture-intelligence\\architecture-project.repository.ts",
+    "zeroTarget": "lib\\investment\\project.types.ts"
+  },
+  {
+    "source": "lib\\architecture-intelligence\\architecture-project.service.ts",
+    "zeroTarget": "lib\\investment\\project.types.ts"
+  },
+  {
+    "source": "lib\\architecture-intelligence\\architecture-recommendation.service.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\architecture-intelligence\\index.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\architecture-intelligence-platform\\architecture.service.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\architecture-intelligence-platform\\architecture.types.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\auth-security\\auth.registry.ts",
+    "zeroTarget": "lib\\auth\\auth.types.ts"
+  },
+  {
+    "source": "lib\\auth-security\\index.ts",
+    "zeroTarget": "lib\\auth\\auth.constants.ts"
+  },
+  {
+    "source": "lib\\auth-security\\permission.service.ts",
+    "zeroTarget": "lib\\auth\\auth.types.ts"
+  },
+  {
+    "source": "lib\\auth-security\\session.service.ts",
+    "zeroTarget": "lib\\auth\\auth.types.ts"
+  },
+  {
+    "source": "lib\\autonomous\\orchestration\\workflow.types.ts",
+    "zeroTarget": "components\\moderation\\WorkflowStatus.tsx"
+  },
+  {
+    "source": "lib\\cms\\content\\content.revision.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\cms\\content\\content.service.ts",
+    "zeroTarget": "lib\\content\\content.types.ts"
+  },
+  {
+    "source": "lib\\cms\\content\\content.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\cms\\content\\content.workflow.service.ts",
+    "zeroTarget": "lib\\content-engine\\content.repository.ts"
+  },
+  {
+    "source": "lib\\cms\\media\\media.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\communication-intelligence\\routing.service.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\construction-intelligence\\construction-project.repository.ts",
+    "zeroTarget": "lib\\investment\\project.types.ts"
+  },
+  {
+    "source": "lib\\construction-intelligence\\construction-project.service.ts",
+    "zeroTarget": "lib\\investment\\project.types.ts"
+  },
+  {
+    "source": "lib\\construction-intelligence\\construction-recommendation.service.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\construction-intelligence\\construction-risk.service.ts",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "lib\\construction-intelligence\\construction-risk.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\construction-intelligence\\construction-sustainability.service.ts",
+    "zeroTarget": "lib\\city-intelligence\\sustainability.types.ts"
+  },
+  {
+    "source": "lib\\construction-intelligence\\index.ts",
+    "zeroTarget": "lib\\city-intelligence\\sustainability.service.ts"
+  },
+  {
+    "source": "lib\\content\\adapters\\adapter.registry.ts",
+    "zeroTarget": "lib\\content\\source.types.ts"
+  },
+  {
+    "source": "lib\\content\\adapters\\contracts\\source.adapter.ts",
+    "zeroTarget": "lib\\content\\source.types.ts"
+  },
+  {
+    "source": "lib\\content\\adapters\\normalization\\content.normalizer.ts",
+    "zeroTarget": "lib\\content\\source.types.ts"
+  },
+  {
+    "source": "lib\\content\\adapters\\pipeline\\content.ingestion.pipeline.ts",
+    "zeroTarget": "lib\\content\\source.types.ts"
+  },
+  {
+    "source": "lib\\content\\index.ts",
+    "zeroTarget": "lib\\content\\content.types.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\adapters\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\composition\\content.index.composition.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\composition\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\contracts\\content.index.contract.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\contracts\\content.index.persistence.contract.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\contracts\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\integration\\content.index.persistence.integration.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\integration\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\persistence\\adapters\\content.index.memory.persistence.adapter.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\persistence\\adapters\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\persistence\\composition\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\persistence\\runtime\\content.index.persistence.runtime.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\persistence\\runtime\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\runtime\\content.index.runtime.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\indexing\\runtime\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-governance-intelligence\\runtime\\autonomous.cognitive.governance.intelligence.runtime.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-architecture-intelligence\\building\\melkism.agi.architecture.building.intelligence.coordinator.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-architecture-intelligence\\controller\\melkism.agi.architecture.intelligence.controller.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-architecture-intelligence\\design-reasoning\\melkism.agi.architecture.design.reasoning.coordinator.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-architecture-intelligence\\pattern\\melkism.agi.architecture.pattern.intelligence.coordinator.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-architecture-intelligence\\sustainability\\melkism.agi.architecture.sustainability.intelligence.coordinator.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-general-intelligence\\intelligence-routing\\melkism.agi.intelligence.routing.coordinator.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-orchestration\\routing\\global.intelligence.routing.engine.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\agi-real-estate-intelligence\\market\\melkism.agi.realestate.market.intelligence.coordinator.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\autonomous-general-intelligence-coordination\\routing\\autonomous.intelligence.routing.coordinator.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\autonomous-orchestration\\monitoring\\intelligence.monitoring.system.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\autonomous-scientific-discovery-engine\\validation\\scientific.validation.engine.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\autonomous-strategic-intelligence\\monitoring\\strategic.monitoring.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\domain-intelligence-specialization\\architecture\\architecture.intelligence.engine.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\domain-intelligence-specialization\\architecture\\architecture.intelligence.specialization.engine.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\domain-intelligence-specialization\\market\\market.intelligence.engine.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\expert-agents\\architecture\\architecture.intelligence.agent.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\global-autonomous-intelligence-mesh\\routing\\intelligence.routing.engine.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\global-intelligence-memory\\experience\\global.intelligence.experience.memory.engine.ts",
+    "zeroTarget": "components\\experience\\IntelligenceExperience.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\memory\\indexing\\cognitive.memory.indexing.engine.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\multi-domain-intelligence-fusion\\architecture\\architecture.intelligence.engine.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\multi-domain-intelligence-fusion\\market\\market.intelligence.engine.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\self-aware-intelligence-monitoring\\controller\\self.aware.intelligence.monitoring.controller.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\self-aware-intelligence-monitoring\\core\\self.aware.monitoring.core.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\self-aware-intelligence-monitoring\\learning\\self.aware.monitoring.learning.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\self-aware-intelligence-monitoring\\memory\\self.aware.monitoring.memory.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-operating-system\\universal-intelligence-operating-core\\routing\\universal.intelligence.routing.engine.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-orchestration-intelligence\\runtime\\autonomous.cognitive.orchestration.intelligence.runtime.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-cognitive-self-awareness-architecture\\runtime\\autonomous.cognitive.self.awareness.architecture.runtime.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-intelligence-execution-framework\\contracts\\autonomous.intelligence.execution.framework.contract.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-intelligence-execution-framework\\runtime\\autonomous.intelligence.execution.framework.runtime.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-intelligence-kernel\\runtime\\autonomous.intelligence.kernel.runtime.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-knowledge-synthesis\\contracts\\autonomous.knowledge.synthesis.contract.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-knowledge-synthesis\\runtime\\autonomous.knowledge.synthesis.runtime.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\autonomous-meta-cognition-intelligence\\runtime\\autonomous.meta.cognition.intelligence.runtime.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\cognitive-execution\\contracts\\autonomous.cognitive.execution.contract.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\cognitive-execution-engine-advanced-integration\\contracts\\autonomous.cognitive.execution.engine.advanced.integration.contract.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\cognitive-execution-engine-advanced-integration\\runtime\\autonomous.cognitive.execution.engine.advanced.integration.runtime.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\cognitive-self-auditing\\runtime\\autonomous.cognitive.self.auditing.runtime.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\content\\intelligence\\cognitive-self-healing\\contracts\\autonomous.cognitive.self.healing.contract.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\model\\index.ts",
+    "zeroTarget": "lib\\intelligence\\intelligence.constants.ts"
+  },
+  {
+    "source": "lib\\content\\intelligence\\providers\\local\\runtime\\deterministic.local.nlp.provider.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\persistence\\runtime\\index.ts",
+    "zeroTarget": "lib\\content-engine\\content.repository.ts"
+  },
+  {
+    "source": "lib\\content\\provenance\\provenance.constants.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\content\\provenance\\provenance.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\content\\retrieval\\contracts\\content.retrieval.contract.js",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\retrieval\\contracts\\content.retrieval.contract.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\retrieval\\filters\\content.filter.contract.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\retrieval\\integration\\content.retrieval.orchestration.js",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\retrieval\\integration\\content.retrieval.orchestration.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\retrieval\\ranking\\runtime\\deterministic.ranking.runtime.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\search\\contracts\\content.search.contract.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\search\\contracts\\index.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\content\\search\\index.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\content\\search\\integration\\content.search.index.integration.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\search\\integration\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\content\\search\\runtime\\content.search.runtime.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\content\\sources\\index.ts",
+    "zeroTarget": "lib\\content\\source.types.ts"
+  },
+  {
+    "source": "lib\\content\\sources\\registry\\source.registry.types.ts",
+    "zeroTarget": "lib\\content\\source.types.ts"
+  },
+  {
+    "source": "lib\\content\\storage\\adapters\\content.storage.memory.adapter.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\content-intelligence-platform\\classification.service.ts",
+    "zeroTarget": "lib\\content\\content.types.ts"
+  },
+  {
+    "source": "lib\\content-intelligence-platform\\content.registry.ts",
+    "zeroTarget": "lib\\content\\content.types.ts"
+  },
+  {
+    "source": "lib\\content-intelligence-platform\\index.ts",
+    "zeroTarget": "lib\\content\\content.types.ts"
+  },
+  {
+    "source": "lib\\decision-intelligence-platform\\index.ts",
+    "zeroTarget": "lib\\recommendation\\recommendation.service.ts"
+  },
+  {
+    "source": "lib\\decision-intelligence-platform\\scoring.service.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\deployment\\deployment.readiness.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\deployment-verification\\deployment-verification.service.ts",
+    "zeroTarget": "lib\\auth\\verification.types.ts"
+  },
+  {
+    "source": "lib\\deployment-verification\\index.ts",
+    "zeroTarget": "lib\\auth\\verification.service.ts"
+  },
+  {
+    "source": "lib\\design-system\\tokens.ts",
+    "zeroTarget": "styles\\tokens\\colors.ts"
+  },
+  {
+    "source": "lib\\ecosystem\\routing\\melkism.intelligence.routing.engine.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\enterprise-governance\\data-access.service.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\enterprise-governance\\data-governance.service.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\enterprise-governance\\governance-risk.service.ts",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "lib\\enterprise-governance\\governance-risk.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\enterprise-governance\\index.ts",
+    "zeroTarget": "lib\\auth\\role.types.ts"
+  },
+  {
+    "source": "lib\\enterprise-governance\\organization.repository.ts",
+    "zeroTarget": "lib\\content\\organization.types.ts"
+  },
+  {
+    "source": "lib\\enterprise-governance\\organization.service.ts",
+    "zeroTarget": "lib\\content\\organization.types.ts"
+  },
+  {
+    "source": "lib\\global-expansion\\index.ts",
+    "zeroTarget": "lib\\content-intelligence\\locale.types.ts"
+  },
+  {
+    "source": "lib\\global-expansion\\locale.service.ts",
+    "zeroTarget": "lib\\content-intelligence\\locale.types.ts"
+  },
+  {
+    "source": "lib\\globalization\\content\\melkism.multilingual.content.engine.ts",
+    "zeroTarget": "components\\content-intelligence\\MultilingualContent.tsx"
+  },
+  {
+    "source": "lib\\hooks\\intelligence\\useIntelligence.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "lib\\i18n\\messages\\ar.ts",
+    "zeroTarget": "lib\\translation-intelligence\\translation.types.ts"
+  },
+  {
+    "source": "lib\\i18n\\messages\\en.ts",
+    "zeroTarget": "lib\\translation-intelligence\\translation.types.ts"
+  },
+  {
+    "source": "lib\\i18n\\messages\\fa.ts",
+    "zeroTarget": "lib\\translation-intelligence\\translation.types.ts"
+  },
+  {
+    "source": "lib\\i18n\\messages\\tr.ts",
+    "zeroTarget": "lib\\translation-intelligence\\translation.types.ts"
+  },
+  {
+    "source": "lib\\i18n\\translation.engine.ts",
+    "zeroTarget": "lib\\translation-intelligence\\translation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\agent\\agent.action.router.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\content\\content.analysis.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\content\\content.feedback.ts",
+    "zeroTarget": "components\\content\\ContentFeed.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\content\\content.feedback.types.ts",
+    "zeroTarget": "components\\content\\ContentFeed.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\content\\content.intelligence.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\content\\content.types.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\content\\index.ts",
+    "zeroTarget": "lib\\content\\content.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\intelligence.governance.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\market\\index.ts",
+    "zeroTarget": "lib\\data-intelligence\\market.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\market\\market.intelligence.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\market\\market.types.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\property\\index.ts",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\property\\property.analysis.ts",
+    "zeroTarget": "components\\property-intelligence\\PropertyAnalysis.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\property\\property.analysis.types.ts",
+    "zeroTarget": "components\\property-intelligence\\PropertyAnalysis.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\property\\property.intelligence.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\property\\property.types.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\user\\index.ts",
+    "zeroTarget": "lib\\auth\\user.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\user\\user.intelligence.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\applications\\user\\user.types.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\audit\\intelligence.audit.engine.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\audit\\intelligence.audit.manager.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\core\\intelligence.core.ts",
+    "zeroTarget": "lib\\real-estate-ai\\valuation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\core\\intelligence.types.ts",
+    "zeroTarget": "lib\\real-estate-ai\\valuation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\data\\data.quality.management.ts",
+    "zeroTarget": "components\\moderation\\QualityScore.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\decision\\foundation\\decision.autonomous.intelligence.recovery.validation.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\decision-support\\governance.engine.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\decision-support\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\decision-support\\recommendation.engine.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\decision-support\\recommendation.types.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\domain-agents\\built-environment.engine.ts",
+    "zeroTarget": "components\\home\\ArchitectureIntelligence.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\domain-agents\\market-agent.engine.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\domain-agents\\property-agent.engine.ts",
+    "zeroTarget": "components\\property-intelligence\\PropertyAnalysis.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\domain-agents\\property-agent.types.ts",
+    "zeroTarget": "components\\property-intelligence\\PropertyAnalysis.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\evaluation\\evaluation.engine.ts",
+    "zeroTarget": "lib\\real-estate-ai\\valuation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\evaluation\\index.ts",
+    "zeroTarget": "lib\\real-estate-ai\\valuation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\evaluation\\intelligence.evaluation.store.ts",
+    "zeroTarget": "lib\\real-estate-ai\\valuation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\experience\\experience.engine.ts",
+    "zeroTarget": "components\\experience\\IntelligenceExperience.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\experience\\experience.types.ts",
+    "zeroTarget": "components\\experience\\IntelligenceExperience.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\governance\\intelligence.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\index.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge\\knowledge.relationship.ts",
+    "zeroTarget": "lib\\knowledge\\relationship.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge\\knowledge.repository.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge\\semantic.retrieval.engine.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge\\synthesis\\knowledge.synthesis.autonomous.intelligence.recovery.validation.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-audit\\intelligence.knowledge.audit.engine.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-audit\\intelligence.knowledge.audit.manager.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-governance\\intelligence.knowledge.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-monitoring\\index.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-monitoring\\intelligence.knowledge.monitoring.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-monitoring\\intelligence.knowledge.monitoring.manager.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-monitoring\\intelligence.knowledge.monitoring.store.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-monitoring\\intelligence.knowledge.monitoring.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-audit\\intelligence.knowledge.priority.audit.engine.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-audit\\intelligence.knowledge.priority.audit.manager.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-governance\\intelligence.knowledge.priority.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-audit\\intelligence.knowledge.priority.knowledge.graph.audit.engine.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-audit\\intelligence.knowledge.priority.knowledge.graph.audit.manager.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-diagnostics\\intelligence.knowledge.priority.knowledge.graph.diagnostics.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-distribution\\intelligence.knowledge.priority.knowledge.graph.distribution.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-governance\\intelligence.knowledge.priority.knowledge.graph.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-audit\\intelligence.knowledge.priority.knowledge.graph.memory.graph.audit.engine.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-audit\\intelligence.knowledge.priority.knowledge.graph.memory.graph.audit.manager.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-autonomous-evolution-governance\\autonomous.evolution.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-autonomous-evolution-governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-autonomous-governance\\autonomous.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-autonomous-governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-autonomous-governance\\intelligence.knowledge.priority.knowledge.graph.memory.graph.autonomous.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-diagnostics\\intelligence.knowledge.priority.knowledge.graph.memory.graph.diagnostics.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-distribution\\intelligence.knowledge.priority.knowledge.graph.memory.graph.distribution.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-governance\\intelligence.knowledge.priority.knowledge.graph.memory.graph.governance.store.ts",
+    "zeroTarget": "lib\\governance\\governance.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-monitoring\\index.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.memory.graph.monitoring.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.memory.graph.monitoring.manager.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.memory.graph.monitoring.store.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.memory.graph.monitoring.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-validation\\index.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-validation\\intelligence.knowledge.priority.knowledge.graph.memory.graph.validation.engine.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-validation\\intelligence.knowledge.priority.knowledge.graph.memory.graph.validation.manager.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-validation\\intelligence.knowledge.priority.knowledge.graph.memory.graph.validation.store.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-memory-graph-validation\\intelligence.knowledge.priority.knowledge.graph.memory.graph.validation.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-monitoring\\index.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.monitoring.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.monitoring.manager.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.monitoring.store.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-monitoring\\intelligence.knowledge.priority.knowledge.graph.monitoring.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-validation\\index.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-validation\\intelligence.knowledge.priority.knowledge.graph.validation.engine.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-validation\\intelligence.knowledge.priority.knowledge.graph.validation.manager.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-validation\\intelligence.knowledge.priority.knowledge.graph.validation.store.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-knowledge-graph-validation\\intelligence.knowledge.priority.knowledge.graph.validation.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-monitoring\\index.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-monitoring\\intelligence.knowledge.priority.monitoring.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-monitoring\\intelligence.knowledge.priority.monitoring.manager.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-monitoring\\intelligence.knowledge.priority.monitoring.store.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-monitoring\\intelligence.knowledge.priority.monitoring.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-validation\\index.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-validation\\intelligence.knowledge.priority.validation.engine.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-validation\\intelligence.knowledge.priority.validation.manager.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-validation\\intelligence.knowledge.priority.validation.store.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-priority-validation\\intelligence.knowledge.priority.validation.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-validation\\index.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-validation\\intelligence.knowledge.validation.engine.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-validation\\intelligence.knowledge.validation.manager.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-validation\\intelligence.knowledge.validation.store.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\knowledge-validation\\intelligence.knowledge.validation.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\continuous\\learning.continuous.autonomous.intelligence.recovery.governance.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\learning.contract.runtime.validation.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\learning.feedback.ts",
+    "zeroTarget": "lib\\real-estate-ai\\valuation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.knowledge.bridge.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.optimization.autonomous.feedback.control.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.optimization.autonomous.intelligence.recovery.feedback.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.optimization.autonomous.intelligence.recovery.monitoring.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.optimization.autonomous.monitoring.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.optimization.router.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.optimization.self.evaluation.ts",
+    "zeroTarget": "components\\moderation\\QualityScore.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\memory\\learning.memory.retrieval.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\intelligence\\learning\\tests\\learning.contract.integration.validator.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\monitoring\\index.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\monitoring\\intelligence.monitoring.engine.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\monitoring\\intelligence.monitoring.manager.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\monitoring\\intelligence.monitoring.store.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\intelligence\\prediction\\index.ts",
+    "zeroTarget": "lib\\real-estate-ai\\prediction.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\prediction\\intelligence.prediction.store.ts",
+    "zeroTarget": "lib\\real-estate-ai\\prediction.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\realestate\\market.intelligence.engine.ts",
+    "zeroTarget": "components\\home\\MarketIntelligence.tsx"
+  },
+  {
+    "source": "lib\\intelligence\\reasoning\\foundation\\reasoning.autonomous.intelligence.recovery.validation.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\reasoning\\prediction.engine.ts",
+    "zeroTarget": "lib\\real-estate-ai\\prediction.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\reasoning\\rule-evaluation.engine.ts",
+    "zeroTarget": "lib\\real-estate-ai\\valuation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\recommendation\\index.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\recommendation\\intelligence.recommendation.store.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\intelligence\\runtime\\index.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\intelligence\\runtime\\intelligence.runtime.event.router.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\intelligence\\runtime\\intelligence.runtime.security.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\intelligence\\swarm\\communication.engine.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\intelligence\\types\\intelligence.types.ts",
+    "zeroTarget": "components\\intelligence\\IntelligenceSignal.tsx"
+  },
+  {
+    "source": "lib\\intelligence-platform\\index.ts",
+    "zeroTarget": "lib\\intelligence\\intelligence.constants.ts"
+  },
+  {
+    "source": "lib\\intelligence-platform\\intelligence.service.ts",
+    "zeroTarget": "lib\\intelligence\\intelligence.constants.ts"
+  },
+  {
+    "source": "lib\\investment-intelligence\\investment-score.types.ts",
+    "zeroTarget": "components\\market-intelligence\\InvestmentScore.tsx"
+  },
+  {
+    "source": "lib\\investment-intelligence-platform\\index.ts",
+    "zeroTarget": "lib\\investment\\investment.constants.ts"
+  },
+  {
+    "source": "lib\\investment-intelligence-platform\\investment.registry.ts",
+    "zeroTarget": "lib\\investment\\investment.types.ts"
+  },
+  {
+    "source": "lib\\investment-intelligence-platform\\opportunity.service.ts",
+    "zeroTarget": "lib\\investment\\investment.types.ts"
+  },
+  {
+    "source": "lib\\investment-intelligence-platform\\risk-analysis.service.ts",
+    "zeroTarget": "lib\\investment\\investment.types.ts"
+  },
+  {
+    "source": "lib\\knowledge\\graph.types.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\market-intelligence\\market-indicator.types.ts",
+    "zeroTarget": "components\\analytics\\MarketIndicator.tsx"
+  },
+  {
+    "source": "lib\\market-intelligence-platform\\index.ts",
+    "zeroTarget": "lib\\data-intelligence\\market.types.ts"
+  },
+  {
+    "source": "lib\\market-intelligence-platform\\indicator.service.ts",
+    "zeroTarget": "components\\analytics\\MarketIndicator.tsx"
+  },
+  {
+    "source": "lib\\market-intelligence-platform\\market.constants.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\market-intelligence-platform\\market.registry.ts",
+    "zeroTarget": "components\\analytics\\MarketIndicator.tsx"
+  },
+  {
+    "source": "lib\\market-intelligence-platform\\market.service.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\market-intelligence-platform\\market.types.ts",
+    "zeroTarget": "components\\analytics\\MarketIndicator.tsx"
+  },
+  {
+    "source": "lib\\market-intelligence-platform\\trend.service.ts",
+    "zeroTarget": "components\\real-estate\\MarketTrend.tsx"
+  },
+  {
+    "source": "lib\\marketplace\\service-marketplace.types.ts",
+    "zeroTarget": "components\\professional-ecosystem\\ServiceMarketplace.tsx"
+  },
+  {
+    "source": "lib\\motion\\motion.presets.ts",
+    "zeroTarget": "styles\\tokens\\motion.ts"
+  },
+  {
+    "source": "lib\\motion\\motion.tokens.ts",
+    "zeroTarget": "styles\\tokens\\motion.ts"
+  },
+  {
+    "source": "lib\\network\\routing\\melkism.global.routing.engine.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\observability\\request-context.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\observability-platform\\index.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\platform-services\\index.ts",
+    "zeroTarget": "lib\\professional-ecosystem\\service.types.ts"
+  },
+  {
+    "source": "lib\\platform-services\\platform-service.registry.ts",
+    "zeroTarget": "lib\\professional-ecosystem\\service.types.ts"
+  },
+  {
+    "source": "lib\\prelaunch\\prelaunch.checks.ts",
+    "zeroTarget": "app\\api\\admin\\content\\publish\\route.ts"
+  },
+  {
+    "source": "lib\\prelaunch\\prelaunch.types.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\production-release\\index.ts",
+    "zeroTarget": "lib\\release\\release.service.ts"
+  },
+  {
+    "source": "lib\\production-release\\production-release.service.ts",
+    "zeroTarget": "lib\\release\\release.types.ts"
+  },
+  {
+    "source": "lib\\professional-ecosystem\\profile.types.ts",
+    "zeroTarget": "components\\professional\\ProfessionalProfile.tsx"
+  },
+  {
+    "source": "lib\\professional-platform\\index.ts",
+    "zeroTarget": "lib\\discovery\\professional.types.ts"
+  },
+  {
+    "source": "lib\\professional-platform\\professional.service.ts",
+    "zeroTarget": "components\\professional\\ProfessionalProfile.tsx"
+  },
+  {
+    "source": "lib\\professional-platform\\professional.types.ts",
+    "zeroTarget": "components\\professional\\ProfessionalProfile.tsx"
+  },
+  {
+    "source": "lib\\property-intelligence\\quality-score.types.ts",
+    "zeroTarget": "components\\moderation\\QualityScore.tsx"
+  },
+  {
+    "source": "lib\\property-marketplace-platform\\property-marketplace.service.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\property-platform\\index.ts",
+    "zeroTarget": "lib\\property-intelligence\\property-search.types.ts"
+  },
+  {
+    "source": "lib\\property-platform\\property-discovery.service.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\property-platform\\property-search.types.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\property-platform\\property-validation.service.ts",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "lib\\property-platform\\property.repository.ts",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "lib\\property-platform\\property.service.ts",
+    "zeroTarget": "lib\\real-estate-intelligence\\property.types.ts"
+  },
+  {
+    "source": "lib\\realtime-intelligence\\validation.service.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\recommendation-platform\\index.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\recommendation-platform\\recommendation.service.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\release-governance\\index.ts",
+    "zeroTarget": "lib\\governance\\governance.constants.ts"
+  },
+  {
+    "source": "lib\\release-governance\\release-governance.service.ts",
+    "zeroTarget": "lib\\governance\\governance.constants.ts"
+  },
+  {
+    "source": "lib\\release-governance\\release-governance.types.ts",
+    "zeroTarget": "components\\release\\ReleaseStatus.tsx"
+  },
+  {
+    "source": "lib\\search\\index.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search\\search.repository.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\search\\search.service.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search\\search.types.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search\\types\\semantic.search.types.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search-intelligence\\index.ts",
+    "zeroTarget": "lib\\search-engine\\search.service.ts"
+  },
+  {
+    "source": "lib\\search-intelligence\\search.service.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search-intelligence\\search.types.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search-platform\\discovery.service.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search-platform\\index.ts",
+    "zeroTarget": "lib\\city-intelligence\\ranking.service.ts"
+  },
+  {
+    "source": "lib\\search-platform\\ranking.service.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search-platform\\search.engine.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search-platform\\search.query.ts",
+    "zeroTarget": "lib\\search-engine\\search.types.ts"
+  },
+  {
+    "source": "lib\\search-platform\\search.registry.ts",
+    "zeroTarget": "lib\\search-engine\\search.types.ts"
+  },
+  {
+    "source": "lib\\search-platform\\search.types.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\search-platform\\search.utils.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\security\\index.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "lib\\security\\security.env.ts",
+    "zeroTarget": "components\\system-audit\\AuditReport.tsx"
+  },
+  {
+    "source": "lib\\security\\security.headers.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security\\security.types.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-audit\\security-audit.service.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\security-deployment-audit\\security-deployment-audit.service.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-deployment-audit\\security-deployment-audit.types.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-enforcement\\security-enforcement.service.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-enforcement\\security-enforcement.types.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-global-headers\\index.ts",
+    "zeroTarget": "lib\\security\\headers.ts"
+  },
+  {
+    "source": "lib\\security-global-headers\\security-global-headers.next.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-global-headers\\security-global-headers.service.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-global-headers\\security-global-headers.types.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-header-http-smoke\\security-header-http-smoke.constants.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-header-http-smoke\\security-header-http-smoke.service.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-header-http-smoke\\security-header-http-smoke.types.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-header-scope\\security-header-scope.service.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-header-scope\\security-header-scope.types.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-policy\\security-policy.service.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-policy\\security-policy.types.ts",
+    "zeroTarget": "components\\navigation\\Header.tsx"
+  },
+  {
+    "source": "lib\\security-posture\\security-posture.service.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\security-posture\\security-posture.types.ts",
+    "zeroTarget": "lib\\security\\validation.ts"
+  },
+  {
+    "source": "lib\\security-trust\\access-control.service.ts",
+    "zeroTarget": "lib\\auth\\role.types.ts"
+  },
+  {
+    "source": "lib\\security-trust\\index.ts",
+    "zeroTarget": "lib\\auth\\role.types.ts"
+  },
+  {
+    "source": "lib\\security-trust\\rbac.service.ts",
+    "zeroTarget": "lib\\auth\\role.types.ts"
+  },
+  {
+    "source": "lib\\security-trust\\security-risk.service.ts",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "lib\\security-trust\\session.service.ts",
+    "zeroTarget": "lib\\auth\\session.types.ts"
+  },
+  {
+    "source": "lib\\semantic-search-intelligence\\index.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\semantic-search-intelligence\\search.registry.ts",
+    "zeroTarget": "lib\\search-engine\\search.types.ts"
+  },
+  {
+    "source": "lib\\semantic-search-intelligence\\search.types.ts",
+    "zeroTarget": "components\\search\\SearchResult.tsx"
+  },
+  {
+    "source": "lib\\semantic-search-intelligence\\search.utils.ts",
+    "zeroTarget": "components\\design-system\\Text.tsx"
+  },
+  {
+    "source": "lib\\semantic-search-intelligence\\semantic-index.service.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\smart-city-intelligence\\index.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\smart-city-intelligence\\smart-city.utils.ts",
+    "zeroTarget": "components\\city-intelligence\\UrbanScore.tsx"
+  },
+  {
+    "source": "lib\\smart-city-intelligence\\urban-recommendation.service.ts",
+    "zeroTarget": "lib\\intelligence\\recommendation.types.ts"
+  },
+  {
+    "source": "lib\\smart-city-intelligence\\urban-risk.service.ts",
+    "zeroTarget": "lib\\investment\\risk.types.ts"
+  },
+  {
+    "source": "lib\\smart-city-intelligence\\urban-risk.types.ts",
+    "zeroTarget": "lib\\performance\\monitoring.ts"
+  },
+  {
+    "source": "lib\\smart-search\\index.repository.ts",
+    "zeroTarget": "components\\admin\\content\\index.ts"
+  },
+  {
+    "source": "lib\\transactions\\index.ts",
+    "zeroTarget": "lib\\content-moderation\\workflow.service.ts"
+  },
+  {
+    "source": "lib\\user-communication\\index.ts",
+    "zeroTarget": "lib\\notification-intelligence\\notification.constants.ts"
+  },
+  {
+    "source": "lib\\user-communication\\notification.registry.ts",
+    "zeroTarget": "lib\\notification-intelligence\\notification.types.ts"
+  },
+  {
+    "source": "lib\\user-communication\\notification.repository.ts",
+    "zeroTarget": "lib\\notification-intelligence\\notification.types.ts"
+  },
+  {
+    "source": "lib\\user-communication\\notification.service.ts",
+    "zeroTarget": "lib\\notification-intelligence\\notification.repository.ts"
+  },
+  {
+    "source": "lib\\user-dashboard\\dashboard.registry.ts",
+    "zeroTarget": "lib\\dashboard\\dashboard.types.ts"
+  },
+  {
+    "source": "lib\\user-dashboard\\dashboard.repository.ts",
+    "zeroTarget": "lib\\dashboard\\dashboard.types.ts"
+  },
+  {
+    "source": "lib\\user-dashboard\\dashboard.service.ts",
+    "zeroTarget": "lib\\dashboard-intelligence\\dashboard.repository.ts"
+  },
+  {
+    "source": "lib\\user-dashboard\\index.ts",
+    "zeroTarget": "lib\\dashboard\\dashboard.constants.ts"
+  },
+  {
+    "source": "lib\\user-identity\\index.ts",
+    "zeroTarget": "lib\\auth\\user.types.ts"
+  },
+  {
+    "source": "lib\\user-identity\\role.service.ts",
+    "zeroTarget": "lib\\auth\\user.types.ts"
+  },
+  {
+    "source": "lib\\user-identity\\user.registry.ts",
+    "zeroTarget": "lib\\auth\\user.types.ts"
+  },
+  {
+    "source": "lib\\user-identity\\user.repository.ts",
+    "zeroTarget": "lib\\auth\\user.types.ts"
+  },
+  {
+    "source": "lib\\user-personalization\\index.ts",
+    "zeroTarget": "lib\\intelligence\\personalization.types.ts"
+  },
+  {
+    "source": "lib\\user-personalization\\personalization.registry.ts",
+    "zeroTarget": "lib\\intelligence\\personalization.types.ts"
+  },
+  {
+    "source": "lib\\user-personalization\\personalization.repository.ts",
+    "zeroTarget": "lib\\intelligence\\personalization.types.ts"
+  },
+  {
+    "source": "lib\\user-profile-platform\\index.ts",
+    "zeroTarget": "lib\\dashboard-intelligence\\activity.service.ts"
+  },
+  {
+    "source": "lib\\user-profile-platform\\professional-profile.service.ts",
+    "zeroTarget": "components\\professional\\ProfessionalProfile.tsx"
+  },
+  {
+    "source": "lib\\user-profile-platform\\profile.registry.ts",
+    "zeroTarget": "lib\\profile\\profile.types.ts"
+  },
+  {
+    "source": "lib\\user-profile-platform\\profile.repository.ts",
+    "zeroTarget": "lib\\profile\\profile.types.ts"
+  },
+  {
+    "source": "lib\\user-profile-platform\\profile.service.ts",
+    "zeroTarget": "lib\\profile-intelligence\\profile.repository.ts"
+  },
+  {
+    "source": "lib\\user-profile-platform\\profile.types.ts",
+    "zeroTarget": "components\\professional\\ProfessionalProfile.tsx"
+  },
+  {
+    "source": "lib\\ux\\ux.registry.ts",
+    "zeroTarget": "styles\\tokens\\motion.ts"
+  }
+]

@@ -1,0 +1,82 @@
+MELKISM v6.33.0
+SEO / METADATA / STRUCTURED DATA
+
+Purpose
+-------
+Establish the canonical SEO foundation for MELKISM.
+
+Domain
+------
+https://melkism.com
+
+Locales
+-------
+fa
+en
+ar
+tr
+
+Default locale
+--------------
+fa
+
+SEO components
+--------------
+Central SEO constants
+Typed metadata helpers
+Canonical URL support
+Sitemap
+Robots
+Schema.org structured data
+
+Structured data
+---------------
+Organization
+WebSite
+
+Sitemap
+-------
+/sitemap.xml
+
+Robots
+------
+/robots.txt
+
+Application metadata
+--------------------
+The existing localized layout remains responsible for page-level
+metadata generation.
+
+Security
+--------
+No environment values are printed.
+
+No database access is introduced.
+
+No external SEO dependency is introduced.
+
+No analytics dependency is introduced.
+
+Deployment
+----------
+Actual production indexing is verified later during deployment and
+release acceptance.
+
+GitHub
+------
+GitHub remains unchanged.
+
+Database
+--------
+No migration.
+No write.
+No connectivity probe.
+
+Validation
+----------
+npm test
+npx prisma validate
+npx prisma generate
+npx tsc --noEmit
+npm run lint
+npm run build

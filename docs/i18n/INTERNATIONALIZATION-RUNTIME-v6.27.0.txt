@@ -1,0 +1,116 @@
+MELKISM v6.27.0
+INTERNATIONALIZATION RUNTIME & CONTENT DELIVERY
+
+Purpose
+-------
+Establish a typed, dependency-free internationalization runtime
+for MELKISM using the existing application locale architecture.
+
+Supported locales
+-----------------
+fa = Persian
+en = English
+ar = Arabic
+tr = Turkish
+
+Default locale
+--------------
+fa
+
+Direction
+---------
+fa = rtl
+ar = rtl
+en = ltr
+tr = ltr
+
+Runtime modules
+---------------
+lib/i18n/config.ts
+lib/i18n/i18n.constants.ts
+lib/i18n/i18n.types.ts
+lib/i18n/locale.config.ts
+lib/i18n/rtl.config.ts
+lib/i18n/translation.engine.ts
+lib/i18n/translation.types.ts
+lib/i18n/translation.utils.ts
+lib/i18n/messages/fa.ts
+lib/i18n/messages/en.ts
+lib/i18n/messages/ar.ts
+lib/i18n/messages/tr.ts
+
+UI integration
+--------------
+components/navigation/LanguageSwitcher.tsx
+components/navigation/DesktopNavigation.tsx
+app/[locale]/layout.tsx
+
+Translation model
+------------------
+Static typed dictionaries are loaded in-process.
+No external translation provider is used.
+No runtime database lookup is required for core UI strings.
+Missing translations fall back to the requested key or explicit fallback.
+
+Routing model
+-------------
+Localized paths use the form:
+
+/fa
+/en
+/ar
+/tr
+
+Examples:
+
+/fa/articles
+/en/articles
+/ar/articles
+/tr/articles
+
+The locale path is replaced without adding duplicate locale prefixes.
+
+Navigation
+----------
+Navigation labels come from the existing navigation configuration.
+Navigation hrefs are generated through localizedPath().
+
+Metadata
+--------
+Per-locale title and description are generated from the active
+translation dictionary.
+
+Security / browser policy
+------------------------
+No localStorage.
+No sessionStorage.
+No document.cookie usage.
+No browser storage dependency.
+No third-party i18n dependency.
+No network translation API.
+
+Database
+--------
+No Prisma schema change.
+No migration.
+No seed.
+No external search dependency.
+
+Compatibility
+-------------
+The phase preserves the established fa/en/ar/tr locale model
+and works with Next.js App Router locale segments.
+
+Validation
+----------
+Required gates:
+
+1. npx prisma validate
+2. npx prisma generate
+3. npx tsc --noEmit
+4. npm run lint
+5. npm run build
+
+Phase
+-----
+MELKISM v6.27.0

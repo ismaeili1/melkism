@@ -1,0 +1,85 @@
+MELKISM v6.31.0
+AUTOMATED TESTING & QUALITY ENGINEERING
+
+Purpose
+-------
+Establish a dependency-free automated architecture and contract-test
+layer around MELKISM.
+
+Test engine
+-----------
+Node.js built-in test runner.
+
+Commands
+--------
+npm test
+npm run test:quality
+
+Runner
+------
+node --test tests/quality/*.test.mjs
+
+Test areas
+----------
+Foundation
+Security
+Internationalization
+Performance
+Observability
+API contracts
+Project integrity
+Cross-phase safety
+
+API contract principle
+----------------------
+The tests validate architectural responsibility boundaries.
+
+The Search API route is responsible for:
+- authentication context
+- permission enforcement
+- rate limiting
+- delegation
+
+Search input validation is owned by:
+lib/search/search.types.ts
+parseSearchInput()
+
+Therefore page-size and query-bound assertions are tested against
+the parser contract rather than incorrectly requiring those
+implementation details inside route.ts.
+
+No database
+-----------
+No Prisma schema modification.
+No migration.
+No seed.
+No database write.
+
+Dependencies
+------------
+No new npm dependency.
+No external testing framework.
+No lockfile regeneration.
+
+GitHub
+-------
+GitHub intentionally remains unchanged.
+
+Rollback
+--------
+Only files belonging to v6.31.0 are snapshotted and restored.
+
+Existing work from earlier phases is not reset.
+
+Validation
+----------
+npm test
+npx prisma validate
+npx prisma generate
+npx tsc --noEmit
+npm run lint
+npm run build
+
+Phase
+-----
+MELKISM v6.31.0

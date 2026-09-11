@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test tests/quality/*.test.mjs",
+    "test:quality": "node --test tests/quality/*.test.mjs",
+    "production:readiness": "node scripts/production-readiness.mjs",
+    "prelaunch:audit": "node scripts/prelaunch-audit.mjs"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.9.0",
