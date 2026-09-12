@@ -1,0 +1,34 @@
+[FOUND] app\page.tsx
+[FOUND] app\layout.tsx
+[MISSING] app\[locale]\page.tsx
+[MISSING] app\[locale]\layout.tsx
+
+===== HomeExperience =====
+System.Object[]
+
+===== HomePage =====
+System.Object[]
+
+===== ProductHeader =====
+System.Object[]
+
+===== ProductFooter =====
+System.Object[]
+
+===== MELKISMLogo =====
+C:\Projects\melkism\components\brand\MELKISMLogo.tsx:1:export default function MELKISMLogo(){
+
+===== BrandLogo =====
+C:\Projects\melkism\components\brand\BrandLogo.tsx:1:export default function BrandLogo(){
+
+===== HeroExperience =====
+System.Object[]
+
+===== IntelligenceDomains =====
+System.Object[]
+
+===== FeaturedExperience =====
+C:\Projects\melkism\components\home\FeaturedExperience.tsx:1:export default function FeaturedExperience(){
+
+===== ReportsPreview =====
+C:\Projects\melkism\components\home\ReportsPreview.tsx:1:export default function ReportsPreview(){

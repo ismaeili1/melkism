@@ -1,0 +1,6 @@
+C:\Projects\melkism\components\brand\BrandIdentity.tsx
+C:\Projects\melkism\components\brand\BrandLogo.tsx
+C:\Projects\melkism\components\brand\BrandMark.tsx
+C:\Projects\melkism\components\brand\index.ts
+C:\Projects\melkism\components\brand\Logo.tsx
+C:\Projects\melkism\components\brand\MELKISMLogo.tsx
