@@ -1,0 +1,17 @@
+
+MELKISM v19.9.43 CSS Runtime Audit
+
+Date:
+09/12/2026 09:45:55
+
+
+FOUND app\globals.css
+MISSING tailwind.config.ts
+MISSING tailwind.config.js
+MISSING postcss.config.js
+MISSING postcss.config.mjs
+MISSING postcss.config.ts
+FOUND components\brand\MELKISMLogo.tsx
+FOUND components\layout\ProductHeader.tsx
+FOUND components\home\HeroExperience.tsx
+FOUND components\home\HomeExperience.tsx

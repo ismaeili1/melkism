@@ -1,12 +1,29 @@
+import ProductHeader from "@/components/layout/ProductHeader";
+import ProductFooter from "@/components/layout/ProductFooter";
+
+
+
 import type { ReactNode } from "react";
+
+
+
 import type { Metadata } from "next";
 
+
+
+
 import { Geist, Geist_Mono } from "next/font/google";
+
+
+
 
 import {
   SEO_DEFAULT_DESCRIPTION,
   SEO_DEFAULT_TITLE,
 } from "@/lib/seo/seo.constants";
+
+
+
 
 import "./globals.css";
 
@@ -38,7 +55,11 @@ export default function RootLayout({
       dir="rtl"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+<ProductHeader />{children}<ProductFooter />
+</body>
     </html>
   );
 }
+
+

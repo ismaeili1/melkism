@@ -1,3 +1,5 @@
+import MELKISMLogo from "../brand/MELKISMLogo";
+
 import {
 DesktopNavigation
 }
@@ -38,12 +40,10 @@ locale="en"
 
 return (
 
-<header>
+<header className="border-b bg-white">
 
 
-<div>
-MELKISM
-</div>
+<MELKISMLogo />
 
 
 <DesktopNavigation locale={locale}/>
@@ -60,3 +60,7 @@ MELKISM
 )
 
 }
+
+
+
+

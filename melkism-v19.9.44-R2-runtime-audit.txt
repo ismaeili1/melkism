@@ -1,0 +1,9 @@
+FOUND : app\page.tsx
+MISSING : app\[locale]\page.tsx
+FOUND : app\layout.tsx
+FOUND : components\layout\ProductHeader.tsx
+FOUND : components\brand\MELKISMLogo.tsx
+FOUND : components\home\HeroExperience.tsx
+FOUND : components\home\HomeExperience.tsx
+Header Size: 655 bytes
+Hero Size: 630 bytes

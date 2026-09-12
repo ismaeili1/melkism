@@ -7,7 +7,7 @@ return (
 
 <img
 
-src="/brand/melkist-logo.png"
+src="/brand/melkism-logo-mark.svg"
 
 alt="MELKISM"
 
