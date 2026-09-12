@@ -1,0 +1,26 @@
+
+Name                        Length
+----                        ------
+melkist-logo-dark.png        80051
+melkist-logo-dark.svg         3452
+melkist-logo-Mark-dark.png   27911
+melkist-logo-Mark-dark.svg    2002
+melkist-logo-Mark-white.png  26111
+melkist-logo-Mark-white.svg   1929
+melkist-logo-Mark.png        62943
+melkist-logo-Mark.svg         3655
+melkist-logo-white.png       58018
+melkist-logo-white.svg        3452
+melkist-logo.png            105596
+melkist-logo.svg              3557
+melkist-logotype-dark.png    53732
+melkist-logotype-dark.svg     2487
+melkist-logotype-En.png      63606
+melkist-logotype-En.svg       2313
+melkist-logotype-Fa.png      59225
+melkist-logotype-Fa.svg       1948
+melkist-logotype-white.png   38778
+melkist-logotype-white.svg    1837
+melkist-logotype.png         44020
+melkist-logotype.svg          1834
+

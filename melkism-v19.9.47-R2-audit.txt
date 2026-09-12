@@ -1,0 +1,8 @@
+FOUND : app\layout.tsx
+FOUND : app\page.tsx
+MISSING : app\[locale]\page.tsx
+FOUND : components\layout\ProductHeader.tsx
+FOUND : components\layout\ProductFooter.tsx
+FOUND : components\home\HeroExperience.tsx
+FOUND : components\home\HomeExperience.tsx
+Responsive layer checked

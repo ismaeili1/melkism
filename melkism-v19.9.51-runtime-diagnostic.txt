@@ -1,0 +1,10 @@
+FOUND : app\layout.tsx
+FOUND : app\page.tsx
+MISSING : app\[locale]\layout.tsx
+MISSING : app\[locale]\page.tsx
+HOME ACTIVE : components\home\HomeExperience.tsx
+HOME ACTIVE : components\home\HeroExperience.tsx
+HOME ACTIVE : components\home\IntelligenceDomains.tsx
+HOME ACTIVE : components\home\FeaturedExperience.tsx
+HEADER ACTIVE
+GLOBAL CSS SIZE : 2922 bytes

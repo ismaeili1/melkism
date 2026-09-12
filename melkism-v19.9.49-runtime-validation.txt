@@ -1,0 +1,13 @@
+ACTIVE ROUTE : app\page.tsx
+MISSING ROUTE : app\[locale]\page.tsx
+MISSING ROUTE : app\[locale]\news
+MISSING ROUTE : app\[locale]\articles
+MISSING ROUTE : app\[locale]\reports
+MISSING ROUTE : app\[locale]\data
+HEADER : ACTIVE
+EXPERIENCE ACTIVE : components\home
+EXPERIENCE ACTIVE : components\ai-experience
+EXPERIENCE ACTIVE : components\data-experience
+EXPERIENCE ACTIVE : components\report-experience
+Desktop Layout : checked
+Mobile Layout : checked

@@ -214,3 +214,174 @@ transform:none;
 
 
 
+
+
+
+
+/* MELKISM PRODUCT SURFACE */
+
+
+.melkism-surface {
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#fafafa
+);
+
+}
+
+
+
+.melkism-title {
+
+letter-spacing:-0.02em;
+
+}
+
+
+
+.melkism-muted {
+
+color:#666666;
+
+}
+
+
+
+.melkism-card {
+
+transition:
+transform .25s ease,
+box-shadow .25s ease;
+
+}
+
+
+
+.melkism-card:hover {
+
+transform:
+translateY(-3px);
+
+}
+
+
+
+
+/* MELKISM UX POLISH */
+
+.melkism-ux-polish {
+
+transition:
+all .25s ease;
+
+}
+
+
+.melkism-surface {
+
+background:#ffffff;
+
+border-radius:20px;
+
+}
+
+
+.melkism-shadow {
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+.melkism-focus:focus-visible {
+
+outline:
+3px solid #6699FF;
+
+outline-offset:3px;
+
+}
+
+
+
+
+
+
+/* MELKISM FINAL EXPERIENCE SYSTEM */
+
+
+.melkism-final-system {
+
+box-sizing:border-box;
+
+}
+
+
+
+.melkism-container {
+
+width:100%;
+
+max-width:1280px;
+
+margin-inline:auto;
+
+padding-inline:24px;
+
+}
+
+
+
+@media(max-width:768px){
+
+.melkism-container{
+
+padding-inline:16px;
+
+}
+
+}
+
+
+
+.melkism-section {
+
+padding-block:64px;
+
+}
+
+
+
+
+/* MELKISM RELEASE SYSTEM */
+
+
+.melkism-release-system {
+
+transition:
+all .3s ease;
+
+}
+
+
+.melkism-panel {
+
+border-radius:24px;
+
+}
+
+
+.melkism-grid {
+
+display:grid;
+
+gap:32px;
+
+}
+
+
+

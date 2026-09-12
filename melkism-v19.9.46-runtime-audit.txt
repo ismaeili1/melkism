@@ -1,0 +1,13 @@
+FOUND : app\page.tsx
+MISSING : app\[locale]\page.tsx
+FOUND : app\layout.tsx
+FOUND : components\layout\ProductHeader.tsx
+FOUND : components\layout\ProductFooter.tsx
+FOUND : components\home\HomeExperience.tsx
+FOUND : components\home\HeroExperience.tsx
+ACTIVE VISUAL LAYER : components\brand
+ACTIVE VISUAL LAYER : components\navigation
+ACTIVE VISUAL LAYER : components\ai-experience
+ACTIVE VISUAL LAYER : components\data-experience
+ACTIVE VISUAL LAYER : components\report-experience
+ACTIVE VISUAL LAYER : components\design-system

@@ -1,0 +1,11 @@
+FOUND : app\page.tsx
+MISSING : app\[locale]\page.tsx
+FOUND : app\layout.tsx
+FOUND : components\home\HomeExperience.tsx
+FOUND : components\home\HeroExperience.tsx
+FOUND : components\layout\ProductHeader.tsx
+FOUND : components\layout\ProductFooter.tsx
+ACTIVE EXPERIENCE : components\home
+ACTIVE EXPERIENCE : components\ai-experience
+ACTIVE EXPERIENCE : components\data-experience
+ACTIVE EXPERIENCE : components\report-experience
