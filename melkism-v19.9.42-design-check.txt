@@ -1,0 +1,52 @@
+
+components\home\ArchitecturePreview.tsx:5:<section>
+components\home\ArchitecturePreview.tsx:11:</section>
+components\home\ExperienceHero.tsx:3:<section>
+components\home\ExperienceHero.tsx:7:</section>
+components\home\FeaturedExperience.tsx:6:<section>
+components\home\FeaturedExperience.tsx:35:</section>
+components\home\Hero.tsx:13:<section>
+components\home\Hero.tsx:21:</section>
+components\home\HeroExperience.tsx:22:<section className="hero">
+components\home\HeroExperience.tsx:59:<button>
+components\home\HeroExperience.tsx:63:</button>
+components\home\HeroExperience.tsx:66:<button>
+components\home\HeroExperience.tsx:70:</button>
+components\home\HeroExperience.tsx:79:</section>
+components\home\HomeExperience.tsx:21:<section>
+components\home\HomeExperience.tsx:35:</section>
+components\home\HomeExperience.tsx:38:<section>
+components\home\HomeExperience.tsx:52:</section>
+components\home\HomePage.tsx:4:IntelligenceCards
+components\home\HomePage.tsx:23:<IntelligenceCards />
+components\home\IntelligenceCards.tsx:1:export default function IntelligenceCards(){
+components\home\IntelligenceCards.tsx:2:return <section>
+components\home\IntelligenceCards.tsx:4:</section>
+components\home\IntelligenceDomains.tsx:23:<section>
+components\home\IntelligenceDomains.tsx:44:className="intelligence-card"
+components\home\IntelligenceDomains.tsx:74:</section>
+components\home\KnowledgePreview.tsx:5:<section>
+components\home\KnowledgePreview.tsx:11:</section>
+components\home\MarketPreview.tsx:5:<section>
+components\home\MarketPreview.tsx:15:</section>
+components\home\ReportsPreview.tsx:6:<section>
+components\home\ReportsPreview.tsx:19:</section>
+components\home\VisualHomepage.tsx:8:<section>
+components\home\VisualHomepage.tsx:25:</section>
+components\home\VisualHomepage.tsx:29:<section>
+components\home\VisualHomepage.tsx:51:</section>
+components\home\ArchitectureShowcase\ArchitectureShowcase.tsx:8:<section>
+components\home\ArchitectureShowcase\ArchitectureShowcase.tsx:15:</section>
+components\home\Cities\Cities.tsx:8:<section>
+components\home\Cities\Cities.tsx:15:</section>
+components\home\FeaturedProperties\FeaturedProperties.tsx:8:<section>
+components\home\FeaturedProperties\FeaturedProperties.tsx:20:</section>
+components\home\Hero\Hero.tsx:8:<section>
+components\home\Hero\Hero.tsx:28:</section>
+components\home\KnowledgeFeed\KnowledgeFeed.tsx:8:<section>
+components\home\KnowledgeFeed\KnowledgeFeed.tsx:20:</section>
+components\home\MarketSnapshot\MarketSnapshot.tsx:8:<section>
+components\home\MarketSnapshot\MarketSnapshot.tsx:20:</section>
+components\home\Services\Services.tsx:7:<section>
+components\home\Services\Services.tsx:18:</section>
+

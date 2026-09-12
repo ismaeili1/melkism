@@ -1,5 +1,9 @@
-import { redirect } from "next/navigation";
+import HomeExperience from "@/components/home/HomeExperience";
 
-export default function RootPage() {
-  redirect("/fa");
+export default function HomePage(){
+
+return (
+<HomeExperience />
+);
+
 }
