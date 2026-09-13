@@ -1,0 +1,123 @@
+
+===== APP ROUTER =====
+FOUND : app\layout.tsx
+  ProductHeader = YES
+  ProductFooter = YES
+  HomeExperience = NO
+  HeroExperience = NO
+  children = YES
+  params = NO
+  locale = NO
+FOUND : app\page.tsx
+  ProductHeader = NO
+  ProductFooter = NO
+  HomeExperience = YES
+  HeroExperience = NO
+  children = NO
+  params = NO
+  locale = NO
+MISSING : app\[locale]\layout.tsx
+MISSING : app\[locale]\page.tsx
+
+===== COMPONENTS =====
+FOUND : components\layout\ProductHeader.tsx
+ DEFAULT EXPORT YES
+FOUND : components\layout\ProductFooter.tsx
+ DEFAULT EXPORT YES
+FOUND : components\home\HomeExperience.tsx
+ DEFAULT EXPORT YES
+FOUND : components\home\HeroExperience.tsx
+ DEFAULT EXPORT YES
+
+===== IMPORTS =====
+components\layout\ProductHeader.tsx => import MELKISMLogo from "../brand/MELKISMLogo";
+components\layout\ProductHeader.tsx => import {
+components\layout\ProductHeader.tsx => import {
+components\layout\ProductHeader.tsx => import {
+components\layout\ProductHeader.tsx => import type {
+components\home\HomeExperience.tsx => import AIExperienceHub from "@/components/ai-experience/AIExperienceHub";
+components\home\HomeExperience.tsx => import DataExperienceHub from "@/components/data-experience/DataExperienceHub";
+components\home\HomeExperience.tsx => import ReportHub from "@/components/report-experience/ReportHub";
+components\home\HomeExperience.tsx => import HeroExperience from "./HeroExperience";
+components\home\HomeExperience.tsx => import IntelligenceDomains from "./IntelligenceDomains";
+
+===== LOGO =====
+LOGO FILE : melkism-logo-Mark.png SIZE:86758
+LOGO FILE : melkism-logo-Mark.svg SIZE:3856
+LOGO FILE : melkism-logo.png SIZE:197929
+LOGO FILE : melkism-logo.svg SIZE:5459
+LOGO FILE : melkism-logotype.png SIZE:73600
+LOGO FILE : melkism-logotype.svg SIZE:2751
+
+===== CSS =====
+FOUND CSS CONFIG : app\globals.css
+CLIENT COMPONENT : C:\Projects\melkism\components\application-security\ApplicationSecurityStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\architecture-intelligence\ArchitectureAnalysisPanel.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\architecture-intelligence\ArchitectureDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\architecture-intelligence\ArchitectureIntelligence.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\architecture-intelligence\ArchitectureIntelligencePanel.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\business-subscription\BusinessSubscription.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\construction-intelligence\ConstructionDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\construction-intelligence\ConstructionIntelligence.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\dashboard\InterestProfile\InterestProfile.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\dashboard\PersonalFeed\PersonalFeed.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\dashboard\SavedKnowledge\SavedKnowledge.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\dashboard\UserInsight\UserInsight.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\deployment-verification\DeploymentVerificationStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\enterprise-governance\EnterpriseGovernance.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\enterprise-governance\GovernanceDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\experience\ExperienceHub.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\feedback\EmptyState\EmptyState.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\feedback\ErrorState\ErrorState.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\feedback\LoadingState\LoadingState.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\feedback\OfflineState\OfflineState.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\feedback\SuccessState\SuccessState.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\global-expansion\GlobalExpansion.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\global-expansion\GlobalExpansionDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\intelligence\AIInsight\AIInsight.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\intelligence\DiscoveryPanel\DiscoveryPanel.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\intelligence\IntelligenceCard\IntelligenceCard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\intelligence\interactions\IntelligenceInput.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\intelligence\KnowledgeSignal\KnowledgeSignal.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\intelligence\Recommendation\Recommendation.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\interaction\AnimatedContainer\AnimatedContainer.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\interaction\Fade\Fade.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\interaction\Reveal\Reveal.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\interaction\Scale\Scale.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\market-intelligence\MarketIntelligencePanel.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\navigation\LanguageSwitcher.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\observability-foundation\ObservabilityStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\production-operations\ProductionOperationsStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\production-release\ProductionReleaseStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\production-reliability\ProductionReliabilityStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\professional-platform\ProfessionalDiscovery.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\property-marketplace\PropertyMarketplace.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\property-platform\PropertyDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\property-platform\PropertyPlatform.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\property-platform\PropertyResults.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\property-platform\PropertySearchPanel.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\recommendation\RecommendationPanel.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\release-governance\ReleaseGovernanceStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\request-protection\RequestProtectionStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\GlobalSearch\GlobalSearch.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\intelligent\RelatedKnowledge\RelatedKnowledge.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\intelligent\SearchExplanation\SearchExplanation.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\intelligent\SearchIntent\SearchIntent.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\intelligent\SemanticSearch\SemanticSearch.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\SearchEmpty\SearchEmpty.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\SearchFilter\SearchFilter.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\SearchInput\SearchInput.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\search\SearchResult\SearchResult.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-audit\SecurityAuditStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-deployment-audit\SecurityDeploymentAuditStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-enforcement\SecurityEnforcementStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-global-headers\SecurityGlobalHeadersStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-header-scope\SecurityHeaderScopeStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-policy\SecurityPolicyStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-posture\SecurityPostureStatus.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-trust\SecurityDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\security-trust\SecurityTrust.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\smart-city-intelligence\SmartCityDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\smart-city-intelligence\SmartCityIntelligence.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\transactions\TransactionDashboard.tsx
+CLIENT COMPONENT : C:\Projects\melkism\components\transactions\TransactionPlatform.tsx

@@ -1,0 +1,27 @@
+
+================================================
+
+MELKISM v19.9.61-R2
+
+FULL RUNTIME ARCHITECTURE AUDIT
+
+
+Report:
+
+C:\Projects\melkism\melkism-v19.9.61-R2-runtime-audit.txt
+
+
+Tree:
+
+C:\Projects\melkism\melkism-v19.9.61-R2-tree.txt
+
+
+NO FILES MODIFIED
+
+NEXT:
+
+ANALYZE RUNTIME REPORT
+
+
+================================================
+
