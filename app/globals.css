@@ -385,3 +385,37 @@ gap:32px;
 
 
 
+
+
+.melkism-product-root {
+
+display:flex;
+flex-direction:column;
+gap:64px;
+
+}
+
+
+.melkism-hero {
+
+padding:80px 24px;
+border-radius:32px;
+background:linear-gradient(
+135deg,
+#ffffff,
+#f1f5f9
+);
+
+}
+
+
+.melkism-product-root article {
+
+border:1px solid #e5e7eb;
+border-radius:24px;
+padding:24px;
+background:#ffffff;
+
+}
+
+

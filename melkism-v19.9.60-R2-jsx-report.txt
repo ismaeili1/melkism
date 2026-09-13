@@ -1,0 +1,12 @@
+
+FILE: components\home\HeroExperience.tsx
+REPAIRED
+
+FILE: components\home\HomeExperience.tsx
+REPAIRED
+
+FILE: components\layout\ProductHeader.tsx
+REPAIRED
+
+FILE: components\layout\ProductFooter.tsx
+REPAIRED

@@ -1,0 +1,10 @@
+FOUND: components\home\HomeExperience.tsx
+FOUND: components\home\HeroExperience.tsx
+FOUND: components\home\IntelligenceDomains.tsx
+FOUND: components\home\FeaturedExperience.tsx
+FOUND: components\home\ReportsPreview.tsx
+FOUND: components\ai-experience\AIExperienceHub.tsx
+FOUND: components\data-experience\DataExperienceHub.tsx
+FOUND: components\report-experience\ReportHub.tsx
+Home main wrapper exists
+Header logo rendering detected

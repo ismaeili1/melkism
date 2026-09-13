@@ -20,7 +20,7 @@ export default function HomeExperience(){
 
 return (
 
-<main className="melkism-product-root">
+<main>
 
 
 <HeroExperience />
@@ -68,13 +68,6 @@ Future intelligence publications.
 )
 
 }
-
-
-
-
-
-
-
 
 
 

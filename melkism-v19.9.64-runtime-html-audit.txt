@@ -1,0 +1,563 @@
+Port 3000 not active
+TEXT FOUND:
+C:\Projects\melkism\.next\dev\server\chunks\ssr\[root-of-the-server]__0laq7xb._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\dev\server\chunks\ssr\[root-of-the-server]__1r6blfm._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\_not-found.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\index.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\login.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\about.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\agents.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\ai-ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\ai-governance.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\ai-marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\ai-workspace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\architecture-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\articles.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\automation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\autonomous-business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\autonomous-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\business-operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\cities.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\collaboration.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\commercial-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\countries.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\data-federation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\data.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\database-production-readiness.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\deployment-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\enterprise-growth.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\enterprise-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\enterprise.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\evolution.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\experience.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\global-ai.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\global-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\global-market.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\global-network.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\global-real-estate.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\intelligence-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\intelligence-os.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\market-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\markets.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\news.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\observability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\operations-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\production-runtime-config.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\production-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\professionals.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\recommendations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\release-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\reliability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\reports.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\request-protection.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\research.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\search.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-deployment-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-enforcement.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-global-headers.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-header-http-smoke.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-header-scope.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-policy.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-posture.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\security-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\self-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\trends.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\admin\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\ar\autonomous-intelligence\platform.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\about.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\agents.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\ai-ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\ai-governance.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\ai-marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\ai-workspace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\architecture-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\articles.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\automation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\autonomous-business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\autonomous-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\business-operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\cities.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\collaboration.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\commercial-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\countries.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\data-federation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\data.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\database-production-readiness.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\deployment-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\enterprise-growth.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\enterprise-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\enterprise.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\evolution.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\experience.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\global-ai.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\global-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\global-market.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\global-network.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\global-real-estate.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\intelligence-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\intelligence-os.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\market-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\markets.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\news.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\observability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\operations-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\production-runtime-config.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\production-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\professionals.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\recommendations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\release-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\reliability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\reports.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\request-protection.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\research.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\search.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-deployment-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-enforcement.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-global-headers.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-header-http-smoke.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-header-scope.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-policy.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-posture.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\security-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\self-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\trends.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\admin\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\en\autonomous-intelligence\platform.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\about.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\agents.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\ai-ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\ai-governance.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\ai-marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\ai-workspace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\architecture-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\articles.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\automation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\autonomous-business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\autonomous-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\business-operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\cities.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\collaboration.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\commercial-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\countries.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\data-federation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\data.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\database-production-readiness.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\deployment-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\enterprise-growth.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\enterprise-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\enterprise.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\evolution.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\experience.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\global-ai.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\global-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\global-market.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\global-network.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\global-real-estate.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\intelligence-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\intelligence-os.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\market-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\markets.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\news.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\observability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\operations-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\production-runtime-config.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\production-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\professionals.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\recommendations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\release-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\reliability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\reports.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\request-protection.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\research.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\search.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-deployment-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-enforcement.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-global-headers.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-header-http-smoke.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-header-scope.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-policy.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-posture.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\security-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\self-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\trends.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\admin\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\fa\autonomous-intelligence\platform.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\about.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\agents.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\ai-ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\ai-governance.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\ai-marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\ai-workspace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\architecture-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\articles.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\automation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\autonomous-business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\autonomous-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\business-operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\business.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\cities.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\collaboration.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\commercial-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\countries.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\data-federation.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\data.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\database-production-readiness.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\deployment-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\ecosystem.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\enterprise-growth.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\enterprise-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\enterprise.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\evolution.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\experience.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\global-ai.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\global-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\global-market.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\global-network.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\global-real-estate.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\intelligence-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\intelligence-os.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\market-intelligence.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\marketplace.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\markets.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\news.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\observability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\operations-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\production-runtime-config.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\production-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\professionals.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\recommendations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\release-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\reliability-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\reports.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\request-protection.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\research.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\search.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-deployment-audit.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-enforcement.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-global-headers.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-header-http-smoke.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-header-scope.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-policy.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-posture.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\security-status.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\self-optimization.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\trends.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\admin\operations.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\app\tr\autonomous-intelligence\platform.html
+TEXT FOUND:
+C:\Projects\melkism\.next\server\chunks\_00p_15a._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\server\chunks\ssr\[root-of-the-server]__023cglu._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\server\chunks\ssr\[root-of-the-server]__028btop._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\server\chunks\ssr\[root-of-the-server]__0rv3eap._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\server\chunks\ssr\[root-of-the-server]__13vl_4k._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\server\chunks\ssr\[root-of-the-server]__14d7ao3._.js
+TEXT FOUND:
+C:\Projects\melkism\.next\server\pages\404.html
+ROUTE FOUND: app\page.tsx
+ROUTE FOUND: app\[locale]\page.tsx

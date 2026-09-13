@@ -1,0 +1,30 @@
+TEXT PATTERN FOUND: C:\Projects\melkism\components\brand\BrandIdentity.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\discovery\IntelligenceHero.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\experience\hero\MainHero.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\global-intelligence\GlobalIntelligenceDashboard.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\global-network\GlobalNetworkDashboard.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\home\ExperienceHero.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\home\HeroExperience.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\home\IntelligenceCards.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\home\VisualHomepage.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\intelligence-experience\IntelligenceHub.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\layout\CanonicalFooter.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\layout\footer.tsx
+TEXT PATTERN FOUND: C:\Projects\melkism\components\layout\ProductFooter.tsx
+FOUND PAGE: app\page.tsx
+import HomeExperience from "@/components/home/HomeExperience";
+
+export default function HomePage(){
+
+return (
+<HomeExperience />
+);
+
+}
+
+FOUND PAGE: app\[locale]\page.tsx
+import HomeExperience from "@/components/home/HomeExperience";
+
+export default function Page(){
+return <HomeExperience/>
+}

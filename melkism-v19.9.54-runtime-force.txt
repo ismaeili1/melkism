@@ -1,0 +1,10 @@
+
+===== app\page.tsx =====
+FOUND : components\layout\ProductHeader.tsx
+FOUND : components\home\HomeExperience.tsx
+FOUND : components\home\HeroExperience.tsx
+FOUND : components\layout\ProductFooter.tsx
+LOGO OK : public\brand\logo\melkism-logo-mark.svg
+LOGO OK : public\brand\logo\melkism-logo.svg
+.next cache removed
+node cache removed

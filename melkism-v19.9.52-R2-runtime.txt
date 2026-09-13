@@ -1,0 +1,9 @@
+
+FILE: app\page.tsx
+import HomeExperience from "@/components/home/HomeExperience";
+<HomeExperience />
+
+FILE: app\layout.tsx
+import ProductHeader from "@/components/layout/ProductHeader";
+import ProductFooter from "@/components/layout/ProductFooter";
+<ProductHeader />{children}<ProductFooter />

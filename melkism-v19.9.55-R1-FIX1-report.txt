@@ -1,0 +1,3 @@
+ACTIVE ROUTE:
+C:\Projects\melkism\app\page.tsx
+Logo OK

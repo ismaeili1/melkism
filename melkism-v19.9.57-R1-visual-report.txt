@@ -1,0 +1,4 @@
+Original globals.css detected
+FOUND components\layout\ProductHeader.tsx
+FOUND components\home\HomeExperience.tsx
+FOUND components\home\HeroExperience.tsx

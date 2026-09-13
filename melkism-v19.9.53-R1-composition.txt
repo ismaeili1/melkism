@@ -1,0 +1,8 @@
+
+ROUTE: app\page.tsx
+import HomeExperience from "@/components/home/HomeExperience";
+export default function HomePage(){
+<HomeExperience />
+LAYOUT FOUND: app\layout.tsx
+PRIMARY LOGO FOUND
+HOME SNAPSHOT CREATED

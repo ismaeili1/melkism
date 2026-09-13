@@ -1,0 +1,10 @@
+
+Name                  Length
+----                  ------
+melkism-logo-Mark.png  86758
+melkism-logo-Mark.svg   3856
+melkism-logo.png      197929
+melkism-logo.svg        5459
+melkism-logotype.png   73600
+melkism-logotype.svg    2751
+

@@ -19,7 +19,7 @@ description="Intelligence Ecosystem for Real Estate, Architecture and Built Envi
 
 return (
 
-<section className="hero melkism-container py-20 text-center">
+<section className="melkism-hero hero melkism-container py-20 text-center">
 
 
 <div className="hero-content">
@@ -82,6 +82,12 @@ Search Knowledge
 
 
 }
+
+
+
+
+
+
 
 
 

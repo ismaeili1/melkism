@@ -1,0 +1,15 @@
+FOUND PAGE: app\page.tsx
+ProductHeader NOT FOUND in app\page.tsx
+HomeExperience FOUND in app\page.tsx
+ProductFooter NOT FOUND in app\page.tsx
+FOUND PAGE: app\layout.tsx
+ProductHeader FOUND in app\layout.tsx
+HomeExperience NOT FOUND in app\layout.tsx
+ProductFooter FOUND in app\layout.tsx
+HomeExperience exists
+HeroExperience FOUND
+IntelligenceDomains FOUND
+FeaturedExperience MISSING
+ReportsPreview MISSING
+ProductHeader exists
+Brand path OK

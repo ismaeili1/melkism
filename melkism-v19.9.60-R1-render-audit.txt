@@ -1,0 +1,4 @@
+Home Length: 695
+FOUND LOGO: public\brand\logo\melkism-logo-mark.svg
+FOUND LOGO: public\brand\logo\melkism-logo.svg
+FOUND LOGO: public\brand\logo\melkism-logotype.svg

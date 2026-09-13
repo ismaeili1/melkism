@@ -1,0 +1,6 @@
+FOUND : app\page.tsx
+HomeExperience mounted : app\page.tsx
+FOUND : app\layout.tsx
+HomeExperience NOT FOUND : app\layout.tsx
+Hero mounted in HomeExperience
+ProductHeader exists
