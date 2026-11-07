@@ -1,5 +1,0 @@
-FOUND: app/page.tsx
-MISSING: app/[locale]/page.tsx
-FOUND: components/home/HomePage.tsx
-FOUND: components/home/HomeExperience.tsx
-
