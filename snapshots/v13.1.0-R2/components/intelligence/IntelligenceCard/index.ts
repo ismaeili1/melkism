@@ -1,1 +1,0 @@
-export { IntelligenceCard } from "./IntelligenceCard";

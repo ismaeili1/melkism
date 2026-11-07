@@ -1,1 +1,0 @@
-export { InterestProfile } from "./InterestProfile";
