@@ -1,9 +1,0 @@
-node_modules/
-.next/
-.next_backup_*/
-.backups/
-.vscode/
-*.backup-*
-*.log
-.env
-.env.local
