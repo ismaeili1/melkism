@@ -1,7 +1,0 @@
-MELKISM v6.69.0
-
-AI User Advisory Layer
-
-STATUS:
-FOUNDATION READY
-

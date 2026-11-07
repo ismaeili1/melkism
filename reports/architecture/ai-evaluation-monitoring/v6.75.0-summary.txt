@@ -1,7 +1,0 @@
-MELKISM v6.75.0
-
-AI Model Evaluation & Monitoring
-
-STATUS:
-FOUNDATION READY
-

@@ -1,7 +1,0 @@
-MELKISM v6.70.0
-
-Conversational Real Estate Intelligence
-
-STATUS:
-FOUNDATION READY
-

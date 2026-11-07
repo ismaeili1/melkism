@@ -1,8 +1,0 @@
-MELKISM v7.2.0
-
-Enterprise Intelligence Platform
-
-STATUS:
-
-READY
-

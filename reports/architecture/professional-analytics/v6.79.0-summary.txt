@@ -1,7 +1,0 @@
-MELKISM v6.79.0
-
-Professional Analytics Platform
-
-STATUS:
-FOUNDATION READY
-

@@ -1,7 +1,0 @@
-MELKISM v6.78.0
-
-Intelligence Dashboard
-
-STATUS:
-FOUNDATION READY
-

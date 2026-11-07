@@ -1,7 +1,0 @@
-MELKISM v6.74.0
-
-Market Data Processing Pipeline
-
-STATUS:
-FOUNDATION READY
-
