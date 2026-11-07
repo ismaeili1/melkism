@@ -1,1 +1,0 @@
-export const REAL_ESTATE_INTELLIGENCE='MELKISM';

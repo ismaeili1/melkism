@@ -1,8 +1,0 @@
-export const PLATFORM_FOUNDATION_NAME =
-"MELKISM";
-
-
-export const PLATFORM_FOUNDATION_VERSION =
-"3.0.0";
-
-

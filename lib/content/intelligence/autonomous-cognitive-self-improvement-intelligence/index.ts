@@ -1,3 +1,0 @@
-export * from "./contracts/autonomous.cognitive.self.improvement.intelligence.contract";
-
-export * from "./runtime/autonomous.cognitive.self.improvement.intelligence.runtime";

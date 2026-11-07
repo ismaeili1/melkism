@@ -1,1 +1,0 @@
-export const FINANCIAL_INTELLIGENCE='MELKISM';

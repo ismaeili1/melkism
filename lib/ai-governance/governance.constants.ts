@@ -1,1 +1,0 @@
-export const AI_GOVERNANCE_PLATFORM='MELKISM';

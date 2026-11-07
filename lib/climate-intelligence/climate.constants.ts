@@ -1,1 +1,0 @@
-export const CLIMATE_INTELLIGENCE='MELKISM';

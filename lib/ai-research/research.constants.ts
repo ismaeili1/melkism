@@ -1,1 +1,0 @@
-export const AI_RESEARCH_PLATFORM='MELKISM';
