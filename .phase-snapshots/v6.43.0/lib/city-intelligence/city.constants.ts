@@ -1,1 +1,0 @@
-export const CITY_TYPES=['CITY','REGION','NEIGHBORHOOD'];

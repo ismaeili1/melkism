@@ -1,1 +1,0 @@
-export const SPATIAL_INTELLIGENCE='MELKISM';

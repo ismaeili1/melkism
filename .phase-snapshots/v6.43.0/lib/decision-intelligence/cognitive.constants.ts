@@ -1,1 +1,0 @@
-export const DECISION_PLATFORM='MELKISM';

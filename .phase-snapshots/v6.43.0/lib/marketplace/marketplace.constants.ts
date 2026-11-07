@@ -1,1 +1,0 @@
-export const MARKETPLACE_PLATFORM='MELKISM';

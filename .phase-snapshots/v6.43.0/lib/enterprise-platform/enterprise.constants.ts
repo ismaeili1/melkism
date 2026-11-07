@@ -1,1 +1,0 @@
-export const ENTERPRISE_PLATFORM='MELKISM';

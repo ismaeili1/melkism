@@ -1,1 +1,0 @@
-export const INFRA_PLATFORM='MELKISM';

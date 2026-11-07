@@ -1,1 +1,0 @@
-export const AGENT_TYPES=['PROPERTY','URBAN','INVESTMENT'];
