@@ -1,7 +1,0 @@
-export const MELKISM_UX_INTELLIGENCE_VERSION =
-"37.4.0-R1";
-
-
-export const MELKISM_UX_INTELLIGENCE_STATUS =
-"locked";
-

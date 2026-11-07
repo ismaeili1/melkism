@@ -1,1 +1,0 @@
-export { PersonalFeed } from "./PersonalFeed";
