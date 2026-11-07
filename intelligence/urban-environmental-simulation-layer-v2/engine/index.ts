@@ -1,8 +1,0 @@
-
-export {
-
-processUrbanEnvironmentalSimulation
-
-} from "./processor";
-
-

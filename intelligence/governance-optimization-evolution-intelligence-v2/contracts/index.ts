@@ -1,9 +1,0 @@
-
-export type {
-
-GovernanceOptimizationEvolutionIntelligenceV2InputContract,
-GovernanceOptimizationEvolutionIntelligenceV2RecordContract,
-GovernanceOptimizationEvolutionIntelligenceV2EvaluationContract
-
-} from "./governance-optimization-evolution-intelligence.v2.contracts";
-

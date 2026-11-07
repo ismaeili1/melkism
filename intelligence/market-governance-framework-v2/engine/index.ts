@@ -1,8 +1,0 @@
-
-export {
-
-processMarketGovernance
-
-} from "./processor";
-
-

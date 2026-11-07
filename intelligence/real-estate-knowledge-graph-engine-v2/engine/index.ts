@@ -1,8 +1,0 @@
-
-export {
-
-processRealEstateKnowledgeGraph
-
-} from "./processor";
-
-

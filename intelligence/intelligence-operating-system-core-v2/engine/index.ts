@@ -1,8 +1,0 @@
-
-export {
-
-processIntelligenceOperatingSystemCore
-
-} from "./processor";
-
-

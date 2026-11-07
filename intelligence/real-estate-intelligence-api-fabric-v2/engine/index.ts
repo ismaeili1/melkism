@@ -1,8 +1,0 @@
-
-export {
-
-processRealEstateIntelligenceAPIFabric
-
-} from "./processor";
-
-

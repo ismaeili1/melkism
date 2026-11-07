@@ -1,8 +1,0 @@
-
-export {
-
-processEcosystemGovernance
-
-} from "./processor";
-
-

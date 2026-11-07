@@ -1,9 +1,0 @@
-
-export {
-
-processKnowledgeGraphGovernance
-
-} from "./processor";
-
-
-

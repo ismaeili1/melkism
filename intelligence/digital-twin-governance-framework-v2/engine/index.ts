@@ -1,8 +1,0 @@
-
-export {
-
-processDigitalTwinGovernance
-
-} from "./processor";
-
-

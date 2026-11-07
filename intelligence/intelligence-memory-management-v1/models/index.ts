@@ -1,4 +1,0 @@
-
-export * from "./memory.model";
-
-

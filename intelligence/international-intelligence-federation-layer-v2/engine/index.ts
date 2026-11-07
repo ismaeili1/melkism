@@ -1,8 +1,0 @@
-
-export {
-
-processInternationalIntelligenceFederation
-
-} from "./processor";
-
-

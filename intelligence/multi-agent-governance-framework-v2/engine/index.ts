@@ -1,8 +1,0 @@
-
-export {
-
-processMultiAgentGovernanceFramework
-
-} from "./processor";
-
-

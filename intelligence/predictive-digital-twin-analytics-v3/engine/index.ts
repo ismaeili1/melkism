@@ -1,7 +1,0 @@
-
-export {
-
-processPredictiveDigitalTwinAnalytics
-
-} from "./processor";
-

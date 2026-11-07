@@ -1,8 +1,0 @@
-
-export {
-
-processGlobalIntelligenceNetworkCore
-
-} from "./processor";
-
-

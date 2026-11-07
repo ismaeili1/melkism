@@ -1,7 +1,0 @@
-
-export {
-
-processDigitalTwinIntelligenceCore
-
-} from "./processor";
-

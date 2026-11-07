@@ -1,7 +1,0 @@
-
-export {
-
-processUrbanIntelligenceTwinNetwork
-
-} from "./processor";
-

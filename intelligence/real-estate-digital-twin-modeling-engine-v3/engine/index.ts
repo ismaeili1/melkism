@@ -1,7 +1,0 @@
-
-export {
-
-processRealEstateDigitalTwinModeling
-
-} from "./processor";
-

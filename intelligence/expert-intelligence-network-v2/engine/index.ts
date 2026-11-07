@@ -1,8 +1,0 @@
-
-export {
-
-processExpertIntelligenceNetwork
-
-} from "./processor";
-
-

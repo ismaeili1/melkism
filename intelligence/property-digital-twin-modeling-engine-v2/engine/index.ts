@@ -1,8 +1,0 @@
-
-export {
-
-processPropertyDigitalTwinModeling
-
-} from "./processor";
-
-

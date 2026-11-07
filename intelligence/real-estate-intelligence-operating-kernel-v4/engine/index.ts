@@ -1,9 +1,0 @@
-
-export {
-
-processRealEstateIntelligenceKernel
-
-} from "./processor";
-
-
-

@@ -1,8 +1,0 @@
-
-export {
-
-processGlobalNetworkGovernance
-
-} from "./processor";
-
-

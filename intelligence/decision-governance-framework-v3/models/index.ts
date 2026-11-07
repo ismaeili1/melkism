@@ -1,4 +1,0 @@
-
-export * from "./decision.model";
-
-

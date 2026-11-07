@@ -1,8 +1,0 @@
-
-export {
-
-processPredictiveGovernanceFramework
-
-} from "./processor";
-
-

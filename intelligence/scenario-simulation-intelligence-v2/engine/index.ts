@@ -1,8 +1,0 @@
-
-export {
-
-processScenarioSimulationIntelligence
-
-} from "./processor";
-
-

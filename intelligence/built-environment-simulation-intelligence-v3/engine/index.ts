@@ -1,7 +1,0 @@
-
-export {
-
-processBuiltEnvironmentSimulation
-
-} from "./processor";
-

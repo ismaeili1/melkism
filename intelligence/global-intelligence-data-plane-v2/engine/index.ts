@@ -1,8 +1,0 @@
-
-export {
-
-processGlobalIntelligenceDataPlane
-
-} from "./processor";
-
-

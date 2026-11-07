@@ -1,8 +1,0 @@
-
-export {
-
-processAssetLifecycleIntelligence
-
-} from "./processor";
-
-

@@ -1,8 +1,0 @@
-
-export {
-
-processCloudIntelligenceAPIGateway
-
-} from "./processor";
-
-

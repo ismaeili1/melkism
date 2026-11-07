@@ -1,9 +1,0 @@
-
-export type {
-
-GovernanceOptimizationEvolutionAdaptiveSelfLearningV2InputContract,
-GovernanceOptimizationEvolutionAdaptiveSelfLearningV2RecordContract,
-GovernanceOptimizationEvolutionAdaptiveSelfLearningV2EvaluationContract
-
-} from "./governance-optimization-evolution-adaptive-self-learning.v2.contracts";
-

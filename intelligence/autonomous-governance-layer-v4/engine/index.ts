@@ -1,9 +1,0 @@
-
-export {
-
-processAutonomousGovernance
-
-} from "./processor";
-
-
-

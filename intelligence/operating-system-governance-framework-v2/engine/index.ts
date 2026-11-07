@@ -1,8 +1,0 @@
-
-export {
-
-processOperatingSystemGovernance
-
-} from "./processor";
-
-

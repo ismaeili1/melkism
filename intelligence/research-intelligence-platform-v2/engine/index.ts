@@ -1,8 +1,0 @@
-
-export {
-
-processResearchIntelligencePlatform
-
-} from "./processor";
-
-

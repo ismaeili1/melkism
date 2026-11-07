@@ -1,8 +1,0 @@
-
-export {
-
-processRealEstateForecastingIntelligence
-
-} from "./processor";
-
-

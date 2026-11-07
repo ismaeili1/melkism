@@ -1,8 +1,0 @@
-
-export {
-
-processInvestmentIntelligenceNetwork
-
-} from "./processor";
-
-
