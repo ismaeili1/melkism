@@ -1,5 +1,0 @@
-
-Name
-----
-next.config.ts
-
