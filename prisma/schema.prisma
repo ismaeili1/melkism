@@ -1,0 +1,253 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ------------------------------------------------------
+// ۱. نقش‌ها و وضعیت‌های کاربری (User Roles & Statuses)
+// ------------------------------------------------------
+
+enum UserRole {
+  GUEST
+  USER
+  EXPERT
+  AGENCY
+  COMPANY
+  MANAGER
+  SUPER_ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  PENDING
+  INACTIVE
+}
+
+model User {
+  id        String     @id @default(cuid())
+  name      String?
+  username  String?    @unique
+  email     String?    @unique
+  mobile    String?    @unique
+  password  String?
+  role      UserRole   @default(USER)
+  status    UserStatus @default(PENDING)
+
+  province  String?
+  city      String?
+  iban      String?
+  bankName  String?
+
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  // روابط معکوس برای معاملات اسکرو
+  buyerTransactions   EscrowTransaction[] @relation("BuyerTransactions")
+  sellerTransactions  EscrowTransaction[] @relation("SellerTransactions")
+}
+
+// ------------------------------------------------------
+// ۲. ماتریس پویای دسترسی‌ها (Dynamic RBAC Engine)
+// ------------------------------------------------------
+
+model Permission {
+  id          String           @id @default(cuid())
+  code        String           @unique // مانند: "MANAGE_USERS", "APPROVE_NEWS", "MANAGE_ESCROW"
+  name        String           // نام نمایشی فارسی
+  description String?          // توضیحات کاربرد
+  category    String?          // دسته‌بندی (امنیتی، مالی، محتوایی، پنل‌ها)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  roles       RolePermission[]
+}
+
+model RolePermission {
+  id           String     @id @default(cuid())
+  role         UserRole   // استفاده از اِنام امن برای نقش‌ها
+  permissionId String
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+  granted      Boolean    @default(false)
+
+  @@unique([role, permissionId])
+}
+
+// ------------------------------------------------------
+// ۳. سیستم معاملات امن و حساب‌های واسط (Escrow Engine)
+// ------------------------------------------------------
+
+enum EscrowStatus {
+  PENDING_DEPOSIT     // در انتظار واریز وجه توسط خریدار
+  DEPOSITED_IN_ESCROW // وجه با موفقیت در حساب واسط (اسکرو) مسدود شد
+  UNDER_INSPECTION    // در مرحله بازرسی و تایید کارشناس/مدیر
+  RELEASED            // وجه به حساب فروشنده/سازنده آزاد شد
+  REFUNDED            // وجه به خریدار مرجوع شد
+  DISPUTED            // دارای اختلاف مالی / مسدود جهت داوری
+}
+
+model EscrowTransaction {
+  id            String       @id @default(cuid())
+  trackingCode  String       @unique // کد رهگیری یکتا تراکنش
+  propertyId    String?      // شناسه ملک مربوطه (در صورت وجود)
+  
+  buyerId       String       // شناسه کاربر خریدار
+  buyer         User         @relation("BuyerTransactions", fields: [buyerId], references: [id])
+  
+  sellerId      String       // شناسه فروشنده/آژانس/شرکت
+  seller        User         @relation("SellerTransactions", fields: [sellerId], references: [id])
+
+  amount        Float        // مبلغ معامله (تومان / ریال)
+  platformFee   Float        @default(0) // کمیسیون پلتفرم ملکیسم
+  status        EscrowStatus @default(PENDING_DEPOSIT)
+  
+  description   String?      // توضیحات توافق‌نامه
+  bankRef       String?      // شماره ارجاع بانکی پس از واریز
+  
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  logs          EscrowLog[]
+}
+
+model EscrowLog {
+  id            String            @id @default(cuid())
+  transactionId String
+  transaction   EscrowTransaction @relation(fields: [transactionId], references: [id], onDelete: Cascade)
+  
+  actorId       String            // کاربری که عملیات را انجام داده
+  action        String            // شرح عملیات (مثلا: "DEPOSIT_CONFIRMED", "FUNDS_RELEASED")
+  notes         String?
+  createdAt     DateTime          @default(now())
+}
+
+// ------------------------------------------------------
+// ۴. بخش‌های عمومی محتوایی و بانک‌های تخصصی
+// ------------------------------------------------------
+
+// اخبار و مقالات (News)
+model News {
+  id        String   @id @default(cuid())
+  title     String
+  slug      String   @unique
+  summary   String?
+  content   String
+  category  String   @default("عمومی")
+  imageUrl  String?  // لینک تصویر شاخص خبر
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// گزارش‌های هوش بازار و تحلیل‌ها (Market Reports)
+model MarketReport {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  marketIndex Float?
+  region      String?
+  content     String
+  pdfLink     String?
+  imageUrl    String?  // لینک تصویر/انفوگرافیک گزارش
+  createdAt   DateTime @default(now())
+}
+
+// قوانین و مقررات (Regulations)
+model Regulation {
+  id         String   @id @default(cuid())
+  title      String
+  codeNumber String   @unique
+  category   String
+  summary    String?
+  fullText   String
+  imageUrl   String?  // لینک تصویر/سند قانون
+  createdAt  DateTime @default(now())
+}
+
+// املاک و آگهی‌ها (Properties)
+model Property {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  price       Float
+  area        Float
+  province    String
+  city        String
+  address     String?
+  description String?
+  imageUrl    String?  // لینک تصویر اصلی ملک
+  gallery     String[] // آرایه‌ای از لینک‌های تصاویر گالری
+  createdAt   DateTime @default(now())
+}
+
+// کتابخانه تخصصی (Library)
+model LibraryDocument {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  author      String?
+  category    String?  // مثلا: کتاب، آیین‌نامه، مقاله علمی
+  summary     String?
+  downloadUrl String?
+  imageUrl    String?  // لینک تصویر جلد کتاب/سند
+  createdAt   DateTime @default(now())
+}
+
+// متخصصین ملکیست - پروفایل VIP (Experts)
+model ExpertProfile {
+  id            String   @id @default(cuid())
+  fullName      String
+  specialty     String   // مثلا: ارزیاب رسمی، مهندس ناظر، مشاور حقوقی
+  licenseNumber String?  @unique
+  city          String
+  mobile        String?
+  bio           String?
+  isVip         Boolean  @default(false) // نشان VIP
+  avatarUrl     String?  // آواتار / تصویر پرسنلی
+  rating        Float    @default(5.0)
+  createdAt     DateTime @default(now())
+}
+
+// بازار ملکیست (Market Items)
+model MarketItem {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  category    String   // مثلا: مصالح ساختمانی، تجهیزات، خدمات مهندسی
+  price       Float?
+  supplier    String   // تامین‌کننده / شرکت
+  city        String
+  description String?
+  imageUrl    String?  // تصویر محصول / خدمت
+  createdAt   DateTime @default(now())
+}
+
+// ------------------------------------------------------
+// ۵. مخزن متمرکز رسانه و تصاویر (Media Library Engine)
+// ------------------------------------------------------
+
+enum MediaType {
+  IMAGE
+  DOCUMENT
+  PDF
+  ARCHIVE
+}
+
+model MediaAsset {
+  id           String    @id @default(cuid())
+  title        String?   // عنوان یا توضیح تصویر
+  filename     String    // نام فایل ذخیره‌شده یا نام مستعار
+  originalName String?   // نام اصلی هنگام آپلود
+  url          String    // آدرس نهایی دسترسی
+  mimeType     String?   // image/jpeg, image/png, etc.
+  size         Int?      // حجم فایل به بایت
+  width        Int?      // عرض به پیکسل
+  height       Int?      // ارتفاع به پیکسل
+  category     String    // دسته‌بندی: news, properties, experts, library, market, general
+  folderPath   String?   // مسیر فولدر مجازی (مثلا: /2026/10/news)
+  altText      String?   // متن جایگزین برای سئو (SEO)
+  uploadedBy   String?   // شناسه کاربر آپلودکننده
+  isUrlSource  Boolean   @default(false) // آیا از طریق URL خارجی ثبت شده؟
+  createdAt    DateTime  @default(now())
+}
