@@ -1,6 +1,8 @@
 'use client';
 
+
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 interface ExpertProfilePageProps {
   params: { slug: string; locale: string };

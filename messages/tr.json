@@ -1,0 +1,111 @@
+﻿{
+  "Common": {
+    "welcome": "Melkism Platformuna Hoş Geldiniz",
+    "search": "İlan, haber, yönetmelik ve makale ara...",
+    "login": "Giriş Yap / Kayıt Ol",
+    "dashboard": "Yönetim Paneli",
+    "properties": "Emlak",
+    "news": "Haberler ve Makaleler",
+    "market": "Piyasa İstihbaratı",
+    "regulations": "Yönetmelikler ve Kanunlar",
+    "library": "Uzmanlık Kütüphanesi",
+    "experts": "Melkism Uzmanları",
+    "marketplace": "Malzeme ve Ekipman Pazarı",
+    "escrow": "Güvenli Emanet İşlemleri (Escrow)",
+    "save": "Değişiklikleri Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "loading": "Yükleniyor...",
+    "errorOccurred": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "successMessage": "İşlem başarıyla tamamlandı."
+  },
+  "Home": {
+    "heroTitle": "Kapsamlı Emlak Piyasası ve İstihbarat Platformu",
+    "heroSubtitle": "Gelişmiş konut piyasası analizi, yasal düzenlemeler ve güvenilir ilanlar",
+    "latestProperties": "Son Eklenen İlanlar",
+    "latestNews": "En Son İnşaat Haberleri ve Makaleleri",
+    "exploreMarket": "Piyasa İstihbaratını Keşfet",
+    "statsProperties": "Aktif Emlak",
+    "statsExperts": "Doğrulanmış Uzman ve Danışman",
+    "statsTransactions": "Başarılı Güvenli İşlem"
+  },
+  "PropertiesPage": {
+    "title": "Gayrimenkul ve Emlak",
+    "subtitle": "Konut, ticari ve sanayi mülklerini arayın ve karşılaştırın",
+    "price": "Fiyat",
+    "area": "Metrekare (Alan)",
+    "province": "İl",
+    "city": "İlçe / Şehir",
+    "address": "Tam Adres",
+    "details": "Detayları Gör",
+    "submitProperty": "Yeni İlan Ekle",
+    "galleryTitle": "Mülk Fotoğraf Galerisi",
+    "pricePerMeter": "Metrekare Fiyatı",
+    "contactOwner": "Ev Sahibi / Ajans ile İletişim"
+  },
+  "NewsPage": {
+    "title": "İnşaat Haberleri ve Makaleler",
+    "subtitle": "İnşaat ve mimarlık sektöründeki son gelişmeler",
+    "readMore": "Devamını Oku",
+    "publishedAt": "Yayın Tarihi",
+    "category": "Kategori",
+    "author": "Yazar"
+  },
+  "NewsDetail": {
+    "backButton": "← Haber Yönetimine Dön",
+    "categoryDefault": "Haberler ve Duyurular",
+    "authorLabel": "Yazar",
+    "publishedDate": "Yayın Tarihi"
+  },
+  "MarketPage": {
+    "title": "Konut Piyasası İstihbaratı",
+    "subtitle": "22 bölgede fiyat trendi analizi ve makro göstergeler",
+    "marketIndex": "Piyasa Endeksi",
+    "region": "Bölge",
+    "downloadReport": "PDF Raporunu İndir"
+  },
+  "RegulationsPage": {
+    "title": "Mevzuat ve Kanunlar Bankası",
+    "subtitle": "Yönetmelikler, genelgeler, belediye ve imar kanunları koleksiyonu",
+    "codeNumber": "Kanun Kodu",
+    "fullText": "Tam Kanun Metni"
+  },
+  "LibraryPage": {
+    "title": "Mühendislik ve Mimarlık Kütüphanesi",
+    "subtitle": "Yapı kimyası, mimarlık ve şehircilik üzerine referans kitaplar",
+    "downloadBook": "Dosyayı / Kitabı İndir",
+    "author": "Yazar / Çevirmen"
+  },
+  "ExpertsPage": {
+    "title": "Doğrulanmış Uzmanlar ve Mutemetler",
+    "subtitle": "Resmi değerleme uzmanları, denetim mühendisleri ve hukuk danışmanları",
+    "licenseNumber": "Profesyonel Lisans Numarası",
+    "vipBadge": "VIP Uzman",
+    "rating": "Kullanıcı Puanı"
+  },
+  "MarketplacePage": {
+    "title": "Malzeme, Ekipman ve Hizmetler Pazarı",
+    "subtitle": "Yapı malzemeleri ve poliüretan sistemlerin doğrudan tedarikçileri",
+    "supplier": "Tedarikçi / Şirket",
+    "category": "Ürün veya Hizmet Türü"
+  },
+  "EscrowPage": {
+    "title": "Emanet Hesabı ve Güvenli İşlemler (Escrow)",
+    "subtitle": "Resmi tapu devrine kadar işlem fonlarının güvence altına alınması",
+    "trackingCode": "İşlem Takip Kodu",
+    "amount": "Yatırılan Tutar",
+    "statusPending": "Fon Yatırılması Bekleniyor",
+    "statusDeposited": "Fonlar Emanet Hesabında Kilitlendi",
+    "statusReleased": "Fonlar Satıcıya Serbest Bırakıldı",
+    "depositButton": "Emanet Hesabına Güvenli Yatırım"
+  },
+  "AdminPanel": {
+    "title": "Yönetim Paneli ve Merkezi CMS",
+    "manageNews": "Haberleri ve Makaleleri Yönet",
+    "manageProperties": "Emlak İlanlarını Yönet",
+    "manageUsers": "Kullanıcıları ve Rolleri Yönet (RBAC)",
+    "manageEscrow": "Emanet İşlemlerini Denetle",
+    "mediaLibrary": "Merkezi Medya Deposu"
+  }
+}

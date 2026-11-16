@@ -1,0 +1,111 @@
+﻿{
+  "Common": {
+    "welcome": "Bienvenue sur la plateforme Melkism",
+    "search": "Rechercher des biens, actualités, réglementations...",
+    "login": "Connexion / S'inscrire",
+    "dashboard": "Tableau de bord",
+    "properties": "Immobilier",
+    "news": "Actualités & Articles",
+    "market": "Intelligence de Marché",
+    "regulations": "Réglementations",
+    "library": "Bibliothèque Spécialisée",
+    "experts": "Experts Melkism",
+    "marketplace": "Marché des Matériaux & Équipements",
+    "escrow": "Transactions Sécurisées par Séquestre",
+    "save": "Enregistrer les modifications",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "loading": "Chargement en cours...",
+    "errorOccurred": "Une erreur s'est produite. Veuillez réessayer.",
+    "successMessage": "Opération effectuée avec succès."
+  },
+  "Home": {
+    "heroTitle": "Plateforme Globale de Marché et d'Intelligence Immobilière",
+    "heroSubtitle": "Analyse avancée du marché du logement, réglementations juridiques et annonces vérifiées",
+    "latestProperties": "Derniers Biens Immobiliers",
+    "latestNews": "Dernières Actualités & Articles du Bâtiment",
+    "exploreMarket": "Explorer l'Intelligence de Marché",
+    "statsProperties": "Biens Actifs",
+    "statsExperts": "Experts & Consultants Vérifiés",
+    "statsTransactions": "Transactions Sécurisées Réussies"
+  },
+  "PropertiesPage": {
+    "title": "Biens Immobiliers",
+    "subtitle": "Rechercher et comparer des biens résidentiels, commerciaux et industriels",
+    "price": "Prix",
+    "area": "Superficie",
+    "province": "Province",
+    "city": "Ville",
+    "address": "Adresse Exacte",
+    "details": "Voir les Détails",
+    "submitProperty": "Soumettre un Nouveau Bien",
+    "galleryTitle": "Galerie Photos du Bien",
+    "pricePerMeter": "Prix au Mètre Carré",
+    "contactOwner": "Contacter le Propriétaire / l'Agence"
+  },
+  "NewsPage": {
+    "title": "Actualités & Articles de la Construction",
+    "subtitle": "Dernières évolutions dans l'industrie de la construction et de l'architecture",
+    "readMore": "Lire la Suite",
+    "publishedAt": "Date de Publication",
+    "category": "Catégorie",
+    "author": "Auteur"
+  },
+  "NewsDetail": {
+    "backButton": "← Retour à la Gestion des Actualités",
+    "categoryDefault": "Actualités & Annonces",
+    "authorLabel": "Auteur",
+    "publishedDate": "Date de Publication"
+  },
+  "MarketPage": {
+    "title": "Intelligence du Marché Immobilier",
+    "subtitle": "Analyse des tendances de prix dans les 22 arrondissements et indicateurs macro",
+    "marketIndex": "Indice du Marché",
+    "region": "Région",
+    "downloadReport": "Télécharger le Rapport PDF"
+  },
+  "RegulationsPage": {
+    "title": "Banque des Lois et Réglementations",
+    "subtitle": "Recueil des règlements, circulaires et lois municipales et d'urbanisme",
+    "codeNumber": "Code de Réglementation",
+    "fullText": "Texte Juridique Intégral"
+  },
+  "LibraryPage": {
+    "title": "Bibliothèque Spécialisée en Ingénierie & Architecture",
+    "subtitle": "Ouvrages de référence sur la chimie du bâtiment, l'architecture et l'urbanisme",
+    "downloadBook": "Télécharger le Fichier / Livre",
+    "author": "Auteur / Traducteur"
+  },
+  "ExpertsPage": {
+    "title": "Experts et Spécialistes Agréés",
+    "subtitle": "Experts immobiliers officiels, ingénieurs superviseurs et conseillers juridiques",
+    "licenseNumber": "Numéro de Licence Professionnelle",
+    "vipBadge": "Expert VIP",
+    "rating": "Évaluation des Utilisateurs"
+  },
+  "MarketplacePage": {
+    "title": "Marché des Matériaux, Équipements & Services",
+    "subtitle": "Fournisseurs directs de matériaux de construction et de systèmes en polyuréthane",
+    "supplier": "Fournisseur / Entreprise",
+    "category": "Type de Produit ou Service"
+  },
+  "EscrowPage": {
+    "title": "Compte Séquestre & Transactions Sécurisées (Escrow)",
+    "subtitle": "Garantie des fonds de la transaction jusqu'au transfert officiel du titre de propriété",
+    "trackingCode": "Code de Suivi de Transaction",
+    "amount": "Montant Déposé",
+    "statusPending": "En Attente du Dépôt de Fonds",
+    "statusDeposited": "Fonds Bloqués sur le Compte Séquestre",
+    "statusReleased": "Fonds Libérés au Bénéfice du Vendeur",
+    "depositButton": "Dépôt Sécurisé sur le Séquestre"
+  },
+  "AdminPanel": {
+    "title": "Panneau d'Administration & CMS Central",
+    "manageNews": "Gérer les Actualités & Articles",
+    "manageProperties": "Gérer les Biens Immobiliers",
+    "manageUsers": "Gérer les Utilisateurs & Rôles (RBAC)",
+    "manageEscrow": "Superviser les Transactions Séquestres",
+    "mediaLibrary": "Dépôt de Médias Central"
+  }
+}

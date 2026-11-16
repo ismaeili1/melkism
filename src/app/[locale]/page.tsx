@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useTranslation } from '@/hooks/useTranslation';
 import Link from 'next/link';
 import { useState, useRef } from 'react';

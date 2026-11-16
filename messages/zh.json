@@ -1,0 +1,111 @@
+﻿{
+  "Common": {
+    "welcome": "欢迎来到 Melkism 平台",
+    "search": "搜索房产、新闻、法规...",
+    "login": "登录 / 注册",
+    "dashboard": "控制面板",
+    "properties": "房产",
+    "news": "新闻与文章",
+    "market": "市场情报",
+    "regulations": "规章制度",
+    "library": "专业图书馆",
+    "experts": "Melkism 专家",
+    "marketplace": "建材与设备市场",
+    "escrow": "安全托管交易",
+    "save": "保存更改",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "loading": "加载中...",
+    "errorOccurred": "发生错误，请重试。",
+    "successMessage": "操作成功完成。"
+  },
+  "Home": {
+    "heroTitle": "综合房地产市场与情报平台",
+    "heroSubtitle": "高级住房市场分析、法律法规与可靠房源",
+    "latestProperties": "最新挂牌房产",
+    "latestNews": "最新建筑新闻与文章",
+    "exploreMarket": "探索市场情报",
+    "statsProperties": "活跃房产",
+    "statsExperts": "认证专家与顾问",
+    "statsTransactions": "成功安全交易"
+  },
+  "PropertiesPage": {
+    "title": "房地产物业",
+    "subtitle": "搜索并对比住宅、商业和工业房产",
+    "price": "价格",
+    "area": "面积",
+    "province": "省份",
+    "city": "城市",
+    "address": "详细地址",
+    "details": "查看详情",
+    "submitProperty": "发布新房源",
+    "galleryTitle": "房产图片库",
+    "pricePerMeter": "每平方米价格",
+    "contactOwner": "联系业主 / 中介"
+  },
+  "NewsPage": {
+    "title": "建筑新闻与文章",
+    "subtitle": "建筑与设计行业的最新动态",
+    "readMore": "阅读全文",
+    "publishedAt": "发布日期",
+    "category": "类别",
+    "author": "作者"
+  },
+  "NewsDetail": {
+    "backButton": "← 返回新闻管理",
+    "categoryDefault": "新闻与公告",
+    "authorLabel": "作者",
+    "publishedDate": "发布日期"
+  },
+  "MarketPage": {
+    "title": "住房市场情报",
+    "subtitle": "22个区的价格走势分析与宏观指标",
+    "marketIndex": "市场指数",
+    "region": "区域",
+    "downloadReport": "下载 PDF 报告"
+  },
+  "RegulationsPage": {
+    "title": "法律法规库",
+    "subtitle": "规章、通告、市政及城市规划法律汇编",
+    "codeNumber": "法规代码",
+    "fullText": "完整法律文本"
+  },
+  "LibraryPage": {
+    "title": "工程与建筑专业图书馆",
+    "subtitle": "关于建筑化学、建筑学与城市设计的参考书",
+    "downloadBook": "下载文件 / 图书",
+    "author": "作者 / 译者"
+  },
+  "ExpertsPage": {
+    "title": "认证专家与专业人士",
+    "subtitle": "官方评估师、监督工程师与法律顾问",
+    "licenseNumber": "专业执照编号",
+    "vipBadge": "VIP 专家",
+    "rating": "用户评分"
+  },
+  "MarketplacePage": {
+    "title": "材料、设备与服务市场",
+    "subtitle": "建筑材料与聚氨酯系统的直接供应商",
+    "supplier": "供应商 / 公司",
+    "category": "产品或服务类型"
+  },
+  "EscrowPage": {
+    "title": "托管账户与安全交易 (Escrow)",
+    "subtitle": "保障交易资金安全，直至正式产权过户",
+    "trackingCode": "交易追踪码",
+    "amount": "存入金额",
+    "statusPending": "等待资金存入",
+    "statusDeposited": "资金已锁定在托管账户",
+    "statusReleased": "资金已释放给卖家",
+    "depositButton": "安全存入托管账户"
+  },
+  "AdminPanel": {
+    "title": "管理面板与中心 CMS",
+    "manageNews": "管理新闻与文章",
+    "manageProperties": "管理房产",
+    "manageUsers": "管理用户与角色 (RBAC)",
+    "manageEscrow": "监管托管交易",
+    "mediaLibrary": "中央媒体库"
+  }
+}

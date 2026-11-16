@@ -3,7 +3,7 @@ const path = require('path');
 
 const ABOUT_PAGE_CONTENT = `
 'use client';
-
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function AboutPage() {
@@ -84,6 +84,8 @@ export default function AboutPage() {
 
 const CONTACT_PAGE_CONTENT = `
 'use client';
+
+import { useTranslations } from 'next-intl';
 
 import { useState } from 'react';
 
@@ -205,6 +207,8 @@ export default function ContactPage() {
 
 const FAQ_PAGE_CONTENT = `
 'use client';
+
+import { useTranslations } from 'next-intl';
 
 import { useState } from 'react';
 

@@ -1,0 +1,40 @@
+import { z } from 'zod';
+
+// اسکیما اعتبارسنجی ثبت یا ویرایش ملک (Property)
+export const propertySchema = z.object({
+  title: z
+    .string()
+    .min(3, { message: 'عنوان ملک باید حداقل ۳ کاراکتر باشد' })
+    .max(150, { message: 'عنوان ملک نمی‌تواند بیشتر از ۱۵۰ کاراکتر باشد' }),
+  price: z
+    .coerce
+    .number({ invalid_type_error: 'قیمت باید مقدار عددی معتبر باشد' })
+    .positive({ message: 'قیمت ملک باید بزرگتر از صفر باشد' }),
+  area: z
+    .coerce
+    .number({ invalid_type_error: 'متراژ باید مقدار عددی معتبر باشد' })
+    .positive({ message: 'متراژ باید بزرگتر از صفر باشد' }),
+  province: z.string().min(2, { message: 'انتخاب استان الزامی است' }),
+  city: z.string().min(2, { message: 'انتخاب شهر الزامی است' }),
+  address: z.string().optional(),
+  description: z.string().max(3000, { message: 'توضیحات طولانی‌تر از حد مجاز است' }).optional(),
+  imageUrl: z.string().url({ message: 'لینک تصویر اصلی نامعتبر است' }).optional().or(z.literal('')),
+  gallery: z.array(z.string().url({ message: 'لینک تصویر گالری نامعتبر است' })).optional(),
+});
+
+// اسکیما اعتبارسنجی تغییر وضعیت تراکنش اسکرو (Escrow Status Change)
+export const escrowStatusSchema = z.object({
+  transactionId: z.string().cuid({ message: 'شناسه تراکنش نامعتبر است' }),
+  status: z.enum([
+    'PENDING_DEPOSIT',
+    'DEPOSITED_IN_ESCROW',
+    'UNDER_INSPECTION',
+    'RELEASED',
+    'REFUNDED',
+    'DISPUTED'
+  ], { message: 'وضعیت اسکرو نامعتبر است' }),
+  note: z.string().max(500, { message: 'توضیحات لاگ نمی‌تواند بیشتر از ۵۰۰ کاراکتر باشد' }).optional(),
+});
+
+export type PropertyInput = z.infer<typeof propertySchema>;
+export type EscrowStatusInput = z.infer<typeof escrowStatusSchema>;

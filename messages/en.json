@@ -1,0 +1,111 @@
+﻿{
+  "Common": {
+    "welcome": "Welcome to Melkism Platform",
+    "search": "Search properties, news, regulations...",
+    "login": "Login / Register",
+    "dashboard": "Dashboard",
+    "properties": "Properties",
+    "news": "News & Articles",
+    "market": "Market Intelligence",
+    "regulations": "Regulations",
+    "library": "Specialized Library",
+    "experts": "Melkism Experts",
+    "marketplace": "Materials & Equipment Marketplace",
+    "escrow": "Secure Escrow Transactions",
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "errorOccurred": "An error occurred. Please try again.",
+    "successMessage": "Operation completed successfully."
+  },
+  "Home": {
+    "heroTitle": "Comprehensive Real Estate Market & Intelligence Platform",
+    "heroSubtitle": "Advanced housing market analysis, legal regulations, and trusted listings",
+    "latestProperties": "Latest Listed Properties",
+    "latestNews": "Latest Construction News & Articles",
+    "exploreMarket": "Explore Market Intelligence",
+    "statsProperties": "Active Properties",
+    "statsExperts": "Verified Experts & Consultants",
+    "statsTransactions": "Successful Secure Transactions"
+  },
+  "PropertiesPage": {
+    "title": "Real Estate Properties",
+    "subtitle": "Search and compare residential, commercial, and industrial properties",
+    "price": "Price",
+    "area": "Area",
+    "province": "Province",
+    "city": "City",
+    "address": "Exact Address",
+    "details": "View Details",
+    "submitProperty": "Submit New Property",
+    "galleryTitle": "Property Image Gallery",
+    "pricePerMeter": "Price per Square Meter",
+    "contactOwner": "Contact Owner / Agency"
+  },
+  "NewsPage": {
+    "title": "Construction News & Articles",
+    "subtitle": "Latest developments in the construction and architecture industry",
+    "readMore": "Read More",
+    "publishedAt": "Published Date",
+    "category": "Category",
+    "author": "Author"
+  },
+  "NewsDetail": {
+    "backButton": "← Back to News Management",
+    "categoryDefault": "News & Announcements",
+    "authorLabel": "Author",
+    "publishedDate": "Published Date"
+  },
+  "MarketPage": {
+    "title": "Housing Market Intelligence",
+    "subtitle": "Price trend analysis across 22 districts and macro indicators",
+    "marketIndex": "Market Index",
+    "region": "Region",
+    "downloadReport": "Download PDF Report"
+  },
+  "RegulationsPage": {
+    "title": "Legal Regulations Bank",
+    "subtitle": "Collection of bylaws, circulars, and municipal/urban planning laws",
+    "codeNumber": "Regulation Code",
+    "fullText": "Full Legal Text"
+  },
+  "LibraryPage": {
+    "title": "Engineering & Architecture Library",
+    "subtitle": "Reference books on building chemistry, architecture, and urban design",
+    "downloadBook": "Download File / Book",
+    "author": "Author / Translator"
+  },
+  "ExpertsPage": {
+    "title": "Verified Experts and Specialists",
+    "subtitle": "Official appraisers, supervisory engineers, and legal advisors",
+    "licenseNumber": "Professional License Number",
+    "vipBadge": "VIP Expert",
+    "rating": "User Rating"
+  },
+  "MarketplacePage": {
+    "title": "Materials, Equipment & Services Marketplace",
+    "subtitle": "Direct suppliers of construction materials and polyurethane systems",
+    "supplier": "Supplier / Company",
+    "category": "Product or Service Type"
+  },
+  "EscrowPage": {
+    "title": "Escrow & Secure Transactions",
+    "subtitle": "Guaranty of transaction funds until official deed transfer",
+    "trackingCode": "Transaction Tracking Code",
+    "amount": "Deposited Amount",
+    "statusPending": "Awaiting Funds Deposit",
+    "statusDeposited": "Funds Locked in Escrow",
+    "statusReleased": "Funds Released to Seller",
+    "depositButton": "Secure Deposit to Escrow"
+  },
+  "AdminPanel": {
+    "title": "Management Panel & Central CMS",
+    "manageNews": "Manage News & Articles",
+    "manageProperties": "Manage Properties",
+    "manageUsers": "Manage Users & Roles (RBAC)",
+    "manageEscrow": "Monitor Escrow Transactions",
+    "mediaLibrary": "Central Media Repository"
+  }
+}

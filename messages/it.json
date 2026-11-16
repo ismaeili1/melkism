@@ -1,0 +1,111 @@
+﻿{
+  "Common": {
+    "welcome": "Benvenuto sulla piattaforma Melkism",
+    "search": "Cerca immobili, notizie, normative...",
+    "login": "Accedi / Registrati",
+    "dashboard": "Dashboard",
+    "properties": "Immobili",
+    "news": "Notizie e Articoli",
+    "market": "Market Intelligence",
+    "regulations": "Normative",
+    "library": "Biblioteca Specializzata",
+    "experts": "Esperti Melkism",
+    "marketplace": "Mercato di Materiali e Apparecchiature",
+    "escrow": "Transazioni Sicure in Escrow",
+    "save": "Salva Modifiche",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "loading": "Caricamento in corso...",
+    "errorOccurred": "Si è verificato un errore. Riprova.",
+    "successMessage": "Operazione completata con successo."
+  },
+  "Home": {
+    "heroTitle": "Piattaforma Globale di Mercato e Intelligence Immobiliare",
+    "heroSubtitle": "Analisi avanzata del mercato immobiliare, normative legali e annunci verificati",
+    "latestProperties": "Ultimi Immobili Inseriti",
+    "latestNews": "Ultime Notizie e Articoli sull'Edilizia",
+    "exploreMarket": "Esplora Market Intelligence",
+    "statsProperties": "Immobili Attivi",
+    "statsExperts": "Esperti e Consulenti Verificati",
+    "statsTransactions": "Transazioni Sicure Riuscite"
+  },
+  "PropertiesPage": {
+    "title": "Beni Immobili",
+    "subtitle": "Cerca e confronta immobili residenziali, commerciali e industriali",
+    "price": "Prezzo",
+    "area": "Superficie",
+    "province": "Provincia",
+    "city": "Città",
+    "address": "Indirizzo Esatto",
+    "details": "Visualizza Dettagli",
+    "submitProperty": "Inserisci Nuovo Immobile",
+    "galleryTitle": "Galleria Immagini Immobile",
+    "pricePerMeter": "Prezzo al Metro Quadro",
+    "contactOwner": "Contatta Proprietario / Agenzia"
+  },
+  "NewsPage": {
+    "title": "Notizie e Articoli sull'Edilizia",
+    "subtitle": "Ultimi sviluppi nel settore delle costruzioni e dell'architettura",
+    "readMore": "Leggi di Più",
+    "publishedAt": "Data di Pubblicazione",
+    "category": "Categoria",
+    "author": "Autore"
+  },
+  "NewsDetail": {
+    "backButton": "← Torna alla Gestione Notizie",
+    "categoryDefault": "Notizie e Annunci",
+    "authorLabel": "Autore",
+    "publishedDate": "Data di Pubblicazione"
+  },
+  "MarketPage": {
+    "title": "Intelligence del Mercato Immobiliare",
+    "subtitle": "Analisi dell'andamento dei prezzi nei 22 distretti e indicatori macro",
+    "marketIndex": "Indice di Mercato",
+    "region": "Regione",
+    "downloadReport": "Scarica Report in PDF"
+  },
+  "RegulationsPage": {
+    "title": "Banca Legale e Normative",
+    "subtitle": "Raccolta di regolamenti, circolari e leggi comunali e urbanistiche",
+    "codeNumber": "Codice Normativo",
+    "fullText": "Testo Giuridico Integrale"
+  },
+  "LibraryPage": {
+    "title": "Biblioteca Specializzata in Ingegneria e Architettura",
+    "subtitle": "Libri di riferimento su chimica delle costruzioni, architettura e urbanistica",
+    "downloadBook": "Scarica File / Libro",
+    "author": "Autore / Traduttore"
+  },
+  "ExpertsPage": {
+    "title": "Esperti e Specialisti Certificati",
+    "subtitle": "Periti ufficiali, ingegneri supervisori e consulenti legali",
+    "licenseNumber": "Numero di Licenza Professionale",
+    "vipBadge": "Esperto VIP",
+    "rating": "Valutazione Utenti"
+  },
+  "MarketplacePage": {
+    "title": "Mercato di Materiali, Apparecchiature e Servizi",
+    "subtitle": "Fornitori diretti di materiali edili e sistemi in poliuretano",
+    "supplier": "Fornitore / Azienda",
+    "category": "Tipo di Prodotto o Servizio"
+  },
+  "EscrowPage": {
+    "title": "Conto Deposito & Transazioni Sicure (Escrow)",
+    "subtitle": "Garanzia dei fondi della transazione fino al trasferimento ufficiale della proprietà",
+    "trackingCode": "Codice di Tracciamento Transazione",
+    "amount": "Importo Depositato",
+    "statusPending": "In Attesa di Deposito Fondi",
+    "statusDeposited": "Fondi Bloccati in Escrow",
+    "statusReleased": "Fondi Svincolati al Venditore",
+    "depositButton": "Deposito Sicuro in Escrow"
+  },
+  "AdminPanel": {
+    "title": "Pannello di Amministrazione e CMS Centrale",
+    "manageNews": "Gestisci Notizie e Articoli",
+    "manageProperties": "Gestisci Immobili",
+    "manageUsers": "Gestisci Utenti e Ruoli (RBAC)",
+    "manageEscrow": "Monitora Transazioni Escrow",
+    "mediaLibrary": "Archivio Multimediale Centrale"
+  }
+}

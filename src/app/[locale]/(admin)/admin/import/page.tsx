@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState } from "react";
 import { handleExcelBulkImport } from "@/actions/bulk-import";
 import { generateExcelTemplate } from "@/actions/export-templates";

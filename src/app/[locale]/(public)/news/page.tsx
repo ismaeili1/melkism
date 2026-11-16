@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import RoleGuard from '@/components/auth/RoleGuard';

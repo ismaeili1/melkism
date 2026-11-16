@@ -1,0 +1,111 @@
+﻿{
+  "Common": {
+    "welcome": "Bienvenido a la plataforma Melkism",
+    "search": "Buscar propiedades, noticias, regulaciones...",
+    "login": "Iniciar sesión / Registrarse",
+    "dashboard": "Panel",
+    "properties": "Propiedades",
+    "news": "Noticias y Artículos",
+    "market": "Inteligencia de Mercado",
+    "regulations": "Regulaciones",
+    "library": "Biblioteca Especializada",
+    "experts": "Expertos de Melkism",
+    "marketplace": "Mercado de Materiales y Equipos",
+    "escrow": "Transacciones Seguras de Custodia",
+    "save": "Guardar Cambios",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "loading": "Cargando...",
+    "errorOccurred": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+    "successMessage": "Operación completada con éxito."
+  },
+  "Home": {
+    "heroTitle": "Plataforma Integral de Mercado e Inteligencia Inmobiliaria",
+    "heroSubtitle": "Análisis avanzado del mercado de vivienda, regulaciones legales y listados confiables",
+    "latestProperties": "Últimas Propiedades Registradas",
+    "latestNews": "Últimas Noticias y Artículos de Construcción",
+    "exploreMarket": "Explorar Inteligencia de Mercado",
+    "statsProperties": "Propiedades Activas",
+    "statsExperts": "Expertos y Consultores Verificados",
+    "statsTransactions": "Transacciones Seguras Exitosas"
+  },
+  "PropertiesPage": {
+    "title": "Propiedades Inmobiliarias",
+    "subtitle": "Buscar y comparar propiedades residenciales, comerciales e industriales",
+    "price": "Precio",
+    "area": "Área",
+    "province": "Provincia",
+    "city": "Ciudad",
+    "address": "Dirección Exacta",
+    "details": "Ver Detalles",
+    "submitProperty": "Registrar Nueva Propiedad",
+    "galleryTitle": "Galería de Imágenes de la Propiedad",
+    "pricePerMeter": "Precio por Metro Cuadrado",
+    "contactOwner": "Contactar Propietario / Agencia"
+  },
+  "NewsPage": {
+    "title": "Noticias y Artículos de Construcción",
+    "subtitle": "Últimos acontecimientos en la industria de la construcción y la arquitectura",
+    "readMore": "Leer Más",
+    "publishedAt": "Fecha de Publicación",
+    "category": "Categoría",
+    "author": "Autor"
+  },
+  "NewsDetail": {
+    "backButton": "← Volver a Gestión de Noticias",
+    "categoryDefault": "Noticias y Anuncios",
+    "authorLabel": "Autor",
+    "publishedDate": "Fecha de Publicación"
+  },
+  "MarketPage": {
+    "title": "Inteligencia del Mercado de Vivienda",
+    "subtitle": "Análisis de tendencias de precios en los 22 distritos e indicadores macro",
+    "marketIndex": "Índice de Mercado",
+    "region": "Región",
+    "downloadReport": "Descargar Informe en PDF"
+  },
+  "RegulationsPage": {
+    "title": "Banco de Leyes y Regulaciones",
+    "subtitle": "Colección de estatutos, circulares y leyes municipales y de urbanismo",
+    "codeNumber": "Código de Regulación",
+    "fullText": "Texto Legal Completo"
+  },
+  "LibraryPage": {
+    "title": "Biblioteca Especializada de Ingeniería y Arquitectura",
+    "subtitle": "Libros de referencia sobre química de la construcción, arquitectura y diseño urbano",
+    "downloadBook": "Descargar Archivo / Libro",
+    "author": "Autor / Traductor"
+  },
+  "ExpertsPage": {
+    "title": "Expertos y Especialistas Verificados",
+    "subtitle": "Tasadores oficiales, ingenieros supervisores y asesores legales",
+    "licenseNumber": "Número de Licencia Profesional",
+    "vipBadge": "Experto VIP",
+    "rating": "Calificación de Usuarios"
+  },
+  "MarketplacePage": {
+    "title": "Mercado de Materiales, Equipos y Servicios",
+    "subtitle": "Proveedores directos de materiales de construcción y sistemas de poliuretano",
+    "supplier": "Proveedor / Empresa",
+    "category": "Tipo de Producto o Servicio"
+  },
+  "EscrowPage": {
+    "title": "Cuenta de Custodia y Transacciones Seguras (Escrow)",
+    "subtitle": "Garantía de los fondos de la transacción hasta la transferencia oficial de la escritura",
+    "trackingCode": "Código de Seguimiento de Transacción",
+    "amount": "Monto Depositado",
+    "statusPending": "Esperando Depósito de Fondos",
+    "statusDeposited": "Fondos Bloqueados en Custodia",
+    "statusReleased": "Fondos Liberados al Vendedor",
+    "depositButton": "Depósito Seguro en Custodia"
+  },
+  "AdminPanel": {
+    "title": "Panel de Administración y CMS Central",
+    "manageNews": "Gestionar Noticias y Artículos",
+    "manageProperties": "Gestionar Propiedades",
+    "manageUsers": "Gestionar Usuarios y Roles (RBAC)",
+    "manageEscrow": "Supervisar Transacciones de Custodia",
+    "mediaLibrary": "Repositorio Central de Medios"
+  }
+}

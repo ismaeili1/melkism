@@ -1,62 +1,70 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
-import { getToken } from "next-auth/jwt";
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export async function middleware(req: NextRequest) {
-  const url = req.nextUrl;
-  const path = url.pathname;
+// ۱۰ زبان پشتیبانی‌شده در پلتفرم ملکیست
+const locales = ['fa', 'en', 'ru', 'fr', 'zh', 'de', 'es', 'it', 'ar', 'tr'] as const;
+const defaultLocale = 'fa';
 
-  // ۱. بررسی اینکه آیا در مسیر حروف بزرگ وجود دارد که نیاز به اصلاح داشته باشد
-  // (برای جلوگیری از لوپ، بررسی می‌کنیم که آیا بخش‌هایی از مسیر بزرگ هستند)
-  const lowerPath = path.toLowerCase();
-  if (path !== lowerPath) {
-    url.pathname = lowerPath;
+function getLocale(pathname: string): string {
+  const pathnameSegments = pathname.split('/');
+  const potentialLocale = pathnameSegments[1];
+  if (locales.includes(potentialLocale as any)) {
+    return potentialLocale;
+  }
+  return defaultLocale;
+}
+
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.includes('.')
+  ) {
+    return NextResponse.next();
+  }
+
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+
+  let response = NextResponse.next();
+
+  if (!pathnameHasLocale) {
+    const savedLocale = request.cookies.get('NEXT_LOCALE')?.value;
+    const targetLocale = savedLocale && locales.includes(savedLocale as any) 
+      ? savedLocale 
+      : defaultLocale;
+
+    const url = request.nextUrl.clone();
+    url.pathname = `/${targetLocale}${pathname === '/' ? '' : pathname}`;
     return NextResponse.redirect(url);
   }
 
-  // ۲. بررسی مسیرهای مدیریتی و پنل‌های اختصاصی
-  const isAdminRoute = lowerPath.includes("/admin");
-  const isProtectedDashboard = 
-    lowerPath.includes("/user") || 
-    lowerPath.includes("/agency") || 
-    lowerPath.includes("/company") || 
-    lowerPath.includes("/expert") || 
-    lowerPath.includes("/manager");
+  const currentLocale = getLocale(pathname);
 
-  if (isAdminRoute || isProtectedDashboard) {
-    const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
+  if (pathname.includes('/admin')) {
+    const sessionToken = 
+      request.cookies.get('next-auth.session-token')?.value || 
+      request.cookies.get('__Secure-next-auth.session-token')?.value;
 
-    // معماری Fail-Closed: اگر توکن وجود نداشته باشد، دسترسی بسته است
-    if (!token) {
-      const loginUrl = new URL("/fa/auth/login", req.url);
-      loginUrl.searchParams.set("callbackUrl", encodeURI(req.url));
+    if (!sessionToken) {
+      const loginUrl = new URL(`/${currentLocale}/auth/login`, request.url);
+      loginUrl.searchParams.set('callbackUrl', encodeURI(request.url));
       return NextResponse.redirect(loginUrl);
-    }
-
-    // بررسی انحصاری بودن دسترسی ادمین برای سطوح SUPER_ADMIN و MANAGER
-    if (isAdminRoute) {
-      const role = token.role as string;
-      if (role !== "SUPER_ADMIN" && role !== "MANAGER") {
-        // هدایت کاربران عادی به پنل خودشان در صورت تلاش برای ورود به ادمین
-        return NextResponse.redirect(new URL("/fa/user/dashboard", req.url));
-      }
     }
   }
 
-  return NextResponse.next();
+  response.cookies.set('NEXT_LOCALE', currentLocale, { 
+    path: '/', 
+    maxAge: 31536000, 
+    sameSite: 'lax' 
+  });
+
+  return response;
 }
 
 export const config = {
-  matcher: [
-    /*
-     * پوشش تمام مسیرهای زبان (مثلاً fa یا en) و بخش‌های مختلف پلتفرم
-     * برای اینکه میدلور بتواند حروف بزرگ را اصلاح و دسترسی‌ها را کنترل کند
-     */
-    "/:locale(fa|en)/admin/:path*",
-    "/:locale(fa|en)/user/:path*",
-    "/:locale(fa|en)/agency/:path*",
-    "/:locale(fa|en)/company/:path*",
-    "/:locale(fa|en)/expert/:path*",
-    "/:locale(fa|en)/manager/:path*",
-  ],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
 };

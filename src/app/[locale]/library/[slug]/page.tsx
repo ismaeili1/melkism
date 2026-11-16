@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 interface LibraryDetailPageProps {
   params: { slug: string; locale: string };

@@ -1,0 +1,35 @@
+import { prisma } from '@/lib/prisma';
+import { UserRole } from '@prisma/client';
+
+/**
+ * بررسی اینکه آیا یک نقش خاص مجوز مشخصی را دارد یا خیر
+ */
+export async function hasPermission(role: UserRole, permissionCode: string):_Promise<boolean> {
+  // مدیر کل سیستم به طور پیش‌فرض به تمام مجوزها دسترسی دارد
+  if (role === 'SUPER_ADMIN') {
+    return true;
+  }
+
+  // بررسی جدول RolePermission در دیتابیس
+  const rolePermission = await prisma.rolePermission.findFirst({
+    where: {
+      role: role,
+      granted: true,
+      permission: {
+        code: permissionCode,
+      },
+    },
+  });
+
+  return Boolean(rolePermission);
+}
+
+/**
+ * تابع کمکی برای استفاده در Server Actions جهت محافظت از توابع
+ */
+export async function requirePermission(userRole: UserRole, permissionCode: string) {
+  const allowed = await hasPermission(userRole, permissionCode);
+  if (!allowed) {
+    throw new Error(`دسترسی غیرمجاز: شما مجوز لازم (${permissionCode}) را برای این عملیات ندارید.`);
+  }
+}

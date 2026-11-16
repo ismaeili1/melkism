@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import { locales, languageNames, Locale } from '@/i18n/config';
 import { useState } from 'react';

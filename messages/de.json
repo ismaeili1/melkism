@@ -1,0 +1,111 @@
+﻿{
+  "Common": {
+    "welcome": "Willkommen auf der Melkism Plattform",
+    "search": "Immobilien, Nachrichten, Vorschriften suchen...",
+    "login": "Anmelden / Registrieren",
+    "dashboard": "Dashboard",
+    "properties": "Immobilien",
+    "news": "Nachrichten & Artikel",
+    "market": "Marktübersicht",
+    "regulations": "Vorschriften & Gesetze",
+    "library": "Fachbibliothek",
+    "experts": "Melkism Experten",
+    "marketplace": "Baustoff- & Ausrüstungsmarkt",
+    "escrow": "Sichere Treuhandgeschäfte",
+    "save": "Änderungen speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "loading": "Wird geladen...",
+    "errorOccurred": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "successMessage": "Vorgang erfolgreich abgeschlossen."
+  },
+  "Home": {
+    "heroTitle": "Umfassende Immobilienmarkt- und Analyseplattform",
+    "heroSubtitle": "Erweiterte Wohnungsmarktanalyse, rechtliche Bestimmungen und geprüfte Inserate",
+    "latestProperties": "Neueste Immobilien",
+    "latestNews": "Neueste Baunachrichten & Artikel",
+    "exploreMarket": "Marktübersicht erkunden",
+    "statsProperties": "Aktive Immobilien",
+    "statsExperts": "Geprüfte Experten & Berater",
+    "statsTransactions": "Erfolgreiche sichere Transaktionen"
+  },
+  "PropertiesPage": {
+    "title": "Immobilien und Grundstücke",
+    "subtitle": "Wohn-, Gewerbe- und Industrieimmobilien suchen und vergleichen",
+    "price": "Preis",
+    "area": "Fläche",
+    "province": "Provinz",
+    "city": "Stadt",
+    "address": "Genaue Adresse",
+    "details": "Details anzeigen",
+    "submitProperty": "Neue Immobilie einreichen",
+    "galleryTitle": "Immobilien-Bildergalerie",
+    "pricePerMeter": "Preis pro Quadratmeter",
+    "contactOwner": "Eigentümer / Agentur kontaktieren"
+  },
+  "NewsPage": {
+    "title": "Baunachrichten & Artikel",
+    "subtitle": "Neueste Entwicklungen in der Bau- und Architekturbranche",
+    "readMore": "Weiterlesen",
+    "publishedAt": "Veröffentlichungsdatum",
+    "category": "Kategorie",
+    "author": "Autor"
+  },
+  "NewsDetail": {
+    "backButton": "← Zurück zur Nachrichtenverwaltung",
+    "categoryDefault": "Nachrichten & Ankündigungen",
+    "authorLabel": "Autor",
+    "publishedDate": "Veröffentlichungsdatum"
+  },
+  "MarketPage": {
+    "title": "Wohnungsmarkt-Analyse",
+    "subtitle": "Preistrendanalyse in den 22 Bezirken und Makroindikatoren",
+    "marketIndex": "Marktindex",
+    "region": "Region",
+    "downloadReport": "PDF-Bericht herunterladen"
+  },
+  "RegulationsPage": {
+    "title": "Rechts- und Vorschriftenbank",
+    "subtitle": "Sammlung von Satzungen, Rundschreiben sowie Gemeinde- und Stadtplanungsgesetzen",
+    "codeNumber": "Gesetzesnummer",
+    "fullText": "Vollständiger Rechtstext"
+  },
+  "LibraryPage": {
+    "title": "Fachbibliothek für Ingenieurwesen & Architektur",
+    "subtitle": "Fachbücher zu Bauchemie, Architektur und Stadtplanung",
+    "downloadBook": "Datei / Buch herunterladen",
+    "author": "Autor / Übersetzer"
+  },
+  "ExpertsPage": {
+    "title": "Geprüfte Experten und Spezialisten",
+    "subtitle": "Offizielle Gutachter, bauüberwachende Ingenieure und Rechtsberater",
+    "licenseNumber": "Berufslizenznummer",
+    "vipBadge": "VIP-Experte",
+    "rating": "Benutzerbewertung"
+  },
+  "MarketplacePage": {
+    "title": "Marktplatz für Baumaterialien, Ausrüstung & Dienstleistungen",
+    "subtitle": "Direktlieferanten von Baustoffen und Polyurethansystemen",
+    "supplier": "Lieferant / Unternehmen",
+    "category": "Produkt- oder Dienstleistungsart"
+  },
+  "EscrowPage": {
+    "title": "Treuhandkonto & Sichere Transaktionen (Escrow)",
+    "subtitle": "Absicherung der Transaktionsgelder bis zur offiziellen Eigentumsübertragung",
+    "trackingCode": "Transaktions-Tracking-Code",
+    "amount": "Eingezahlter Betrag",
+    "statusPending": "Warten auf Geldeinzahlung",
+    "statusDeposited": "Geld auf Treuhandkonto gesperrt",
+    "statusReleased": "Geld an Verkäufer freigegeben",
+    "depositButton": "Sichere Einzahlung auf Treuhandkonto"
+  },
+  "AdminPanel": {
+    "title": "Verwaltungspanel & Zentrales CMS",
+    "manageNews": "Nachrichten & Artikel verwalten",
+    "manageProperties": "Immobilien verwalten",
+    "manageUsers": "Benutzer & Rollen verwalten (RBAC)",
+    "manageEscrow": "Treuhandtransaktionen überwachen",
+    "mediaLibrary": "Zentrales Medienarchiv"
+  }
+}

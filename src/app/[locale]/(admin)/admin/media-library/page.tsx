@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState, useRef, useEffect } from "react";
 import { registerMediaAsset, getMediaAssets, deleteMediaAsset } from "@/actions/media";
 

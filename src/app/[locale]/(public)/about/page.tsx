@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-
+import { useTranslations } from 'next-intl';
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-slate-800 py-12 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">

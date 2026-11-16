@@ -1,0 +1,161 @@
+'use server';
+
+import { prisma } from '@/lib/prisma';
+import { propertySchema, escrowStatusSchema } from '@/schemas/melkismSchemas';
+import { revalidatePath } from 'next/cache';
+
+// خروجی استاندارد برای اکشن‌ها
+export type ActionResponse<T = null> = {
+  success: boolean;
+  message: string;
+  data?: T;
+  errors?: Record<string, string[]> | null;
+};
+
+/**
+ * ایجاد یا ثبت ملک جدید در سیستم
+ */
+export async function createPropertyAction(
+  prevState: ActionResponse | null,
+  formData: FormData
+): Promise<ActionResponse> {
+  try {
+    // ۱. استخراج داده‌ها از فرم (تبدیل فیلدهای عددی و آرایه‌ها)
+    const rawData = {
+      title: formData.get('title'),
+      price: formData.get('price'),
+      area: formData.get('area'),
+      province: formData.get('province'),
+      city: formData.get('city'),
+      address: formData.get('address'),
+      description: formData.get('description'),
+      imageUrl: formData.get('imageUrl'),
+      // نمونه پردازش گالری در صورت ارسال به صورت JSON string یا مقادیر متعدد
+      gallery: formData.get('gallery') ? JSON.parse(formData.get('gallery') as string) : [],
+    };
+
+    // ۲. اعتبارسنجی مقادیر با Zod
+    const validationResult = propertySchema.safeParse(rawData);
+    if (!validationResult.success) {
+      return {
+        success: false,
+        message: 'خطا در اطلاعات ورودی فرم ملک وجود دارد.',
+        errors: validationResult.error.flatten().fieldErrors,
+      };
+    }
+
+    const data = validationResult.data;
+
+    // ۳. تولید خودکار Slug یکتا بر اساس عنوان
+    const baseSlug = data.title
+      .toLowerCase()
+      .replace(/[\s]+/g, '-')
+      .replace(/[^\w\u0600-\u06FF\-]+/g, ''); // پشتیبانی از حروف فارسی در اسلاگ
+    
+    let slug = baseSlug;
+    let counter = 1;
+    while (await prisma.property.findUnique({ where: { slug } })) {
+      slug = `${baseSlug}-${counter++}`;
+    }
+
+    // ۴. ذخیره در دیتابیس با استفاده از Prisma
+    const newProperty = await prisma.property.create({
+      data: {
+        title: data.title,
+        slug,
+        price: data.price,
+        area: data.area,
+        province: data.province,
+        city: data.city,
+        address: data.address,
+        description: data.description,
+        imageUrl: data.imageUrl || null,
+        gallery: data.gallery || [],
+      },
+    });
+
+    // ۵. بازسازی کش صفحات مربوطه
+    revalidatePath('/properties');
+
+    return {
+      success: true,
+      message: 'ملک با موفقیت ثبت و منتشر شد.',
+      data: newProperty as any,
+    };
+
+  } catch (error) {
+    console.error('[CreatePropertyAction Error]:', error);
+    return {
+      success: false,
+      message: 'خطای سیستمی رخ داد. لطفاً مجدداً تلاش کنید.',
+    };
+  }
+}
+
+/**
+ * مدیریت تغییر وضعیت حساب اسکرو و ثبت لاگ تغییرات
+ */
+export async function updateEscrowStatusAction(
+  actorId: string, // شناسایی کاربری که این تغییر را ایجاد کرده (مدیر یا کارشناس)
+  input: { transactionId: string; status: any; note?: string }
+): Promise<ActionResponse> {
+  try {
+    // ۱. اعتبارسنجی ورودی
+    const validationResult = escrowStatusSchema.safeParse(input);
+    if (!validationResult.success) {
+      return {
+        success: false,
+        message: 'اطلاعات وضعیت اسکرو نامعتبر است.',
+        errors: validationResult.error.flatten().fieldErrors,
+      };
+    }
+
+    const { transactionId, status, note } = validationResult.data;
+
+    // ۲. بررسی وجود تراکنش در دیتابیس
+    const transaction = await prisma.escrowTransaction.findUnique({
+      where: { id: transactionId },
+    });
+
+    if (!transaction) {
+      return { success: false, message: 'تراکنش اسکرو مورد نظر یافت نشد.' };
+    }
+
+    // ۳. استفاده از Transaction پدیده Prisma برای آپدیت وضعیت و درج همزمان لاگ
+    const updatedTransaction = await prisma.$transaction(async (tx) => {
+      // به‌روزرسانی وضعیت تراکنش
+      const updated = await tx.escrowTransaction.update({
+        where: { id: transactionId },
+        data: { status },
+      });
+
+      // درج سند در جدول EscrowLog برای تاریخچه و حسابرسی
+      await tx.escrowLog.create({
+        data: {
+          transactionId,
+          actorId,
+          action: `STATUS_CHANGED_TO_${status}`,
+          notes: note || `تغییر وضعیت تراکنش به ${status}`,
+        },
+      });
+
+      return updated;
+    });
+
+    // ۴. بازسازی کش پنل مدیریتی مربوطه
+    revalidatePath('/admin/escrow');
+
+    return {
+      success: true,
+      message: 'وضعیت حساب اسکرو با موفقیت به‌روزرسانی شد.',
+      data: updatedTransaction as any,
+    };
+
+  } catch (error) {
+    console.error('[UpdateEscrowStatusAction Error]:', error);
+    return {
+      success: false,
+      message: 'خطا در پردازش تغییر وضعیت حساب واسط.',
+    };
+  }
+}
