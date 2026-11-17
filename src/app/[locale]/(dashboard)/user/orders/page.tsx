@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function UserOrdersPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [activeTab, setActiveTab] = useState("ALL");
 
   const [orders, setOrders] = useState([
@@ -47,7 +52,7 @@ export default function UserOrdersPage() {
   });
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -59,17 +64,17 @@ export default function UserOrdersPage() {
           <p className="text-xs text-slate-500 mt-1">مشاهده وضعیت مالی سفارش‌ها، آگهی‌های فعال و پروژه‌های در حال اجرا.</p>
         </div>
         <div className="flex items-center gap-2">
-          <Link href="/fa/user/financial" className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm">
+          <Link href={`/${locale}/user/financial`} className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm whitespace-nowrap">
             💳 کیف پول و گزارش مالی
           </Link>
-          <Link href="/fa/user/dashboard" className="bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl">
-            ← بازگشت به داشبورد
+          <Link href={`/${locale}/user/dashboard`} className="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+            {dir === 'rtl' ? '← بازگشت به داشبورد' : 'بازگشت به داشبورد →'}
           </Link>
         </div>
       </div>
 
       {/* تب‌های تفکیک سفارش‌ها */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-3 shadow-sm flex gap-2 text-xs">
+      <div className="bg-white border border-slate-200 rounded-2xl p-3 shadow-sm flex flex-wrap gap-2 text-xs">
         {[
           { key: "ALL", label: "همه سفارش‌ها و آگهی‌ها" },
           { key: "SPECIAL", label: "آگهی‌های ویژه و پروژه‌ها" },
@@ -87,15 +92,15 @@ export default function UserOrdersPage() {
 
       {/* جدول سفارش‌ها */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
           <h3 className="text-sm font-bold text-slate-900">📦 لیست سفارش‌های ثبت‌شده ({filteredOrders.length} مورد)</h3>
-          <button onClick={() => alert("فرم ثبت آگهی جدید یا پروژه ساختمانی")} className="bg-indigo-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl">
+          <button onClick={() => alert("فرم ثبت آگهی جدید یا پروژه ساختمانی")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
             + ثبت آگهی یا پروژه جدید
           </button>
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-right text-xs">
+          <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
             <thead>
               <tr className="border-b border-slate-100 text-slate-400 font-medium">
                 <th className="pb-3">عنوان سفارش / پروژه</th>
@@ -111,14 +116,14 @@ export default function UserOrdersPage() {
                 <tr key={order.id} className="hover:bg-slate-50/80 transition">
                   <td className="py-4 font-bold text-slate-900">{order.title}</td>
                   <td className="py-4">
-                    <span className="bg-indigo-50 text-indigo-700 font-bold px-2.5 py-1 rounded-lg text-[10px]">
+                    <span className="bg-indigo-50 text-indigo-700 font-bold px-2.5 py-1 rounded-lg text-[10px] inline-block">
                       {order.type}
                     </span>
                   </td>
                   <td className="py-4 font-bold text-slate-900">{order.amount}</td>
                   <td className="py-4 text-slate-500 font-mono text-[11px]">{order.date}</td>
                   <td className="py-4">
-                    <span className="font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg text-[10px]">
+                    <span className="font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg text-[10px] inline-block">
                       {order.status}
                     </span>
                   </td>

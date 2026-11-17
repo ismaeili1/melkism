@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import { useParams } from 'next/navigation';
 
 const faqList = [
   {
@@ -28,6 +29,11 @@ const faqList = [
 ];
 
 export default function FAQPage() {
+  const t = useTranslations('FAQPage');
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+  const dir = ['fa', 'ar'].includes(locale) ? 'rtl' : 'ltr';
+
   const [openIndex, setOpenIndex] = useState<string | null>(null);
 
   const toggle = (id: string) => {
@@ -35,11 +41,11 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 py-12 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">
+    <div className={`min-h-screen bg-white text-slate-800 py-12 px-4 sm:px-6 lg:px-8 ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'} font-sans`} dir={dir}>
       <div className="max-w-4xl mx-auto space-y-10">
         
         {/* هدر سوالات */}
-        <div className="border-b border-slate-100 pb-6 space-y-2 text-right">
+        <div className={`border-b border-slate-100 pb-6 space-y-2 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
           <span className="text-[11px] font-bold tracking-wide uppercase text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full inline-block">
             • FREQUENTLY ASKED QUESTIONS
           </span>
@@ -68,14 +74,14 @@ export default function FAQPage() {
                     <div key={qIdx} className="bg-white border border-slate-200/80 rounded-xl overflow-hidden transition">
                       <button
                         onClick={() => toggle(itemId)}
-                        className="w-full text-right p-4 text-xs font-bold text-slate-900 hover:bg-slate-50 transition flex items-center justify-between gap-2"
+                        className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} p-4 text-xs font-bold text-slate-900 hover:bg-slate-50 transition flex items-center justify-between gap-2`}
                       >
                         <span>{item.q}</span>
                         <span className="text-slate-400 text-sm font-normal">{isOpen ? '−' : '+'}</span>
                       </button>
 
                       {isOpen && (
-                        <div className="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        <div className={`p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/50 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
                           {item.a}
                         </div>
                       )}

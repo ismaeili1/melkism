@@ -1,64 +1,68 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { prisma } from '@/lib/prisma';
 import Link from "next/link";
+import { notFound } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 
 interface MarketHubDetailPageProps {
   params: { slug: string; locale: string };
 }
 
-export default function MarketHubDetailPage({ params }: MarketHubDetailPageProps) {
-  const slug = params.slug;
-  const locale = params.locale || "fa";
+const rtlLocales = ["fa", "ar"];
 
-  // بانک اطلاعات نمونه گزارشات هاب بازار و هوش تحلیل املاک
-  const marketDatabase: Record<string, any> = {
-    "tehran-districts-roi-1405": {
-      title: "گزارش جامع تحلیل بازدهی سرمایه‌گذاری (ROI) در مناطق ۲۲ گانه تهران",
-      category: "هوش بازار و سرمایه‌گذاری",
-      author: "تیم تحلیل داده‌های ملکیسم",
-      date: "۱۴۰۵/۰۷/۱۵",
-      version: "نسخه نهایی - پاییز ۱۴۰۵",
-      imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-      summary: "بررسی شاخص‌های رشد قیمت، میزان نقدشوندگی و بازدهی اجاره در مناطق مختلف کلان‌شهر تهران.",
-      content: "یافته‌های این گزارش نشان می‌دهد که در پاییز ۱۴۰۵، مناطق حاشیه‌ای با رشد تقاضای مصرفی و مناطق لوکس شمالی با ثبات نسبی قیمت همراه بوده‌اند. مدل‌های پیش‌بینی هوش مصنوعی ملکیسم روند صعودی ملایمی را برای املاک تجاری متراژ متوسط پیش‌بینی می‌کنند..."
-    }
-  };
+// تابع دریافت جزئیات گزارش بازار از دیتابیس
+async function getMarketReport(slug: string, locale: string) {
+  const report = await prisma.marketReport.findUnique({
+    where: { slug },
+    include: {
+      translations: { where: { locale } },
+    },
+  });
 
-  const report = marketDatabase[slug] || {
-    title: `گزارش تخصصی هوش بازار: ${slug}`,
-    category: "تحلیل و هوش املاک",
-    author: "سیستم هوش مصنوعی و تحلیل داده ملکیسم",
-    date: "امروز",
-    version: "نسخه پویای سیستم",
-    imageUrl: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-    summary: "گزارش هوشمند استخراج‌شده از مخزن داده‌های تحلیلی پلتفرم ملکیسم.",
-    content: "این گزارش به صورت زنده از پایگاه داده هاب بازار فراخوانی شده است. مشروح داده‌های آماری، نمودارهای مقایسه‌ای و تحلیل‌های مهندسی به زودی در این بخش بارگذاری خواهد شد."
+  if (!report) return null;
+
+  const translation = report.translations[0] || {};
+
+  return {
+    ...report,
+    title: translation.title || 'گزارش تحلیلی بدون عنوان',
+    description: translation.description || 'محتوای گزارش در این زبان موجود نیست.',
   };
+}
+
+export default async function MarketHubDetailPage({ params }: MarketHubDetailPageProps) {
+  const { slug, locale } = params;
+  const currentLocale = locale || "fa";
+  
+  setRequestLocale(currentLocale);
+  const isRtl = rtlLocales.includes(currentLocale);
+
+  const report = await getMarketReport(slug, currentLocale);
+
+  if (!report) {
+    notFound();
+  }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 sm:p-12 dir-rtl font-sans space-y-8">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 sm:p-12 ${isRtl ? 'dir-rtl' : 'dir-ltr'} font-sans space-y-8`} dir={isRtl ? 'rtl' : 'ltr'}>
       <div className="max-w-3xl mx-auto space-y-6">
         
         <div>
-          <Link href={`/${locale}/admin/market-hub`} className="text-indigo-600 text-xs font-bold hover:underline bg-indigo-50 px-3.5 py-2 rounded-xl inline-flex items-center gap-1 border border-indigo-100">
-            ← بازگشت به مدیریت هاب بازار
+          <Link href={`/${currentLocale}/admin/market-hub`} className="text-indigo-600 text-xs font-bold hover:underline bg-indigo-50 px-3.5 py-2 rounded-xl inline-flex items-center gap-1 border border-indigo-100">
+            {isRtl ? '← بازگشت به مدیریت هاب بازار' : '← Back to Market Hub'}
           </Link>
         </div>
 
         <div className="space-y-3">
           <span className="text-[11px] font-bold text-indigo-600 bg-indigo-100/60 px-3 py-1 rounded-full inline-block">
-            {report.category}
+            {report.region || 'هوش بازار و سرمایه‌گذاری'}
           </span>
           <h1 className="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
             {report.title}
           </h1>
           <div className="text-xs text-slate-400 flex flex-wrap items-center gap-3 pt-1">
-            <span>📊 تهیه‌کننده: <strong className="text-slate-700">{report.author}</strong></span>
+            <span>📊 شاخص بازار: <strong className="text-slate-700 font-mono">{report.marketIndex ?? 'N/A'}</strong></span>
             <span>•</span>
-            <span>📅 تاریخ انتشار: <strong className="text-slate-700 font-mono">{report.date}</strong></span>
-            <span>•</span>
-            <span>🔖 نسخه: <strong className="text-indigo-600 font-mono">{report.version}</strong></span>
+            <span>📅 تاریخ انتشار: <strong className="text-slate-700 font-mono">{new Date(report.createdAt).toLocaleDateString(currentLocale === 'fa' ? 'fa-IR' : 'en-US')}</strong></span>
           </div>
         </div>
 
@@ -69,15 +73,15 @@ export default function MarketHubDetailPage({ params }: MarketHubDetailPageProps
         )}
 
         <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm space-y-4 text-sm leading-relaxed text-slate-700">
-          <div className="bg-indigo-50/50 border border-indigo-100 p-4 rounded-xl font-medium text-slate-900">
-            <strong>چکیده گزارش:</strong> {report.summary}
-          </div>
           <h3 className="font-bold text-slate-900 text-base pt-2">مشروح تحلیل‌های بازار:</h3>
-          <p>{report.content}</p>
+          <p className="whitespace-pre-line leading-7">{report.description}</p>
+          
           <div className="pt-4 flex items-center gap-3">
-            <button onClick={() => alert("گزارش تحلیلی با موفقیت دانلود شد.")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-5 py-3 rounded-xl shadow-sm transition">
-              📥 دانلود نسخه کامل گزارش (PDF)
-            </button>
+            {report.pdfLink && (
+              <a href={report.pdfLink} target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-5 py-3 rounded-xl shadow-sm transition inline-block">
+                📥 دانلود نسخه کامل گزارش (PDF)
+              </a>
+            )}
             <button onClick={() => alert("لینک اشتراک‌گذاری کپی شد.")} className="bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-4 py-3 rounded-xl transition">
               🔗 اشتراک‌گذاری گزارش
             </button>

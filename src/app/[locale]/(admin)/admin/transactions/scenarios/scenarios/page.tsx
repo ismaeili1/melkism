@@ -11,7 +11,14 @@ const STATUS_CONFIG: Record<EscrowStatus, { label: string; color: string }> = {
   DISPUTED: { label: "دارای اختلاف (مسدود)", color: "bg-red-100 text-red-800 border-red-300 font-bold" },
 };
 
-export default async function EscrowScenariosPage() {
+interface EscrowScenariosPageProps {
+  params: { locale: string };
+}
+
+export default async function EscrowScenariosPage({ params }: EscrowScenariosPageProps) {
+  const { locale } = params;
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const transactions = await getAllEscrowTransactions();
 
   // محاسبات آمار کلی صندوق (Escrow Metrics)
@@ -21,7 +28,7 @@ export default async function EscrowScenariosPage() {
     .reduce((acc, t) => acc + t.amount, 0);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6 max-w-7xl mx-auto">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6 max-w-7xl mx-auto`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
@@ -56,15 +63,15 @@ export default async function EscrowScenariosPage() {
 
       {/* جدول لیست معاملات اسکرو */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm overflow-x-auto">
-        <table className="w-full text-right text-xs">
+        <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
           <thead>
             <tr className="border-b border-slate-200 text-slate-900 font-bold bg-slate-50">
-              <th className="p-3.5 rounded-r-xl">کد رهگیری</th>
+              <th className={`p-3.5 ${dir === 'rtl' ? 'rounded-r-xl' : 'rounded-l-xl'}`}>کد رهگیری</th>
               <th className="p-3.5">خریدار</th>
               <th className="p-3.5">فروشنده / سازنده</th>
               <th className="p-3.5">مبلغ معامله (تومان)</th>
               <th className="p-3.5">وضعیت اسکرو</th>
-              <th className="p-3.5 rounded-l-xl text-center">عملیات و تغییر وضعیت</th>
+              <th className={`p-3.5 ${dir === 'rtl' ? 'rounded-l-xl' : 'rounded-r-xl'} text-center`}>عملیات و تغییر وضعیت</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
@@ -94,7 +101,7 @@ export default async function EscrowScenariosPage() {
                       {tx.amount.toLocaleString()} تومان
                     </td>
                     <td className="p-4">
-                      <span className={`px-2.5 py-1 rounded-full text-[10px] border ${statusInfo.color}`}>
+                      <span className={`px-2.5 py-1 rounded-full text-[10px] border inline-block ${statusInfo.color}`}>
                         {statusInfo.label}
                       </span>
                     </td>
@@ -115,7 +122,7 @@ export default async function EscrowScenariosPage() {
                           >
                             <button
                               type="submit"
-                              className="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold transition shadow-sm"
+                              className="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold transition shadow-sm whitespace-nowrap"
                             >
                               آزادسازی وجه ✓
                             </button>
@@ -137,7 +144,7 @@ export default async function EscrowScenariosPage() {
                           >
                             <button
                               type="submit"
-                              className="bg-rose-100 hover:bg-rose-200 text-rose-700 px-3 py-1.5 rounded-lg text-[10px] font-bold transition"
+                              className="bg-rose-100 hover:bg-rose-200 text-rose-700 px-3 py-1.5 rounded-lg text-[10px] font-bold transition whitespace-nowrap"
                             >
                               اختلاف مالی ⚠️
                             </button>

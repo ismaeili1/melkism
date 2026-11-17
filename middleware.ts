@@ -1,22 +1,18 @@
+import createMiddleware from 'next-intl/middleware';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { locales, defaultLocale } from './src/i18n/config';
 
-// ۱۰ زبان پشتیبانی‌شده در پلتفرم ملکیست
-const locales = ['fa', 'en', 'ru', 'fr', 'zh', 'de', 'es', 'it', 'ar', 'tr'] as const;
-const defaultLocale = 'fa';
-
-function getLocale(pathname: string): string {
-  const pathnameSegments = pathname.split('/');
-  const potentialLocale = pathnameSegments[1];
-  if (locales.includes(potentialLocale as any)) {
-    return potentialLocale;
-  }
-  return defaultLocale;
-}
+const handleI18nRouting = createMiddleware({
+  locales,
+  defaultLocale,
+  localePrefix: 'always',
+});
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // نادیده گرفتن مسیرهای سیستمی و فایل‌های استاتیک
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
@@ -25,28 +21,19 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
+  // اجرای میدل‌ویر رسمی next-intl برای ساخت هدرها و تشخیص دقیق لوکیل
+  const response = handleI18nRouting(request);
 
-  let response = NextResponse.next();
+  // استخراج زبان فعلی از مسیر
+  const segments = pathname.split('/');
+  const currentLocale = locales.includes(segments[1] as any)
+    ? segments[1]
+    : defaultLocale;
 
-  if (!pathnameHasLocale) {
-    const savedLocale = request.cookies.get('NEXT_LOCALE')?.value;
-    const targetLocale = savedLocale && locales.includes(savedLocale as any) 
-      ? savedLocale 
-      : defaultLocale;
-
-    const url = request.nextUrl.clone();
-    url.pathname = `/${targetLocale}${pathname === '/' ? '' : pathname}`;
-    return NextResponse.redirect(url);
-  }
-
-  const currentLocale = getLocale(pathname);
-
+  // محافظت از مسیرهای پنل مدیریت (Admin)
   if (pathname.includes('/admin')) {
-    const sessionToken = 
-      request.cookies.get('next-auth.session-token')?.value || 
+    const sessionToken =
+      request.cookies.get('next-auth.session-token')?.value ||
       request.cookies.get('__Secure-next-auth.session-token')?.value;
 
     if (!sessionToken) {
@@ -56,15 +43,9 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  response.cookies.set('NEXT_LOCALE', currentLocale, { 
-    path: '/', 
-    maxAge: 31536000, 
-    sameSite: 'lax' 
-  });
-
   return response;
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|images).*)'],
 };

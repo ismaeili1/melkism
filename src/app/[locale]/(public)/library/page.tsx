@@ -2,9 +2,14 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LibraryPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+  const dir = ['fa', 'ar'].includes(locale) ? 'rtl' : 'ltr';
+
   const [resources, setResources] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -42,7 +47,7 @@ export default function LibraryPage() {
       const res = await fetch('/api/generate-library', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ topic: topicInput })
+        body: JSON.stringify({ topic: topicInput, locale })
       });
       const data = await res.json();
       if (data.success || res.ok) {
@@ -74,7 +79,7 @@ export default function LibraryPage() {
   const latestTextList = filteredResources.slice(0, 20);
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">
+    <div className={`min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'} font-sans`} dir={dir}>
       <div className="max-w-7xl mx-auto space-y-8">
         
         {/* هدر کتابخانه */}
@@ -152,7 +157,7 @@ export default function LibraryPage() {
               </div>
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                 <span className="text-slate-400">📄 {featuredItem.pages || 250} صفحه / PDF</span>
-                <Link href={`/fa/library/${featuredItem.id}`} className="text-blue-700 hover:text-blue-800 font-bold">
+                <Link href={`/${locale}/library/${featuredItem.id}`} className="text-blue-700 hover:text-blue-800 font-bold">
                   مطالعه و دانلود ←
                 </Link>
               </div>
@@ -165,7 +170,7 @@ export default function LibraryPage() {
           {gridItems.map((item: any) => (
             <Link
               key={item.id}
-              href={`/fa/library/${item.id}`}
+              href={`/${locale}/library/${item.id}`}
               className="bg-white border border-slate-200/80 rounded-xl overflow-hidden hover:border-blue-300 transition duration-200 flex flex-col justify-between group"
             >
               <div>
@@ -208,7 +213,7 @@ export default function LibraryPage() {
             {latestTextList.map((item: any, index: number) => (
               <Link 
                 key={item.id} 
-                href={`/fa/library/${item.id}`}
+                href={`/${locale}/library/${item.id}`}
                 className="flex items-center justify-between p-2.5 rounded-lg bg-white border border-slate-200/60 hover:border-blue-300 transition group"
               >
                 <span className="text-xs text-slate-700 group-hover:text-blue-700 transition truncate font-medium">

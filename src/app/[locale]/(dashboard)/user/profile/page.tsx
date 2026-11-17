@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function UserProfileSettingsPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [profile, setProfile] = useState({
     name: "شرکت انبوه‌سازی سازندگان آلتون",
     username: "alton_build",
@@ -24,15 +29,17 @@ export default function UserProfileSettingsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
-      <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex justify-between items-center">
+      <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
           <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full inline-block mb-1">تنظیمات حساب کاربری</span>
           <h1 className="text-2xl font-black text-slate-900">ویرایش مشخصات، پروانه کسب و اطلاعات بانکی</h1>
           <p className="text-xs text-slate-500 mt-1">مدیریت اطلاعات هویتی، آدرس‌ها و حساب بانکی جهت تسویه حساب‌ها.</p>
         </div>
-        <Link href="/fa/user/dashboard" className="bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl">← بازگشت به داشبورد</Link>
+        <Link href={`/${locale}/user/dashboard`} className="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+          {dir === 'rtl' ? '← بازگشت به داشبورد' : 'بازگشت به داشبورد →'}
+        </Link>
       </div>
 
       <form onSubmit={handleSave} className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 text-xs">
@@ -49,15 +56,15 @@ export default function UserProfileSettingsPage() {
           </div>
           <div>
             <label className="block text-slate-600 font-bold mb-1">ایمیل سازمانی</label>
-            <input type="email" value={profile.email} onChange={e => setProfile({...profile, email: e.target.value})} className="w-full border border-slate-200 rounded-xl px-3 py-2 outline-none focus:border-indigo-600" required />
+            <input type="email" value={profile.email} onChange={e => setProfile({...profile, email: e.target.value})} className="w-full border border-slate-200 rounded-xl px-3 py-2 outline-none focus:border-indigo-600 font-mono" required />
           </div>
           <div>
             <label className="block text-slate-600 font-bold mb-1">شماره موبایل (تأییدشده)</label>
-            <input type="text" value={profile.mobile} onChange={e => setProfile({...profile, mobile: e.target.value})} className="w-full border border-slate-200 rounded-xl px-3 py-2 outline-none focus:border-indigo-600" required />
+            <input type="text" value={profile.mobile} onChange={e => setProfile({...profile, mobile: e.target.value})} className="w-full border border-slate-200 rounded-xl px-3 py-2 outline-none focus:border-indigo-600 font-mono" required />
           </div>
           <div>
             <label className="block text-slate-600 font-bold mb-1">شماره شبا بانکی (جهت تسویه)</label>
-            <input type="text" value={profile.iban} onChange={e => setProfile({...profile, iban: e.target.value})} className="w-full border border-slate-200 rounded-xl px-3 py-2 outline-none font-mono focus:border-indigo-600" required />
+            <input type="text" value={profile.iban} onChange={e => setProfile({...profile, iban: e.target.value})} className="w-full border border-slate-200 rounded-xl px-3 py-2 outline-none font-mono focus:border-indigo-600 text-left" dir="ltr" required />
           </div>
           <div>
             <label className="block text-slate-600 font-bold mb-1">نام بانک</label>

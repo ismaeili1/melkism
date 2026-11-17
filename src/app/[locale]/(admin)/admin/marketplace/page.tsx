@@ -1,10 +1,15 @@
 ﻿"use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 import ImagePickerInput from "@/components/admin/ImagePickerInput"; // 🌟 ایمپورت کامپوننت مخزن و آپلود
 
 export default function AdminMarketplaceManagementPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [ads, setAds] = useState([
     { id: "AD-1", title: "پنت‌هاوس لوکس ۱۸۰ متری الهیه (آگهی ویژه)", owner: "شرکت آلتون", status: "فعال در صفحه اول", slug: "penthouse-elahiyeh", imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c" },
     { id: "AD-2", title: "پیش‌فروش پروژه مسکونی ارکیده - فاز ۲", owner: "سازندگان آپادانا", status: "در انتظار بازبینی", slug: "orkideh-project-pre", imageUrl: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" }
@@ -67,7 +72,7 @@ export default function AdminMarketplaceManagementPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -76,9 +81,9 @@ export default function AdminMarketplaceManagementPage() {
           <h1 className="text-2xl font-black text-slate-900">مدیریت آگهی‌های ویژه، پیش‌فروش‌ها و محصولات بازار ملک</h1>
           <p className="text-xs text-slate-500 mt-1">نظارت بر جایگاه‌های ویژه آگهی‌ها، تصاویر و تأیید پیش‌فروش‌های شرکت‌های ساختمانی.</p>
         </div>
-        <div className="flex gap-2">
-          <button onClick={() => handleOpenModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm">+ ثبت آگهی/پروژه جدید</button>
-          <Link href="/fa/admin/dashboard" className="bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl">← بازگشت به داشبورد</Link>
+        <div className="flex flex-wrap items-center gap-2">
+          <button onClick={() => handleOpenModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition whitespace-nowrap">+ ثبت آگهی/پروژه جدید</button>
+          <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">{dir === 'rtl' ? '← بازگشت به داشبورد' : 'Dashboard →'}</Link>
         </div>
       </div>
 
@@ -86,7 +91,7 @@ export default function AdminMarketplaceManagementPage() {
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
         <h3 className="text-sm font-bold text-slate-900">🛒 لیست آگهی‌ها و پیش‌فروش‌های ویژه بازار ({ads.length} مورد)</h3>
         <div className="overflow-x-auto">
-          <table className="w-full text-right text-xs">
+          <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
             <thead>
               <tr className="border-b text-slate-400 font-medium">
                 <th className="pb-3">تصویر</th>
@@ -106,8 +111,12 @@ export default function AdminMarketplaceManagementPage() {
                   <td className="py-4 font-bold text-slate-900">{ad.title}</td>
                   <td className="py-4 text-slate-600">{ad.owner}</td>
                   <td className="py-4 text-emerald-600 font-bold">{ad.status}</td>
-                  <td className="py-4"><a href={`/fa/marketplace/${ad.slug}`} target="_blank" rel="noopener noreferrer" className="text-indigo-600 font-bold hover:underline">🔗 مشاهده آگهی ↗</a></td>
-                  <td className="py-4 text-center space-x-2 space-x-reverse">
+                  <td className="py-4">
+                    <a href={`/${locale}/marketplace/${ad.slug}`} target="_blank" rel="noopener noreferrer" className="text-indigo-600 font-bold hover:underline inline-flex items-center gap-1 whitespace-nowrap">
+                      مشاهده آگهی ↗
+                    </a>
+                  </td>
+                  <td className="py-4 text-center space-x-2 space-x-reverse whitespace-nowrap">
                     <button onClick={() => handleOpenModal(ad)} className="text-indigo-600 font-bold hover:underline">ویرایش</button>
                     <button onClick={() => handleToggle(ad.id)} className="text-indigo-600 font-bold hover:underline">مدیریت جایگاه</button>
                   </td>
@@ -128,7 +137,7 @@ export default function AdminMarketplaceManagementPage() {
                 <label className="block font-bold mb-1">عنوان آگهی / پروژه:</label>
                 <input type="text" value={formTitle} onChange={e => setFormTitle(e.target.value)} className="w-full border rounded-xl px-3 py-2 outline-none" required />
               </div>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <div>
                   <label className="block font-bold mb-1">مالک / سازنده:</label>
                   <input type="text" value={formOwner} onChange={e => setFormOwner(e.target.value)} className="w-full border rounded-xl px-3 py-2 outline-none" required />
@@ -144,7 +153,7 @@ export default function AdminMarketplaceManagementPage() {
               </div>
               <div>
                 <label className="block font-bold mb-1">لینک اختصاصی (Slug):</label>
-                <input type="text" value={formSlug} onChange={e => setFormSlug(e.target.value)} className="w-full border rounded-xl px-3 py-2 outline-none font-mono" required />
+                <input type="text" value={formSlug} onChange={e => setFormSlug(e.target.value)} className="w-full border rounded-xl px-3 py-2 outline-none font-mono" dir="ltr" required />
               </div>
               <div>
                 {/* 🌟 جایگزینی فیلد با کامپوننت مخزن و آپلود تصویر */}
@@ -157,8 +166,8 @@ export default function AdminMarketplaceManagementPage() {
                 />
               </div>
               <div className="pt-2 flex justify-end gap-2">
-                <button type="button" onClick={() => setShowModal(false)} className="px-4 py-2 bg-slate-100 rounded-xl font-bold">انصراف</button>
-                <button type="submit" className="px-4 py-2 bg-indigo-600 text-white rounded-xl font-bold">ذخیره آگهی</button>
+                <button type="button" onClick={() => setShowModal(false)} className="px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-xl font-bold transition">انصراف</button>
+                <button type="submit" className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition">ذخیره آگهی</button>
               </div>
             </form>
           </div>

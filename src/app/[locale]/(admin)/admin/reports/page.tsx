@@ -1,10 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 import ImagePickerInput from "@/components/admin/ImagePickerInput"; // 🌟 ایمپورت کامپوننت مخزن رسانه و آپلود
 
 export default function AdminReportsPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [dateRange, setDateRange] = useState("ALL");
   const [roleFilter, setRoleFilter] = useState("ALL");
   const [reportType, setReportType] = useState("FINANCIAL");
@@ -62,7 +67,7 @@ export default function AdminReportsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -73,15 +78,15 @@ export default function AdminReportsPage() {
           <h1 className="text-2xl font-black text-slate-900">گزارش‌های جامع آماری و تحلیل پیشرفته</h1>
           <p className="text-xs text-slate-500 mt-1">فیلتر، دسته‌بندی، پیوست تصاویر/نمودارها و استخراج گزارش‌های مالی، کاربران و محتوای پلتفرم.</p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <button 
             onClick={() => setShowModal(true)} 
-            className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition whitespace-nowrap"
           >
             + ثبت گزارش جدید
           </button>
-          <Link href="/fa/admin/dashboard" className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
-            ← بازگشت به داشبورد فرماندهی
+          <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+            {dir === 'rtl' ? '← بازگشت به داشبورد فرماندهی' : 'Command Dashboard →'}
           </Link>
         </div>
       </div>
@@ -135,7 +140,7 @@ export default function AdminReportsPage() {
         </div>
 
         <div className="pt-2 flex justify-end">
-          <button onClick={() => alert("فیلترها اعمال شد و گزارش به‌روز گردید")} className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2.5 rounded-xl text-xs transition shadow-sm">
+          <button onClick={() => alert("فیلترها اعمال شد و گزارش به‌روز گردید")} className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2.5 rounded-xl text-xs transition shadow-sm whitespace-nowrap">
             اعمال فیلتر و دریافت گزارش زنده
           </button>
         </div>
@@ -143,18 +148,18 @@ export default function AdminReportsPage() {
 
       {/* نتایج گزارش آماری */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
           <h3 className="text-sm font-bold text-slate-900">
             📊 نتایج گزارش تفکیک‌شده: <span className="text-indigo-600">{reportType}</span>
           </h3>
-          <button onClick={() => alert("خروجی گزارش با موفقیت دانلود شد")} className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-3 py-1.5 rounded-xl text-xs transition">
+          <button onClick={() => alert("خروجی گزارش با موفقیت دانلود شد")} className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-3 py-1.5 rounded-xl text-xs transition whitespace-nowrap">
             📥 دانلود خروجی (Excel / PDF)
           </button>
         </div>
 
         <div className="divide-y divide-slate-100 text-xs">
           {reportData[reportType as keyof typeof reportData]?.map((item: any, idx: number) => (
-            <div key={item.id || idx} className="py-3.5 flex items-center justify-between gap-4">
+            <div key={item.id || idx} className="py-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 {item.attachmentUrl && (
                   <img src={item.attachmentUrl} alt="پیوست" className="w-10 h-10 rounded-lg object-cover border border-slate-200 shrink-0" />
@@ -168,7 +173,7 @@ export default function AdminReportsPage() {
                   </span>
                 </div>
               </div>
-              <span className="px-3 py-1 rounded-lg font-bold text-[10px] bg-indigo-50 text-indigo-600 whitespace-nowrap">
+              <span className="px-3 py-1 rounded-lg font-bold text-[10px] bg-indigo-50 text-indigo-600 whitespace-nowrap inline-block">
                 {item.status || "ثبت‌شده"}
               </span>
             </div>
@@ -191,7 +196,7 @@ export default function AdminReportsPage() {
                 <input type="text" value={formTitle} onChange={e => setFormTitle(e.target.value)} className="w-full border rounded-xl px-3 py-2 outline-none" required />
               </div>
 
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <div>
                   <label className="block font-bold mb-1">نوع گزارش:</label>
                   <select value={formType} onChange={e => setFormType(e.target.value)} className="w-full border rounded-xl px-3 py-2 bg-white outline-none">
@@ -223,8 +228,8 @@ export default function AdminReportsPage() {
               </div>
 
               <div className="pt-2 flex justify-end gap-2">
-                <button type="button" onClick={() => setShowModal(false)} className="px-4 py-2 bg-slate-100 rounded-xl font-bold">انصراف</button>
-                <button type="submit" className="px-4 py-2 bg-indigo-600 text-white rounded-xl font-bold shadow-sm">ثبت گزارش</button>
+                <button type="button" onClick={() => setShowModal(false)} className="px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-xl font-bold transition">انصراف</button>
+                <button type="submit" className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold shadow-sm transition">ثبت گزارش</button>
               </div>
             </form>
           </div>

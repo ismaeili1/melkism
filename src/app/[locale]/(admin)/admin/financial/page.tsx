@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function UserFinancialDashboardPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [activeTab, setActiveTab] = useState("TRANSACTIONS");
 
   // اطلاعات نمونه مالی مختص کاربری که وارد شده است
@@ -50,7 +55,7 @@ export default function UserFinancialDashboardPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -61,8 +66,8 @@ export default function UserFinancialDashboardPage() {
           <h1 className="text-2xl font-black text-slate-900">کیف پول، پرداختی‌ها و سفارش‌ها</h1>
           <p className="text-xs text-slate-500 mt-1">مشاهده عناوین پرداختی (عضویت، ویژه، آگهی، رپرتاژ)، رسیدها، تخفیف‌ها و وضعیت سفارش‌ها.</p>
         </div>
-        <Link href="/fa/user/dashboard" className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
-          ← بازگشت به داشبورد کاربری
+        <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+          {dir === 'rtl' ? '← بازگشت به داشبورد' : 'Dashboard →'}
         </Link>
       </div>
 
@@ -70,17 +75,17 @@ export default function UserFinancialDashboardPage() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-1 bg-gradient-to-br from-emerald-50/50 to-white">
           <span className="text-xs text-emerald-700 font-bold block">💰 موجودی کیف پول:</span>
-          <h3 className="text-2xl font-black text-emerald-900">{wallet.balance}</h3>
+          <h3 className="text-2xl font-black text-emerald-900" dir="ltr">{wallet.balance}</h3>
           <span className="text-[10px] text-slate-400 block">قابل برداشت یا پرداخت آنی</span>
         </div>
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-1">
           <span className="text-xs text-slate-400 font-bold block">🎁 اعتبار هدیه و تخفیف‌ها:</span>
-          <h3 className="text-2xl font-black text-slate-900">{wallet.activeCredit}</h3>
+          <h3 className="text-2xl font-black text-slate-900" dir="ltr">{wallet.activeCredit}</h3>
           <span className="text-[10px] text-slate-400 block">قابل اعمال روی سفارش‌های بعدی</span>
         </div>
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-1">
           <span className="text-xs text-slate-400 font-bold block">📊 مجموع پرداخت‌های موفق:</span>
-          <h3 className="text-2xl font-black text-slate-900">{wallet.totalSpent}</h3>
+          <h3 className="text-2xl font-black text-slate-900" dir="ltr">{wallet.totalSpent}</h3>
           <span className="text-[10px] text-slate-400 block">سوابق کلی سال جاری</span>
         </div>
       </div>
@@ -108,7 +113,7 @@ export default function UserFinancialDashboardPage() {
           <div className="space-y-4">
             <h3 className="text-sm font-bold text-slate-900">💳 سوابق پرداخت (عضویت، ویژه، آگهی، رپرتاژ)</h3>
             <div className="overflow-x-auto">
-              <table className="w-full text-right text-xs">
+              <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
                 <thead>
                   <tr className="border-b border-slate-100 text-slate-400 font-medium">
                     <th className="pb-3">عنوان پرداختی / دسته</th>
@@ -125,14 +130,14 @@ export default function UserFinancialDashboardPage() {
                         {r.title}
                         <span className="block text-[10px] text-indigo-600 font-normal">دسته: {r.category}</span>
                       </td>
-                      <td className="py-4 font-bold text-slate-900">{r.amount}</td>
-                      <td className="py-4 text-emerald-600">{r.discount}</td>
-                      <td className="py-4 text-slate-500 font-mono text-[11px]">
+                      <td className="py-4 font-bold text-slate-900" dir="ltr">{r.amount}</td>
+                      <td className="py-4 text-emerald-600" dir="ltr">{r.discount}</td>
+                      <td className="py-4 text-slate-500 font-mono text-[11px]" dir="ltr">
                         {r.date}
                         <span className="block text-[10px] text-slate-400">رسید: {r.receiptNo}</span>
                       </td>
                       <td className="py-4">
-                        <span className={`font-bold px-2.5 py-1 rounded-lg text-[10px] ${r.status === 'تاییدشده' ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`}>
+                        <span className={`font-bold px-2.5 py-1 rounded-lg text-[10px] inline-block ${r.status === 'تاییدشده' ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`}>
                           {r.status}
                         </span>
                       </td>
@@ -152,9 +157,9 @@ export default function UserFinancialDashboardPage() {
                 <div key={r.id} className="py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                   <div>
                     <span className="font-bold text-slate-900 block">{r.title}</span>
-                    <span className="text-slate-400 text-[10px]">مبلغ: {r.amount} | تاریخ ثبت: {r.date} | شماره رسید: {r.receiptNo}</span>
+                    <span className="text-slate-400 text-[10px]" dir="ltr">مبلغ: {r.amount} | تاریخ ثبت: {r.date} | شماره رسید: {r.receiptNo}</span>
                   </div>
-                  <span className={`px-3 py-1 rounded-xl font-bold text-[10px] ${r.orderStatus.includes('جاری') ? 'bg-indigo-50 text-indigo-600' : r.orderStatus.includes('رزرو') ? 'bg-amber-50 text-amber-600' : 'bg-slate-100 text-slate-600'}`}>
+                  <span className={`px-3 py-1 rounded-xl font-bold text-[10px] whitespace-nowrap ${r.orderStatus.includes('جاری') ? 'bg-indigo-50 text-indigo-600' : r.orderStatus.includes('رزرو') ? 'bg-amber-50 text-amber-600' : 'bg-slate-100 text-slate-600'}`}>
                     وضعیت سفارش: {r.orderStatus}
                   </span>
                 </div>

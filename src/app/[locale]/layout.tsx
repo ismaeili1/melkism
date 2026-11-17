@@ -21,33 +21,27 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params,
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams.locale as Locale;
-
-  // بررسی اعتبار زبان انتخابی (پوشش‌دهی ۱۰ زبان پروژه)
-  if (!locales.includes(locale)) {
+  if (!locales.includes(locale as Locale)) {
     notFound();
   }
 
-  // تعیین خودکار جهت صفحه (RTL برای فارسی و عربی، LTR برای بقیه زبان‌ها)
-  const direction = getDirection(locale);
-
-  // بارگذاری پیام‌ها و ترجمه‌های next-intl برای زبان فعال
+  const direction = getDirection(locale as Locale);
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={direction}>
-      <body className={`${vazirmatn.className} bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+    <html lang={locale} dir={direction} suppressHydrationWarning>
+      <body
+        className={`${vazirmatn.className} bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased`}
+        suppressHydrationWarning
+      >
+        <NextIntlClientProvider key={locale} locale={locale} messages={messages}>
           <SiteHeader />
-          <main className="flex-1">
-            {children}
-          </main>
+          <main className="flex-1">{children}</main>
           <SiteFooter />
         </NextIntlClientProvider>
       </body>

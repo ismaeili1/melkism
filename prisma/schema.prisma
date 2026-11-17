@@ -28,26 +28,29 @@ enum UserStatus {
 }
 
 model User {
-  id        String       @id @default(cuid())
+  id        String     @id @default(cuid())
   name      String?
-  username  String?      @unique
-  email     String?      @unique
-  mobile    String?      @unique
+  username  String?    @unique
+  email     String?    @unique
+  mobile    String?    @unique
   password  String?
-  role      UserRole     @default(USER)
-  status    UserStatus   @default(PENDING)
+  role      UserRole   @default(USER)
+  status    UserStatus @default(PENDING)
 
   province  String?
   city      String?
   iban      String?
   bankName  String?
 
-  createdAt DateTime     @default(now())
-  updatedAt DateTime     @updatedAt
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
 
   // روابط معکوس برای معاملات اسکرو
-  buyerTransactions   EscrowTransaction[] @relation("BuyerTransactions")
-  sellerTransactions  EscrowTransaction[] @relation("SellerTransactions")
+  buyerTransactions    EscrowTransaction[] @relation("BuyerTransactions")
+  sellerTransactions   EscrowTransaction[] @relation("SellerTransactions")
+
+  @@index([email])
+  @@index([mobile])
 }
 
 // ------------------------------------------------------
@@ -57,7 +60,7 @@ model User {
 model Permission {
   id          String           @id @default(cuid())
   code        String           @unique // مانند: "MANAGE_USERS", "APPROVE_NEWS", "MANAGE_ESCROW"
-  name        String           // نام نمایشی (چندزبانه یا پیش‌فرض فارسی)
+  name        String           // نام نمایشی 
   description String?          // توضیحات کاربرد
   category    String?          // دسته‌بندی (امنیتی، مالی، محتوایی، پنل‌ها)
   createdAt   DateTime         @default(now())
@@ -80,12 +83,12 @@ model RolePermission {
 // ------------------------------------------------------
 
 enum EscrowStatus {
-  PENDING_DEPOSIT       // در انتظار واریز وجه توسط خریدار
-  DEPOSITED_IN_ESCROW   // وجه با موفقیت در حساب واسط (اسکرو) مسدود شد
-  UNDER_INSPECTION      // در مرحله بازرسی و تایید کارشناس/مدیر
-  RELEASED              // وجه به حساب فروشنده/سازنده آزاد شد
-  REFUNDED              // وجه به خریدار مرجوع شد
-  DISPUTED              // دارای اختلاف مالی / مسدود جهت داوری
+  PENDING_DEPOSIT        // در انتظار واریز وجه توسط خریدار
+  DEPOSITED_IN_ESCROW    // وجه با موفقیت در حساب واسط (اسکرو) مسدود شد
+  UNDER_INSPECTION       // در مرحله بازرسی و تایید کارشناس/مدیر
+  RELEASED               // وجه به حساب فروشنده/سازنده آزاد شد
+  REFUNDED               // وجه به خریدار مرجوع شد
+  DISPUTED               // دارای اختلاف مالی / مسدود جهت داوری
 }
 
 model EscrowTransaction {
@@ -109,6 +112,9 @@ model EscrowTransaction {
   createdAt     DateTime     @default(now())
   updatedAt     DateTime     @updatedAt
   logs          EscrowLog[]
+
+  @@index([trackingCode])
+  @@index([status])
 }
 
 model EscrowLog {
@@ -123,108 +129,224 @@ model EscrowLog {
 }
 
 // ------------------------------------------------------
-// ۴. بخش‌های عمومی محتوایی و بانک‌های تخصصی (پشتیبانی ۱۰ زبان)
-// ساختار JSON برای translations شامل کلیدهای زبانی (fa, en, ru, fr, zh, de, es, it, ar, tr) است.
+// ۴. بخش‌های محتوایی با «روش جدول ترجمه مجزا» (Translations Tables)
+// پشتیبانی کامل از ۱۰ زبان: fa, en, de, fr, es, it, tr, zh, ar, ru
 // ------------------------------------------------------
 
-// اخبار و مقالات (News)
+// --- اخبار و مقالات (News) ---
 model News {
-  id          String   @id @default(cuid())
-  slug        String   @unique
-  category    String   @default("عمومی")
-  imageUrl    String?  // لینک تصویر شاخص خبر
-  published   Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  category    String           @default("عمومی")
+  imageUrl    String?          // لینک تصویر شاخص خبر
+  published   Boolean          @default(true)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
 
-  // ساختار ترجمه: { "fa": { "title": "...", "summary": "...", "content": "..." }, "en": { ... }, ... }
-  translations Json
+  translations NewsTranslation[]
+
+  @@index([slug])
 }
 
-// گزارش‌های هوش بازار و تحلیل‌ها (Market Reports)
-model MarketReport {
+model NewsTranslation {
   id          String   @id @default(cuid())
-  slug        String   @unique
+  newsId      String
+  locale      String   // کد زبان (fa, en, de, ...)
+  title       String
+  summary     String   @db.Text
+  content     String   @db.Text
+
+  news        News     @relation(fields: [newsId], references: [id], onDelete: Cascade)
+
+  @@unique([newsId, locale])
+  @@index([locale])
+  @@map("news_translations")
+}
+
+// --- گزارش‌های هوش بازار (Market Reports) ---
+model MarketReport {
+  id          String                    @id @default(cuid())
+  slug        String                    @unique
   marketIndex Float?
   region      String?
   pdfLink     String?
-  imageUrl    String?  // لینک تصویر/انفوگرافیک گزارش
-  createdAt   DateTime @default(now())
+  imageUrl    String?                   // لینک تصویر/انفوگرافیک گزارش
+  createdAt   DateTime                  @default(now())
 
-  // ساختار ترجمه: { "fa": { "title": "...", "content": "..." }, "en": { ... }, ... }
-  translations Json
+  translations MarketReportTranslation[]
+
+  @@index([slug])
+  @@index([region])
 }
 
-// قوانین و مقررات (Regulations)
+model MarketReportTranslation {
+  id          String       @id @default(cuid())
+  reportId    String
+  locale      String
+  title       String
+  description String       @db.Text
+
+  report      MarketReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+
+  @@unique([reportId, locale])
+  @@index([locale])
+  @@map("market_report_translations")
+}
+
+// --- قوانین و مقررات (Regulations) ---
 model Regulation {
-  id         String   @id @default(cuid())
-  codeNumber String   @unique
+  id         String                  @id @default(cuid())
+  codeNumber String                  @unique
   category   String
-  imageUrl   String?  // لینک تصویر/سند قانون
-  createdAt  DateTime @default(now())
+  imageUrl   String?                 // لینک تصویر/سند قانون
+  createdAt  DateTime                @default(now())
 
-  // ساختار ترجمه: { "fa": { "title": "...", "summary": "...", "fullText": "..." }, "en": { ... }, ... }
-  translations Json
+  translations RegulationTranslation[]
+
+  @@index([codeNumber])
 }
 
-// املاک و آگهی‌ها (Properties)
+model RegulationTranslation {
+  id           String     @id @default(cuid())
+  regulationId String
+  locale       String
+  title        String
+  fullText     String     @db.Text
+
+  regulation   Regulation @relation(fields: [regulationId], references: [id], onDelete: Cascade)
+
+  @@unique([regulationId, locale])
+  @@index([locale])
+  @@map("regulation_translations")
+}
+
+// --- املاک و آگهی‌ها (Properties) ---
 model Property {
-  id          String   @id @default(cuid())
-  slug        String   @unique
+  id          String                @id @default(cuid())
+  slug        String                @unique
   price       Float
   area        Float
   province    String
   city        String
-  imageUrl    String?  // لینک تصویر اصلی ملک
-  gallery     String[] // آرایه‌ای از لینک‌های تصاویر گالری
-  createdAt   DateTime @default(now())
+  imageUrl    String?               // لینک تصویر اصلی ملک
+  gallery     String[]              // آرایه‌ای از لینک‌های تصاویر گالری
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
 
-  // ساختار ترجمه: { "fa": { "title": "...", "address": "...", "description": "..." }, "en": { ... }, ... }
-  translations Json
+  translations PropertyTranslation[]
+
+  @@index([slug])
+  @@index([city])
+  @@index([province])
+  @@index([price])
 }
 
-// کتابخانه تخصصی (Library)
-model LibraryDocument {
+model PropertyTranslation {
   id          String   @id @default(cuid())
-  slug        String   @unique
-  author      String?
-  category    String?  // مثلا: کتاب، آیین‌نامه، مقاله علمی
-  downloadUrl String?
-  imageUrl    String?  // لینک تصویر جلد کتاب/سند
-  createdAt   DateTime @default(now())
+  propertyId  String
+  locale      String
+  title       String
+  description String   @db.Text
+  address     String
 
-  // ساختار ترجمه: { "fa": { "title": "...", "summary": "..." }, "en": { ... }, ... }
-  translations Json
+  property    Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  @@unique([propertyId, locale])
+  @@index([locale])
+  @@map("property_translations")
 }
 
-// متخصصین ملکیست - پروفایل VIP (Experts)
+// --- کتابخانه تخصصی (Library Documents) ---
+model LibraryDocument {
+  id          String               @id @default(cuid())
+  slug        String               @unique
+  author      String?
+  category    String?              // کتاب، آیین‌نامه، مقاله علمی
+  downloadUrl String?
+  imageUrl    String?              // لینک تصویر جلد کتاب/سند
+  createdAt   DateTime             @default(now())
+
+  translations LibraryTranslation[]
+
+  @@index([slug])
+}
+
+model LibraryTranslation {
+  id         String          @id @default(cuid())
+  documentId String
+  locale     String
+  title      String
+  summary    String          @db.Text
+
+  document   LibraryDocument @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([documentId, locale])
+  @@index([locale])
+  @@map("library_translations")
+}
+
+// --- متخصصین ملکیست - پروفایل VIP (Expert Profiles) ---
 model ExpertProfile {
-  id            String   @id @default(cuid())
-  licenseNumber String?  @unique
+  id            String              @id @default(cuid())
+  licenseNumber String?             @unique
   city          String
   mobile        String?
-  isVip         Boolean  @default(false) // نشان VIP
-  avatarUrl     String?  // آواتار / تصویر پرسنلی
-  rating        Float    @default(5.0)
-  createdAt     DateTime @default(now())
+  isVip         Boolean             @default(false) // نشان VIP
+  avatarUrl     String?             // آواتار / تصویر پرسنلی
+  rating        Float               @default(5.0)
+  createdAt     DateTime            @default(now())
 
-  // ساختار ترجمه: { "fa": { "fullName": "...", "specialty": "...", "bio": "..." }, "en": { ... }, ... }
-  translations Json
+  translations ExpertTranslation[]
+
+  @@index([city])
+  @@index([isVip])
 }
 
-// بازار ملکیست (Market Items)
-model MarketItem {
-  id          String   @id @default(cuid())
-  slug        String   @unique
-  category    String   // مثلا: مصالح ساختمانی، تجهیزات، خدمات مهندسی
-  price       Float?
-  supplier    String   // تامین‌کننده / شرکت
-  city        String
-  imageUrl    String?  // تصویر محصول / خدمت
-  createdAt   DateTime @default(now())
+model ExpertTranslation {
+  id        String        @id @default(cuid())
+  expertId  String
+  locale    String
+  name      String
+  bio       String        @db.Text
+  specialty String
 
-  // ساختار ترجمه: { "fa": { "title": "...", "description": "..." }, "en": { ... }, ... }
-  translations Json
+  expert    ExpertProfile @relation(fields: [expertId], references: [id], onDelete: Cascade)
+
+  @@unique([expertId, locale])
+  @@index([locale])
+  @@map("expert_translations")
+}
+
+// --- بازار ملکیست (Market Items) ---
+model MarketItem {
+  id          String                  @id @default(cuid())
+  slug        String                  @unique
+  category    String                  // مصالح ساختمانی، تجهیزات، خدمات مهندسی
+  price       Float?
+  supplier    String                  // تامین‌کننده / شرکت
+  city        String
+  imageUrl    String?                 // تصویر محصول / خدمت
+  createdAt   DateTime                @default(now())
+
+  translations MarketItemTranslation[]
+
+  @@index([slug])
+  @@index([category])
+  @@index([city])
+}
+
+model MarketItemTranslation {
+  id          String     @id @default(cuid())
+  itemId      String
+  locale      String
+  title       String
+  description String     @db.Text
+
+  item        MarketItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+
+  @@unique([itemId, locale])
+  @@index([locale])
+  @@map("market_item_translations")
 }
 
 // ------------------------------------------------------
@@ -254,4 +376,6 @@ model MediaAsset {
   uploadedBy   String?   // شناسه کاربر آپلودکننده
   isUrlSource  Boolean   @default(false) // آیا از طریق URL خارجی ثبت شده؟
   createdAt    DateTime  @default(now())
+
+  @@index([category])
 }

@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function AdminContentHubPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [activeTab, setActiveTab] = useState("NEWS");
 
   // داده‌های آزمایشی و مدیریتی بخش‌های مختلف پلتفرم
@@ -44,7 +49,7 @@ export default function AdminContentHubPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -55,8 +60,8 @@ export default function AdminContentHubPage() {
           <h1 className="text-2xl font-black text-slate-900">کنترل صفحات عمومی و تخصصی ملکیسم</h1>
           <p className="text-xs text-slate-500 mt-1">مدیریت، ویرایش، تایید و انتشار اطلاعات در بخش‌های مختلف پلتفرم از یک نقطه.</p>
         </div>
-        <Link href="/fa/admin/dashboard" className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
-          ← بازگشت به داشبورد فرماندهی
+        <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+          {dir === 'rtl' ? '← بازگشت به داشبورد فرماندهی' : 'Command Dashboard →'}
         </Link>
       </div>
 
@@ -75,21 +80,21 @@ export default function AdminContentHubPage() {
 
       {/* محتوای تب انتخاب‌شده */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
           <h3 className="text-sm font-bold text-slate-900">
             مدیریت بخش: <span className="text-indigo-600">{tabLabels[activeTab]}</span>
           </h3>
-          <button onClick={() => alert("افزودن آیتم جدید به این بخش")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition shadow-sm">
+          <button onClick={() => alert("افزودن آیتم جدید به این بخش")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition shadow-sm whitespace-nowrap">
             + افزودن مورد جدید
           </button>
         </div>
 
         <div className="divide-y divide-slate-100 text-xs">
           {contentSections[activeTab]?.map((item: any, idx: number) => (
-            <div key={item.id || idx} className="py-4 flex items-center justify-between gap-4">
+            <div key={item.id || idx} className="py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="space-y-1">
                 <span className="font-bold text-slate-900 block">{item.title || item.name}</span>
-                <span className="text-slate-400 text-[10px] block">
+                <span className="text-slate-400 text-[10px] block" dir="ltr">
                   {item.author && `نویسنده: ${item.author} | `}
                   {item.date && `تاریخ: ${item.date} | `}
                   {item.category && `دسته‌بندی: ${item.category} | `}
@@ -99,11 +104,11 @@ export default function AdminContentHubPage() {
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <span className={`px-2.5 py-1 rounded-lg font-bold text-[10px] ${item.status === 'PUBLISHED' || item.status === 'ACTIVE' || item.status === 'VERIFIED' || item.status === 'FEATURED' || item.status === 'UPDATED' ? 'bg-emerald-50 text-emerald-600' : 'bg-amber-50 text-amber-600'}`}>
+                <span className={`px-2.5 py-1 rounded-lg font-bold text-[10px] whitespace-nowrap inline-block ${item.status === 'PUBLISHED' || item.status === 'ACTIVE' || item.status === 'VERIFIED' || item.status === 'FEATURED' || item.status === 'UPDATED' ? 'bg-emerald-50 text-emerald-600' : 'bg-amber-50 text-amber-600'}`}>
                   {item.status}
                 </span>
-                <button onClick={() => alert(`ویرایش آیتم: ${item.title || item.name}`)} className="text-indigo-600 hover:underline font-bold">ویرایش</button>
-                <button onClick={() => alert(`حذف آیتم`)} className="text-rose-600 hover:underline font-bold">حذف</button>
+                <button onClick={() => alert(`ویرایش آیتم: ${item.title || item.name}`)} className="text-indigo-600 hover:underline font-bold whitespace-nowrap">ویرایش</button>
+                <button onClick={() => alert(`حذف آیتم`)} className="text-rose-600 hover:underline font-bold whitespace-nowrap">حذف</button>
               </div>
             </div>
           ))}

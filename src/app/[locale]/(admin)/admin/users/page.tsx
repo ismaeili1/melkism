@@ -2,10 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useParams } from "next/navigation";
 
 export default function AdminUsersManagementPage() {
   const searchParams = useSearchParams();
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const initialRole = searchParams.get("role") || "ALL";
 
   const [selectedRole, setSelectedRole] = useState(initialRole);
@@ -24,7 +28,7 @@ export default function AdminUsersManagementPage() {
 
   const [users, setUsers] = useState([
     {
-      id: "1", name: "دکتر مورتضی اسماعیلی", username: "morteza_admin", email: "morteza.admin@melkism.com",
+      id: "1", name: "دکتر مرتضی اسماعیلی", username: "morteza_admin", email: "morteza.admin@melkism.com",
       mobile: "09121112233", role: "SUPER_ADMIN", status: "ACTIVE", province: "تهران", city: "تهران",
       specialtyTitle: "مدیر ارشد و معماری", licenseNumber: "IR-ADMIN-01", bankName: "پاسارگاد", iban: "IR550540101980002133445566",
       featuredAllowed: "10", featuredActive: "5", description: "دسترسی کامل به فایروال، تراکنش‌ها و مدیریت کلان."
@@ -104,7 +108,7 @@ export default function AdminUsersManagementPage() {
   });
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -115,15 +119,15 @@ export default function AdminUsersManagementPage() {
           <h1 className="text-2xl font-black text-slate-900">کنترل جامع سطوح دسترسی، اطلاعات صنفی و مالی</h1>
           <p className="text-xs text-slate-500 mt-1">دسترسی مستقیم به گزارش‌های مالی و کیف پول هر کاربر از طریق جدول زیر.</p>
         </div>
-        <div className="flex items-center gap-2">
-          <Link href="/fa/admin/financial/users-ledger" className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm">
+        <div className="flex flex-wrap items-center gap-2">
+          <Link href={`/${locale}/admin/financial/users-ledger`} className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm whitespace-nowrap">
             💰 کل سوابق مالی کاربران
           </Link>
-          <button onClick={() => handleOpenModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm">
+          <button onClick={() => handleOpenModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm whitespace-nowrap">
             + افزودن کاربر
           </button>
-          <Link href="/fa/admin/dashboard" className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
-            ← داشبورد
+          <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+            {dir === 'rtl' ? '← داشبورد' : 'Dashboard →'}
           </Link>
         </div>
       </div>
@@ -148,7 +152,7 @@ export default function AdminUsersManagementPage() {
             placeholder="جستجو نام، ایمیل..." 
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
-            className="border border-slate-200 rounded-xl px-3.5 py-2 text-xs outline-none focus:border-indigo-600 bg-slate-50/50 w-56"
+            className="border border-slate-200 rounded-xl px-3.5 py-2 text-xs outline-none focus:border-indigo-600 bg-slate-50/50 w-full sm:w-56"
           />
         </div>
       </div>
@@ -160,7 +164,7 @@ export default function AdminUsersManagementPage() {
         </h3>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-right text-xs">
+          <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
             <thead>
               <tr className="border-b border-slate-100 text-slate-400 font-medium">
                 <th className="pb-3">نام کاربر</th>
@@ -182,19 +186,19 @@ export default function AdminUsersManagementPage() {
                     <span className="block text-[10px] text-slate-400">{user.mobile}</span>
                   </td>
                   <td className="py-4">
-                    <span className="bg-indigo-50 text-indigo-700 font-bold px-2.5 py-1 rounded-lg text-[10px] border border-indigo-100">
+                    <span className="bg-indigo-50 text-indigo-700 font-bold px-2.5 py-1 rounded-lg text-[10px] border border-indigo-100 inline-block">
                       {user.role}
                     </span>
                   </td>
                   <td className="py-4">
-                    <span className={`font-bold px-2.5 py-1 rounded-lg text-[10px] ${user.status === 'ACTIVE' ? 'bg-emerald-50 text-emerald-600' : 'bg-amber-50 text-amber-600'}`}>
+                    <span className={`font-bold px-2.5 py-1 rounded-lg text-[10px] inline-block ${user.status === 'ACTIVE' ? 'bg-emerald-50 text-emerald-600' : 'bg-amber-50 text-amber-600'}`}>
                       {user.status === 'ACTIVE' ? '🟢 فعال' : '🔴 در انتظار تأیید'}
                     </span>
                   </td>
                   <td className="py-4 text-center space-x-2 space-x-reverse">
                     {/* دکمه اختصاصی لینک مالی برای هر کاربر */}
                     <Link 
-                      href={`/fa/admin/financial/users-ledger?userId=${user.id}`}
+                      href={`/${locale}/admin/financial/users-ledger?userId=${user.id}`}
                       className="inline-block bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold px-3 py-1.5 rounded-xl border border-emerald-200 transition"
                       title="مشاهده گزارش مالی، کیف پول و تراکنش‌ها"
                     >
@@ -220,7 +224,7 @@ export default function AdminUsersManagementPage() {
         </div>
       </div>
 
-      {/* مودال ویرایش (در صورت نیاز) */}
+      {/* مودال ویرایش */}
       {showModal && (
         <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-2xl p-6 w-full max-w-md space-y-4 shadow-xl">

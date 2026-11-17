@@ -2,13 +2,20 @@
 
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
+
 export default function AboutPage() {
+  const t = useTranslations('AboutPage');
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+  const dir = ['fa', 'ar'].includes(locale) ? 'rtl' : 'ltr';
+
   return (
-    <div className="min-h-screen bg-white text-slate-800 py-12 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">
+    <div className={`min-h-screen bg-white text-slate-800 py-12 px-4 sm:px-6 lg:px-8 ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'} font-sans`} dir={dir}>
       <div className="max-w-5xl mx-auto space-y-12">
         
         {/* هدر صفحه */}
-        <div className="border-b border-slate-100 pb-8 space-y-3 text-right">
+        <div className={`border-b border-slate-100 pb-8 space-y-3 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
           <span className="text-[11px] font-bold tracking-wide uppercase text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full inline-block">
             • ABOUT MELKISM
           </span>
@@ -45,7 +52,7 @@ export default function AboutPage() {
 
         {/* ارکان اصلی ملکیسم */}
         <div className="space-y-6">
-          <h2 className="text-lg font-black text-slate-900 border-r-3 border-blue-600 pr-3">
+          <h2 className={`text-lg font-black text-slate-900 border-blue-600 ${dir === 'rtl' ? 'border-r-3 pr-3' : 'border-l-3 pl-3'}`}>
             ارکان ۶ گانه اکوسیستم ملکیسم
           </h2>
 

@@ -1,10 +1,15 @@
 ﻿"use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 import ImagePickerInput from "@/components/admin/ImagePickerInput"; // 🌟 ایمپورت کامپوننت مخزن و آپلود
 
 export default function AdminExpertsManagementPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [experts, setExperts] = useState([
     { id: "EXP-1", name: "مهندس آرش طاهری", specialty: "ارزیاب فنی و قیمت‌گذاری ملک", status: "تاییدشده", slug: "arash-taheri-expert", avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb" },
     { id: "EXP-2", name: "دکتر مهرداد سعیدی", specialty: "حقوق‌دان ملکی و مشاور قراردادها", status: "در انتظار بررسی", slug: "mehrdad-saeedi-expert", avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" }
@@ -65,7 +70,7 @@ export default function AdminExpertsManagementPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -74,9 +79,9 @@ export default function AdminExpertsManagementPage() {
           <h1 className="text-2xl font-black text-slate-900">ارزیابی صلاحیت و مدیریت مشاوران و کارشناسان ارشد</h1>
           <p className="text-xs text-slate-500 mt-1">بررسی مدارک نظام مهندسی، تصویر پرسنلی و تایید کارشناسان معتبر جهت ارائه خدمات تخصصی.</p>
         </div>
-        <div className="flex gap-2">
-          <button onClick={() => handleOpenModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm">+ افزودن متخصص جدید</button>
-          <Link href="/fa/admin/dashboard" className="bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl">← بازگشت به داشبورد</Link>
+        <div className="flex flex-wrap items-center gap-2">
+          <button onClick={() => handleOpenModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition whitespace-nowrap">+ افزودن متخصص جدید</button>
+          <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">{dir === 'rtl' ? '← بازگشت به داشبورد' : 'Dashboard →'}</Link>
         </div>
       </div>
 
@@ -84,7 +89,7 @@ export default function AdminExpertsManagementPage() {
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
         <h3 className="text-sm font-bold text-slate-900">👨‍⚖️ لیست کارشناسان متقاضی و تاییدشده ({experts.length} مورد)</h3>
         <div className="overflow-x-auto">
-          <table className="w-full text-right text-xs">
+          <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
             <thead>
               <tr className="border-b text-slate-400 font-medium">
                 <th className="pb-3">تصویر / آواتار</th>
@@ -104,14 +109,16 @@ export default function AdminExpertsManagementPage() {
                   <td className="py-4 font-bold text-slate-900">{exp.name}</td>
                   <td className="py-4 text-slate-600">{exp.specialty}</td>
                   <td className="py-4">
-                    <span className={`px-2.5 py-1 rounded-lg font-bold text-[10px] ${exp.status === 'تاییدشده' ? 'bg-emerald-50 text-emerald-600' : 'bg-amber-50 text-amber-600'}`}>
+                    <span className={`px-2.5 py-1 rounded-lg font-bold text-[10px] inline-block ${exp.status === 'تاییدشده' ? 'bg-emerald-50 text-emerald-600' : 'bg-amber-50 text-amber-600'}`}>
                       {exp.status}
                     </span>
                   </td>
                   <td className="py-4">
-                    <a href={`/fa/experts/${exp.slug}`} target="_blank" rel="noopener noreferrer" className="text-indigo-600 font-bold hover:underline">🔗 پروفایل ↗</a>
+                    <a href={`/${locale}/experts/${exp.slug}`} target="_blank" rel="noopener noreferrer" className="text-indigo-600 font-bold hover:underline inline-flex items-center gap-1 whitespace-nowrap">
+                      پروفایل ↗
+                    </a>
                   </td>
-                  <td className="py-4 text-center space-x-2 space-x-reverse">
+                  <td className="py-4 text-center space-x-2 space-x-reverse whitespace-nowrap">
                     <button onClick={() => handleOpenModal(exp)} className="text-indigo-600 font-bold hover:underline">ویرایش</button>
                     <button onClick={() => handleToggle(exp.id, exp.status)} className="text-amber-600 font-bold hover:underline">تغییر وضعیت</button>
                   </td>
@@ -140,7 +147,7 @@ export default function AdminExpertsManagementPage() {
 
               <div>
                 <label className="block font-bold mb-1">لینک اختصاصی (Slug):</label>
-                <input type="text" value={formSlug} onChange={e => setFormSlug(e.target.value)} className="w-full border rounded-xl px-3 py-2 outline-none font-mono" required />
+                <input type="text" value={formSlug} onChange={e => setFormSlug(e.target.value)} className="w-full border rounded-xl px-3 py-2 outline-none font-mono" dir="ltr" required />
               </div>
 
               <div>
@@ -155,8 +162,8 @@ export default function AdminExpertsManagementPage() {
               </div>
 
               <div className="pt-2 flex justify-end gap-2">
-                <button type="button" onClick={() => setShowModal(false)} className="px-4 py-2 bg-slate-100 rounded-xl font-bold">انصراف</button>
-                <button type="submit" className="px-4 py-2 bg-indigo-600 text-white rounded-xl font-bold">ذخیره متخصص</button>
+                <button type="button" onClick={() => setShowModal(false)} className="px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-xl font-bold transition">انصراف</button>
+                <button type="submit" className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition">ذخیره متخصص</button>
               </div>
             </form>
           </div>

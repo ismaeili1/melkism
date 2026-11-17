@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function AdminUserFinancialLedgerPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [selectedUser, setSelectedUser] = useState("کاربر: شرکت انبوه‌سازی آلتون (COMPANY)");
   const [filterType, setFilterType] = useState("ALL");
 
@@ -53,7 +58,7 @@ export default function AdminUserFinancialLedgerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -64,8 +69,8 @@ export default function AdminUserFinancialLedgerPage() {
           <h1 className="text-2xl font-black text-slate-900">گزارش مالی و کیف پول اختصاصی</h1>
           <p className="text-xs text-slate-500 mt-1">مشاهده پرداختی‌ها، رسیدها، تخفیف‌ها، عودت وجه و وضعیت سفارش‌های قبلی، جاری و رزرو شده.</p>
         </div>
-        <Link href="/fa/admin/users" className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
-          ← بازگشت به لیست کاربران
+        <Link href={`/${locale}/admin/users`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+          {dir === 'rtl' ? '← بازگشت به لیست کاربران' : 'Users List →'}
         </Link>
       </div>
 
@@ -89,7 +94,7 @@ export default function AdminUserFinancialLedgerPage() {
 
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-1 bg-gradient-to-br from-emerald-50/50 to-white">
           <span className="text-xs text-emerald-700 font-bold block">💰 موجودی فعلی کیف پول کاربر:</span>
-          <h3 className="text-2xl font-black text-emerald-900">۴۸,۰۰۰,۰۰۰ تومان</h3>
+          <h3 className="text-2xl font-black text-emerald-900" dir="ltr">۴۸,۰۰۰,۰۰۰ تومان</h3>
           <span className="text-[10px] text-slate-400 block">قابل استفاده برای پرداخت آنی آگهی و سفارش‌ها</span>
         </div>
       </div>
@@ -100,7 +105,7 @@ export default function AdminUserFinancialLedgerPage() {
           <h3 className="text-sm font-bold text-slate-900">
             📊 سوابق پرداختی و سفارش‌های کاربر
           </h3>
-          <div className="flex gap-2 text-xs">
+          <div className="flex flex-wrap gap-2 text-xs">
             {["ALL", "عضویت", "ویژه", "آگهی", "رپرتاژ"].map(cat => (
               <button 
                 key={cat}
@@ -114,7 +119,7 @@ export default function AdminUserFinancialLedgerPage() {
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-right text-xs">
+          <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
             <thead>
               <tr className="border-b border-slate-100 text-slate-400 font-medium">
                 <th className="pb-3">عنوان پرداختی / دسته</th>
@@ -133,24 +138,24 @@ export default function AdminUserFinancialLedgerPage() {
                     <span className="block text-[10px] text-indigo-600 font-normal">دسته: {record.category}</span>
                   </td>
                   <td className="py-4 text-slate-700">
-                    <strong className="text-slate-900">{record.amount}</strong>
-                    <span className="block text-[10px] text-emerald-600">تخفیف: {record.discount}</span>
+                    <strong className="text-slate-900" dir="ltr">{record.amount}</strong>
+                    <span className="block text-[10px] text-emerald-600" dir="ltr">تخفیف: {record.discount}</span>
                   </td>
-                  <td className="py-4 text-slate-500 font-mono text-[11px]">
+                  <td className="py-4 text-slate-500 font-mono text-[11px]" dir="ltr">
                     {record.date}
                     <span className="block text-[10px] text-slate-400">رسید: {record.receiptNo}</span>
                   </td>
                   <td className="py-4">
-                    <span className="font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg text-[10px]">
+                    <span className="font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg text-[10px] inline-block">
                       {record.orderStatus}
                     </span>
                   </td>
                   <td className="py-4">
-                    <span className={`font-bold px-2.5 py-1 rounded-lg text-[10px] ${record.status === 'تاییدشده' ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`}>
+                    <span className={`font-bold px-2.5 py-1 rounded-lg text-[10px] inline-block ${record.status === 'تاییدشده' ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`}>
                       {record.status}
                     </span>
                   </td>
-                  <td className="py-4 text-center space-x-2 space-x-reverse">
+                  <td className="py-4 text-center space-x-2 space-x-reverse whitespace-nowrap">
                     <button 
                       onClick={() => handleUpdateStatus(record.id, 'تاییدشده')} 
                       className="text-emerald-600 font-bold hover:underline"

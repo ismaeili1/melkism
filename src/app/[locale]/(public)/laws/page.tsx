@@ -1,10 +1,19 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useFormatter } from 'next-intl';
 import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LawsPage() {
+  const t = useTranslations('RegulationsPage');
+  const common = useTranslations('Common');
+  const format = useFormatter();
+
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+  const dir = ['fa', 'ar'].includes(locale) ? 'rtl' : 'ltr';
+
   const [laws, setLaws] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -41,7 +50,7 @@ export default function LawsPage() {
       const res = await fetch('/api/generate-laws', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ topic: topicInput })
+        body: JSON.stringify({ topic: topicInput, locale })
       });
       const data = await res.json();
       if (data.success || res.ok) {
@@ -72,26 +81,26 @@ export default function LawsPage() {
   const latestTextList = filteredLaws.slice(0, 20);
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">
+    <div className={`min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'} font-sans`} dir={dir}>
       <div className="max-w-7xl mx-auto space-y-8">
         
         {/* هدر قوانین */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-100">
+        <div className={`flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-100 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
           <div>
             <span className="text-[11px] font-bold tracking-wide uppercase text-indigo-700 bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-full inline-block mb-2">
               • LEGAL & LEGISLATION
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              تفسیر حقوقی، رویه‌های قضایی و حقوق ثبتی
+              {t('title')}
             </h1>
             <p className="text-xs text-slate-500 mt-1 max-w-xl">
-              پایگاه تخصصی قوانین املاک، آیین‌نامه‌ها و بخشنامه‌های شهرداری.
+              {t('subtitle')}
             </p>
           </div>
           <div className="w-full md:w-72">
             <input
               type="text"
-              placeholder="جستجو در مواد قانونی..."
+              placeholder={common('search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-indigo-600 transition"
@@ -101,7 +110,7 @@ export default function LawsPage() {
 
         {/* پنل هوش مصنوعی */}
         <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 sm:p-5">
-          <h2 className="text-xs font-bold text-slate-900 mb-2.5 flex items-center gap-2">
+          <h2 className={`text-xs font-bold text-slate-900 mb-2.5 flex items-center gap-2 ${dir === 'rtl' ? 'flex-row' : 'flex-row'}`}>
             <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse" />
             <span>استخراج و تحلیل حقوقی هوشمند</span>
           </h2>
@@ -127,14 +136,14 @@ export default function LawsPage() {
         {featuredItem && !searchQuery && (
           <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0 hover:border-slate-300 transition shadow-sm">
             {featuredItem.imageUrl && (
-              <div className="lg:col-span-5 h-64 lg:h-auto relative bg-slate-100">
+              <div className={`lg:col-span-5 h-64 lg:h-auto relative bg-slate-100 ${dir === 'rtl' ? 'order-first lg:order-last' : 'order-first'}`}>
                 <img src={featuredItem.imageUrl} alt={featuredItem.title} className="w-full h-full object-cover" />
-                <span className="absolute top-3 right-3 bg-indigo-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                <span className={`absolute top-3 ${dir === 'rtl' ? 'right-3' : 'left-3'} bg-indigo-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-sm`}>
                   مصوبه مصوب
                 </span>
               </div>
             )}
-            <div className="lg:col-span-7 p-6 flex flex-col justify-between space-y-3">
+            <div className={`lg:col-span-7 p-6 flex flex-col justify-between space-y-3 ${featuredItem.imageUrl ? (dir === 'rtl' ? 'lg:order-first' : 'lg:order-last') : 'lg:col-span-12'}`}>
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-[11px] font-bold text-indigo-700">
                   <span>{featuredItem.category || 'قوانین اصلی'}</span>
@@ -149,9 +158,9 @@ export default function LawsPage() {
                 </p>
               </div>
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span className="text-slate-400">👁️ {featuredItem.views || 340} بازدید</span>
-                <Link href={`/fa/laws/${featuredItem.id}`} className="text-indigo-700 hover:text-indigo-800 font-bold">
-                  مطالعه قانون ←
+                <span className="text-slate-400 font-mono" dir="ltr">👁️ {format.number(featuredItem.views || 340)} بازدید</span>
+                <Link href={`/${locale}/laws/${featuredItem.id}`} className="text-indigo-700 hover:text-indigo-800 font-bold">
+                  {dir === 'rtl' ? 'مطالعه قانون ←' : 'Read Law →'}
                 </Link>
               </div>
             </div>
@@ -163,7 +172,7 @@ export default function LawsPage() {
           {gridItems.map((item: any) => (
             <Link
               key={item.id}
-              href={`/fa/laws/${item.id}`}
+              href={`/${locale}/laws/${item.id}`}
               className="bg-white border border-slate-200/80 rounded-xl overflow-hidden hover:border-indigo-300 transition duration-200 flex flex-col justify-between group"
             >
               <div>
@@ -186,7 +195,7 @@ export default function LawsPage() {
               </div>
               <div className="px-4 pb-4 pt-0">
                 <span className="text-xs text-slate-400 group-hover:text-indigo-700 font-bold transition">
-                  مشاهده مصوبه ←
+                  {dir === 'rtl' ? 'مشاهده مصوبه ←' : 'View Regulation →'}
                 </span>
               </div>
             </Link>
@@ -206,11 +215,11 @@ export default function LawsPage() {
             {latestTextList.map((item: any, index: number) => (
               <Link 
                 key={item.id} 
-                href={`/fa/laws/${item.id}`}
+                href={`/${locale}/laws/${item.id}`}
                 className="flex items-center justify-between p-2.5 rounded-lg bg-white border border-slate-200/60 hover:border-indigo-300 transition group"
               >
                 <span className="text-xs text-slate-700 group-hover:text-indigo-700 transition truncate font-medium">
-                  #{index + 1} {item.title}
+                  #{format.number(index + 1)} {item.title}
                 </span>
                 <span className="text-[10px] text-slate-400 whitespace-nowrap mr-2">
                   {item.category}

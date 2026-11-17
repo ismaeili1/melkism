@@ -1,6 +1,5 @@
 ﻿'use client';
 
-import { useTranslations } from 'next-intl';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
@@ -25,13 +24,14 @@ const navTranslations: Record<string, Record<string, string>> = {
   tr: { news: 'Haberler', library: 'Kütüphane', market: 'Pazar Zekası', laws: 'Kanunlar', specialists: 'Melkist Uzmanı', melkist: 'MELKIST Pazarı', tagline: 'Akıllı Emlak Medyası', searchPlaceholder: 'Makalelerde, kanunlarda ara...', searchBtn: 'Ara', login: 'Giriş' },
   de: { news: 'Nachrichten', library: 'Bibliothek', market: 'Markt-KI', laws: 'Gesetze', specialists: 'Melkist Experte', melkist: 'MELKIST Markt', tagline: 'Intelligente Immobilien-Medien', searchPlaceholder: 'Artikel, Gesetze suchen...', searchBtn: 'Suchen', login: 'Anmelden' },
   fr: { news: 'Actualités', library: 'Bibliothèque', market: 'Intelligence Marché', laws: 'Lois', specialists: 'Spécialiste Melkist', melkist: 'Marché MELKIST', tagline: 'Média Immobilier Intelligent', searchPlaceholder: 'Rechercher articles, lois...', searchBtn: 'Chercher', login: 'Connexion' },
-  ru: { news: 'Новости', library: 'Библиотека', market: 'Аналитика рынка', laws: 'Законы', specialists: 'Специалист Melkist', melkist: 'Рынок MELKIST', tagline: 'Уمные СМИ о недвижимости', searchPlaceholder: 'Поиск статей, законов...', searchBtn: 'Искать', login: 'Войти' },
+  ru: { news: 'Новости', library: 'Библиотека', market: 'Аналитика рынка', laws: 'Законы', specialists: 'Специалист Melkist', melkist: 'Рынок MELKIST', tagline: 'Умные СМИ о недвижимости', searchPlaceholder: 'Поиск статей, законов...', searchBtn: 'Искать', login: 'Войти' },
   zh: { news: '新闻', library: '图书馆', market: '市场情报', laws: '法律法规', specialists: 'Melkist 专家', melkist: 'MELKIST 市场', tagline: '智能房地产媒体', searchPlaceholder: '搜索文章、法律...', searchBtn: '搜索', login: '登录' },
   es: { news: 'Noticias', library: 'Biblioteca', market: 'Inteligencia de Mercado', laws: 'Leyes', specialists: 'Especialista Melkist', melkist: 'Mercado MELKIST', tagline: 'Medio Inmobiliario Inteligente', searchPlaceholder: 'Buscar artículos, leyes...', searchBtn: 'Buscar', login: 'Acceder' },
   it: { news: 'Notizie', library: 'Biblioteca', market: 'Market Intelligence', laws: 'Leggi', specialists: 'Specialista Melkist', melkist: 'Mercato MELKIST', tagline: 'Media Immobiliare Intelligente', searchPlaceholder: 'Cerca articoli, leggi...', searchBtn: 'Cerca', login: 'Accedi' },
 };
 
 export default function SiteHeader() {
+  const [mounted, setMounted] = useState(false);
   const [user, setUser] = useState<any>(null);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -42,42 +42,21 @@ export default function SiteHeader() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const pathSegments = pathname ? pathname.split('/') : [];
-  const currentLocale = languages.some(l => l.code === pathSegments[1]) ? pathSegments[1] : 'fa';
-  
-  const currentLangObj = languages.find(l => l.code === currentLocale) || languages[0];
-  const selectedLangLabel = currentLangObj.label;
-
-  const t = navTranslations[currentLocale] || navTranslations.fa;
-
-  const changeLanguage = (newLangCode: string) => {
-    setLangOpen(false);
-    if (!pathname) return;
-
-    const segments = pathname.split('/');
-    if (languages.some(l => l.code === segments[1])) {
-      segments[1] = newLangCode;
-    } else {
-      segments.unshift('', newLangCode);
-    }
-    const newPath = segments.join('/') || `/${newLangCode}`;
-    router.push(newPath);
-  };
-
-  const checkUser = () => {
-    const savedUser = localStorage.getItem('melkism_user');
-    if (savedUser) {
-      try {
-        setUser(JSON.parse(savedUser));
-      } catch (e) {
+  useEffect(() => {
+    setMounted(true);
+    const checkUser = () => {
+      const savedUser = localStorage.getItem('melkism_user');
+      if (savedUser) {
+        try {
+          setUser(JSON.parse(savedUser));
+        } catch (e) {
+          setUser(null);
+        }
+      } else {
         setUser(null);
       }
-    } else {
-      setUser(null);
-    }
-  };
+    };
 
-  useEffect(() => {
     checkUser();
     window.addEventListener('storage', checkUser);
     const interval = setInterval(checkUser, 1000);
@@ -96,6 +75,31 @@ export default function SiteHeader() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  const pathSegments = pathname ? pathname.split('/') : [];
+  const currentLocale = languages.some(l => l.code === pathSegments[1]) ? pathSegments[1] : 'fa';
+  const dir = ['fa', 'ar'].includes(currentLocale) ? 'rtl' : 'ltr';
+  
+  const currentLangObj = languages.find(l => l.code === currentLocale) || languages[0];
+  const selectedLangLabel = currentLangObj.label;
+
+  const t = navTranslations[currentLocale] || navTranslations.fa;
+
+  const changeLanguage = (newLangCode: string) => {
+    setLangOpen(false);
+    setMobileMenuOpen(false);
+    if (!pathname) return;
+
+    const segments = pathname.split('/');
+    if (languages.some(l => l.code === segments[1])) {
+      segments[1] = newLangCode;
+    } else {
+      segments.unshift('', newLangCode);
+    }
+    const newPath = segments.join('/') || `/${newLangCode}`;
+    
+    window.location.href = newPath;
+  };
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -124,11 +128,15 @@ export default function SiteHeader() {
     }`;
   };
 
+  if (!mounted) {
+    return <header className="bg-white border-b border-slate-200 h-20 sticky top-0 z-50 shadow-sm" />;
+  }
+
   return (
-    <header className="bg-white border-b border-slate-200 text-slate-800 sticky top-0 z-50 shadow-sm">
+    <header className={`bg-white border-b border-slate-200 text-slate-800 sticky top-0 z-50 shadow-sm ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'}`} dir={dir}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
-        {/* سمت راست: منوی موبایل و لوگو */}
+        {/* راست/چپ: منوی موبایل و لوگو */}
         <div className="flex items-center gap-3 lg:gap-6">
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -153,12 +161,10 @@ export default function SiteHeader() {
                 className="group-hover:scale-105 transition-transform"
               />
             </div>
-            <div className="text-right">
-              {/* کلمه MELKISM با رنگ قرمز لوگو */}
+            <div className={dir === 'rtl' ? 'text-right' : 'text-left'}>
               <span className="block text-sm sm:text-base font-black tracking-tight text-[#dc2626]">
                 MELKISM
               </span>
-              {/* زیرنویس لوگو: مخفی در موبایل، نمایان در تبلت و دسکتاپ */}
               <span className="hidden sm:block text-[8px] sm:text-[9px] font-medium text-slate-500">
                 {t.tagline}
               </span>
@@ -188,10 +194,10 @@ export default function SiteHeader() {
           </nav>
         </div>
 
-        {/* سمت چپ: جستجو، زبان و آواتار (علامت AI حذف شد) */}
+        {/* سمت مقابل: جستجو، زبان و آواتار */}
         <div className="flex items-center gap-2 sm:gap-3 relative" ref={searchRef}>
           
-          {/* دکمه جستجو همراه با آیکون ذره‌بین آبی ساده */}
+          {/* دکمه جستجو */}
           <div className="relative">
             <button 
               onClick={() => setSearchOpen(!searchOpen)}
@@ -214,16 +220,16 @@ export default function SiteHeader() {
             </button>
 
             {searchOpen && (
-              <form onSubmit={handleSearchSubmit} className="absolute left-0 mt-2 w-64 sm:w-72 bg-white border border-slate-200 rounded-xl shadow-2xl p-2 z-50 flex items-center gap-2">
+              <form onSubmit={handleSearchSubmit} className={`absolute ${dir === 'rtl' ? 'left-0' : 'right-0'} mt-2 w-64 sm:w-72 bg-white border border-slate-200 rounded-xl shadow-2xl p-2 z-50 flex items-center gap-2`}>
                 <input 
                   type="text" 
                   placeholder={t.searchPlaceholder} 
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-blue-500"
+                  className={`w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs text-slate-800 focus:outline-none focus:border-blue-500 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}
                   autoFocus
                 />
-                <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white text-xs px-3 py-1.5 rounded-lg font-medium transition">
+                <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white text-xs px-3 py-1.5 rounded-lg font-medium transition whitespace-nowrap">
                   {t.searchBtn}
                 </button>
               </form>
@@ -242,12 +248,12 @@ export default function SiteHeader() {
             </button>
 
             {langOpen && (
-              <div className="absolute left-0 mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-2xl py-2 z-50 max-h-64 overflow-y-auto">
+              <div className={`absolute ${dir === 'rtl' ? 'left-0' : 'right-0'} mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-2xl py-2 z-50 max-h-64 overflow-y-auto`}>
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
-                    className={`w-full text-right px-4 py-2 text-xs flex items-center justify-between transition ${selectedLangLabel === lang.label ? 'bg-blue-50 text-blue-600 font-bold' : 'text-slate-700 hover:bg-slate-50'}`}
+                    className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} px-4 py-2 text-xs flex items-center justify-between transition ${selectedLangLabel === lang.label ? 'bg-blue-50 text-blue-600 font-bold' : 'text-slate-700 hover:bg-slate-50'}`}
                   >
                     <span>{lang.name}</span>
                     <span className="bg-slate-100 text-slate-700 border border-slate-200 text-[10px] px-1.5 py-0.5 rounded font-mono uppercase">
@@ -281,7 +287,7 @@ export default function SiteHeader() {
           ) : (
             <Link 
               href={`/${currentLocale}/login`}
-              className="text-xs font-semibold text-slate-700 hover:text-blue-600 px-2 py-2 transition"
+              className="text-xs font-semibold text-slate-700 hover:text-blue-600 px-2 py-2 transition whitespace-nowrap"
             >
               {t.login}
             </Link>
@@ -293,31 +299,31 @@ export default function SiteHeader() {
 
       {/* منوی کشویی موبایل */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-0 right-0 bg-white border-b border-slate-200 px-6 py-5 flex flex-col gap-4 shadow-2xl z-50">
+        <div className={`lg:hidden absolute top-20 left-0 right-0 bg-white border-b border-slate-200 px-6 py-5 flex flex-col gap-4 shadow-2xl z-50 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
           <nav className="flex flex-col gap-3 text-sm font-bold text-slate-900">
             <Link href={`/${currentLocale}/news`} onClick={() => setMobileMenuOpen(false)} className={`py-2.5 border-b border-slate-100 transition flex items-center justify-between ${isActive('/news') ? 'text-blue-600 font-black text-base' : 'hover:text-blue-600'}`}>
               <span>{t.news}</span>
-              <span className="text-xs">←</span>
+              <span className="text-xs">{dir === 'rtl' ? '←' : '→'}</span>
             </Link>
             <Link href={`/${currentLocale}/library`} onClick={() => setMobileMenuOpen(false)} className={`py-2.5 border-b border-slate-100 transition flex items-center justify-between ${isActive('/library') ? 'text-blue-600 font-black text-base' : 'hover:text-blue-600'}`}>
               <span>{t.library}</span>
-              <span className="text-xs">←</span>
+              <span className="text-xs">{dir === 'rtl' ? '←' : '→'}</span>
             </Link>
             <Link href={`/${currentLocale}/market-intelligence`} onClick={() => setMobileMenuOpen(false)} className={`py-2.5 border-b border-slate-100 transition flex items-center justify-between ${isActive('/market-intelligence') ? 'text-blue-600 font-black text-base' : 'hover:text-blue-600'}`}>
               <span>{t.market}</span>
-              <span className="text-xs">←</span>
+              <span className="text-xs">{dir === 'rtl' ? '←' : '→'}</span>
             </Link>
             <Link href={`/${currentLocale}/laws`} onClick={() => setMobileMenuOpen(false)} className={`py-2.5 border-b border-slate-100 transition flex items-center justify-between ${isActive('/laws') ? 'text-blue-600 font-black text-base' : 'hover:text-blue-600'}`}>
               <span>{t.laws}</span>
-              <span className="text-xs">←</span>
+              <span className="text-xs">{dir === 'rtl' ? '←' : '→'}</span>
             </Link>
             <Link href={`/${currentLocale}/specialists`} onClick={() => setMobileMenuOpen(false)} className={`py-2.5 border-b border-slate-100 transition flex items-center justify-between ${isActive('/specialists') ? 'text-blue-600 font-black text-base' : 'hover:text-blue-600'}`}>
               <span>{t.specialists}</span>
-              <span className="text-xs">←</span>
+              <span className="text-xs">{dir === 'rtl' ? '←' : '→'}</span>
             </Link>
             <Link href={`/${currentLocale}/melkist`} onClick={() => setMobileMenuOpen(false)} className={`py-2.5 transition flex items-center justify-between ${isActive('/melkist') ? 'text-blue-600 font-black text-base' : 'hover:text-blue-600'}`}>
               <span>{t.melkist}</span>
-              <span className="text-xs">←</span>
+              <span className="text-xs">{dir === 'rtl' ? '←' : '→'}</span>
             </Link>
           </nav>
         </div>

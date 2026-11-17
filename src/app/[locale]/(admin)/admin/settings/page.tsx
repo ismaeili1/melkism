@@ -1,16 +1,21 @@
 ﻿"use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function AdminGlobalSettingsPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [activeTab, setActiveTab] = useState("HEADER_FOOTER");
 
   const [headerLinks, setHeaderLinks] = useState([
-    { id: 1, title: "صفحه اصلی", url: "/fa", status: "فعال" },
-    { id: 2, title: "هوش بازار", url: "/fa/market-hub", status: "فعال" },
-    { id: 3, title: "کتابخانه تخصصی", url: "/fa/library", status: "فعال" },
-    { id: 4, title: "متخصص ملکیست", url: "/fa/experts", status: "فعال" },
+    { id: 1, title: "صفحه اصلی", url: `/${locale}`, status: "فعال" },
+    { id: 2, title: "هوش بازار", url: `/${locale}/market-hub`, status: "فعال" },
+    { id: 3, title: "کتابخانه تخصصی", url: `/${locale}/library`, status: "فعال" },
+    { id: 4, title: "متخصص ملکیست", url: `/${locale}/experts`, status: "فعال" },
   ]);
 
   const [supportChannels, setSupportChannels] = useState([
@@ -24,7 +29,7 @@ export default function AdminGlobalSettingsPage() {
   ]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -35,8 +40,8 @@ export default function AdminGlobalSettingsPage() {
           <h1 className="text-2xl font-black text-slate-900">مدیریت هدر، فوتر، خدمات، پشتیبانی و مجوزها</h1>
           <p className="text-xs text-slate-500 mt-1">کنترل منوهای سراسری، کانال‌های پشتیبانی کاربران و اسناد قانونی پلتفرم.</p>
         </div>
-        <Link href="/fa/admin/dashboard" className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
-          ← بازگشت به داشبورد فرماندهی
+        <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+          {dir === 'rtl' ? '← بازگشت به داشبورد فرماندهی' : 'Command Dashboard →'}
         </Link>
       </div>
 
@@ -67,20 +72,22 @@ export default function AdminGlobalSettingsPage() {
         
         {activeTab === "HEADER_FOOTER" && (
           <div className="space-y-4">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
               <h3 className="text-sm font-bold text-slate-900">🔗 مدیریت لینک‌ها و منوهای ناوبری (Header & Footer)</h3>
-              <button onClick={() => alert("افزودن لینک جدید به منو")} className="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-xl">+ افزودن لینک</button>
+              <button onClick={() => alert("افزودن لینک جدید به منو")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
+                + افزودن لینک
+              </button>
             </div>
             <div className="divide-y divide-slate-100 text-xs">
               {headerLinks.map(link => (
-                <div key={link.id} className="py-3 flex justify-between items-center">
+                <div key={link.id} className="py-3 flex justify-between items-center gap-4">
                   <div>
                     <span className="font-bold text-slate-900 block">{link.title}</span>
-                    <span className="text-slate-400 font-mono text-[10px]">{link.url}</span>
+                    <span className="text-slate-400 font-mono text-[10px]" dir="ltr">{link.url}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px]">{link.status}</span>
-                    <button onClick={() => alert(`ویرایش لینک ${link.title}`)} className="text-indigo-600 font-bold hover:underline">ویرایش</button>
+                    <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px] inline-block">{link.status}</span>
+                    <button onClick={() => alert(`ویرایش لینک ${link.title}`)} className="text-indigo-600 font-bold hover:underline whitespace-nowrap">ویرایش</button>
                   </div>
                 </div>
               ))}
@@ -90,18 +97,20 @@ export default function AdminGlobalSettingsPage() {
 
         {activeTab === "SUPPORT" && (
           <div className="space-y-4">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
               <h3 className="text-sm font-bold text-slate-900">🎧 کانال‌های ارتباطی و پشتیبانی مشتریان</h3>
-              <button onClick={() => alert("افزودن کانال پشتیبانی جدید")} className="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-xl">+ افزودن کانال</button>
+              <button onClick={() => alert("افزودن کانال پشتیبانی جدید")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
+                + افزودن کانال
+              </button>
             </div>
             <div className="divide-y divide-slate-100 text-xs">
               {supportChannels.map(sup => (
-                <div key={sup.id} className="py-3 flex justify-between items-center">
+                <div key={sup.id} className="py-3 flex justify-between items-center gap-4">
                   <div>
                     <span className="font-bold text-slate-900 block">{sup.type}</span>
                     <span className="text-slate-400 text-[10px]">مخاطبین هدف: {sup.target}</span>
                   </div>
-                  <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px]">{sup.status}</span>
+                  <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px] inline-block whitespace-nowrap">{sup.status}</span>
                 </div>
               ))}
             </div>
@@ -110,18 +119,20 @@ export default function AdminGlobalSettingsPage() {
 
         {activeTab === "LICENSES" && (
           <div className="space-y-4">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
               <h3 className="text-sm font-bold text-slate-900">📜 اسناد قانونی، پروانه‌ها و مجوزهای رسمی</h3>
-              <button onClick={() => alert("بارگذاری سند یا مجوز جدید")} className="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-xl">+ بارگذاری سند جدید</button>
+              <button onClick={() => alert("بارگذاری سند یا مجوز جدید")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
+                + بارگذاری سند جدید
+              </button>
             </div>
             <div className="divide-y divide-slate-100 text-xs">
               {licenses.map(lic => (
-                <div key={lic.id} className="py-3 flex justify-between items-center">
+                <div key={lic.id} className="py-3 flex justify-between items-center gap-4">
                   <div>
                     <span className="font-bold text-slate-900 block">{lic.title}</span>
-                    <span className="text-slate-400 font-mono text-[10px]">شناسه ثبت: {lic.code}</span>
+                    <span className="text-slate-400 font-mono text-[10px]" dir="ltr">شناسه ثبت: {lic.code}</span>
                   </div>
-                  <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px]">{lic.status}</span>
+                  <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px] inline-block whitespace-nowrap">{lic.status}</span>
                 </div>
               ))}
             </div>

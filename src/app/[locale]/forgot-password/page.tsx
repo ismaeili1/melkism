@@ -3,14 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { translate } from "@/lib/i18n/translator";
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 
-interface ForgotPasswordProps {
-  params: { locale: string };
-}
-
-export default function ForgotPasswordPage({ params: { locale } }: ForgotPasswordProps) {
-  const t = (text: string) => translate(text, locale);
+export default function ForgotPasswordPage() {
+  const t = useTranslations('ForgotPassword'); // یا استفاده از کلیدهای عمومی
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
   const isRtl = locale === "fa" || locale === "ar";
 
   const [identifier, setIdentifier] = useState("");
@@ -21,9 +20,10 @@ export default function ForgotPasswordPage({ params: { locale } }: ForgotPasswor
     e.preventDefault();
     setIsLoading(true);
 
+    // شبیه‌سازی درخواست ارسال لینک بازیابی به سرور
     setTimeout(() => {
       setIsLoading(false);
-      setSuccessMsg(t("لینک بازیابی رمز عبور با موفقیت ارسال شد."));
+      setSuccessMsg("لینک بازیابی رمز عبور با موفقیت ارسال شد.");
     }, 1000);
   };
 
@@ -53,10 +53,10 @@ export default function ForgotPasswordPage({ params: { locale } }: ForgotPasswor
           </Link>
 
           <h1 className="text-2xl font-black text-slate-800 dark:text-slate-100">
-            {t("فراموشی رمز عبور")}
+            فراموشی رمز عبور
           </h1>
           <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-xs">
-            {t("ایمیل یا شماره موبایل خود را وارد کنید تا لینک بازیابی ارسال شود.")}
+            ایمیل یا شماره موبایل خود را وارد کنید تا لینک بازیابی ارسال شود.
           </p>
         </div>
 
@@ -67,10 +67,10 @@ export default function ForgotPasswordPage({ params: { locale } }: ForgotPasswor
               {successMsg}
             </div>
             <Link
-              href={`/${locale}/auth`}
+              href={`/${locale}/login`}
               className="block w-full py-3.5 text-center bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 font-bold rounded-2xl text-sm transition"
             >
-              {t("بازگشت به صفحه ورود")}
+              بازگشت به صفحه ورود
             </Link>
           </div>
         ) : (
@@ -78,7 +78,7 @@ export default function ForgotPasswordPage({ params: { locale } }: ForgotPasswor
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
-                {t("شماره موبایل یا ایمیل")} <span className="text-red-500">*</span>
+                شماره موبایل یا ایمیل <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -96,15 +96,15 @@ export default function ForgotPasswordPage({ params: { locale } }: ForgotPasswor
               disabled={isLoading}
               className="w-full py-4 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-2xl text-sm shadow-lg shadow-amber-500/20 active:scale-[0.99] transition disabled:opacity-50"
             >
-              {isLoading ? t("در حال پردازش...") : t("ارسال لینک بازیابی")}
+              {isLoading ? "در حال پردازش..." : "ارسال لینک بازیابی"}
             </button>
 
             <div className="text-center pt-2">
               <Link
-                href={`/${locale}/auth`}
+                href={`/${locale}/login`}
                 className="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline"
               >
-                {t("بازگشت به صفحه ورود")}
+                بازگشت به صفحه ورود
               </Link>
             </div>
           </form>

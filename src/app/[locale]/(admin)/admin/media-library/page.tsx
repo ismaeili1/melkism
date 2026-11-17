@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useRef, useEffect } from "react";
+import { useParams } from "next/navigation";
 import { registerMediaAsset, getMediaAssets, deleteMediaAsset } from "@/actions/media";
 
 const CATEGORIES = [
@@ -22,6 +23,11 @@ const ASPECT_RATIOS = [
 ];
 
 export default function MediaLibraryPage() {
+  const t = useTranslations('AdminPanel');
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [activeCategory, setActiveCategory] = useState("all");
   const [assets, setAssets] = useState<any[]>([]);
   const [tab, setTab] = useState<"file" | "url">("file");
@@ -105,7 +111,7 @@ export default function MediaLibraryPage() {
       // ثبت در مخزن دیتابیس
       const res = await registerMediaAsset({
         title: title || "تصویر بدون عنوان",
-        url: processedDataUrl, // یا آدرس مستقیم در صورت ذخیره در هاست
+        url: processedDataUrl,
         category: selectedCategory,
         altText,
         width: finalW,
@@ -129,7 +135,7 @@ export default function MediaLibraryPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6 max-w-7xl mx-auto">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6 max-w-7xl mx-auto`} dir={dir}>
       
       {/* هدر */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
@@ -137,7 +143,7 @@ export default function MediaLibraryPage() {
           <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-full inline-block mb-1">
             مخزن متمرکز و گالری رسانه ملکیسم (Media Library)
           </span>
-          <h1 className="text-2xl font-black text-slate-900">آلبوم تصاویـر، ویرایش آنلاین و تایید نهایی</h1>
+          <h1 className="text-2xl font-black text-slate-900">{t('mediaLibrary')}</h1>
           <p className="text-xs text-slate-500 mt-1">آپلود یا ثبت URL، اصلاح ابعاد و پیکسل، کاهش حجم و آماده‌سازی لینک جهت استفاده در فایل‌های اکسل.</p>
         </div>
       </div>
@@ -177,6 +183,7 @@ export default function MediaLibraryPage() {
               placeholder="https://example.com/image.jpg"
               onBlur={(e) => handleUrlSubmit(e.target.value)}
               className="w-full border border-slate-300 rounded-xl p-3 text-xs bg-slate-50 outline-none focus:ring-2 focus:ring-indigo-500"
+              dir="ltr"
             />
           </div>
         )}
@@ -198,32 +205,32 @@ export default function MediaLibraryPage() {
               <div className="space-y-4 text-xs">
                 <div>
                   <label className="font-bold text-slate-700 block mb-1">عنوان تصویر</label>
-                  <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="w-full border rounded-lg p-2 bg-slate-50" />
+                  <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="w-full border rounded-lg p-2 bg-slate-50 outline-none" />
                 </div>
 
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   <div>
                     <label className="font-bold text-slate-700 block mb-1">دسته‌بندی مخزن</label>
-                    <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)} className="w-full border rounded-lg p-2 bg-slate-50">
+                    <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)} className="w-full border rounded-lg p-2 bg-slate-50 outline-none">
                       {CATEGORIES.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
                     </select>
                   </div>
                   <div>
                     <label className="font-bold text-slate-700 block mb-1">نسبت ابعاد (Aspect Ratio)</label>
-                    <select onChange={(e) => setSelectedRatio(parseFloat(e.target.value))} className="w-full border rounded-lg p-2 bg-slate-50">
+                    <select onChange={(e) => setSelectedRatio(parseFloat(e.target.value))} className="w-full border rounded-lg p-2 bg-slate-50 outline-none">
                       {ASPECT_RATIOS.map(r => <option key={r.label} value={r.ratio}>{r.label}</option>)}
                     </select>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   <div>
                     <label className="font-bold text-slate-700 block mb-1">عرض استاندارد (پیکسل)</label>
-                    <input type="number" value={targetWidth} onChange={(e) => setTargetWidth(Number(e.target.value))} className="w-full border rounded-lg p-2 bg-slate-50" />
+                    <input type="number" value={targetWidth} onChange={(e) => setTargetWidth(Number(e.target.value))} className="w-full border rounded-lg p-2 bg-slate-50 outline-none font-mono" dir="ltr" />
                   </div>
                   <div>
                     <label className="font-bold text-slate-700 block mb-1">ارتفاع استاندارد (پیکسل)</label>
-                    <input type="number" value={targetHeight} onChange={(e) => setTargetHeight(Number(e.target.value))} className="w-full border rounded-lg p-2 bg-slate-50" />
+                    <input type="number" value={targetHeight} onChange={(e) => setTargetHeight(Number(e.target.value))} className="w-full border rounded-lg p-2 bg-slate-50 outline-none font-mono" dir="ltr" />
                   </div>
                 </div>
 
@@ -269,7 +276,7 @@ export default function MediaLibraryPage() {
             <div key={item.id} className="border border-slate-200 rounded-xl overflow-hidden bg-slate-50 group hover:shadow-md transition">
               <div className="h-28 bg-slate-200 overflow-hidden relative">
                 <img src={item.url} alt={item.title} className="w-full h-full object-cover" />
-                <span className="absolute top-1 right-1 bg-slate-900/80 text-white text-[9px] px-1.5 py-0.5 rounded">
+                <span className="absolute top-1 right-1 bg-slate-900/80 text-white text-[9px] px-1.5 py-0.5 rounded font-mono" dir="ltr">
                   {item.width}x{item.height}
                 </span>
               </div>

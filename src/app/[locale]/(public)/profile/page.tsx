@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 
 // آواتارهای سیستم
@@ -20,7 +20,14 @@ const defaultAvatars = [
 ];
 
 export default function ProfilePage() {
+  const t = useTranslations('ProfilePage');
+  const common = useTranslations('Common');
+
   const router = useRouter();
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+  const dir = ['fa', 'ar'].includes(locale) ? 'rtl' : 'ltr';
+
   const [formData, setFormData] = useState({
     fullName: '',
     phone: '',
@@ -41,7 +48,7 @@ export default function ProfilePage() {
   useEffect(() => {
     const savedUser = localStorage.getItem('melkism_user');
     if (!savedUser) {
-      router.push('/fa/login');
+      router.push(`/${locale}/login`);
       return;
     }
     const parsed = JSON.parse(savedUser);
@@ -66,12 +73,12 @@ export default function ProfilePage() {
 
     setIsVerified(parsed.isVerified || false);
     setSubscription(parsed.subscription || 'free');
-  }, [router]);
+  }, [router, locale]);
 
   const handleLogout = () => {
     localStorage.removeItem('melkism_user');
     window.dispatchEvent(new Event('storage'));
-    router.push('/fa/login');
+    router.push(`/${locale}/login`);
   };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -111,15 +118,15 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 py-10 px-4 sm:px-6 lg:px-8">
+    <div className={`min-h-screen bg-slate-950 text-slate-100 py-10 px-4 sm:px-6 lg:px-8 ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'} font-sans`} dir={dir}>
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center justify-between pb-6 mb-8 border-b border-slate-800">
+        <div className={`flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 mb-8 border-b border-slate-800 gap-4 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
           <div>
             <h1 className="text-2xl font-bold text-white">پروفایل و مدیریت دسترسی‌ها</h1>
             <p className="text-xs text-slate-400 mt-1">تکمیل اطلاعات جهت دسترسی به تحلیل‌های ملکی و ساخت‌وساز</p>
           </div>
           <div className="flex items-center gap-2">
-            <Link href="/fa/news" className="bg-slate-800 hover:bg-slate-700 text-xs px-4 py-2 rounded-xl transition">
+            <Link href={`/${locale}/news`} className="bg-slate-800 hover:bg-slate-700 text-xs px-4 py-2 rounded-xl transition">
               مشاهده اخبار
             </Link>
             <button
@@ -134,12 +141,12 @@ export default function ProfilePage() {
 
         {/* کارت وضعیت اشتراک */}
         <div className="bg-gradient-to-r from-blue-900/40 to-slate-900 border border-blue-500/30 rounded-2xl p-6 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <span className="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full border border-blue-500/30">
-              {subscription === 'vip' ? '👑 عضویت ویژه دوره ای (VIP)' : 'عضویت معمولی'}
+          <div className={dir === 'rtl' ? 'text-right' : 'text-left'}>
+            <span className="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full border border-blue-500/30 inline-block">
+              {subscription === 'vip' ? '👑 عضویت ویژه دوره‌ای (VIP)' : 'عضویت معمولی'}
             </span>
             <h2 className="text-lg font-bold text-white mt-2">
-              {subscription === 'vip' ? 'دسترسی کامل به گزارش‌های جامع ساخت‌وساز و معماری' : 'ارتقا به عضویت ویژه دوره ای'}
+              {subscription === 'vip' ? 'دسترسی کامل به گزارش‌های جامع ساخت‌وساز و معماری' : 'ارتقا به عضویت ویژه دوره‌ای'}
             </h2>
             <p className="text-xs text-slate-400 mt-1">
               {isVerified ? 'پروفایل شما احراز شده است.' : 'برای باز شدن تمام بخش‌ها، اطلاعات اجباری زیر را تکمیل کنید.'}
@@ -147,8 +154,8 @@ export default function ProfilePage() {
           </div>
           {subscription !== 'vip' && (
             <button
-              onClick={() => alert('انتقال به درگاه پرداخت حق عضویت دوره ای')}
-              className="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs px-6 py-3 rounded-xl shadow-lg transition"
+              onClick={() => alert('انتقال به درگاه پرداخت حق عضویت دوره‌ای')}
+              className="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs px-6 py-3 rounded-xl shadow-lg transition whitespace-nowrap"
             >
               خرید حق عضویت ویژه‌ ⭐
             </button>
@@ -276,7 +283,8 @@ export default function ProfilePage() {
                 required
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500"
+                className={`w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500 font-mono ${dir === 'rtl' ? 'text-right' : 'text-left'}`}
+                dir="ltr"
               />
             </div>
             <div>
@@ -285,7 +293,8 @@ export default function ProfilePage() {
                 type="date"
                 value={formData.birthDate}
                 onChange={(e) => setFormData({ ...formData, birthDate: e.target.value })}
-                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500"
+                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500 font-mono"
+                dir="ltr"
               />
             </div>
             <div>
@@ -295,7 +304,8 @@ export default function ProfilePage() {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="example@mail.com"
-                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500"
+                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500 font-mono"
+                dir="ltr"
               />
             </div>
           </div>

@@ -1,10 +1,19 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useFormatter } from 'next-intl';
 import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function MarketIntelligencePage() {
+  const t = useTranslations('MarketPage');
+  const common = useTranslations('Common');
+  const format = useFormatter();
+
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+  const dir = ['fa', 'ar'].includes(locale) ? 'rtl' : 'ltr';
+
   const [analyses, setAnalyses] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -41,7 +50,7 @@ export default function MarketIntelligencePage() {
       const res = await fetch('/api/generate-market-intelligence', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ topic: topicInput })
+        body: JSON.stringify({ topic: topicInput, locale })
       });
       const data = await res.json();
       if (data.success || res.ok) {
@@ -72,26 +81,26 @@ export default function MarketIntelligencePage() {
   const latestTextList = filteredAnalyses.slice(0, 20);
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">
+    <div className={`min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'} font-sans`} dir={dir}>
       <div className="max-w-7xl mx-auto space-y-8">
         
         {/* هدر هوش بازار */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-100">
+        <div className={`flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-100 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
           <div>
             <span className="text-[11px] font-bold tracking-wide uppercase text-emerald-700 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block mb-2">
               • MARKET INTELLIGENCE & ANALYTICS
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              آمار، پیش‌بینی قیمت و پایش بازدهی مسکن
+              {t('title')}
             </h1>
             <p className="text-xs text-slate-500 mt-1 max-w-xl">
-              تحلیل الگوی قیمتی، تورم ساخت، نقدشوندگی و ارزیابی ریسک سرمایه‌گذاری.
+              {t('subtitle')}
             </p>
           </div>
           <div className="w-full md:w-72">
             <input
               type="text"
-              placeholder="جستجو در شاخص‌ها..."
+              placeholder={common('search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-emerald-600 transition"
@@ -127,14 +136,14 @@ export default function MarketIntelligencePage() {
         {featuredItem && !searchQuery && (
           <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0 hover:border-slate-300 transition shadow-sm">
             {featuredItem.imageUrl && (
-              <div className="lg:col-span-5 h-64 lg:h-auto relative bg-slate-100">
+              <div className={`lg:col-span-5 h-64 lg:h-auto relative bg-slate-100 ${dir === 'rtl' ? 'order-first lg:order-last' : 'order-first'}`}>
                 <img src={featuredItem.imageUrl} alt={featuredItem.title} className="w-full h-full object-cover" />
-                <span className="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                <span className={`absolute top-3 ${dir === 'rtl' ? 'right-3' : 'left-3'} bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-sm`}>
                   گزارش شاخص
                 </span>
               </div>
             )}
-            <div className="lg:col-span-7 p-6 flex flex-col justify-between space-y-3">
+            <div className={`lg:col-span-7 p-6 flex flex-col justify-between space-y-3 ${featuredItem.imageUrl ? (dir === 'rtl' ? 'lg:order-first' : 'lg:order-last') : 'lg:col-span-12'}`}>
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-[11px] font-bold text-emerald-700">
                   <span>{featuredItem.category || 'تحلیل بازار'}</span>
@@ -149,9 +158,9 @@ export default function MarketIntelligencePage() {
                 </p>
               </div>
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span className="text-slate-400">👁️ {featuredItem.views || 210} تحلیل</span>
-                <Link href={`/fa/market-intelligence/${featuredItem.id}`} className="text-emerald-700 hover:text-emerald-800 font-bold">
-                  مشاهده تحلیل کامل ←
+                <span className="text-slate-400 font-mono" dir="ltr">👁️ {format.number(featuredItem.views || 210)} تحلیل</span>
+                <Link href={`/${locale}/market-intelligence/${featuredItem.id}`} className="text-emerald-700 hover:text-emerald-800 font-bold">
+                  {dir === 'rtl' ? 'مشاهده تحلیل کامل ←' : 'View Full Analysis →'}
                 </Link>
               </div>
             </div>
@@ -163,7 +172,7 @@ export default function MarketIntelligencePage() {
           {gridItems.map((item: any) => (
             <Link
               key={item.id}
-              href={`/fa/market-intelligence/${item.id}`}
+              href={`/${locale}/market-intelligence/${item.id}`}
               className="bg-white border border-slate-200/80 rounded-xl overflow-hidden hover:border-emerald-300 transition duration-200 flex flex-col justify-between group"
             >
               <div>
@@ -186,7 +195,7 @@ export default function MarketIntelligencePage() {
               </div>
               <div className="px-4 pb-4 pt-0">
                 <span className="text-xs text-slate-400 group-hover:text-emerald-700 font-bold transition">
-                  مطالعه گزارش ←
+                  {dir === 'rtl' ? 'مطالعه گزارش ←' : 'Read Report →'}
                 </span>
               </div>
             </Link>
@@ -206,11 +215,11 @@ export default function MarketIntelligencePage() {
             {latestTextList.map((item: any, index: number) => (
               <Link 
                 key={item.id} 
-                href={`/fa/market-intelligence/${item.id}`}
+                href={`/${locale}/market-intelligence/${item.id}`}
                 className="flex items-center justify-between p-2.5 rounded-lg bg-white border border-slate-200/60 hover:border-emerald-300 transition group"
               >
                 <span className="text-xs text-slate-700 group-hover:text-emerald-700 transition truncate font-medium">
-                  #{index + 1} {item.title}
+                  #{format.number(index + 1)} {item.title}
                 </span>
                 <span className="text-[10px] text-slate-400 whitespace-nowrap mr-2">
                   {item.category}

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import { handleExcelBulkImport } from "@/actions/bulk-import";
 import { generateExcelTemplate } from "@/actions/export-templates";
 
@@ -16,6 +17,11 @@ const TEMPLATE_CARTS = [
 ];
 
 export default function BulkImportPage() {
+  const t = useTranslations('AdminPanel');
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [loading, setLoading] = useState(false);
   const [downloading, setDownloading] = useState<string | null>(null);
   const [resultMessage, setResultMessage] = useState<{ success: boolean; text: string } | null>(null);
@@ -51,7 +57,7 @@ export default function BulkImportPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6 max-w-6xl mx-auto">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6 max-w-6xl mx-auto`} dir={dir}>
       
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
         <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-full inline-block mb-1">
@@ -88,7 +94,7 @@ export default function BulkImportPage() {
         <form onSubmit={onSubmit} className="space-y-6">
           <div>
             <label className="block text-xs font-bold text-slate-700 mb-2">انتخاب بخش مقصد</label>
-            <select name="contentType" required className="w-full border border-slate-300 rounded-xl p-3 text-xs bg-slate-50">
+            <select name="contentType" required className="w-full border border-slate-300 rounded-xl p-3 text-xs bg-slate-50 outline-none">
               <option value="news">اخبار و مقالات</option>
               <option value="market">گزارش‌های هوش بازار</option>
               <option value="rules">قوانین و مقررات ملکی</option>
@@ -101,7 +107,7 @@ export default function BulkImportPage() {
 
           <div>
             <label className="block text-xs font-bold text-slate-700 mb-2">فایل اکسل (.xlsx)</label>
-            <input type="file" name="excelFile" accept=".xlsx, .xls" required className="w-full border border-slate-300 border-dashed rounded-xl p-6 text-xs bg-slate-50" />
+            <input type="file" name="excelFile" accept=".xlsx, .xls" required className="w-full border border-slate-300 border-dashed rounded-xl p-6 text-xs bg-slate-50 cursor-pointer" />
           </div>
 
           {resultMessage && (

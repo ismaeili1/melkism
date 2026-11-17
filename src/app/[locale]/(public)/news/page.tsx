@@ -2,10 +2,18 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import RoleGuard from '@/components/auth/RoleGuard';
 
 export default function NewsPage() {
+  const t = useTranslations('NewsPage');
+  const common = useTranslations('Common');
+  
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+  const dir = ['fa', 'ar'].includes(locale) ? 'rtl' : 'ltr';
+
   const [articles, setArticles] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   
@@ -43,7 +51,7 @@ export default function NewsPage() {
       const res = await fetch('/api/generate-news', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ topic: topicInput })
+        body: JSON.stringify({ topic: topicInput, locale })
       });
       const data = await res.json();
       if (data.success || res.ok) {
@@ -76,7 +84,7 @@ export default function NewsPage() {
   const latestTextList = filteredArticles.slice(0, 20);
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">
+    <div className={`min-h-screen bg-white text-slate-800 py-10 px-4 sm:px-6 lg:px-8 ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'} font-sans`} dir={dir}>
       <div className="max-w-7xl mx-auto space-y-8">
         
         {/* هدر اخبار */}
@@ -86,16 +94,16 @@ export default function NewsPage() {
               • NEWS & REPORTING
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              اخبار و تحولات لحظه‌ای صنعت مسکن
+              {t('title')}
             </h1>
             <p className="text-xs text-slate-500 mt-1 max-w-xl">
-              پایش زنده بازار املاک، گزارش‌های تحلیلی و اخبار اقتصادی با نظارت هوش مصنوعی.
+              {t('subtitle')}
             </p>
           </div>
           <div className="w-full md:w-72">
             <input
               type="text"
-              placeholder="جستجو در اخبار..."
+              placeholder={common('search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-rose-500 transition"
@@ -189,7 +197,7 @@ export default function NewsPage() {
                 <div className="flex items-center gap-2 text-[11px] font-bold text-rose-600">
                   <span>{featuredArticle.category || 'تحلیل بازار'}</span>
                   <span>•</span>
-                  <span className="text-slate-400 font-normal">{new Date(featuredArticle.createdAt || Date.now()).toLocaleDateString('fa-IR')}</span>
+                  <span className="text-slate-400 font-normal">{new Date(featuredArticle.createdAt || Date.now()).toLocaleDateString(locale === 'fa' ? 'fa-IR' : 'en-US')}</span>
                 </div>
                 <h2 className="text-lg font-black text-slate-900 leading-snug">
                   {featuredArticle.title}
@@ -200,8 +208,8 @@ export default function NewsPage() {
               </div>
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                 <span className="text-slate-400">👁️ {featuredArticle.views || 120} بازدید</span>
-                <Link href={`/fa/news/${featuredArticle.id}`} className="text-rose-600 hover:text-rose-700 font-bold">
-                  مطالعه کامل ←
+                <Link href={`/${locale}/news/${featuredArticle.id}`} className="text-rose-600 hover:text-rose-700 font-bold">
+                  {t('readMore')} ←
                 </Link>
               </div>
             </div>
@@ -213,7 +221,7 @@ export default function NewsPage() {
           {gridArticles.map((item: any) => (
             <Link
               key={item.id}
-              href={`/fa/news/${item.id}`}
+              href={`/${locale}/news/${item.id}`}
               className="bg-white border border-slate-200/80 rounded-xl overflow-hidden hover:border-rose-300 transition duration-200 flex flex-col justify-between group"
             >
               <div>
@@ -236,7 +244,7 @@ export default function NewsPage() {
               </div>
               <div className="px-4 pb-4 pt-0">
                 <span className="text-xs text-slate-400 group-hover:text-rose-600 font-bold transition">
-                  مشاهده خبر ←
+                  {t('readMore')} ←
                 </span>
               </div>
             </Link>
@@ -256,14 +264,14 @@ export default function NewsPage() {
             {latestTextList.map((item: any, index: number) => (
               <Link 
                 key={item.id} 
-                href={`/fa/news/${item.id}`}
+                href={`/${locale}/news/${item.id}`}
                 className="flex items-center justify-between p-2.5 rounded-lg bg-white border border-slate-200/60 hover:border-rose-300 transition group"
               >
                 <span className="text-xs text-slate-700 group-hover:text-rose-600 transition truncate font-medium">
                   #{index + 1} {item.title}
                 </span>
-                <span className="text-[10px] text-slate-400 whitespace-nowrap mr-2">
-                  {new Date(item.createdAt || Date.now()).toLocaleDateString('fa-IR')}
+                <span className="text-[10px] text-slate-400 whitespace-nowrap mr-2 font-mono">
+                  {new Date(item.createdAt || Date.now()).toLocaleDateString(locale === 'fa' ? 'fa-IR' : 'en-US')}
                 </span>
               </Link>
             ))}

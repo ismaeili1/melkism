@@ -1,18 +1,20 @@
 ﻿'use client';
 
-
-import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 
 export default function AuthLoginRedirect() {
   const router = useRouter();
+  const params = useParams();
+  const locale = (params?.locale as string) || 'fa';
+
   useEffect(() => {
-    router.replace('/fa/login');
-  }, [router]);
+    // هدایت خودکار کاربر به صفحه لاگینِ همان زبان (locale) فعال
+    router.replace(`/${locale}/login`);
+  }, [router, locale]);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center text-sm">
+    <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center text-sm font-sans">
       در حال انتقال به صفحه ورود...
     </div>
   );

@@ -1,9 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import FeatureGuard from "@/components/auth/FeatureGuard";
 
 export default function UserDashboardPanel() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
@@ -26,7 +31,7 @@ export default function UserDashboardPanel() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50 text-slate-500 text-xs font-medium">
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 text-slate-500 text-xs font-medium font-sans">
         در حال بارگذاری اطلاعات پنل کاربری...
       </div>
     );
@@ -43,11 +48,11 @@ export default function UserDashboardPanel() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50/50 py-10 px-4 sm:px-6 lg:px-8 dir-rtl font-sans">
+    <div className={`min-h-screen bg-slate-50/50 py-10 px-4 sm:px-6 lg:px-8 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans`} dir={dir}>
       <div className="max-w-7xl mx-auto space-y-8">
         
         {/* کارت خوش آمدگویی و مشخصات کاربر */}
-        <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="bg-white border border-slate-200/85 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="space-y-1.5">
             <span className="text-[11px] font-bold text-rose-600 bg-rose-50 border border-rose-100 px-3 py-1 rounded-full inline-block">
               {roleLabels[user?.role] || "کاربر پلتفرم"}
@@ -56,7 +61,7 @@ export default function UserDashboardPanel() {
               سلام، {user?.name || "کاربر گرامی"} خوش آمدید!
             </h1>
             <p className="text-xs text-slate-500">
-              ایمیل: <span className="font-medium text-slate-700">{user?.email}</span> | وضعیت حساب: <span className="text-emerald-600 font-bold">{user?.status || "فعال"}</span>
+              ایمیل: <span className="font-medium text-slate-700 font-mono">{user?.email}</span> | وضعیت حساب: <span className="text-emerald-600 font-bold">{user?.status || "فعال"}</span>
             </p>
           </div>
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-600 max-w-sm">

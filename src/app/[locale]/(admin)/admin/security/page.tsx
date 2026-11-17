@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function AdminSecurityMonitoringPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "fa";
+  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+
   const [lockdownMode, setLockdownMode] = useState(false);
   const [firewallStatus, setFirewallStatus] = useState("فعال و محافظت‌شده (Fail-Closed)");
 
@@ -28,7 +33,7 @@ export default function AdminSecurityMonitoringPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 p-6 dir-rtl font-sans space-y-6">
+    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
       
       {/* هدر صفحه */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -39,8 +44,8 @@ export default function AdminSecurityMonitoringPage() {
           <h1 className="text-2xl font-black text-slate-900">مانیتورینگ امنیت، فایروال و لاگ‌های نفوذ</h1>
           <p className="text-xs text-slate-500 mt-1">پایش لحظه‌ای ترافیک ورودی، مسدودسازی IPهای مخرب و مدیریت وضعیت امنیتی هسته.</p>
         </div>
-        <Link href="/fa/admin/dashboard" className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
-          ← بازگشت به داشبورد فرماندهی
+        <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+          {dir === 'rtl' ? '← بازگشت به داشبورد فرماندهی' : 'Command Dashboard →'}
         </Link>
       </div>
 
@@ -92,7 +97,7 @@ export default function AdminSecurityMonitoringPage() {
 
       {/* جدول لاگ‌های زنده امنیتی */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
           <h3 className="text-sm font-bold text-slate-900">
             🛡️ لاگ‌های زنده رخدادهای امنیتی و فایروال ({securityLogs.length} مورد)
           </h3>
@@ -103,7 +108,7 @@ export default function AdminSecurityMonitoringPage() {
           <div className="text-center py-12 text-slate-400 text-xs">هیچ رخداد امنیتی ثبت‌نشده یا لاگ‌ها پاکسازی شده‌اند.</div>
         ) : (
           <div className="overflow-x-auto">
-            <table className="w-full text-right text-xs">
+            <table className={`w-full ${dir === 'rtl' ? 'text-right' : 'text-left'} text-xs`}>
               <thead>
                 <tr className="border-b border-slate-100 text-slate-400 font-medium">
                   <th className="pb-3">سطح هشدار</th>
@@ -117,11 +122,11 @@ export default function AdminSecurityMonitoringPage() {
                 {securityLogs.map(log => (
                   <tr key={log.id} className="hover:bg-slate-50/80 transition">
                     <td className="py-4">
-                      <span className={`px-2.5 py-1 rounded-lg font-bold text-[10px] ${log.type === 'CRITICAL' ? 'bg-rose-50 text-rose-600 border border-rose-100' : log.type === 'WARNING' ? 'bg-amber-50 text-amber-600' : 'bg-blue-50 text-blue-600'}`}>
+                      <span className={`px-2.5 py-1 rounded-lg font-bold text-[10px] inline-block ${log.type === 'CRITICAL' ? 'bg-rose-50 text-rose-600 border border-rose-100' : log.type === 'WARNING' ? 'bg-amber-50 text-amber-600' : 'bg-blue-50 text-blue-600'}`}>
                         {log.type}
                       </span>
                     </td>
-                    <td className="py-4 text-slate-700">{log.ip}</td>
+                    <td className="py-4 text-slate-700" dir="ltr">{log.ip}</td>
                     <td className="py-4 font-bold text-slate-900 font-sans">{log.action}</td>
                     <td className="py-4 text-slate-600 font-sans">{log.details}</td>
                     <td className="py-4 text-slate-400 text-[11px]">{log.time}</td>
