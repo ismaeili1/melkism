@@ -4,15 +4,15 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { MOCK_USERS } from "@/lib/mock-users";
-import { translate } from "@/lib/i18n/translator";
 
 interface AuthPageProps {
   params: { locale: string };
 }
 
 export default function AuthPage({ params: { locale } }: AuthPageProps) {
-  const t = (text: string) => translate(text, locale);
+  const t = useTranslations("AuthPage");
   const isRtl = locale === "fa" || locale === "ar";
 
   const router = useRouter();
@@ -47,10 +47,10 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
         localStorage.setItem("authToken", "mock-jwt-token-melkism-2026");
         router.push(redirectUrl);
       } else {
-        setErrorMsg(t("شماره موبایل/نام کاربری یا رمز عبور اشتباه است."));
+        setErrorMsg(t("invalidCredentials"));
       }
     } catch (err) {
-      setErrorMsg(t("خطایی در برقراری ارتباط رخ داد. لطفاً دوباره تلاش کنید."));
+      setErrorMsg(t("networkError"));
     } finally {
       setIsLoading(false);
     }
@@ -61,7 +61,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
     setErrorMsg(null);
 
     if (!termsAccepted) {
-      setErrorMsg(t("لطفاً قوانین و مقررات ملکیسم را بپذیرید."));
+      setErrorMsg(t("acceptTermsRequired"));
       return;
     }
 
@@ -71,7 +71,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
       const newUser = {
         id: `user-${Date.now()}`,
         phone: identifier,
-        name: fullName || t("کاربر جدید ملکیسم"),
+        name: fullName || t("newUserDefaultName"),
         username: `user_${Math.floor(1000 + Math.random() * 9000)}`,
         role: "USER",
         avatar: "/images/melkism-logo-Mark.svg",
@@ -82,7 +82,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
       localStorage.setItem("authToken", "mock-jwt-token-new-user");
       router.push(`/${locale}/profile?complete=true`);
     } catch (err) {
-      setErrorMsg(t("ثبت‌نام با مشکل مواجه شد."));
+      setErrorMsg(t("registerFailed"));
     } finally {
       setIsLoading(false);
     }
@@ -133,12 +133,10 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
           </Link>
 
           <h2 className="text-2xl font-black text-slate-800 dark:text-slate-100 tracking-tight">
-            {mode === "login" ? t("ورود به حساب ملکیسم") : t("عضویت و ثبت‌نام در ملکیسم")}
+            {mode === "login" ? t("loginTitle") : t("registerTitle")}
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            {mode === "login"
-              ? t("دسترسی به تحلیل‌های تخصصی، دانشنامه و هوش بازار مسکن")
-              : t("برای دسترسی کامل به گزارش‌ها و تکمیل پروفایل کاربری")}
+            {mode === "login" ? t("loginSubtitle") : t("registerSubtitle")}
           </p>
         </div>
 
@@ -156,13 +154,13 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
               <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
             </svg>
-            <span>{t("ورود سریع با اکانت گوگل")}</span>
+            <span>{t("googleLogin")}</span>
           </button>
 
           <div className="relative flex items-center justify-center my-4">
             <div className="border-t border-slate-200 dark:border-slate-700 w-full" />
             <span className="bg-white dark:bg-slate-800 px-3 text-[11px] text-slate-400 font-medium absolute">
-              {t("یا با حساب کاربری")}
+              {t("orWithAccount")}
             </span>
           </div>
         </div>
@@ -179,14 +177,14 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
           {mode === "signup" && (
             <div>
               <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-                {t("نام و نام خانوادگی")}
+                {t("fullNameLabel")}
               </label>
               <input
                 type="text"
                 required
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                placeholder={t("مثلاً: علی رضایی")}
+                placeholder={t("fullNamePlaceholder")}
                 className="w-full px-4 py-3 text-xs rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900 focus:bg-white dark:focus:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition"
               />
             </div>
@@ -194,7 +192,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
 
           <div>
             <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-              {mode === "login" ? t("شماره موبایل، ایمیل یا یوزرنیم") : t("شماره موبایل یا ایمیل")}
+              {mode === "login" ? t("identifierLoginLabel") : t("identifierRegisterLabel")}
             </label>
             <input
               type="text"
@@ -210,14 +208,14 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300">
-                {t("رمز عبور")}
+                {t("passwordLabel")}
               </label>
               {mode === "login" && (
                 <Link
                   href={`/${locale}/forgot-password`}
                   className="text-[11px] text-amber-600 hover:text-amber-700 dark:text-amber-400 font-medium"
                 >
-                  {t("رمز عبور را فراموش کرده‌اید؟")}
+                  {t("forgotPassword")}
                 </Link>
               )}
             </div>
@@ -241,7 +239,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
                   isRtl ? "left-3" : "right-3"
                 }`}
               >
-                {showPassword ? t("مخفی") : t("نمایش")}
+                {showPassword ? t("hidePassword") : t("showPassword")}
               </button>
             </div>
           </div>
@@ -256,7 +254,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
                 className="w-4 h-4 rounded border-slate-300 text-amber-500 focus:ring-amber-400 cursor-pointer"
               />
               <label htmlFor="terms" className="text-[11px] text-slate-600 dark:text-slate-400 cursor-pointer">
-                {t("شرایط و قوانین ملکیسم را می‌پذیرم.")}
+                {t("acceptTermsLabel")}
               </label>
             </div>
           )}
@@ -267,10 +265,10 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
             className="w-full py-3.5 px-4 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-2xl text-xs shadow-lg shadow-amber-500/20 active:scale-[0.99] transition disabled:opacity-50 mt-2"
           >
             {isLoading
-              ? t("در حال پردازش...")
+              ? t("processing")
               : mode === "login"
-              ? t("ورود به حساب کاربری")
-              : t("ثبت‌نام و ورود به پروفایل")}
+              ? t("loginSubmit")
+              : t("registerSubmit")}
           </button>
         </form>
 
@@ -278,7 +276,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
         <div className="pt-4 border-t border-slate-100 dark:border-slate-700/50 text-center text-xs">
           {mode === "login" ? (
             <p className="text-slate-600 dark:text-slate-400">
-              {t("هنوز حساب کاربری ندارید؟")}{" "}
+              {t("noAccountYet")}{" "}
               <button
                 onClick={() => {
                   setMode("signup");
@@ -286,12 +284,12 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
                 }}
                 className="font-bold text-amber-600 dark:text-amber-400 hover:underline inline-flex items-center gap-1 mx-1"
               >
-                {t("ثبت‌نام کاربر جدید")}
+                {t("registerNewUser")}
               </button>
             </p>
           ) : (
             <p className="text-slate-600 dark:text-slate-400">
-              {t("قبلاً ثبت‌نام کرده‌اید؟")}{" "}
+              {t("alreadyRegistered")}{" "}
               <button
                 onClick={() => {
                   setMode("login");
@@ -299,7 +297,7 @@ export default function AuthPage({ params: { locale } }: AuthPageProps) {
                 }}
                 className="font-bold text-amber-600 dark:text-amber-400 hover:underline inline-flex items-center gap-1 mx-1"
               >
-                {t("ورود به حساب")}
+                {t("loginToAccount")}
               </button>
             </p>
           )}

@@ -1,7 +1,10 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { locales, defaultLocale } from './src/i18n/config';
+
+export const locales = ['fa', 'en', 'de', 'fr', 'es', 'it', 'tr', 'zh', 'ar', 'ru'] as const;
+export type AppLocale = (typeof locales)[number];
+export const defaultLocale: AppLocale = 'fa';
 
 const handleI18nRouting = createMiddleware({
   locales,
@@ -12,7 +15,7 @@ const handleI18nRouting = createMiddleware({
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // نادیده گرفتن مسیرهای سیستمی و فایل‌های استاتیک
+  // نادیده گرفتن مسیرهای سیستمی، API و فایل‌های استاتیک
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
@@ -21,14 +24,16 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // اجرای میدل‌ویر رسمی next-intl برای ساخت هدرها و تشخیص دقیق لوکیل
+  // اجرای میدل‌ویر رسمی next-intl برای ریدایرکت/بازنویسی لوکیل و تنظیم هدرها
   const response = handleI18nRouting(request);
 
-  // استخراج زبان فعلی از مسیر
+  // استخراج زبان فعلی از مسیر یا هدر تولیدشده توسط next-intl
   const segments = pathname.split('/');
-  const currentLocale = locales.includes(segments[1] as any)
-    ? segments[1]
-    : defaultLocale;
+  const pathLocale = locales.includes(segments[1] as AppLocale)
+    ? (segments[1] as AppLocale)
+    : undefined;
+  const headerLocale = response.headers.get('x-middleware-request-x-next-intl-locale') as AppLocale | null;
+  const currentLocale: AppLocale = pathLocale || (headerLocale && locales.includes(headerLocale) ? headerLocale : defaultLocale);
 
   // محافظت از مسیرهای پنل مدیریت (Admin)
   if (pathname.includes('/admin')) {
@@ -38,7 +43,7 @@ export function middleware(request: NextRequest) {
 
     if (!sessionToken) {
       const loginUrl = new URL(`/${currentLocale}/auth/login`, request.url);
-      loginUrl.searchParams.set('callbackUrl', encodeURI(request.url));
+      loginUrl.searchParams.set('callbackUrl', request.url);
       return NextResponse.redirect(loginUrl);
     }
   }
@@ -47,5 +52,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|images).*)'],
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 };
