@@ -1,146 +1,209 @@
 ﻿"use client";
 
 import { useState } from "react";
-import { useParams } from "next/navigation";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useLocalizedText } from "@/hooks/useLocalizedText";
 
-export default function AdminGlobalSettingsPage() {
+export default function AdminSettingsPage() {
   const params = useParams();
   const locale = (params?.locale as string) || "fa";
-  const dir = ["fa", "ar"].includes(locale) ? "rtl" : "ltr";
+  const isRtl = ["fa", "ar"].includes(locale);
+  const dir = isRtl ? "rtl" : "ltr";
 
-  const [activeTab, setActiveTab] = useState("HEADER_FOOTER");
+  const { t, num } = useLocalizedText("AdminSettings");
 
-  const [headerLinks, setHeaderLinks] = useState([
-    { id: 1, title: "صفحه اصلی", url: `/${locale}`, status: "فعال" },
-    { id: 2, title: "هوش بازار", url: `/${locale}/market-hub`, status: "فعال" },
-    { id: 3, title: "کتابخانه تخصصی", url: `/${locale}/library`, status: "فعال" },
-    { id: 4, title: "متخصص ملکیست", url: `/${locale}/experts`, status: "فعال" },
-  ]);
+  const defaultSettings = {
+    brandName: "MELKIST",
+    supportPhone: "021-88000000",
+    supportEmail: "info@melkism.com",
+    address: "تهران، سعادت‌آباد، بلوار دریا",
+    workingHours: "شنبه تا چهارشنبه، ۹ الی ۱۷",
+    defaultLocale: locale,
+    modules: {
+      news: true,
+      library: true,
+      marketHub: true,
+      marketplace: true,
+      specialists: true,
+      rules: true,
+    } as Record<string, boolean>,
+  };
 
-  const [supportChannels, setSupportChannels] = useState([
-    { id: 1, type: "تیکت آنلاین ۲۴ ساعته", status: "فعال", target: "کاربران و سازندگان" },
-    { id: 2, type: "پشتیبانی تلفنی اختصاصی شرکت‌ها", status: "فعال", target: "نقش COMPANY و AGENCY" },
-  ]);
+  const [settings, setSettings] = useState(defaultSettings);
+  const [bannerMsg, setBannerMsg] = useState<string | null>(null);
 
-  const [licenses, setLicenses] = useState([
-    { id: 1, title: "گواهینامه عضویت رسمی ICOMOS ایران", code: "IR-ICOMOS-1405", status: "معتبر" },
-    { id: 2, title: "نماد اعتماد و مجوز انتشار محتوای دیجیتال", code: "ENAMAD-MELKISM", status: "تاییدشده" },
-  ]);
+  const activeModulesCount = Object.values(settings.modules).filter(Boolean).length;
+
+  const moduleRows = [
+    { key: "news", labelKey: "modNews" },
+    { key: "library", labelKey: "modLibrary" },
+    { key: "marketHub", labelKey: "modMarketHub" },
+    { key: "marketplace", labelKey: "modMarketplace" },
+    { key: "specialists", labelKey: "modSpecialists" },
+    { key: "rules", labelKey: "modRules" },
+  ];
+
+  const handleToggleModule = (key: string) => {
+    setSettings((prev) => ({
+      ...prev,
+      modules: {
+        ...prev.modules,
+        [key]: !prev.modules[key],
+      },
+    }));
+  };
+
+  const handleSave = (e: React.FormEvent) => {
+    e.preventDefault();
+    setBannerMsg(t("savedMessage", { count: num(activeModulesCount) }));
+  };
+
+  const handleReset = () => {
+    setSettings(defaultSettings);
+    setBannerMsg(t("resetMessage"));
+  };
 
   return (
-    <div className={`min-h-screen bg-slate-50 text-slate-800 p-6 ${dir === "rtl" ? "dir-rtl" : "dir-ltr"} font-sans space-y-6`} dir={dir}>
-      
-      {/* هدر صفحه */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+    <div
+      className={`min-h-screen bg-slate-100 text-slate-800 p-6 ${
+        isRtl ? "dir-rtl" : "dir-ltr"
+      } font-sans space-y-6`}
+      dir={dir}
+    >
+      <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
         <div>
           <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-full inline-block mb-1">
-            تنظیمات زیرساخت، ساختار سراسری و مجوزها
+            {t("badge")}
           </span>
-          <h1 className="text-2xl font-black text-slate-900">مدیریت هدر، فوتر، خدمات، پشتیبانی و مجوزها</h1>
-          <p className="text-xs text-slate-500 mt-1">کنترل منوهای سراسری، کانال‌های پشتیبانی کاربران و اسناد قانونی پلتفرم.</p>
+          <h1 className="text-2xl font-black text-slate-900">{t("pageTitle")}</h1>
+          <p className="text-xs text-slate-500 mt-1">{t("pageSubtitle")}</p>
         </div>
-        <Link href={`/${locale}/admin/dashboard`} className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
-          {dir === 'rtl' ? '← بازگشت به داشبورد فرماندهی' : 'Command Dashboard →'}
-        </Link>
+
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={handleReset}
+            className="bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-4 py-2.5 rounded-xl transition"
+          >
+            {t("resetBtn")}
+          </button>
+          <Link
+            href={`/${locale}/admin/dashboard`}
+            className="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition"
+          >
+            {isRtl ? `← ${t("backToDashboard")}` : `${t("backToDashboard")} →`}
+          </Link>
+        </div>
       </div>
 
-      {/* تب‌های مدیریت تنظیمات */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-3 shadow-sm flex flex-wrap gap-2 text-xs">
-        <button 
-          onClick={() => setActiveTab("HEADER_FOOTER")}
-          className={`px-4 py-2.5 rounded-xl font-bold transition ${activeTab === 'HEADER_FOOTER' ? 'bg-indigo-600 text-white shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
-        >
-          🌐 هدر و فوتر سایت
-        </button>
-        <button 
-          onClick={() => setActiveTab("SUPPORT")}
-          className={`px-4 py-2.5 rounded-xl font-bold transition ${activeTab === 'SUPPORT' ? 'bg-indigo-600 text-white shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
-        >
-          🎧 خدمات و پشتیبانی
-        </button>
-        <button 
-          onClick={() => setActiveTab("LICENSES")}
-          className={`px-4 py-2.5 rounded-xl font-bold transition ${activeTab === 'LICENSES' ? 'bg-indigo-600 text-white shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
-        >
-          📜 مجوزها و اسناد قانونی
-        </button>
-      </div>
+      {bannerMsg && (
+        <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold px-4 py-3 rounded-2xl">
+          {bannerMsg}
+        </div>
+      )}
 
-      {/* محتوای تب فعال */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
-        
-        {activeTab === "HEADER_FOOTER" && (
-          <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
-              <h3 className="text-sm font-bold text-slate-900">🔗 مدیریت لینک‌ها و منوهای ناوبری (Header & Footer)</h3>
-              <button onClick={() => alert("افزودن لینک جدید به منو")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
-                + افزودن لینک
-              </button>
+      <form onSubmit={handleSave} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 text-xs">
+          <h2 className="text-sm font-bold text-slate-900">{t("contactSectionTitle")}</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label className="block font-bold text-slate-700 mb-1">{t("brandNameLabel")}</label>
+              <input
+                type="text"
+                value={settings.brandName}
+                onChange={(e) => setSettings({ ...settings, brandName: e.target.value })}
+                className="w-full border border-slate-200 rounded-xl px-3.5 py-2 outline-none focus:border-indigo-600"
+              />
             </div>
-            <div className="divide-y divide-slate-100 text-xs">
-              {headerLinks.map(link => (
-                <div key={link.id} className="py-3 flex justify-between items-center gap-4">
-                  <div>
-                    <span className="font-bold text-slate-900 block">{link.title}</span>
-                    <span className="text-slate-400 font-mono text-[10px]" dir="ltr">{link.url}</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px] inline-block">{link.status}</span>
-                    <button onClick={() => alert(`ویرایش لینک ${link.title}`)} className="text-indigo-600 font-bold hover:underline whitespace-nowrap">ویرایش</button>
-                  </div>
-                </div>
-              ))}
+            <div>
+              <label className="block font-bold text-slate-700 mb-1">{t("supportPhoneLabel")}</label>
+              <input
+                type="text"
+                dir="ltr"
+                value={settings.supportPhone}
+                onChange={(e) => setSettings({ ...settings, supportPhone: e.target.value })}
+                className="w-full border border-slate-200 rounded-xl px-3.5 py-2 outline-none focus:border-indigo-600 font-mono"
+              />
+            </div>
+            <div>
+              <label className="block font-bold text-slate-700 mb-1">{t("supportEmailLabel")}</label>
+              <input
+                type="email"
+                dir="ltr"
+                value={settings.supportEmail}
+                onChange={(e) => setSettings({ ...settings, supportEmail: e.target.value })}
+                className="w-full border border-slate-200 rounded-xl px-3.5 py-2 outline-none focus:border-indigo-600 font-mono"
+              />
+            </div>
+            <div>
+              <label className="block font-bold text-slate-700 mb-1">{t("workingHoursLabel")}</label>
+              <input
+                type="text"
+                value={settings.workingHours}
+                onChange={(e) => setSettings({ ...settings, workingHours: e.target.value })}
+                className="w-full border border-slate-200 rounded-xl px-3.5 py-2 outline-none focus:border-indigo-600"
+              />
             </div>
           </div>
-        )}
 
-        {activeTab === "SUPPORT" && (
-          <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
-              <h3 className="text-sm font-bold text-slate-900">🎧 کانال‌های ارتباطی و پشتیبانی مشتریان</h3>
-              <button onClick={() => alert("افزودن کانال پشتیبانی جدید")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
-                + افزودن کانال
-              </button>
-            </div>
-            <div className="divide-y divide-slate-100 text-xs">
-              {supportChannels.map(sup => (
-                <div key={sup.id} className="py-3 flex justify-between items-center gap-4">
-                  <div>
-                    <span className="font-bold text-slate-900 block">{sup.type}</span>
-                    <span className="text-slate-400 text-[10px]">مخاطبین هدف: {sup.target}</span>
-                  </div>
-                  <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px] inline-block whitespace-nowrap">{sup.status}</span>
-                </div>
-              ))}
-            </div>
+          <div>
+            <label className="block font-bold text-slate-700 mb-1">{t("addressLabel")}</label>
+            <input
+              type="text"
+              value={settings.address}
+              onChange={(e) => setSettings({ ...settings, address: e.target.value })}
+              className="w-full border border-slate-200 rounded-xl px-3.5 py-2 outline-none focus:border-indigo-600"
+            />
           </div>
-        )}
 
-        {activeTab === "LICENSES" && (
-          <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
-              <h3 className="text-sm font-bold text-slate-900">📜 اسناد قانونی، پروانه‌ها و مجوزهای رسمی</h3>
-              <button onClick={() => alert("بارگذاری سند یا مجوز جدید")} className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
-                + بارگذاری سند جدید
-              </button>
-            </div>
-            <div className="divide-y divide-slate-100 text-xs">
-              {licenses.map(lic => (
-                <div key={lic.id} className="py-3 flex justify-between items-center gap-4">
-                  <div>
-                    <span className="font-bold text-slate-900 block">{lic.title}</span>
-                    <span className="text-slate-400 font-mono text-[10px]" dir="ltr">شناسه ثبت: {lic.code}</span>
-                  </div>
-                  <span className="px-2 py-0.5 bg-emerald-50 text-emerald-600 font-bold rounded text-[10px] inline-block whitespace-nowrap">{lic.status}</span>
-                </div>
-              ))}
-            </div>
+          <div className="pt-2">
+            <button
+              type="submit"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2.5 rounded-xl transition shadow-xs"
+            >
+              {t("saveBtn")}
+            </button>
           </div>
-        )}
+        </div>
 
-      </div>
+        <div className="space-y-6">
+          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-3 text-xs">
+            <h2 className="text-sm font-bold text-slate-900">{t("modulesSectionTitle")}</h2>
+            {moduleRows.map((m) => {
+              const active = settings.modules[m.key];
+              return (
+                <div
+                  key={m.key}
+                  className="flex items-center justify-between py-2 border-b border-slate-100 last:border-none"
+                >
+                  <span className="font-bold text-slate-800">{t(m.labelKey)}</span>
+                  <button
+                    type="button"
+                    onClick={() => handleToggleModule(m.key)}
+                    className={`px-3 py-1 rounded-lg font-bold text-[11px] transition ${
+                      active
+                        ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                        : "bg-slate-100 text-slate-500 border border-slate-200"
+                    }`}
+                  >
+                    {active ? t("statusActive") : t("statusDisabled")}
+                  </button>
+                </div>
+              );
+            })}
+          </div>
 
+          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-2 text-xs">
+            <h2 className="text-sm font-bold text-slate-900">{t("uiSectionTitle")}</h2>
+            <p className="text-slate-700 font-bold">
+              {t("supportedLocalesInfo", { count: num(10) })}
+            </p>
+            <p className="text-slate-500 leading-relaxed">{t("rtlAutoInfo")}</p>
+          </div>
+        </div>
+      </form>
     </div>
   );
 }

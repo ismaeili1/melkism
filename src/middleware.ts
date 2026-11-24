@@ -33,17 +33,22 @@ export function middleware(request: NextRequest) {
     ? (segments[1] as AppLocale)
     : undefined;
   const headerLocale = response.headers.get('x-middleware-request-x-next-intl-locale') as AppLocale | null;
-  const currentLocale: AppLocale = pathLocale || (headerLocale && locales.includes(headerLocale) ? headerLocale : defaultLocale);
+  const currentLocale: AppLocale =
+    pathLocale || (headerLocale && locales.includes(headerLocale) ? headerLocale : defaultLocale);
 
-  // محافظت از مسیرهای پنل مدیریت (Admin)
+  // محافظت از مسیرهای پنل مدیریت (Admin) برای نقش‌های ADMIN و SUPER_ADMIN
   if (pathname.includes('/admin')) {
-    const sessionToken =
-      request.cookies.get('next-auth.session-token')?.value ||
-      request.cookies.get('__Secure-next-auth.session-token')?.value;
+    const rawRole = request.cookies.get('melkism_role')?.value || '';
+    const sessionCookie = request.cookies.get('melkism_session')?.value || '';
+    const normalizedRole = decodeURIComponent(rawRole).trim().toUpperCase();
 
-    if (!sessionToken) {
-      const loginUrl = new URL(`/${currentLocale}/auth/login`, request.url);
-      loginUrl.searchParams.set('callbackUrl', request.url);
+    const isAuthorizedAdmin =
+      (normalizedRole === 'ADMIN' || normalizedRole === 'SUPER_ADMIN') &&
+      Boolean(sessionCookie);
+
+    if (!isAuthorizedAdmin) {
+      const loginUrl = new URL(`/${currentLocale}/login`, request.url);
+      loginUrl.searchParams.set('redirect', pathname);
       return NextResponse.redirect(loginUrl);
     }
   }

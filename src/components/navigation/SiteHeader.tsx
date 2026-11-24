@@ -5,16 +5,16 @@ import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 
 const languages = [
-  { code: 'fa', label: 'FA', name: 'فارسی (IR)' },
-  { code: 'en', label: 'EN', name: 'English (US)' },
-  { code: 'ar', label: 'AR', name: 'العربية (AR)' },
-  { code: 'tr', label: 'TR', name: 'Türkçe (TR)' },
-  { code: 'de', label: 'DE', name: 'Deutsch (DE)' },
-  { code: 'fr', label: 'FR', name: 'Français (FR)' },
-  { code: 'ru', label: 'RU', name: 'Русский (RU)' },
-  { code: 'zh', label: 'ZH', name: '中文 (ZH)' },
-  { code: 'es', label: 'ES', name: 'Español (ES)' },
-  { code: 'it', label: 'IT', name: 'Italiano (IT)' },
+  { code: 'fa', label: 'FA', name: 'فارسی' },
+  { code: 'en', label: 'EN', name: 'English' },
+  { code: 'ar', label: 'AR', name: 'العربية' },
+  { code: 'tr', label: 'TR', name: 'Türkçe' },
+  { code: 'de', label: 'DE', name: 'Deutsch' },
+  { code: 'fr', label: 'FR', name: 'Français' },
+  { code: 'ru', label: 'RU', name: 'Русский' },
+  { code: 'zh', label: 'ZH', name: '中文' },
+  { code: 'es', label: 'ES', name: 'Español' },
+  { code: 'it', label: 'IT', name: 'Italiano' },
 ];
 
 const navTranslations: Record<string, Record<string, string>> = {
@@ -131,6 +131,12 @@ export default function SiteHeader() {
   if (!mounted) {
     return <header className="bg-white border-b border-slate-200 h-20 sticky top-0 z-50 shadow-sm" />;
   }
+
+  const profileHref =
+    String(user?.role || '').toLowerCase() === 'admin' ||
+    String(user?.role || '').toLowerCase() === 'superadmin'
+      ? `/${currentLocale}/admin/dashboard`
+      : `/${currentLocale}/user/dashboard`;
 
   return (
     <header className={`bg-white border-b border-slate-200 text-slate-800 sticky top-0 z-50 shadow-sm ${dir === 'rtl' ? 'dir-rtl' : 'dir-ltr'}`} dir={dir}>
@@ -268,7 +274,7 @@ export default function SiteHeader() {
           {/* آواتار کاربر */}
           {user ? (
             <Link 
-              href={user.role === 'admin' ? `/${currentLocale}/admin` : `/${currentLocale}/profile`}
+              href={profileHref}
               className="flex items-center justify-center p-1 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-full transition shadow-sm group"
               title={user.name || user.fullName || 'پروفایل کاربری'}
             >
